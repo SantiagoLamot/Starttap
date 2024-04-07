@@ -34,3 +34,39 @@ C:\Users\Facu\Desktop\Mi carpeta\TP2_GRUPO_1\TP2_GRUPO_1\obj\Debug\TP2_GRUPO_1.c
 C:\Users\Facu\Desktop\Mi carpeta\TP2_GRUPO_1\TP2_GRUPO_1\obj\Debug\TP2_GRUPO_1.csproj.CopyComplete
 C:\Users\Facu\Desktop\Mi carpeta\TP2_GRUPO_1\TP2_GRUPO_1\obj\Debug\TP2_GRUPO_1.dll
 C:\Users\Facu\Desktop\Mi carpeta\TP2_GRUPO_1\TP2_GRUPO_1\obj\Debug\TP2_GRUPO_1.pdb
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\TP2_GRUPO_1.dll.config
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\TP2_GRUPO_1.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\TP2_GRUPO_1.pdb
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\csc.exe
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\csc.exe.config
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\csc.rsp
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\csi.exe
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\csi.rsp
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\System.AppContext.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\vbc.exe
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\vbc.exe.config
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\vbc.rsp
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\VBCSCompiler.exe
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\obj\Debug\TP2_GRUPO_1.csproj.AssemblyReference.cache
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\obj\Debug\TP2_GRUPO_1.csproj.CoreCompileInputs.cache
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\obj\Debug\TP2_GRUP.85F75CFC.Up2Date
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\obj\Debug\TP2_GRUPO_1.dll
+C:\Users\kechu\OneDrive\Documentos\GitHub\Starttap\TP2_GRUPO_1\TP2_GRUPO_1\obj\Debug\TP2_GRUPO_1.pdb
