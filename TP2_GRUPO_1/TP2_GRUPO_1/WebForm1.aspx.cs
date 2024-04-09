@@ -54,10 +54,10 @@ namespace TP2_GRUPO_1
             Tabla += "</table>";
             lblTabla.Text = Tabla;
 
-            txtCantidad.Text = " ";
-            txtCantidad2.Text = " ";
-            txtProducto.Text = " ";
-            txtProducto2.Text = " ";
+            txtCantidad.Text = "";
+            txtCantidad2.Text = "";
+            txtProducto.Text = "";
+            txtProducto2.Text = "";
         }
     }
 }
