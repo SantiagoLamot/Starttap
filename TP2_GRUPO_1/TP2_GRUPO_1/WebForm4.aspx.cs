@@ -11,18 +11,18 @@ namespace TP2_GRUPO_1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            txtClave.TextMode = TextBoxMode.Password;
         }
 
         protected void btnValidar_Click(object sender, EventArgs e)
         {
-            if(txtUsuario.Text == "Claudio" && txtClave.Text == "casas") 
+            if (txtUsuario.Text == "Claudio" && txtClave.Text == "casas")
             {
-
+                Response.Redirect("WebForm4Valido.aspx?Usuario=" + txtUsuario.Text);
             }
             else
             {
-
+                Response.Redirect("WebForm4Error.aspx");
             }
         }
     }
