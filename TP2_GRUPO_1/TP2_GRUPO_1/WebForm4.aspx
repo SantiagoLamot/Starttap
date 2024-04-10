@@ -50,14 +50,12 @@
                         <asp:TextBox ID="txtClave" runat="server" Width="244px"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style4">
                         <asp:Button ID="btnValidar" runat="server" Text="Validar" OnClick="btnValidar_Click" Width="60px" />
                     </td>
-                    <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
             </table>

@@ -20,8 +20,7 @@
             <br />
             <strong>
             <asp:Label ID="lblError" runat="server" Font-Size="X-Large"></asp:Label>
-            </strong>
-            <br />
+            &nbsp;</strong><br />
             <br />
             <br />
         </div>

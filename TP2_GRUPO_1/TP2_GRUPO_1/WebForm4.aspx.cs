@@ -13,7 +13,7 @@ namespace TP2_GRUPO_1
         {
             txtClave.TextMode = TextBoxMode.Password;
         }
-
+       
         protected void btnValidar_Click(object sender, EventArgs e)
         {
             if (txtUsuario.Text == "Claudio" && txtClave.Text == "casas")
