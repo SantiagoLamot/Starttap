@@ -33,6 +33,27 @@ namespace TP2_GRUPO_1
              Page_Load(sender, e, Color.Green);
         }
 
-  
+        protected void btn1_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("WebForm1.aspx");
+        }
+
+        protected void btn2_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("WebForm2A.aspx");
+
+        }
+
+        protected void btn4_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("WebForm4.aspx");
+
+        }
+
+        protected void btn5_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("WebForm5.aspx");
+
+        }
     }
 }

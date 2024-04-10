@@ -18,5 +18,28 @@ namespace TP2_GRUPO_1
 
             Server.Transfer("WebForm2B.aspx");
         }
+
+        protected void btn1_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("WebForm1.aspx");
+        }
+
+        protected void btn3_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("WebForm3.aspx");
+
+        }
+
+        protected void btn4_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("WebForm4.aspx");
+
+        }
+
+        protected void btn5_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("WebForm5.aspx");
+
+        }
     }
 }
