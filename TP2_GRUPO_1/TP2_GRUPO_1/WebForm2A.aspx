@@ -8,8 +8,9 @@
     <title>EJERCICIO 2</title>
     <style type="text/css">
         .auto-style1 {
-            width: 100%;
-            background-color: #333333;
+            width: 101%;
+            background-color: #26303D;
+            height: 419px;
         }
         .auto-style5 {
             width: 80px;
@@ -66,25 +67,35 @@
         .auto-style19 {
             height: 39px;
         }
+        .auto-style20 {
+            color: #A87CCE;
+        }
+        .auto-style21 {
+            position: static;
+        }
+        .auto-style22 {
+            margin-left: 15px;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server" style="margin: 10px">
-        <div>
+        <div class="auto-style22" style="padding: inherit; margin-right: inherit; margin-bottom: inherit;">
 
-            <fieldset style=" align-content:center; border: none; padding: 20px; border-radius: 5px; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            <fieldset style=" align-content:center; border: none; padding: 20px; border-radius: 5px; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" class="auto-style21">
                 <legend style="font-weight: bold; padding: 0 10px;">Ejercicios</legend>
                 <asp:Button ID="btn1" runat="server" Text="1" Style="background-color: #007bff; border: none; color: white; padding: 10px 20px; text-align: center; font-size: 16px; margin: 4px 2px;" OnClick="btn1_Click" />
                 <asp:Button ID="btn3" runat="server" Text="3" Style="background-color: #007bff; border: none; color: white; padding: 10px 20px; text-align: center; font-size: 16px; margin: 4px 2px;" OnClick="btn3_Click" />
                 <asp:Button ID="btn4" runat="server" Text="4" Style="background-color: #007bff; border: none; color: white; padding: 10px 20px; text-align: center; font-size: 16px; margin: 4px 2px;" OnClick="btn4_Click" />
                 <asp:Button ID="btn5" runat="server" Text="5" Style="background-color: #007bff; border: none; color: white; padding: 10px 20px; text-align: center; font-size: 16px; margin: 4px 2px;" OnClick="btn5_Click" />
                
-            </fieldset>
-
+                <br />
+               
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style5"></td>
                     <td class="auto-style5">
                         <asp:Label ID="LBLINGRESONOMB" runat="server" ForeColor="White" Text="Nombre:"></asp:Label>
                     </td>
@@ -111,7 +122,7 @@
                         <asp:Label ID="LBLINGRESOCIUDAD" runat="server" ForeColor="White" Text="Ciudad:"></asp:Label>
                     </td>
                     <td class="auto-style15"><strong>
-                        <asp:DropDownList ID="ddlCiudad" runat="server" AutoPostBack="True" Font-Bold="True" Font-Names="Arial Narrow" ForeColor="#A87CCE">
+                        <asp:DropDownList ID="ddlCiudad" runat="server" AutoPostBack="True" Font-Bold="True" Font-Names="Arial Narrow" ForeColor="#A87CCE" CssClass="auto-style20">
                             <asp:ListItem Value="Zona Norte">Gral. Pacheco</asp:ListItem>
                             <asp:ListItem Value="Zona Oeste">San Miguel</asp:ListItem>
                             <asp:ListItem Value="Zona Sur">Boedo</asp:ListItem>
@@ -146,12 +157,15 @@
                     <td class="auto-style11">&nbsp;</td>
                     <td class="auto-style11">&nbsp;</td>
                     <td class="auto-style16">
-                        <asp:Button ID="btnResumen" runat="server" BorderStyle="Double" Font-Bold="True" Font-Names="Arial Narrow" Font-Size="Medium" ForeColor="#A87CCE" OnClick="btnResumen_Click" Text="Ver Resumen" UseSubmitBehavior="False" Width="239px" />
+                        <asp:Button ID="btnResumen" runat="server" BorderStyle="Solid" Font-Bold="True" Font-Names="Arial Narrow" Font-Size="Medium" ForeColor="#A87CCE" OnClick="btnResumen_Click" Text="Ver Resumen" UseSubmitBehavior="False" Width="239px" />
                     </td>
                     <td class="auto-style12">&nbsp;</td>
                 </tr>
             </table>
-        </div>
+               
+            </fieldset>
+
+            </div>
     </form>
 </body>
 </html>

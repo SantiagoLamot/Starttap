@@ -23,6 +23,7 @@
         .auto-style1 {
             width: 100%;
             background-color: #333333;
+            height: 424px;
         }
         .auto-style5 {
             width: 80px;
@@ -81,19 +82,19 @@
             color: #A87DCF;
         }
         .auto-style22 {
-            width: 80px;
+            width: 97px;
             height: 39px;
             text-align: left;
             color: #FFFFFF;
         }
         .auto-style23 {
-            width: 80px;
+            width: 97px;
             height: 50px;
             text-align: left;
             color: #FFFFFF;
         }
         .auto-style24 {
-            width: 80px;
+            width: 97px;
             height: 49px;
             text-align: left;
             color: #FFFFFF;
@@ -130,7 +131,7 @@
             color: #FFFFFF;
         }
         .auto-style32 {
-            width: 80px;
+            width: 97px;
             height: 8px;
             text-align: left;
             color: #FFFFFF;
@@ -152,31 +153,41 @@
                 <tr>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style20" colspan="2">&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style20" colspan="2"><strong>Resumen</strong></td>
                     <td class="auto-style6"></td>
                 </tr>
                 <tr>
                     <td class="auto-style7"></td>
                     <td class="auto-style7"></td>
-                    <td class="auto-style24">Nombre:</td>
+                    <td class="auto-style24"><strong>Nombre:</strong></td>
                     <td class="auto-style14">
+                        <strong>
                         <asp:Label ID="lblNombre" runat="server" Font-Bold="True" ForeColor="#A87DCF" OnLoad="lblNombre_Load"></asp:Label>
+                        </strong>
                     </td>
                     <td class="auto-style8"></td>
                 </tr>
                 <tr>
                     <td class="auto-style9">&nbsp;</td>
                     <td class="auto-style29">&nbsp;</td>
-                    <td class="auto-style23">Apellido:</td>
+                    <td class="auto-style23"><strong>Apellido:</strong></td>
                     <td class="auto-style15">
+                        <strong>
                         <asp:Label ID="lblApellido" runat="server" Font-Bold="True" ForeColor="#A87DCF"></asp:Label>
+                        </strong>
                     </td>
                     <td class="auto-style10"></td>
                 </tr>
                 <tr>
                     <td class="auto-style17">&nbsp;</td>
                     <td class="auto-style28">&nbsp;</td>
-                    <td class="auto-style22">Zona:</td>
+                    <td class="auto-style22"><strong>Zona:</strong></td>
                     <td class="auto-style18"><strong>
                         <asp:Label ID="lblZona" runat="server" ForeColor="#A87DCF"></asp:Label>
                         </strong></td>
@@ -192,10 +203,16 @@
                 <tr>
                     <td class="auto-style11">&nbsp;</td>
                     <td class="auto-style27">&nbsp;</td>
-                    <td class="auto-style25" colspan="2"><span class="auto-style26">Los temas elegidos son:</span><br class="auto-style26" />
-                        <strong>
+                    <td class="auto-style25" colspan="2"><span class="auto-style26"><strong>Los temas elegidos son:</strong></span><strong><br />
+                        <br class="auto-style26" />
                         <asp:Label ID="lblTemas" runat="server" CssClass="auto-style26" ForeColor="#A87DCF"></asp:Label>
                         </strong></td>
+                    <td class="auto-style12">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style11">&nbsp;</td>
+                    <td class="auto-style27">&nbsp;</td>
+                    <td class="auto-style25" colspan="2">&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
                 </tr>
             </table>

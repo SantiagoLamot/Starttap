@@ -9,6 +9,12 @@
     <style type="text/css">
         .auto-style1 {
             text-align: center;
+            width: 1847px;
+            height: 423px;
+            background-color: #333333;
+        }
+        .auto-style2 {
+            color: #A87DAC;
         }
     </style>
 </head>
@@ -18,8 +24,13 @@
             <br />
             <br />
             <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <strong>
-            <asp:Label ID="lblError" runat="server" Font-Size="X-Large"></asp:Label>
+            <asp:Label ID="lblError" runat="server" Font-Size="X-Large" CssClass="auto-style2"></asp:Label>
             &nbsp;</strong><br />
             <br />
             <br />

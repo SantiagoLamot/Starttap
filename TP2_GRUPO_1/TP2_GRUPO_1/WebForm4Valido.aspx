@@ -9,6 +9,15 @@
     <style type="text/css">
         .auto-style1 {
             text-align: center;
+            width: 1839px;
+            height: 422px;
+            background-color: #333333;
+        }
+        .auto-style2 {
+            background-color: #333333;
+        }
+        .auto-style3 {
+            color: #A87DCF;
         }
     </style>
 </head>
@@ -20,7 +29,11 @@
             <br />
             <br />
             <br />
-            <asp:Label ID="lblBienvenido" runat="server" Font-Size="X-Large"></asp:Label>
+            <br />
+            <br />
+            <br />
+            <br class="auto-style2" />
+            <asp:Label ID="lblBienvenido" runat="server" Font-Size="X-Large" CssClass="auto-style3"></asp:Label>
             <br />
             <br />
             <br />
