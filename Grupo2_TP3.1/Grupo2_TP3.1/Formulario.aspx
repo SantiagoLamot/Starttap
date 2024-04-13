@@ -35,7 +35,7 @@
                         <asp:TextBox ID="txtLocalidad" runat="server" ValidationGroup="GrupoL" Width="178px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad" ForeColor="Red" InitialValue="..." ValidationGroup="GrupoL">Ingrese una localidad</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad" ForeColor="Red" ValidationGroup="GrupoL" Display="Dynamic">Ingrese una localidad</asp:RequiredFieldValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -44,7 +44,9 @@
                     <td class="auto-style3">
                         <asp:Button ID="btnGuardarLocalidad" runat="server" OnClick="btnGuardarLocalidad_Click" Text="Guardar Localidad" ValidationGroup="GrupoL" Width="187px" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="revNumerosyLetras" runat="server" ControlToValidate="txtLocalidad" EnableTheming="False" ValidationExpression="^[0-9]*?[  a-z ]*?[A-Za-z]+$">*</asp:RegularExpressionValidator>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
