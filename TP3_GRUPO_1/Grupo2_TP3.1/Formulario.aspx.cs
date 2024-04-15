@@ -16,35 +16,29 @@ namespace Grupo2_TP3._1
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
         {
-            ddlLocalidades.Items.Add(txtLocalidad.Text);
-            lblMensajeLocalidad.Text = "La localidad fue ingresada correctamente";
-        }
-
-        protected void TextChanged_Localidad(object sender, EventArgs e)
-        {
-            if(lblMensajeLocalidad.Text!="")
-            {
-                lblMensajeLocalidad.Text = "";
-            }
         }
 
         protected void sv_LocaliadRepetida(object source, ServerValidateEventArgs args)
         {
-            string LocalidadIngresada = txtLocalidad.Text;
+            string LocalidadIngresada = txtLocalidad.Text.ToLower().Trim();
             bool validacion = true;
-            foreach (string localidades in ddlLocalidades.Items)
+            foreach (ListItem localidades in ddlLocalidades.Items)
             {
-                if (localidades == LocalidadIngresada)
+                if (localidades.Text.ToLower().Trim() == LocalidadIngresada)
                 {
                     validacion = false;
                 }
             }
             if (validacion)
             {
+                ddlLocalidades.Items.Add(txtLocalidad.Text);
+                txtLocalidad.Text = "";
+                lblMensajeLocalidad.Text = "La localidad fue ingresada correctamente";
                 args.IsValid = true;
             }
             else
             {
+                lblMensajeLocalidad.Text = "";
                 args.IsValid = false;
             }
         }

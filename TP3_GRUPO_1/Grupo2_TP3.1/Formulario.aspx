@@ -37,9 +37,9 @@
                     <td>&nbsp;</td>
                 </tr>
               <tr>
-              <td class="auto-style5">Ingrese localidad:</td>
+              <td class="auto-style5" >Ingrese localidad:</td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="txtLocalidad" runat="server" ValidationGroup="GrupoL" Width="178px" OnTextChanged="TextChanged_Localidad"></asp:TextBox>
+                        <asp:TextBox ID="txtLocalidad" runat="server" Width="180px" ValidationGroup="GrupoL"></asp:TextBox>
                         <br />
                         <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad" Font-Names="Calibri" Font-Size="X-Small" ForeColor="#660066" ValidationGroup="GrupoL" Display="Dynamic">*Ingrese una localidad</asp:RequiredFieldValidator>
                         <br />
@@ -97,7 +97,7 @@
                         <asp:Label runat="server" Text="Repetir contraseña:" ID="Label1"></asp:Label>&nbsp;
                     </td>
                     <td>
-                        <asp:TextBox ID="txtRepContraseña" runat="server" Width="179px" TextMode="Password"></asp:TextBox>&nbsp;<br />
+                        <asp:TextBox ID="txtRepContraseña" runat="server" Width="180px" TextMode="Password"></asp:TextBox>&nbsp;<br />
                         <asp:CompareValidator ID="cvErrorPassw" runat="server" ControlToCompare="txtContraseña" ControlToValidate="txtRepContraseña" Display="Dynamic" ErrorMessage="CompareValidator" Font-Names="Calibri" Font-Size="X-Small" ForeColor="#660066" ValidationGroup="GUsuario" CssClass="auto-style5">*La contraseña no coincide </asp:CompareValidator>
                     </td>
                     <td>&nbsp;</td>
@@ -108,7 +108,7 @@
                         <asp:Label runat="server" Text="Correo electronico:" ID="Label2"></asp:Label>&nbsp;
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>&nbsp;</td>
+                        <asp:TextBox ID="TextBox3" runat="server" Width="180px"></asp:TextBox>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -117,7 +117,7 @@
                         <asp:Label runat="server" Text="CP:" ID="Label3"></asp:Label>&nbsp;
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>&nbsp;</td>
+                        <asp:TextBox ID="TextBox4" runat="server" Width="180px"></asp:TextBox>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -126,14 +126,14 @@
                         <asp:Label runat="server" Text="Localidades:" ID="Label4"></asp:Label>&nbsp;
                     </td>
                     <td>
-                        <asp:DropDownList ID="ddlLocalidades" runat="server" ValidationGroup="GrupoL"></asp:DropDownList>&nbsp;</td>
+                        <asp:DropDownList ID="ddlLocalidades" runat="server" ValidationGroup="GrupoL" Width="180px"></asp:DropDownList>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                 <td class="auto-style5">&nbsp;</td>
                 <td>
-                        <asp:Button ID="btnGuardarUsuario" runat="server" OnClick="btnGuardarLocalidad_Click" Text="Guardar Usuario" ValidationGroup="GrupoL" Width="187px" />
+                    <asp:Button ID="btnGuardarUsuario" runat="server" OnClick="btnGuardarLocalidad_Click" Text="Guardar Usuario" ValidationGroup="GrupoL" Width="180px" />
                     </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
