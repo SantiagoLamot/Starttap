@@ -168,6 +168,15 @@ namespace Grupo2_TP3._1
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
 
         /// <summary>
+        /// Control revCorreoElectronico.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revCorreoElectronico;
+
+        /// <summary>
         /// Control rfvCorreoElectronico.
         /// </summary>
         /// <remarks>
@@ -193,6 +202,15 @@ namespace Grupo2_TP3._1
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox4;
+
+        /// <summary>
+        /// Control revCodigoPostal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revCodigoPostal;
 
         /// <summary>
         /// Control rfvCP.

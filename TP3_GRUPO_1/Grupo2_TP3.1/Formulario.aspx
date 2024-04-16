@@ -26,6 +26,17 @@
                                                                                                                                                                       .auto-style7 {
                                                                                                                                                                           width: 302px;
                                                                                                                                                                       }
+                                                                                                                                                                      .auto-style8 {
+                                                                                                                                                                          width: 295px;
+                                                                                                                                                                          height: 43px;
+                                                                                                                                                                      }
+                                                                                                                                                                      .auto-style9 {
+                                                                                                                                                                          width: 278px;
+                                                                                                                                                                          height: 43px;
+                                                                                                                                                                      }
+                                                                                                                                                                      .auto-style10 {
+                                                                                                                                                                          height: 43px;
+                                                                                                                                                                      }
     </style></head><body><form id="form1" runat="server">
         <div>
             <table class="auto-style1">
@@ -70,7 +81,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style5">Nombre de usuario:</td>
@@ -109,21 +120,25 @@
                     </td>
                     <td class="auto-style5">
                         <asp:TextBox ID="TextBox3" runat="server" Width="180px" ValidationGroup="GUsuario"></asp:TextBox>&nbsp;<br />
+                        <asp:RegularExpressionValidator ID="revCorreoElectronico" runat="server" ControlToValidate="TextBox3" Font-Names="Calibri" Font-Size="X-Small" ForeColor="#660066" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="GUsuario">*Ingrese un Correo Electronico Valido</asp:RegularExpressionValidator>
+                        <br />
                         <asp:RequiredFieldValidator ID="rfvCorreoElectronico" runat="server" ControlToValidate="TextBox3" Font-Names="Calibri" Font-Size="X-Small" ForeColor="#660066" ValidationGroup="GUsuario">*Ingrese su Correo Electronico</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style5">
+                    <td class="auto-style8">
                         <asp:Label runat="server" Text="CP:" ID="Label3"></asp:Label>&nbsp;
                     </td>
-                    <td class="auto-style5">
+                    <td class="auto-style8">
                         <asp:TextBox ID="TextBox4" runat="server" Width="180px" ValidationGroup="GUsuario"></asp:TextBox>&nbsp;<br />
+                        <asp:RegularExpressionValidator ID="revCodigoPostal" runat="server" ControlToValidate="TextBox4" Font-Names="Calibri" Font-Size="X-Small" ForeColor="#660066" ValidationExpression="^[0-9,$]*$" ValidationGroup="GUsuario">*Ingrese un Codigo  Postal Valido</asp:RegularExpressionValidator>
+                        <br />
                         <asp:RequiredFieldValidator ID="rfvCP" runat="server" ControlToValidate="TextBox4" Font-Names="Calibri" Font-Size="X-Small" ForeColor="#660066" ValidationGroup="GUsuario">*Ingrese su Codigo Postal</asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style10"></td>
                 </tr>
                 <tr>
                      <td class="auto-style5">
