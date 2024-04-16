@@ -114,6 +114,15 @@ namespace Grupo2_TP3._1
         protected global::System.Web.UI.WebControls.TextBox txtContraseña;
 
         /// <summary>
+        /// Control rfvContraseña.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContraseña;
+
+        /// <summary>
         /// Control Label1.
         /// </summary>
         /// <remarks>
@@ -159,6 +168,15 @@ namespace Grupo2_TP3._1
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
 
         /// <summary>
+        /// Control rfvCorreoElectronico.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCorreoElectronico;
+
+        /// <summary>
         /// Control Label3.
         /// </summary>
         /// <remarks>
@@ -177,6 +195,15 @@ namespace Grupo2_TP3._1
         protected global::System.Web.UI.WebControls.TextBox TextBox4;
 
         /// <summary>
+        /// Control rfvCP.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCP;
+
+        /// <summary>
         /// Control Label4.
         /// </summary>
         /// <remarks>
@@ -193,6 +220,15 @@ namespace Grupo2_TP3._1
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlLocalidades;
+
+        /// <summary>
+        /// Control rfvLocalidad1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidad1;
 
         /// <summary>
         /// Control btnGuardarUsuario.

@@ -16,6 +16,7 @@ namespace Grupo2_TP3._1
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
         {
+            txtLocalidad.Text = ""; 
         }
 
         protected void sv_LocaliadRepetida(object source, ServerValidateEventArgs args)
@@ -32,7 +33,6 @@ namespace Grupo2_TP3._1
             if (validacion)
             {
                 ddlLocalidades.Items.Add(txtLocalidad.Text);
-                txtLocalidad.Text = "";
                 lblMensajeLocalidad.Text = "La localidad fue ingresada correctamente";
                 args.IsValid = true;
             }
@@ -42,5 +42,6 @@ namespace Grupo2_TP3._1
                 args.IsValid = false;
             }
         }
+
     }
 }

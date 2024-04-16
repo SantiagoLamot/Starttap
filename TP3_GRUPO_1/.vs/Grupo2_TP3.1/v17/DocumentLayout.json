@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP3_GRUPO_1\\",
+  "WorkspaceRootPath": "C:\\GitHub\\Starttap\\TP3_GRUPO_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D62F68B7-CFDA-451F-BB64-1A558AB28996}|Grupo2_TP3.1\\Grupo2_TP3.1.csproj|C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP3_GRUPO_1\\grupo2_tp3.1\\formulario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D62F68B7-CFDA-451F-BB64-1A558AB28996}|Grupo2_TP3.1\\Grupo2_TP3.1.csproj|solutionrelative:grupo2_tp3.1\\formulario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D62F68B7-CFDA-451F-BB64-1A558AB28996}|Grupo2_TP3.1\\Grupo2_TP3.1.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tp3_grupo_1\\grupo2_tp3.1\\formulario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{D62F68B7-CFDA-451F-BB64-1A558AB28996}|Grupo2_TP3.1\\Grupo2_TP3.1.csproj|c:\\github\\starttap\\tp3_grupo_1\\grupo2_tp3.1\\formulario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D62F68B7-CFDA-451F-BB64-1A558AB28996}|Grupo2_TP3.1\\Grupo2_TP3.1.csproj|solutionrelative:grupo2_tp3.1\\formulario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D62F68B7-CFDA-451F-BB64-1A558AB28996}|Grupo2_TP3.1\\Grupo2_TP3.1.csproj|C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP3_GRUPO_1\\grupo2_tp3.1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D62F68B7-CFDA-451F-BB64-1A558AB28996}|Grupo2_TP3.1\\Grupo2_TP3.1.csproj|solutionrelative:grupo2_tp3.1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{D62F68B7-CFDA-451F-BB64-1A558AB28996}|Grupo2_TP3.1\\Grupo2_TP3.1.csproj|c:\\github\\starttap\\tp3_grupo_1\\grupo2_tp3.1\\formulario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D62F68B7-CFDA-451F-BB64-1A558AB28996}|Grupo2_TP3.1\\Grupo2_TP3.1.csproj|solutionrelative:grupo2_tp3.1\\formulario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Formulario.aspx",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP3_GRUPO_1\\Grupo2_TP3.1\\Formulario.aspx",
-              "RelativeDocumentMoniker": "Grupo2_TP3.1\\Formulario.aspx",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP3_GRUPO_1\\Grupo2_TP3.1\\Formulario.aspx",
-              "RelativeToolTip": "Grupo2_TP3.1\\Formulario.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-12T22:36:19.759Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Formulario.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP3_GRUPO_1\\Grupo2_TP3.1\\Formulario.aspx.cs",
-              "RelativeDocumentMoniker": "Grupo2_TP3.1\\Formulario.aspx.cs",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP3_GRUPO_1\\Grupo2_TP3.1\\Formulario.aspx.cs*",
-              "RelativeToolTip": "Grupo2_TP3.1\\Formulario.aspx.cs*",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAACMAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T22:39:43.178Z",
+              "Title": "Formulario.aspx",
+              "DocumentMoniker": "C:\\GitHub\\Starttap\\TP3_GRUPO_1\\Grupo2_TP3.1\\Formulario.aspx",
+              "RelativeDocumentMoniker": "Grupo2_TP3.1\\Formulario.aspx",
+              "ToolTip": "C:\\GitHub\\Starttap\\TP3_GRUPO_1\\Grupo2_TP3.1\\Formulario.aspx",
+              "RelativeToolTip": "Grupo2_TP3.1\\Formulario.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-15T23:49:35.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP3_GRUPO_1\\Grupo2_TP3.1\\Web.config",
-              "RelativeDocumentMoniker": "Grupo2_TP3.1\\Web.config",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP3_GRUPO_1\\Grupo2_TP3.1\\Web.config",
-              "RelativeToolTip": "Grupo2_TP3.1\\Web.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-04-12T22:33:51.875Z",
+              "DocumentIndex": 1,
+              "Title": "Formulario.aspx.cs",
+              "DocumentMoniker": "C:\\GitHub\\Starttap\\TP3_GRUPO_1\\Grupo2_TP3.1\\Formulario.aspx.cs",
+              "RelativeDocumentMoniker": "Grupo2_TP3.1\\Formulario.aspx.cs",
+              "ToolTip": "C:\\GitHub\\Starttap\\TP3_GRUPO_1\\Grupo2_TP3.1\\Formulario.aspx.cs",
+              "RelativeToolTip": "Grupo2_TP3.1\\Formulario.aspx.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T00:00:17.159Z",
               "EditorCaption": ""
             }
           ]
