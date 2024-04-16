@@ -141,9 +141,11 @@
                 <tr>
                 <td class="auto-style5">&nbsp;</td>
                 <td class="auto-style5">
-                    <asp:Button ID="btnGuardarUsuario" runat="server" OnClick="btnGuardarLocalidad_Click" Text="Guardar Usuario" ValidationGroup="GUsuario" Width="180px" />
+                    <asp:Button ID="btnGuardarUsuario" runat="server" OnClick="btnGuardarUsuario_Click" Text="Guardar Usuario" ValidationGroup="GUsuario" Width="180px" />
                     </td>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3">
+                    <asp:Label ID="lblMensajeUsuario" runat="server" Font-Bold="True"></asp:Label>
+                    </td>
                 <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -151,7 +153,9 @@
                 <td class="auto-style5">&nbsp;</td>
                 </tr>
                 <tr>
-                <td class="auto-style7"></td>
+                <td class="auto-style7">
+                    <asp:Button ID="btnAspx" runat="server" OnClick="btnAspx_Click" Text="Ir a Inicio.aspx" Width="121px" />
+                    </td>
                 <td class="auto-style6">&nbsp;</td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4"></td>

@@ -16,7 +16,7 @@ namespace Grupo2_TP3._1
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
         {
-            txtLocalidad.Text = ""; 
+            txtLocalidad.Text = "";
         }
 
         protected void sv_LocaliadRepetida(object source, ServerValidateEventArgs args)
@@ -43,5 +43,16 @@ namespace Grupo2_TP3._1
             }
         }
 
+
+
+        protected void btnAspx_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Inicio.aspx");
+        }
+
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e)
+        {
+            lblMensajeUsuario.Text = "Bienvenido/a " + txtUsuario.Text;
+        }
     }
 }
