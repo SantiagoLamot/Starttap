@@ -42,6 +42,15 @@ namespace Grupo2_TP3._1
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidad;
 
         /// <summary>
+        /// Control revNumerosyLetras.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revNumerosyLetras;
+
+        /// <summary>
         /// Control cvValidarLocaliadesRepetidas.
         /// </summary>
         /// <remarks>
@@ -58,15 +67,6 @@ namespace Grupo2_TP3._1
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnGuardarLocalidad;
-
-        /// <summary>
-        /// Control revNumerosyLetras.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revNumerosyLetras;
 
         /// <summary>
         /// Control lblMensajeLocalidad.
@@ -105,13 +105,13 @@ namespace Grupo2_TP3._1
         protected global::System.Web.UI.WebControls.Label label001;
 
         /// <summary>
-        /// Control TextBox1.
+        /// Control txtContraseña.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtContraseña;
 
         /// <summary>
         /// Control Label1.
@@ -123,13 +123,22 @@ namespace Grupo2_TP3._1
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Control TextBox2.
+        /// Control txtRepContraseña.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtRepContraseña;
+
+        /// <summary>
+        /// Control cvErrorPassw.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvErrorPassw;
 
         /// <summary>
         /// Control Label2.
@@ -184,5 +193,14 @@ namespace Grupo2_TP3._1
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlLocalidades;
+
+        /// <summary>
+        /// Control btnGuardarUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnGuardarUsuario;
     }
 }
