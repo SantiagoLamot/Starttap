@@ -109,16 +109,16 @@ namespace Grupo2_TP3._1
             
         }
 
-        protected void cvCPvalido_ServerValidate(object source, ServerValidateEventArgs args)
-        {
-            if (args.Value.Length == 4)
-            {
-                args.IsValid = true;
-            }
-            else
-            {
-                args.IsValid = false;
-            }
-        }
+        //protected void cvCPvalido_ServerValidate(object source, ServerValidateEventArgs args)
+        //{
+        //    if (args.Value.Length == 4)
+        //    {
+        //        args.IsValid = true;
+        //    }
+        //    else
+        //    {
+        //        args.IsValid = false;
+        //    }
+        //}
     }
 }

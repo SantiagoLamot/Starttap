@@ -222,15 +222,6 @@ namespace Grupo2_TP3._1
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCP;
 
         /// <summary>
-        /// Control cvCPvalido.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CustomValidator cvCPvalido;
-
-        /// <summary>
         /// Control Label4.
         /// </summary>
         /// <remarks>
