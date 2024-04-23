@@ -11,13 +11,16 @@
             width: 100%;
         }
         .auto-style2 {
-            width: 32px;
+            width: 7px;
         }
         .auto-style3 {
-            width: 140px;
+            width: 181px;
         }
         .auto-style4 {
             width: 112px;
+        }
+        .auto-style5 {
+            width: 377px;
         }
     </style>
 </head>
@@ -31,7 +34,7 @@
                         <asp:Label ID="Label1" runat="server" Text="DESTINO INICIAL"></asp:Label>
                         </strong></td>
                     <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -42,7 +45,7 @@
                     <td class="auto-style4">
                         <asp:Label ID="Label2" runat="server" Text="PROVINCIA:"></asp:Label>
                     </td>
-                    <td>
+                    <td class="auto-style5">
                         <asp:DropDownList ID="ddlProvInicial" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProvInicial_SelectedIndexChanged">
                             <asp:ListItem>--Seleccione una provincia--</asp:ListItem>
                         </asp:DropDownList>
@@ -57,7 +60,7 @@
                     <td class="auto-style4">
                         <asp:Label ID="Label3" runat="server" Text="LOCALIDAD:"></asp:Label>
                     </td>
-                    <td>
+                    <td class="auto-style5">
                         <asp:DropDownList ID="ddlLocalInicial" runat="server">
                             <asp:ListItem>--Seleccione una localidad--</asp:ListItem>
                         </asp:DropDownList>
@@ -70,7 +73,7 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -81,7 +84,7 @@
                         <asp:Label ID="Label4" runat="server" Text="DESTINO FINAL"></asp:Label>
                         </strong></td>
                     <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -92,8 +95,8 @@
                     <td class="auto-style4">
                         <asp:Label ID="Label5" runat="server" Text="PROVINCIA:"></asp:Label>
                     </td>
-                    <td>
-                        <asp:DropDownList ID="ddlProvFinal" runat="server" AutoPostBack="True">
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="ddlProvFinal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProvFinal_SelectedIndexChanged">
                             <asp:ListItem>--Seleccione una provincia--</asp:ListItem>
                         </asp:DropDownList>
                     </td>
@@ -107,7 +110,7 @@
                     <td class="auto-style4">
                         <asp:Label ID="Label6" runat="server" Text="LOCALIDAD:"></asp:Label>
                     </td>
-                    <td>
+                    <td class="auto-style5">
                         <asp:DropDownList ID="ddlLocalFinal" runat="server">
                             <asp:ListItem>--Seleccione una localidad--</asp:ListItem>
                         </asp:DropDownList>
