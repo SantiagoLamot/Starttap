@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
+using System.Net.NetworkInformation;
 
 namespace TP4_GRUPO_1
 {
@@ -40,6 +42,33 @@ namespace TP4_GRUPO_1
 
         protected void ddltemas_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        protected void lbVerLibros_Click(object sender, EventArgs e)
+        {
+            SqlConnection sqlConnection = new SqlConnection(cadenaConexionLibreria);
+            sqlLibreriaConnection.Open();
+            string Consulta = "";
+
+            if (ddltemas.SelectedValue == "Tema1")
+            {
+                Consulta = "Select * From Libros Where IdTema = 1";
+
+            }
+            if (ddltemas.SelectedValue == "Tema2")
+            {
+                Consulta = "Select * From Libros Where IdTema = 2";
+            } 
+            if (ddltemas.SelectedValue == "Tema3")
+            {
+                Consulta = "Select * From Libros Where IdTema = 3";
+            }
+ 
+            sqlConnection.Close();
+
+            Session["ConsultaLibros"] = Consulta;
+            Server.Transfer("Ejercicio3.1.aspx");
 
         }
     }

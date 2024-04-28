@@ -35,6 +35,9 @@
                     </td>
                     <td class="auto-style4">
                         <asp:DropDownList ID="ddltemas" runat="server" OnSelectedIndexChanged="ddltemas_SelectedIndexChanged">
+                            <asp:ListItem Value="Tema 1">Tema1</asp:ListItem>
+                            <asp:ListItem Value="Tema 2">Tema2</asp:ListItem>
+                            <asp:ListItem Value="Tema 3">Tema3</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style5">
@@ -45,7 +48,9 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:LinkButton ID="lbVerLibros" runat="server" Font-Names="Times New Roman" Font-Size="Large" ForeColor="#CC00FF" OnClick="lbVerLibros_Click">Ver Libros</asp:LinkButton>
+                    </td>
                     <td class="auto-style4">
                         &nbsp;</td>
                     <td class="auto-style5">
