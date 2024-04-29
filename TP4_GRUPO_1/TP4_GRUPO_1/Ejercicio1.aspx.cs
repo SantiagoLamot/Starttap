@@ -6,6 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Drawing.Drawing2D;
 
 namespace TP4_GRUPO_1
 {
@@ -41,11 +44,7 @@ namespace TP4_GRUPO_1
                 {
                     ddlProvFinal.Items.Add(new ListItem(dataRow["NombreProvincia"].ToString(), dataRow["IdProvincia"].ToString()));
                 }
-
                 sqlViajesConnection.Close();
-                ddlProvFinal.SelectedIndex = -1;
-
-
             }
 
         }
@@ -58,13 +57,12 @@ namespace TP4_GRUPO_1
                 ddlProvFinal.Items.Clear();
                 cargarProvinciaFinal();
                 ddlProvFinal.SelectedIndex = -1;
-                ddlLocalFinal.Items.Clear();
             }
         }
 
         private void cargarProvinciaFinal()
         {
-            ddlProvFinal.Items.Add(new ListItem("--Seleccione una provincia--", "-1"));
+            ddlProvFinal.Items.Add(new ListItem("--Seleccione una provincia--", null));
             sqlViajesConnection.Open();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("select * from Provincias", sqlViajesConnection);
             DataSet dataSet = new DataSet();
@@ -77,6 +75,7 @@ namespace TP4_GRUPO_1
                 }
             }
             sqlViajesConnection.Close();
+            
         }
 
         private void cargarlocalidadInicial()
@@ -106,6 +105,7 @@ namespace TP4_GRUPO_1
         }
         private void cargarlocalidadFinal()
         {
+            ddlLocalInicial.Items.Add(new ListItem("--Seleccione una localidad--", null));
             sqlViajesConnection.Open();
             SqlCommand cmd = new SqlCommand("select * from Localidades where IdProvincia = @id", sqlViajesConnection);
             SqlParameter sqlParameter = new SqlParameter();
@@ -124,7 +124,20 @@ namespace TP4_GRUPO_1
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-                lblMensaje.Text = "Buscando viajes desde " + ddlLocalInicial.SelectedItem.Text + ", " + ddlProvInicial.SelectedItem.Text + " hasta " + ddlLocalFinal.SelectedItem.Text + ", " + ddlProvFinal.SelectedItem.Text + "...";
+            if (ddlProvInicial.SelectedItem.Text != "--Seleccione una provincia--" && 
+                ddlLocalInicial.SelectedItem.Text != "--Seleccione una localidad--" && 
+                ddlProvFinal.SelectedItem.Text != "--Seleccione una provincia--" && 
+                ddlLocalFinal.SelectedValue != "--Seleccione una localidad--")
+            {
+                lblMensaje.Text = "⏳ Buscando viajes desde " + ddlLocalInicial.SelectedItem.Text + ", " + ddlProvInicial.SelectedItem.Text + 
+                    " hasta " + ddlLocalFinal.SelectedItem.Text + ", " + ddlProvFinal.SelectedItem.Text + " ✈︎ ✈︎ ✈︎";
+                lblMensaje.ForeColor = ColorTranslator.FromHtml("#007bff");
+            }
+            else
+            {
+                lblMensaje.Text = "La seleccion esta incompleta";
+                lblMensaje.ForeColor = Color.Red;
+            }
         }
     }
 }
