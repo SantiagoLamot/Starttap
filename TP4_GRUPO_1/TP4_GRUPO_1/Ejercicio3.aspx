@@ -35,9 +35,6 @@
                     </td>
                     <td class="auto-style4">
                         <asp:DropDownList ID="ddltemas" runat="server" OnSelectedIndexChanged="ddltemas_SelectedIndexChanged">
-                            <asp:ListItem Value="Tema 1">Tema1</asp:ListItem>
-                            <asp:ListItem Value="Tema 2">Tema2</asp:ListItem>
-                            <asp:ListItem Value="Tema 3">Tema3</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style5">

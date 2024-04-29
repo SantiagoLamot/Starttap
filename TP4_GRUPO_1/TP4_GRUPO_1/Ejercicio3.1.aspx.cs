@@ -13,34 +13,36 @@ namespace TP4_GRUPO_1
 {
     public partial class Ejercicio3__1 : System.Web.UI.Page
     {
-        private const string cadenaConexionLibreria = "Data Source=localhost;Initial Catalog=Libreria;Integrated Security=True";
-       SqlConnection sqlLibreriaConnection = new SqlConnection(cadenaConexionLibreria);
+        private const string cadenaConexionLibreria = @"Data Source=localhost;Initial Catalog=Libreria;Integrated Security=True";
+        private string QuerySql = "Select * from Libros Where 1=1";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (PreviousPage != null)
             {
-                SqlConnection sqlLibreriaConnection = new SqlConnection(cadenaConexionLibreria);
-                sqlLibreriaConnection.Open();
-
-                if (Session["ConsultaLibros"] == null)
+                DropDownList ddlTemas = (DropDownList)PreviousPage.FindControl("ddlTemas");
+                if (ddlTemas != null)
                 {
-                    string consulta = Session["ConsultaLibros"].ToString();
+                    SqlConnection sqlConnection = new SqlConnection(cadenaConexionLibreria);
+                    sqlConnection.Open();
 
-                    SqlDataAdapter adapter = new SqlDataAdapter(consulta, sqlLibreriaConnection);
+                    string Seleccion = ddlTemas.SelectedValue;
+                    QuerySql += $" AND IdTema =  '{Seleccion}' ";
 
-                    DataSet dataSet = new DataSet();
-                    adapter.Fill(dataSet, "TablaLibros");
+                    SqlDataAdapter adapter = new SqlDataAdapter (QuerySql, sqlConnection);
+                    DataSet ds = new DataSet();
+                    adapter.Fill (ds, "TablaLibros");
 
-                    gvLibros.DataSource = dataSet.Tables["TablaLibros"];
+                    gvLibros.DataSource = ds.Tables["TablaLibros"];
                     gvLibros.DataBind();
-                }
 
+                    sqlConnection.Close();
+                }
             }
         }
 
             protected void LinkButton1_Click(object sender, EventArgs e)
             {
-                
+            Server.Transfer("Ejercicio3.aspx");  
             }
         }
     } 
