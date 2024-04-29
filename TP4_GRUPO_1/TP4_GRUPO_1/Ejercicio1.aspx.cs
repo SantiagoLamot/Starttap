@@ -43,9 +43,11 @@ namespace TP4_GRUPO_1
                 }
 
                 sqlViajesConnection.Close();
+                ddlProvFinal.SelectedIndex = -1;
+
 
             }
-            
+
         }
 
         protected void ddlProvInicial_SelectedIndexChanged(object sender, EventArgs e)
@@ -122,7 +124,7 @@ namespace TP4_GRUPO_1
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-            lblMensaje.Text = "Buscando viajes desde " + " " + ddlLocalInicial.SelectedItem.ToString() + ", " + ddlProvInicial.SelectedItem.ToString() + " hasta " + ddlLocalFinal.SelectedItem.ToString() + ", " + ddlProvFinal.SelectedItem.ToString() + "...";
+                lblMensaje.Text = "Buscando viajes desde " + ddlLocalInicial.SelectedItem.Text + ", " + ddlProvInicial.SelectedItem.Text + " hasta " + ddlLocalFinal.SelectedItem.Text + ", " + ddlProvFinal.SelectedItem.Text + "...";
         }
     }
 }

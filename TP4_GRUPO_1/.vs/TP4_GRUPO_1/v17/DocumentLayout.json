@@ -1,22 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\GitHub\\Starttap\\TP4_GRUPO_1\\",
+  "WorkspaceRootPath": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP4_GRUPO_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|c:\\github\\starttap\\tp4_grupo_1\\tp4_grupo_1\\ejercicio3.1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|solutionrelative:tp4_grupo_1\\ejercicio3.1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tp4_grupo_1\\tp4_grupo_1\\ejercicio1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|solutionrelative:tp4_grupo_1\\ejercicio1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|C:\\GitHub\\Starttap\\TP4_GRUPO_1\\tp4_grupo_1\\ejercicio3.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|solutionrelative:tp4_grupo_1\\ejercicio3.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|C:\\GitHub\\Starttap\\TP4_GRUPO_1\\tp4_grupo_1\\ejercicio3.1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|solutionrelative:tp4_grupo_1\\ejercicio3.1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|C:\\GitHub\\Starttap\\TP4_GRUPO_1\\tp4_grupo_1\\ejercicio3.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|solutionrelative:tp4_grupo_1\\ejercicio3.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tp4_grupo_1\\tp4_grupo_1\\ejercicio1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7601DCCF-061D-46E2-9F94-5F45035AE1C2}|TP4_GRUPO_1\\TP4_GRUPO_1.csproj|solutionrelative:tp4_grupo_1\\ejercicio1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Ejercicio3.1.aspx.cs",
-              "DocumentMoniker": "C:\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio3.1.aspx.cs",
-              "RelativeDocumentMoniker": "TP4_GRUPO_1\\Ejercicio3.1.aspx.cs",
-              "ToolTip": "C:\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio3.1.aspx.cs",
-              "RelativeToolTip": "TP4_GRUPO_1\\Ejercicio3.1.aspx.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAABwAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:14:59.489Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Ejercicio3.aspx.cs",
-              "DocumentMoniker": "C:\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio3.aspx.cs",
-              "RelativeDocumentMoniker": "TP4_GRUPO_1\\Ejercicio3.aspx.cs",
-              "ToolTip": "C:\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio3.aspx.cs",
-              "RelativeToolTip": "TP4_GRUPO_1\\Ejercicio3.aspx.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAAB4AAAAxAAAA",
+              "Title": "Ejercicio1.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio1.aspx.cs",
+              "RelativeDocumentMoniker": "TP4_GRUPO_1\\Ejercicio1.aspx.cs",
+              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio1.aspx.cs",
+              "RelativeToolTip": "TP4_GRUPO_1\\Ejercicio1.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH4AAADnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T14:24:34.117Z",
+              "WhenOpened": "2024-04-29T19:37:31.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Ejercicio3.1.aspx",
-              "DocumentMoniker": "C:\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio3.1.aspx",
-              "RelativeDocumentMoniker": "TP4_GRUPO_1\\Ejercicio3.1.aspx",
-              "ToolTip": "C:\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio3.1.aspx",
-              "RelativeToolTip": "TP4_GRUPO_1\\Ejercicio3.1.aspx",
+              "DocumentIndex": 0,
+              "Title": "Ejercicio1.aspx",
+              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio1.aspx",
+              "RelativeDocumentMoniker": "TP4_GRUPO_1\\Ejercicio1.aspx",
+              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio1.aspx",
+              "RelativeToolTip": "TP4_GRUPO_1\\Ejercicio1.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-28T18:30:08.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Ejercicio3.aspx",
-              "DocumentMoniker": "C:\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio3.aspx",
-              "RelativeDocumentMoniker": "TP4_GRUPO_1\\Ejercicio3.aspx",
-              "ToolTip": "C:\\GitHub\\Starttap\\TP4_GRUPO_1\\TP4_GRUPO_1\\Ejercicio3.aspx",
-              "RelativeToolTip": "TP4_GRUPO_1\\Ejercicio3.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-27T14:05:09.105Z",
+              "WhenOpened": "2024-04-29T19:34:32.275Z",
               "EditorCaption": ""
             }
           ]
