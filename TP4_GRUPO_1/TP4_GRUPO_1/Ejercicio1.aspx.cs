@@ -16,6 +16,8 @@ namespace TP4_GRUPO_1
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
             if (!IsPostBack)
             {
                 sqlViajesConnection.Open();
@@ -116,6 +118,11 @@ namespace TP4_GRUPO_1
 
             sqlViajesConnection.Close();
 
+        }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            lblMensaje.Text = "Buscando viajes desde " + " " + ddlLocalInicial.SelectedItem.ToString() + ", " + ddlProvInicial.SelectedItem.ToString() + " hasta " + ddlLocalFinal.SelectedItem.ToString() + ", " + ddlProvFinal.SelectedItem.ToString() + "...";
         }
     }
 }

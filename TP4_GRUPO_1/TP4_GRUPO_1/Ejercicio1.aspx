@@ -20,7 +20,7 @@
             width: 112px;
         }
         .auto-style5 {
-            width: 377px;
+            width: 221px;
         }
     </style>
 </head>
@@ -46,7 +46,7 @@
                         <asp:Label ID="Label2" runat="server" Text="PROVINCIA:"></asp:Label>
                     </td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="ddlProvInicial" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProvInicial_SelectedIndexChanged">
+                        <asp:DropDownList ID="ddlProvInicial" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProvInicial_SelectedIndexChanged" ValidationGroup="GP">
                             <asp:ListItem>--Seleccione una provincia--</asp:ListItem>
                         </asp:DropDownList>
                     </td>
@@ -61,7 +61,7 @@
                         <asp:Label ID="Label3" runat="server" Text="LOCALIDAD:"></asp:Label>
                     </td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="ddlLocalInicial" runat="server">
+                        <asp:DropDownList ID="ddlLocalInicial" runat="server" ValidationGroup="GP">
                             <asp:ListItem>--Seleccione una localidad--</asp:ListItem>
                         </asp:DropDownList>
                     </td>
@@ -96,7 +96,7 @@
                         <asp:Label ID="Label5" runat="server" Text="PROVINCIA:"></asp:Label>
                     </td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="ddlProvFinal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProvFinal_SelectedIndexChanged">
+                        <asp:DropDownList ID="ddlProvFinal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProvFinal_SelectedIndexChanged" ValidationGroup="GP">
                             <asp:ListItem>--Seleccione una provincia--</asp:ListItem>
                         </asp:DropDownList>
                     </td>
@@ -115,9 +115,29 @@
                             <asp:ListItem>--Seleccione una localidad--</asp:ListItem>
                         </asp:DropDownList>
                     </td>
+                    <td>
+                        <asp:Button ID="btnBuscar" runat="server" OnClick="btnBuscar_Click" Text="Buscar" ValidationGroup="GP" />
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style4">
+                        &nbsp;</td>
+                    <td class="auto-style5">
+                        &nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td colspan="5">
+                        <asp:Label ID="lblMensaje" runat="server" Font-Bold="True" Font-Italic="True" ForeColor="#0066CC"></asp:Label>
+                    </td>
                 </tr>
             </table>
         </div>
