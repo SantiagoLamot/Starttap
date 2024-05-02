@@ -87,13 +87,13 @@ namespace TP4_GRUPO_1
         protected global::System.Web.UI.WebControls.Button btnFiltro;
 
         /// <summary>
-        /// Control btnQuitarFiltro.
+        /// Control QuitarFiltro.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnQuitarFiltro;
+        protected global::System.Web.UI.WebControls.Button QuitarFiltro;
 
         /// <summary>
         /// Control gvProductos.

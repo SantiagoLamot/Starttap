@@ -11,11 +11,11 @@ namespace TP4_GRUPO_1
 {
     public partial class Ejercicio2 : System.Web.UI.Page
     {
-        private const string ConexionNeptuno = @"Data Source=localhost;Initial Catalog=Neptuno;Integrated Security=True;";
+        private const string ConexionNeptuno = @"Data Source=localhost\sqlexpress;Initial Catalog=Neptuno;Integrated Security=True";
         private string QueryProductos = "SELECT * FROM productos";
         protected void Page_Load(object sender, EventArgs e)
         {
-            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
             if (!IsPostBack)
             {
                 CargarGridW();

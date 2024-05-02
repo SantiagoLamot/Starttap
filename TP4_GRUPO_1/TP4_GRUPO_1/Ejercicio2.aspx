@@ -5,152 +5,128 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Filtrado de Productos</title>
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc; 
+            margin: 0;
+            padding: 0;
         }
-        .auto-style4 {
-            height: 23px;
+        .divPrincipal {
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .auto-style5 {
-            height: 42px;
+         h2 {
+             color: #007bff; 
+             margin-bottom: 20px;
+         }
+         label {
+             font-weight: bold;
+             color: #333;
+             margin-right: 20px;
+         }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 20px;
         }
-        .auto-style7 {
-            width: 88px;
-            height: 42px;
-        }
-        .auto-style12 {
-            width: 118px;
-            height: 42px;
-            font-size: medium;
-        }
-        .auto-style13 {
-            width: 118px;
-        }
-        .auto-style14 {
-            color: #660066;
-        }
-        .auto-style16 {
-            width: 118px;
-            font-size: medium;
-        }
-        .auto-style19 {
-            width: 118px;
-            height: 43px;
-            font-size: medium;
-        }
-        .auto-style20 {
-            width: 88px;
-            height: 43px;
-        }
-        .auto-style21 {
-            height: 43px;
-        }
-        .auto-style22 {
-            width: 140px;
-        }
-        .auto-style23 {
-            width: 88px;
-        }
+         .DDList {
+             width: 50%;
+             padding: 4px;
+             margin-bottom: 10px;
+             border: 1px solid #ccc;
+             border-radius: 4px;
+             background-color: #fff;
+             color: #555;
+             Width: 300px;
+             margin-right: 20px;
+         }
+         .txtBox{
+            width: 50%;
+            padding: 4px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #555;
+            Width: 300px;
+         }
+         .gridview {
+           
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+            
+         }
+         .grid-container {
+            margin-left:250px;
+            margin-right: 100px;
+            text-align: center;
+         }
+
+        
+
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style22" rowspan="5"></td>
-                    <td class="auto-style19"><strong>Id Producto:</strong></td>
-                    <td class="auto-style20">
-                        <asp:DropDownList ID="ddlProducto" runat="server" Height="33px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="88px" CssClass="auto-style14">
-                            <asp:ListItem Value="=">Igual a:</asp:ListItem>
-                            <asp:ListItem Value="&gt;">Mayor a:</asp:ListItem>
-                            <asp:ListItem Value="&lt;">Menor a:</asp:ListItem>
-                        </asp:DropDownList>
-                    </td>
-                    <td class="auto-style21">
-                        <asp:TextBox ID="txtIdProd" runat="server" Height="30px" Width="38px"></asp:TextBox>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtIdProd" Display="Dynamic" ErrorMessage="RegularExpressionValidator" Font-Bold="True" Font-Size="Small" ForeColor="#660066" ValidationExpression="(D-)?\d{1,2}">*El id debe ser un numero menor a 100</asp:RegularExpressionValidator>
-                    </td>
-                    <td class="auto-style21"></td>
-                    <td class="auto-style21"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style16">&nbsp;</td>
-                    <td class="auto-style23">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style12"><strong>Id Categoria:</strong></td>
-                    <td class="auto-style7">
-                        <asp:DropDownList ID="ddlCategoria" runat="server" Height="33px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="88px" CssClass="auto-style14">
-                            <asp:ListItem Value="=">Igual a:</asp:ListItem>
-                            <asp:ListItem Value="&gt;">Mayor a:</asp:ListItem>
-                            <asp:ListItem Value="&lt;">Menor a:</asp:ListItem>
-                        </asp:DropDownList>
-                    </td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="txtIdCat" runat="server" Height="30px" Width="38px"></asp:TextBox>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtIdCat" Display="Dynamic" ErrorMessage="RegularExpressionValidator" Font-Bold="True" Font-Size="Small" ForeColor="#660066" ValidationExpression="(D-)?\d{1,2}">*El id debe ser un numero menor a 10</asp:RegularExpressionValidator>
-                    </td>
-                    <td class="auto-style5"></td>
-                    <td class="auto-style5"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style13">&nbsp;</td>
-                    <td class="auto-style23">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style13">&nbsp;</td>
-                    <td class="auto-style23">
-                        <asp:Button ID="btnFiltro" runat="server" OnClick="Button1_Click" style="height: 26px" Text="Filtrar" BorderStyle="Outset" ForeColor="#660066" />
-                    </td>
-                    <td>&nbsp;<asp:Button ID="btnQuitarFiltro" runat="server" Text="Quitar Filtro" OnClick="btnQuitarFiltro_Click" BorderStyle="Outset" ForeColor="#660066" />
-                    </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4" colspan="6">
-                        &nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style22">&nbsp;</td>
-                    <td colspan="3">
-                        <asp:GridView ID="gvProductos" runat="server">
-                            <AlternatingRowStyle BackColor="#660066" BorderColor="#660066" VerticalAlign="Middle" Wrap="False" />
-                            <EditRowStyle BackColor="#660066" BorderStyle="None" />
-                            <HeaderStyle BackColor="#000066" ForeColor="White" />
-                        </asp:GridView>
-                    </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style22">&nbsp;</td>
-                    <td class="auto-style13">&nbsp;</td>
-                    <td class="auto-style23">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style22">&nbsp;</td>
-                    <td class="auto-style13">&nbsp;</td>
-                    <td class="auto-style23">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
-        </div>
+        <h2 style="text-align:center">&nbsp;</h2>
+        <h2 style="text-align:center">&nbsp;Filtrado de Productos</h2>
+        <div class="divPrincipal">
+            <div>
+                <label>Id Producto:</label>
+               <br />
+                <asp:DropDownList ID="ddlProducto" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"  CssClass="DDList">
+                    <asp:ListItem Value="=">Igual a:</asp:ListItem>
+                    <asp:ListItem Value="&gt;">Mayor a:</asp:ListItem>
+                    <asp:ListItem Value="&lt;">Menor a:</asp:ListItem>
+                 </asp:DropDownList>
+                 <asp:TextBox ID="txtIdProd" runat="server"  CssClass="txtBox"></asp:TextBox>
+                <br />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtIdProd" Display="Dynamic" ErrorMessage="RegularExpressionValidator" Font-Bold="True" Font-Size="Small" ForeColor="#660066" ValidationExpression="(D-)?\d{1,2}">*El id debe ser un numero menor a 100</asp:RegularExpressionValidator>
+                <br />
+                <br />
+            </div>
+            <div>
+                <label>Id Categoria:</label>
+                <br />
+                <asp:DropDownList ID="ddlCategoria" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" CssClass="DDList" Font-Size="Small">
+                    <asp:ListItem Value="=">Igual a:</asp:ListItem>
+                    <asp:ListItem Value="&gt;">Mayor a:</asp:ListItem>
+                    <asp:ListItem Value="&lt;">Menor a:</asp:ListItem>
+                </asp:DropDownList>
+                        <asp:TextBox ID="txtIdCat" runat="server"  CssClass="txtBox"></asp:TextBox>
+                 <br />
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtIdCat" Display="Dynamic" ErrorMessage="RegularExpressionValidator" Font-Bold="True" Font-Size="Small" ForeColor="#660066" ValidationExpression="(D-)?\d{1,2}">*El id debe ser un numero menor a 10</asp:RegularExpressionValidator>
+                <br />
+                <br />
+            </div>
+            <div>
+                <asp:Button ID="btnFiltro" runat="server" OnClick="Button1_Click" Text="Filtrar" CssClass="btn" />
+                <asp:Button ID="QuitarFiltro" runat="server" Text="Quitar Filtro" OnClick="btnQuitarFiltro_Click" CssClass="btn" />
+            </div>
+          </div >
+                <br />
+                <h2 style="text-align:center">Tabla de Productos</h2>
+                <br />
+          <div class="grid-container">
+                     <asp:GridView ID="gvProductos" runat="server" CssClass="my-gridview">
+                     <AlternatingRowStyle BackColor="#660066" BorderColor="#660066" VerticalAlign="Middle" Wrap="False" />
+                         <EditRowStyle BackColor="#660066" BorderStyle="None" />
+                         <HeaderStyle BackColor="#000066" ForeColor="White" />
+                     </asp:GridView>
+           </div>
     </form>
 </body>
 </html>
