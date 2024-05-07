@@ -69,18 +69,18 @@
         }
         .auto-style26 {
             height: 28px;
-            width: 50px;
+            width: 243px;
         }
         .auto-style27 {
             height: 26px;
-            width: 50px;
+            width: 243px;
         }
         .auto-style28 {
             height: 23px;
-            width: 50px;
+            width: 243px;
         }
         .auto-style29 {
-            width: 50px;
+            width: 243px;
         }
     </style>
 </head>
@@ -143,11 +143,11 @@
                 <td class="auto-style17"></td>
                 <td class="auto-style22">Nombre de sucursal:</td>
                 <td class="auto-style26">
-                    <asp:TextBox ID="tbNombreSucursal" runat="server" Width="160px"></asp:TextBox>
+                    <asp:TextBox ID="tbNombreSucursal" runat="server" Width="160px" ValidationGroup="GPV"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="tbNombreSucursal" ErrorMessage="Ingrese nombre de sucursal" ForeColor="#CC0000" ValidationGroup="GPV">*</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style20">
-                    <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="tbNombreSucursal">*Ingrese nombre de sucursal</asp:RequiredFieldValidator>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style20">&nbsp;</td>
                 <td class="auto-style20">&nbsp;</td>
                 <td class="auto-style20">&nbsp;</td>
@@ -156,11 +156,11 @@
                 <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style21">Descripcion:</td>
                 <td class="auto-style29">
-                    <asp:TextBox ID="tbDescripcion" runat="server" Width="160px"></asp:TextBox>
+                    <asp:TextBox ID="tbDescripcion" runat="server" Width="160px" ValidationGroup="GPV"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="tbDescripcion" ErrorMessage="Ingrese descripcion" ForeColor="#CC0000" ValidationGroup="GPV">*</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style13">
-                    <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="tbDescripcion">*Ingrese descripcion</asp:RequiredFieldValidator>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style13">&nbsp;</td>
                 <td class="auto-style13">&nbsp;</td>
                 <td class="auto-style13">&nbsp;</td>
@@ -169,13 +169,13 @@
                 <td class="auto-style9"></td>
                 <td class="auto-style23">Provincia:</td>
                 <td class="auto-style27">
-                    <asp:DropDownList ID="ddlProvincia" runat="server" Width="160px">
+                    <asp:DropDownList ID="ddlProvincia" runat="server" Width="168px" Height="20px" ValidationGroup="GPV">
                         <asp:ListItem Value="-1">Selecciona una provincia</asp:ListItem>
                     </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" InitialValue="-1" ErrorMessage="Seleccione una provincia" ForeColor="#CC0000" ValidationGroup="GPV">*</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style14">
-                    <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" InitialValue="-1">*Seleccione una provincia</asp:RequiredFieldValidator>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style14">&nbsp;</td>
                 <td class="auto-style14">&nbsp;</td>
                 <td class="auto-style14">&nbsp;</td>
@@ -184,11 +184,11 @@
                 <td class="auto-style2"></td>
                 <td class="auto-style24">Direccion:</td>
                 <td class="auto-style28">
-                    <asp:TextBox ID="tbDireccion" runat="server" Width="160px"></asp:TextBox>
+                    <asp:TextBox ID="tbDireccion" runat="server" Width="160px" ValidationGroup="GPV"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="tbDireccion" ErrorMessage="Ingrese una direccion" ForeColor="#CC0000" ValidationGroup="GPV">*</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style15">
-                    <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="tbDireccion">*Ingrese una direccion</asp:RequiredFieldValidator>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style15">&nbsp;</td>
                 <td class="auto-style15">&nbsp;</td>
                 <td class="auto-style15">&nbsp;</td>
@@ -197,12 +197,12 @@
                 <td class="auto-style2"></td>
                 <td class="auto-style24">Horario: </td>
                 <td class="auto-style28">
-                    <asp:DropDownList ID="ddlHorario" runat="server" ClientIDMode="AutoID" Width="160px">
+                    <asp:DropDownList ID="ddlHorario" runat="server" ClientIDMode="AutoID" Width="170px" Height="21px" ValidationGroup="GPV">
                     </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="rfvHorario" runat="server" ControlToValidate="ddlHorario" InitialValue="-1" ErrorMessage="Seleccione un horario" ForeColor="#CC0000" ValidationGroup="GPV">*</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style15">
-                    <asp:RequiredFieldValidator ID="rfvHorario" runat="server" ControlToValidate="ddlHorario" InitialValue="-1">*Seleccione un horario</asp:RequiredFieldValidator>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style15">&nbsp;</td>
                 <td class="auto-style15">&nbsp;</td>
                 <td class="auto-style15">&nbsp;</td>
@@ -220,7 +220,17 @@
                 <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style29">
-                    <asp:Button ID="btnAgregar" runat="server" OnClick="btnAgregar_Click" Text="Agregar" />
+                    <asp:Button ID="btnAgregar" runat="server" OnClick="btnAgregar_Click" Text="Agregar" ValidationGroup="GPV" />
+                </td>
+                <td class="auto-style13">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style16">&nbsp;</td>
+                <td colspan="2">
+                    <asp:ValidationSummary ID="Summary" runat="server" Font-Italic="True" Font-Overline="False" Font-Size="X-Small" ForeColor="#CC0000" ValidationGroup="GPV" Width="153px" />
                 </td>
                 <td class="auto-style13">&nbsp;</td>
                 <td class="auto-style13">&nbsp;</td>

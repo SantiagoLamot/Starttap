@@ -9,9 +9,25 @@ namespace TP5_GRUPO1
 {
     public partial class ListadodeSucursales : System.Web.UI.Page
     {
+
+        ConexionBDSucursal Conexion = new ConexionBDSucursal();
+        private string consultaSelect = string.Empty;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnMostrarTodos_Click(object sender, EventArgs e)
+        {
+            consultaSelect = @"SELECT Id_Sucursal as 'ID_sucursal',NombreSucursal as 'Nombre',DescripcionSucursal as 'Descripcion', DireccionSucursal as 'Direccion', DescripcionProvincia as 'Provincia' FROM Sucursal inner join Provincia on Sucursal.Id_ProvinciaSucursal = Provincia.Id_Provincia";
+            Conexion.ejecutarSelectGridView(consultaSelect, gvSucursales);
+        }
+
+        protected void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            consultaSelect = @"SELECT Id_Sucursal as 'ID_sucursal',NombreSucursal as 'Nombre',DescripcionSucursal as 'Descripcion', DireccionSucursal as 'Direccion', DescripcionProvincia as 'Provincia' FROM Sucursal inner join Provincia on Sucursal.Id_ProvinciaSucursal = Provincia.Id_Provincia where Id_Sucursal = " + txtIDbuscar.Text;
+            Conexion.ejecutarSelectGridView(consultaSelect, gvSucursales);
         }
     }
 }

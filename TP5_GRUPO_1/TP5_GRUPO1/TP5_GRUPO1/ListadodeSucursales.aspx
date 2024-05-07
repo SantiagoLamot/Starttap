@@ -19,15 +19,128 @@
         .hipervinculo:last-child {
             margin-right: 0;
         }
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 279px;
+        }
+        .auto-style3 {
+            width: 31px;
+        }
+        .auto-style4 {
+            width: 31px;
+            height: 25px;
+        }
+        .auto-style5 {
+            height: 25px;
+        }
+        .auto-style6 {
+            height: 25px;
+            width: 277px;
+        }
+        .auto-style7 {
+            width: 277px;
+        }
+        .auto-style8 {
+            width: 121px;
+        }
+        .auto-style9 {
+            height: 25px;
+            width: 216px;
+        }
+        .auto-style10 {
+            width: 216px;
+        }
+        .auto-style11 {
+            height: 25px;
+            width: 128px;
+        }
+        .auto-style12 {
+            width: 128px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <asp:HyperLink ID="lkAgregarSucursal" runat="server" CssClass="hipervinculo" ToolTip="Click para ir a Pagina Agregar Sucursal">Agregar Sucursal</asp:HyperLink>
-            <asp:HyperLink ID="lkListado" runat="server" CssClass="hipervinculo" ToolTip="Click para ir a Pagina Listar Sucursales">Listado de Sucursales</asp:HyperLink>
+            <asp:HyperLink ID="lkListado" runat="server" CssClass="hipervinculo" ToolTip="Click para ir a Pagina Listar Sucursales" Height="21px" Width="139px">Listado de Sucursales</asp:HyperLink>
             <asp:HyperLink ID="lkELiminar" runat="server" CssClass="hipervinculo" ToolTip="Click para ir a Pagina Eliminar Sucursal">Eliminar Sucursal</asp:HyperLink>
         </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" Font-Size="XX-Large" Text="Listado de sucursales"></asp:Label>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style6">&nbsp;</td>
+                <td class="auto-style9"></td>
+                <td class="auto-style11"></td>
+                <td class="auto-style5"></td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style7">
+                    <asp:Label ID="Label2" runat="server" Text="Busqueda, ingrese ID de sucursal:"></asp:Label>
+                </td>
+                <td class="auto-style10">
+                    <asp:TextBox ID="txtIDbuscar" runat="server" Width="191px"></asp:TextBox>
+                </td>
+                <td class="auto-style12">
+                    <asp:Button ID="btnFiltrar" runat="server" OnClick="btnFiltrar_Click" Text="Filtrar" />
+                </td>
+                <td>
+                    <asp:Button ID="btnMostrarTodos" runat="server" OnClick="btnMostrarTodos_Click" Text="Mostrar Todos" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style12">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td colspan="4">
+                    <asp:GridView ID="gvSucursales" runat="server">
+                    </asp:GridView>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style12">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style12">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>

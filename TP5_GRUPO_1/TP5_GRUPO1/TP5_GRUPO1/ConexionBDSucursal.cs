@@ -15,16 +15,20 @@ namespace TP5_GRUPO1
 
         public int ejecutarConsulta(string QuerySQL)
         {
-           SqlConnection conexion = new SqlConnection(cadenaConexion);
-           conexion.Open();
-
-           SqlCommand command = new SqlCommand(QuerySQL, conexion);
-
-           int rowAffected = command.ExecuteNonQuery();
-     
-           conexion.Close();
-
-           return rowAffected;
+            try
+            {
+                SqlConnection conexion = new SqlConnection(cadenaConexion);
+                conexion.Open();
+                SqlCommand command = new SqlCommand(QuerySQL, conexion);
+                int rowAffected = command.ExecuteNonQuery();
+                conexion.Close();
+                return rowAffected;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("\t\t***ERROR:" + ex.Message + "***");
+                return 0;
+            }
         }
         public void ejecutarSelect(string consulta, DropDownList list, string dataTex, string dataValue)
         {
@@ -43,6 +47,24 @@ namespace TP5_GRUPO1
             catch (Exception e)
             {
                 Console.WriteLine("\t\t***ERROR:" + e.Message +"***"); //Dejaria impreso en consola porque no se pudo ejecutar el ExecuteReader();
+            }
+        }
+
+        public void ejecutarSelectGridView(string consulta, GridView gridView)
+        {
+            try
+            {
+                SqlConnection sqlConnection = new SqlConnection(cadenaConexion);
+                sqlConnection.Open();
+                SqlCommand sqlCommand = new SqlCommand(consulta, sqlConnection);
+                SqlDataReader sqlReader = sqlCommand.ExecuteReader();
+                gridView.DataSource = sqlReader;
+                gridView.DataBind();
+                sqlConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("\t\t***ERROR:" + ex.Message + "***");
             }
         }
     }
