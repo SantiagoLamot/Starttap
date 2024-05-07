@@ -16,7 +16,25 @@ namespace TP5_GRUPO1
         //Conexion a base de datos creada, pasar por paramentro la consulta sql.
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+            if (!IsPostBack)
+            {
+                QuerySQL = "SELECT Id_Provincia, DescripcionProvincia FROM Provincia";
+                ConexionBDSucursal.ejecutarSelect(QuerySQL, ddlProvincia, "DescripcionProvincia", "Id_Provincia");
+                QuerySQL = "SELECT Id_Horario, DescripcionHorario FROM Horario";
+                ConexionBDSucursal.ejecutarSelect(QuerySQL, ddlHorario, "DescripcionHorario", "Id_Horario");
+            }
+        }
 
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            QuerySQL = "INSERT INTO Sucursal" +
+            "(NombreSucursal,DescripcionSucursal, Id_HorarioSucursal ,Id_ProvinciaSucursal, DireccionSucursal) " +
+            "VALUES " +
+            "('" + tbNombreSucursal.Text + "', '" + tbDescripcion.Text + "', " + ddlHorario.SelectedValue + ", " 
+            + ddlProvincia.SelectedValue + ", '" + tbDireccion.Text + "')";
+            
+            rowAffected = ConexionBDSucursal.ejecutarConsulta(QuerySQL);
         }
     }
 }
