@@ -145,6 +145,7 @@
                 <td class="auto-style26">
                     <asp:TextBox ID="tbNombreSucursal" runat="server" Width="160px" ValidationGroup="GPV"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="tbNombreSucursal" ErrorMessage="Ingrese nombre de sucursal" ForeColor="#CC0000" ValidationGroup="GPV">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="revNombSucursal" runat="server" ControlToValidate="tbNombreSucursal" ErrorMessage="El nombre no debe contener numeros" ValidationExpression="^[A-Za-z\s]+$" ValidationGroup="GPV">*</asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style20">
                     &nbsp;</td>
@@ -156,8 +157,9 @@
                 <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style21">Descripcion:</td>
                 <td class="auto-style29">
-                    <asp:TextBox ID="tbDescripcion" runat="server" Width="160px" ValidationGroup="GPV"></asp:TextBox>
+                    <asp:TextBox ID="tbDescripcion" runat="server" Width="160px" ValidationGroup="GPV" ToolTip="Que Actividades realiza en la sucursal, o servicios que brinda."></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="tbDescripcion" ErrorMessage="Ingrese descripcion" ForeColor="#CC0000" ValidationGroup="GPV">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="revDescripcion" runat="server" ControlToValidate="tbDescripcion" ErrorMessage="La descripción no debe contener numeros" ValidationExpression="^[A-Za-z\s]+$" ValidationGroup="GPV">*</asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style13">
                     &nbsp;</td>
@@ -186,6 +188,7 @@
                 <td class="auto-style28">
                     <asp:TextBox ID="tbDireccion" runat="server" Width="160px" ValidationGroup="GPV"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="tbDireccion" ErrorMessage="Ingrese una direccion" ForeColor="#CC0000" ValidationGroup="GPV">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="revDirección" runat="server" ControlToValidate="tbDireccion" ErrorMessage="La Dirección no debe contener numeros" ValidationExpression="^[A-Za-z0-9\s]+$" ValidationGroup="GPV">*</asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style15">
                     &nbsp;</td>
@@ -230,7 +233,8 @@
             <tr>
                 <td class="auto-style16">&nbsp;</td>
                 <td colspan="2">
-                    <asp:ValidationSummary ID="Summary" runat="server" Font-Italic="True" Font-Overline="False" Font-Size="X-Small" ForeColor="#CC0000" ValidationGroup="GPV" Width="153px" />
+                    <asp:ValidationSummary ID="Summary1" runat="server" Font-Italic="True" Font-Overline="False" Font-Size="X-Small" ForeColor="#CC0000" ValidationGroup="GPV" Width="153px" DisplayMode="List" Height="47px" />
+                    <asp:Label ID="lblAgregadoExitoso" runat="server"></asp:Label>
                 </td>
                 <td class="auto-style13">&nbsp;</td>
                 <td class="auto-style13">&nbsp;</td>

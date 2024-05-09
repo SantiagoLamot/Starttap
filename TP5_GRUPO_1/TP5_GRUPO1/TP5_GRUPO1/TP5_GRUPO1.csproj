@@ -88,6 +88,7 @@
     <Compile Include="EliminarSucursal.aspx.designer.cs">
       <DependentUpon>EliminarSucursal.aspx</DependentUpon>
     </Compile>
+    <Compile Include="limpiarTextboxes.cs" />
     <Compile Include="ListadodeSucursales.aspx.cs">
       <DependentUpon>ListadodeSucursales.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

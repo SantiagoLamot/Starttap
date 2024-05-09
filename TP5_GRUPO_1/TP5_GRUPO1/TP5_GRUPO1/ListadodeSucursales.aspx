@@ -59,14 +59,36 @@
         .auto-style12 {
             width: 128px;
         }
+        .auto-style13 {
+            text-align: left;
+        }
+        .auto-style14 {
+            width: 31px;
+            height: 23px;
+        }
+        .auto-style15 {
+            width: 277px;
+            height: 23px;
+        }
+        .auto-style16 {
+            width: 216px;
+            height: 23px;
+        }
+        .auto-style17 {
+            width: 128px;
+            height: 23px;
+        }
+        .auto-style18 {
+            height: 23px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:HyperLink ID="lkAgregarSucursal" runat="server" CssClass="hipervinculo" ToolTip="Click para ir a Pagina Agregar Sucursal">Agregar Sucursal</asp:HyperLink>
-            <asp:HyperLink ID="lkListado" runat="server" CssClass="hipervinculo" ToolTip="Click para ir a Pagina Listar Sucursales" Height="21px" Width="139px">Listado de Sucursales</asp:HyperLink>
-            <asp:HyperLink ID="lkELiminar" runat="server" CssClass="hipervinculo" ToolTip="Click para ir a Pagina Eliminar Sucursal">Eliminar Sucursal</asp:HyperLink>
+            <asp:HyperLink ID="lkAgregarSucursal" runat="server" CssClass="hipervinculo" ToolTip="Click para ir a Pagina Agregar Sucursal" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
+            <asp:HyperLink ID="lkListado" runat="server" CssClass="hipervinculo" ToolTip="Click para ir a Pagina Listar Sucursales" Height="21px" Width="139px" NavigateUrl="~/ListadodeSucursales.aspx">Listado de Sucursales</asp:HyperLink>
+            <asp:HyperLink ID="lkELiminar" runat="server" CssClass="hipervinculo" ToolTip="Click para ir a Pagina Eliminar Sucursal" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
         </div>
         <table class="auto-style1">
             <tr>
@@ -106,16 +128,21 @@
                     <asp:TextBox ID="txtIDbuscar" runat="server" Width="191px"></asp:TextBox>
                 </td>
                 <td class="auto-style12">
-                    <asp:Button ID="btnFiltrar" runat="server" OnClick="btnFiltrar_Click" Text="Filtrar" />
+                    <asp:Button ID="btnFiltrar" runat="server" OnClick="btnFiltrar_Click" Text="Filtrar" ValidationGroup="GFiltro" />
                 </td>
-                <td>
+                <td class="auto-style13">
                     <asp:Button ID="btnMostrarTodos" runat="server" OnClick="btnMostrarTodos_Click" Text="Mostrar Todos" />
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style7">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style10">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtIDbuscar" ErrorMessage="*Debe Ingresar un Numero" ValidationExpression="^[0-9,$]*$" ValidationGroup="GFiltro"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="revIDBuscar" runat="server" ControlToValidate="txtIDbuscar" ErrorMessage="*Ingrese un ID" ValidationGroup="GFiltro">*Ingrese un ID</asp:RequiredFieldValidator>
+                    <br />
+                    <asp:Label ID="lblNoExiste" runat="server"></asp:Label>
+                </td>
                 <td class="auto-style12">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
@@ -127,11 +154,11 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style7">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
-                <td class="auto-style12">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style14"></td>
+                <td class="auto-style15"></td>
+                <td class="auto-style16"></td>
+                <td class="auto-style17"></td>
+                <td class="auto-style18"></td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>

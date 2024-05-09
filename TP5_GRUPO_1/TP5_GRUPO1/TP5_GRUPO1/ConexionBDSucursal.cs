@@ -6,13 +6,14 @@ using System.Linq;
 using System.Web;
 using System.Data;
 using System.Web.UI.WebControls;
+using System.Drawing;
 
 namespace TP5_GRUPO1
 {
     public class ConexionBDSucursal
     {
-        private const string cadenaConexion = @"Data Source=localhost;Initial Catalog=BDSucursales;Integrated Security=True";
-
+        private const string cadenaConexion = @"Data Source=localhost\sqlexpress;Initial Catalog=BDSucursales;Integrated Security=True";
+        int rowAffected = 0;
         public int ejecutarConsulta(string QuerySQL)
         {
             try
@@ -20,7 +21,7 @@ namespace TP5_GRUPO1
                 SqlConnection conexion = new SqlConnection(cadenaConexion);
                 conexion.Open();
                 SqlCommand command = new SqlCommand(QuerySQL, conexion);
-                int rowAffected = command.ExecuteNonQuery();
+                rowAffected = command.ExecuteNonQuery();
                 conexion.Close();
                 return rowAffected;
             }
@@ -50,22 +51,28 @@ namespace TP5_GRUPO1
             }
         }
 
-        public void ejecutarSelectGridView(string consulta, GridView gridView)
+        public bool ejecutarSelectGridView(string consulta, GridView gridView)
         {
+            bool Existe = false;
             try
             {
                 SqlConnection sqlConnection = new SqlConnection(cadenaConexion);
                 sqlConnection.Open();
                 SqlCommand sqlCommand = new SqlCommand(consulta, sqlConnection);
                 SqlDataReader sqlReader = sqlCommand.ExecuteReader();
-                gridView.DataSource = sqlReader;
-                gridView.DataBind();
+
+                Existe = sqlReader.HasRows;
+                
+                    gridView.DataSource = sqlReader;
+                    gridView.DataBind();
+ 
                 sqlConnection.Close();
             }
             catch (Exception ex)
             {
                 Console.WriteLine("\t\t***ERROR:" + ex.Message + "***");
             }
+            return Existe;
         }
     }
 }

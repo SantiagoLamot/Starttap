@@ -28,13 +28,25 @@ namespace TP5_GRUPO1
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            QuerySQL = "INSERT INTO Sucursal" +
-            "(NombreSucursal,DescripcionSucursal, Id_HorarioSucursal ,Id_ProvinciaSucursal, DireccionSucursal) " +
-            "VALUES " +
-            "('" + tbNombreSucursal.Text + "', '" + tbDescripcion.Text + "', " + ddlHorario.SelectedValue + ", " 
-            + ddlProvincia.SelectedValue + ", '" + tbDireccion.Text + "')";
-            
+            QuerySQL = "IF NOT EXISTS (SELECT 1 FROM Sucursal WHERE NombreSucursal = '" + tbNombreSucursal.Text.Trim() + "') " +
+           "BEGIN " +
+           "    INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_HorarioSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
+           "    VALUES ('" + tbNombreSucursal.Text + "', '" + tbDescripcion.Text + "', " + ddlHorario.SelectedValue + ", " +
+           "            " + ddlProvincia.SelectedValue + ", '" + tbDireccion.Text + "') " +
+           "END";
+
+
             rowAffected = ConexionBDSucursal.ejecutarConsulta(QuerySQL);
+            if (rowAffected > 0)
+            {
+                lblAgregadoExitoso.Text = "Sucursal Agregada con Exito";
+                limpiarTextboxes.LimpiatextBoxes(this);
+
+            }
+            else
+            {
+                lblAgregadoExitoso.Text = "La sucursal '" + tbNombreSucursal.Text + "' ya existe";
+            }
         }
     }
 }

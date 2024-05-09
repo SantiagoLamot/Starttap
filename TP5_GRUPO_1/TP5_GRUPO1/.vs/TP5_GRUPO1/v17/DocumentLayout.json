@@ -1,21 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\GitHub\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\",
+  "WorkspaceRootPath": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|c:\\github\\starttap\\tp5_grupo_1\\tp5_grupo1\\tp5_grupo1\\eliminarsucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|solutionrelative:tp5_grupo1\\eliminarsucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|c:\\github\\starttap\\tp5_grupo_1\\tp5_grupo1\\tp5_grupo1\\eliminarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\tp5_grupo1\\eliminarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|solutionrelative:tp5_grupo1\\eliminarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|C:\\GitHub\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\tp5_grupo1\\conexionbdsucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tp5_grupo_1\\tp5_grupo1\\tp5_grupo1\\eliminarsucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|solutionrelative:tp5_grupo1\\eliminarsucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tp5_grupo_1\\tp5_grupo1\\tp5_grupo1\\agregarsucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|solutionrelative:tp5_grupo1\\agregarsucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tp5_grupo_1\\tp5_grupo1\\tp5_grupo1\\listadodesucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|solutionrelative:tp5_grupo1\\listadodesucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tp5_grupo_1\\tp5_grupo1\\tp5_grupo1\\listadodesucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|solutionrelative:tp5_grupo1\\listadodesucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\tp5_grupo1\\conexionbdsucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|solutionrelative:tp5_grupo1\\conexionbdsucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|c:\\github\\starttap\\tp5_grupo_1\\tp5_grupo1\\tp5_grupo1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tp5_grupo_1\\tp5_grupo1\\tp5_grupo1\\agregarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|solutionrelative:tp5_grupo1\\agregarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tp5_grupo_1\\tp5_grupo1\\tp5_grupo1\\limpiartextboxes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|solutionrelative:tp5_grupo1\\limpiartextboxes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\tp5_grupo1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{89B1689C-936F-4050-AFB4-9287CAC81CCA}|TP5_GRUPO1\\TP5_GRUPO1.csproj|solutionrelative:tp5_grupo1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -26,58 +46,131 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EliminarSucursal.aspx.cs",
-              "DocumentMoniker": "C:\\GitHub\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\EliminarSucursal.aspx.cs",
-              "RelativeDocumentMoniker": "TP5_GRUPO1\\EliminarSucursal.aspx.cs",
-              "ToolTip": "C:\\GitHub\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\EliminarSucursal.aspx.cs",
-              "RelativeToolTip": "TP5_GRUPO1\\EliminarSucursal.aspx.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T20:55:39.564Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\GitHub\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\Web.config",
-              "RelativeDocumentMoniker": "TP5_GRUPO1\\Web.config",
-              "ToolTip": "C:\\GitHub\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\Web.config",
-              "RelativeToolTip": "TP5_GRUPO1\\Web.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-07T20:47:21.989Z",
+              "Title": "ListadodeSucursales.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\ListadodeSucursales.aspx.cs",
+              "RelativeDocumentMoniker": "TP5_GRUPO1\\ListadodeSucursales.aspx.cs",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\ListadodeSucursales.aspx.cs",
+              "RelativeToolTip": "TP5_GRUPO1\\ListadodeSucursales.aspx.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T21:39:01.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "AgregarSucursal.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\AgregarSucursal.aspx.cs",
+              "RelativeDocumentMoniker": "TP5_GRUPO1\\AgregarSucursal.aspx.cs",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\AgregarSucursal.aspx.cs",
+              "RelativeToolTip": "TP5_GRUPO1\\AgregarSucursal.aspx.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwDMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T22:09:38.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "EliminarSucursal.aspx",
-              "DocumentMoniker": "C:\\GitHub\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\EliminarSucursal.aspx",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\EliminarSucursal.aspx",
               "RelativeDocumentMoniker": "TP5_GRUPO1\\EliminarSucursal.aspx",
-              "ToolTip": "C:\\GitHub\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\EliminarSucursal.aspx",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\EliminarSucursal.aspx",
               "RelativeToolTip": "TP5_GRUPO1\\EliminarSucursal.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-05-07T20:35:35.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "EliminarSucursal.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\EliminarSucursal.aspx.cs",
+              "RelativeDocumentMoniker": "TP5_GRUPO1\\EliminarSucursal.aspx.cs",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\EliminarSucursal.aspx.cs",
+              "RelativeToolTip": "TP5_GRUPO1\\EliminarSucursal.aspx.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAiwBkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T20:55:39.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListadodeSucursales.aspx",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\ListadodeSucursales.aspx",
+              "RelativeDocumentMoniker": "TP5_GRUPO1\\ListadodeSucursales.aspx",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\ListadodeSucursales.aspx",
+              "RelativeToolTip": "TP5_GRUPO1\\ListadodeSucursales.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-08T21:27:14.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ConexionBDSucursal.cs",
-              "DocumentMoniker": "C:\\GitHub\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\ConexionBDSucursal.cs",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\ConexionBDSucursal.cs",
               "RelativeDocumentMoniker": "TP5_GRUPO1\\ConexionBDSucursal.cs",
-              "ToolTip": "C:\\GitHub\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\ConexionBDSucursal.cs",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\ConexionBDSucursal.cs",
               "RelativeToolTip": "TP5_GRUPO1\\ConexionBDSucursal.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAAA8AAAAgAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAxwEsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-07T17:51:50.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AgregarSucursal.aspx",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\AgregarSucursal.aspx",
+              "RelativeDocumentMoniker": "TP5_GRUPO1\\AgregarSucursal.aspx",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\AgregarSucursal.aspx",
+              "RelativeToolTip": "TP5_GRUPO1\\AgregarSucursal.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-08T22:00:40.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "limpiarTextboxes.cs",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\limpiarTextboxes.cs",
+              "RelativeDocumentMoniker": "TP5_GRUPO1\\limpiarTextboxes.cs",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\limpiarTextboxes.cs",
+              "RelativeToolTip": "TP5_GRUPO1\\limpiarTextboxes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T22:40:53.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\Web.config",
+              "RelativeDocumentMoniker": "TP5_GRUPO1\\Web.config",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP5_GRUPO_1\\TP5_GRUPO1\\TP5_GRUPO1\\Web.config",
+              "RelativeToolTip": "TP5_GRUPO1\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-07T20:47:21.989Z",
               "EditorCaption": ""
             }
           ]

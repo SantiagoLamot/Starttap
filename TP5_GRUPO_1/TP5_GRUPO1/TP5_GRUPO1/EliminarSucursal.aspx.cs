@@ -23,16 +23,19 @@ namespace TP5_GRUPO1
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
+           
             string idSucursal = txtIDSucursal.Text.Trim();
             QuerySQL = "DELETE FROM Sucursal WHERE Id_Sucursal = '" + idSucursal + "'";
             rowAffected = ConexionBDSucursal.ejecutarConsulta(QuerySQL);
-            if (rowAffected > 0 ) 
+            if (rowAffected > 0)
             {
                 lblEliminacion.Text = "La sucursal se ha eliminado con exito";
-            }else
+            }
+            else
             {
                 lblEliminacion.Text = "El numero de sucursal es inexistente";
             }
+            limpiarTextboxes.LimpiatextBoxes(this);
         }
     }
 }
