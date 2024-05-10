@@ -32,6 +32,7 @@ namespace TP5_GRUPO1
 
             if (rowAffected != true)
             {
+                lblNoExiste.ForeColor = System.Drawing.Color.IndianRed;
                 lblNoExiste.Text = "La Sucursal ingresada no existe"; 
             }
             else

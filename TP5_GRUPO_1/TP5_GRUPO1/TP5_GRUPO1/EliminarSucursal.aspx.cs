@@ -29,10 +29,12 @@ namespace TP5_GRUPO1
             rowAffected = ConexionBDSucursal.ejecutarConsulta(QuerySQL);
             if (rowAffected > 0)
             {
+                lblEliminacion.ForeColor = System.Drawing.Color.LimeGreen;
                 lblEliminacion.Text = "La sucursal se ha eliminado con exito";
             }
             else
             {
+                lblEliminacion.ForeColor = System.Drawing.Color.IndianRed;
                 lblEliminacion.Text = "El numero de sucursal es inexistente";
             }
             limpiarTextboxes.LimpiatextBoxes(this);

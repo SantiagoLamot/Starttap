@@ -39,12 +39,14 @@ namespace TP5_GRUPO1
             rowAffected = ConexionBDSucursal.ejecutarConsulta(QuerySQL);
             if (rowAffected > 0)
             {
+                lblAgregadoExitoso.ForeColor = System.Drawing.Color.LimeGreen;
                 lblAgregadoExitoso.Text = "Sucursal Agregada con Exito";
                 limpiarTextboxes.LimpiatextBoxes(this);
 
             }
             else
             {
+                lblAgregadoExitoso.ForeColor = System.Drawing.Color.IndianRed;
                 lblAgregadoExitoso.Text = "La sucursal '" + tbNombreSucursal.Text + "' ya existe";
             }
         }
