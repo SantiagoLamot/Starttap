@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data;
 using System.Data.SqlClient;
+using System.Security.Policy;
 
  public class GestionProductos
     {
@@ -47,5 +48,37 @@ using System.Data.SqlClient;
         {
             return false;
         }
+    }
+
+    public bool EditarProducto(Producto pro)
+    {
+        SqlCommand sqlCommand = new SqlCommand();
+        ArmarParametrosEditarProducto(ref sqlCommand, pro);
+        AccesoDatosProd accesoDatosProd = new AccesoDatosProd();
+        int filas = accesoDatosProd.EjecutarProcedimientoAlmacenado(sqlCommand, "spActualizarProducto");
+        if(filas==1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void ArmarParametrosEditarProducto(ref SqlCommand sqlCommand, Producto pro)
+    {
+        SqlParameter sqlParameter = new SqlParameter();
+        sqlParameter = sqlCommand.Parameters.Add("@IDPRODUCTO", SqlDbType.Int);
+        sqlParameter.Value = pro.IdProducto;
+        
+        sqlParameter = sqlCommand.Parameters.Add("@NOMBREPRODUCTO", SqlDbType.VarChar, 40);
+        sqlParameter.Value = pro.NombreProducto;
+        
+        sqlParameter = sqlCommand.Parameters.Add("@CANTPRODXUNI", SqlDbType.VarChar, 20);
+        sqlParameter.Value = pro.CantidadPorUnidad;
+        
+        sqlParameter = sqlCommand.Parameters.Add("@PRECIOXUNIDAD", SqlDbType.Decimal);
+        sqlParameter.Value = pro.PrecioUnidad;
     }
 }
