@@ -23,17 +23,26 @@
         <div>
             <table class="auto-style3">
                 <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>
+                    <td class="auto-style4">
                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Inicio.aspx">Inicio</asp:HyperLink>
+                        </td>
+                    <td>
+                        <br />
+                        <br />
                         <br />
                         Productos Seleccionados por el Usuario:</td>
                 </tr>
                 <tr>
                     <td class="auto-style4">&nbsp;</td>
-                    <td>
-                        <asp:GridView ID="gv_MostrarSeleccion" runat="server" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" OnSelectedIndexChanged="gv_MostrarSeleccion_SelectedIndexChanged" PageSize="14">
+                    <td class="auto-style2">
+                        <asp:GridView ID="gv_MostrarSeleccion" runat="server" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" OnSelectedIndexChanged="gv_MostrarSeleccion_SelectedIndexChanged" PageSize="14" AutoGenerateColumns="False" Width="558px">
                             <AlternatingRowStyle BackColor="#F7F7F7" />
+                            <Columns>
+                                <asp:BoundField DataField="idProducto" HeaderText="Id Producto" />
+                                <asp:BoundField DataField="nombreProducto" HeaderText="Nombre Producto" />
+                                <asp:BoundField DataField="idProveedor" HeaderText="Id Proveedor" />
+                                <asp:BoundField DataField="precioUnidad" HeaderText="Precio Unidad" />
+                            </Columns>
                             <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
                             <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
                             <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />

@@ -12,49 +12,50 @@ using System.Web;
         private string _cantidadPorUnidad;
         private decimal _precioUnidad;
         private int _idProveedor;
-    private string nomProducto;
-    private string cantPorUnidad;
-    private decimal v;
+    //private string nomProducto;
+    //private string cantPorUnidad;
+    //private decimal v;
 
     /// METODOS CONSTRUCTORES
     public Producto()
-        {
-            
-        }
-
-        public Producto(int idProducto)
-        {
-            _idProducto = idProducto;
-        }
-
-    public Producto(int idProducto, string nomProducto, string cantPorUnidad, decimal v) : this(idProducto)
     {
-        this.nomProducto = nomProducto;
-        this.cantPorUnidad = cantPorUnidad;
-        this.v = v;
+            
     }
 
-    public Producto(int idProducto, int idProveedor, string nombreProducto, string cantidadPorUnidad, decimal precioUnidad)
-        {
-            _idProducto = idProducto;
-            _nombreProducto = nombreProducto;
-            _cantidadPorUnidad = cantidadPorUnidad;
-            _precioUnidad = precioUnidad;
-            _idProveedor = idProveedor;
-        }
+    public Producto(int idProducto)
+    {
+       _idProducto = idProducto;
+    }
 
-        /// METODOS GETTER Y SETTERS
-        
+    public Producto(int idProducto, string nombreProducto, string cantidadPorUnidad, decimal precioUnidad)
+    {
+        _idProducto = idProducto;
+        _nombreProducto = nombreProducto;
+        _cantidadPorUnidad = cantidadPorUnidad;
+        _precioUnidad = precioUnidad;
+
+    }
+    public Producto(int idProducto, string nombreProducto, int idProveedor, decimal precioUnidad)
+    {
+        _idProducto = idProducto;
+        _nombreProducto = nombreProducto;
+        _idProveedor = idProveedor;
+        _precioUnidad = precioUnidad;
+
+    }
+
+    /// METODOS GETTER Y SETTERS
+
         public int IdProducto
         {
-            get
-            {
-                return _idProducto;
-            }
-            set
-            {
-                _idProducto = value;
-            }
+                get
+                {
+                    return _idProducto;
+                }
+                set
+                {
+                    _idProducto = value;
+                }
         }
         public string NombreProducto
         {
@@ -89,7 +90,7 @@ using System.Web;
                 _precioUnidad = value;
             }
         }
-        public int idProveedor
+        public int IdProveedor
         {
             get
             {

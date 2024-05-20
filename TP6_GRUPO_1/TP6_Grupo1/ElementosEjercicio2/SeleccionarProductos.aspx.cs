@@ -26,6 +26,7 @@ namespace TP6_Grupo1
         }
         protected void gv_productos2_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
         {
+            
             List<Producto> productosSeleccionados = Session["productosSeleccionados"] as List<Producto> ?? new List<Producto>();
             foreach (GridViewRow fila in gv_productos2.Rows)
             {
@@ -36,19 +37,19 @@ namespace TP6_Grupo1
                     string idProveedor = ((Label)fila.FindControl("lblIDProveedor")).Text;
                     string precioUnitario = ((Label)fila.FindControl("lblPrecioUni")).Text;
 
-                    bool productoExiste = productosSeleccionados.Exists(p => p.IdProducto == int.Parse(idProducto));
+                    bool productoExiste = productosSeleccionados.Exists(prod => prod.IdProducto == int.Parse(idProducto));
 
                     if (!productoExiste)
                     {
-                        Producto producto = new Producto
-                        {
-                            IdProducto = int.Parse(idProducto),
-                            NombreProducto = nombreProd,
-                            idProveedor = int.Parse(idProveedor),
-                            PrecioUnidad = decimal.Parse(precioUnitario)
-                        };
+                        Producto prod = new Producto
+                        (
+                            int.Parse(idProducto),
+                            nombreProd,
+                            int.Parse(idProveedor),
+                            decimal.Parse(precioUnitario)
+                        );
 
-                        productosSeleccionados.Add(producto);
+                        productosSeleccionados.Add(prod);
                         Session["productosSeleccionados"] = productosSeleccionados;
 
                         lblProductoSeleccionado.Text = $"Producto seleccionado: {nombreProd} - Precio: ${precioUnitario}";

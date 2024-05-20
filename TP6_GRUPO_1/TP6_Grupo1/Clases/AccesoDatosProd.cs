@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
     public class AccesoDatosProd
     {
-        string rutaProductos = @"Data Source=localhost;Initial Catalog=Neptuno;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+        string rutaProductos = "Data Source=localhost\\sqlexpress;Initial Catalog=Neptuno;Integrated Security=True";
 
         public AccesoDatosProd()
         {

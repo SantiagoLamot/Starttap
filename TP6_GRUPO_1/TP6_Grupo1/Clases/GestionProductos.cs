@@ -24,8 +24,9 @@ using System.Security.Policy;
 
         public DataTable ObtenerProductos()
         {
-        return ObtenerTabla("Productos", "select * from Productos");
-    }
+             return ObtenerTabla("Productos", "select * from Productos");
+        }
+
     private void ArmarParametrosProductosEliminar(ref SqlCommand Comando, Producto prod)
     {
         SqlParameter Parametros = new SqlParameter();
