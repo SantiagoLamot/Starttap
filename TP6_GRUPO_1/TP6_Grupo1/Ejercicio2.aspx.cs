@@ -17,9 +17,27 @@ namespace TP6_Grupo1
 
         protected void lbtnDeleteProd_Click(object sender, EventArgs e)
         {
+            if (Session["ProductosSeleccionados"] != null)
+            {
+                List<Producto> productosSeleccionados = Session["ProductosSeleccionados"] as List<Producto>;
 
+                if (productosSeleccionados != null && productosSeleccionados.Count >= 1)
+                {
+                    productosSeleccionados.Clear();
+                    Session["ProductosSeleccionados"] = productosSeleccionados;
+
+                    Response.Write("<script>alert('Productos seleccionados eliminados.');</script>");
+                }
+                else
+                {
+
+                    Response.Write("<script>alert('No hay productos seleccionados para eliminar.');</script>");
+                }
+            }
+            else
+            {
+                Response.Write("<script>alert('No hay productos seleccionados para eliminar.');</script>");
+            }
         }
-
-        
     }
 }

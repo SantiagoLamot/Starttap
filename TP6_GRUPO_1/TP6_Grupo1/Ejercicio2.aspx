@@ -11,10 +11,10 @@
     <form id="form1" runat="server">
         <div>
             <br />
-            <asp:HyperLink ID="hlSeleccionar" runat="server" NavigateUrl="~/ElementosEjercicio2/SeleccionarProductos.aspx">Seleccionar Productos</asp:HyperLink>
+            <asp:HyperLink ID="hlSeleccionar" runat="server" NavigateUrl="~/ElementosEjercicio2/SeleccionarProductos.aspx" OnDataBinding="Page_Load">Seleccionar Productos</asp:HyperLink>
             <br />
             <br />
-            <asp:LinkButton ID="lbtnDeleteProd" runat="server" >Eliminar Productos Seleccionados</asp:LinkButton>
+            <asp:LinkButton ID="lbtnDeleteProd" runat="server" OnClick="lbtnDeleteProd_Click" OnClientClick="return confirm('¿Estás seguro de que deseas eliminar los&nbsp;productos?');" >Eliminar Productos Seleccionados</asp:LinkButton>
             <br />
             <br />
             <asp:HyperLink ID="hlMostrar" runat="server" NavigateUrl="~/ElementosEjercicio2/MostrarSeleccionados.aspx">Mostrar Productos</asp:HyperLink>
