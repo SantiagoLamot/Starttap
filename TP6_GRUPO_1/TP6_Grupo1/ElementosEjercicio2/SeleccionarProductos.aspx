@@ -12,6 +12,7 @@
         }
         .auto-style2 {
             text-align: center;
+            margin-left: 40px;
         }
     </style>
 </head>
@@ -21,8 +22,7 @@
             <asp:HyperLink ID="hlVolverInicio" runat="server" NavigateUrl="~/Inicio.aspx">Inicio</asp:HyperLink>
             <br />
             <br />
-            <br />
-            <br />
+            <strong>Elija los Productos que desea agregar a la lista:</strong><br />
             <br />
             <div class="auto-style2">
             <asp:GridView ID="gv_productos2" runat="server" AutoGenerateColumns="False" AutoGenerateSelectButton="True" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gv_productos2_SelectedIndexChanged" AllowPaging="True" OnPageIndexChanging="gv_productos2_PageIndexChanging" OnSelectedIndexChanging="gv_productos2_SelectedIndexChanging" PageSize="14">
@@ -67,9 +67,7 @@
             </div>
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblProductoSeleccionado" runat="server" CssClass="auto-style1"></asp:Label>
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
