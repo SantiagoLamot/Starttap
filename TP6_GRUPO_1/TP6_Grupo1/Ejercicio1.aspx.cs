@@ -11,19 +11,13 @@ namespace TP6_Grupo1
 {
     public partial class Ejercicio1 : System.Web.UI.Page
     {
+        CargarGV cargarGV = new CargarGV();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Page.IsPostBack == false)
+            if (!Page.IsPostBack)
             {
-                CargarGridViewProductos();
+                cargarGV.CargarGridViewProductos(gv_Productos);
             }
-        }
-
-        private void CargarGridViewProductos()
-        {
-            GestionProductos gestionProductos = new GestionProductos();
-            gv_Productos.DataSource = gestionProductos.MostrarProductos();
-            gv_Productos.DataBind();
         }
 
         protected void gv_Productos_RowDeleting(object sender, GridViewDeleteEventArgs e)
@@ -34,25 +28,25 @@ namespace TP6_Grupo1
 
             GestionProductos gestionProd = new GestionProductos();
             gestionProd.EliminarProducto(prod);
-            CargarGridViewProductos();
+            cargarGV.CargarGridViewProductos(gv_Productos);
         }
 
         protected void gv_Productos_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             gv_Productos.PageIndex = e.NewPageIndex;
-            CargarGridViewProductos();
+            cargarGV.CargarGridViewProductos(gv_Productos);
         }
 
         protected void gv_Productos_RowEditing(object sender, GridViewEditEventArgs e)
         {
             gv_Productos.EditIndex = e.NewEditIndex;
-            CargarGridViewProductos();
+            cargarGV.CargarGridViewProductos(gv_Productos);
         }
 
         protected void gv_Productos_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
             gv_Productos.EditIndex = -1;
-            CargarGridViewProductos();
+            cargarGV.CargarGridViewProductos(gv_Productos);
         }
 
         protected void gv_Productos_RowUpdating(object sender, GridViewUpdateEventArgs e)
@@ -60,12 +54,12 @@ namespace TP6_Grupo1
             string idProducto = ((Label)gv_Productos.Rows[e.RowIndex].FindControl("l_EIT_IdProducto")).Text;
             string NomProducto = ((TextBox)gv_Productos.Rows[e.RowIndex].FindControl("tb_EIT_NombreProducto")).Text;
             string CantPorUnidad= ((TextBox)gv_Productos.Rows[e.RowIndex].FindControl("tb_EIT_CantidadXunidad")).Text;
-            string PrecioPorUnidad= ((TextBox)gv_Productos.Rows[e.RowIndex].FindControl("tb_EIT_PrecioXunidad")).Text;
-            Producto producto = new Producto(Convert.ToInt32(idProducto), NomProducto, CantPorUnidad, Convert.ToDecimal(PrecioPorUnidad));
+            string PrecioUnidad= ((TextBox)gv_Productos.Rows[e.RowIndex].FindControl("tb_EIT_PrecioXunidad")).Text;
+            Producto producto = new Producto(Convert.ToInt32(idProducto), NomProducto, CantPorUnidad, Convert.ToDecimal(PrecioUnidad));
             GestionProductos gestionProductos = new GestionProductos();
             gestionProductos.EditarProducto(producto);
             gv_Productos.EditIndex = -1;
-            CargarGridViewProductos();
+            cargarGV.CargarGridViewProductos(gv_Productos);
         }
     }
 }

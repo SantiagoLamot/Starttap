@@ -10,6 +10,15 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <br />
+            <asp:HyperLink ID="hlSeleccionar" runat="server" NavigateUrl="~/ElementosEjercicio2/SeleccionarProductos.aspx">Seleccionar Productos</asp:HyperLink>
+            <br />
+            <br />
+            <asp:LinkButton ID="lbtnDeleteProd" runat="server" >Eliminar Productos Seleccionados</asp:LinkButton>
+            <br />
+            <br />
+            <asp:HyperLink ID="hlMostrar" runat="server" NavigateUrl="~/ElementosEjercicio2/MostrarSeleccionados.aspx">Mostrar Productos</asp:HyperLink>
+            <br />
         </div>
     </form>
 </body>

@@ -22,11 +22,10 @@ using System.Security.Policy;
             return dataSet.Tables[tabla];
         }
 
-        public DataTable MostrarProductos()
+        public DataTable ObtenerProductos()
         {
-            return ObtenerTabla("Productos", "SELECT IdProducto, NombreProducto, CantidadPorUnidad, PrecioUnidad From Productos");
-        }
-
+        return ObtenerTabla("Productos", "select * from Productos");
+    }
     private void ArmarParametrosProductosEliminar(ref SqlCommand Comando, Producto prod)
     {
         SqlParameter Parametros = new SqlParameter();

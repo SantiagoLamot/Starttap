@@ -11,7 +11,7 @@ namespace TP6_Grupo1
 {
 
 
-    public partial class Ejercicio2
+    public partial class SeleccionarProductos
     {
 
         /// <summary>
@@ -24,30 +24,39 @@ namespace TP6_Grupo1
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control hlSeleccionar.
+        /// Control hlVolverInicio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hlSeleccionar;
+        protected global::System.Web.UI.WebControls.HyperLink hlVolverInicio;
 
         /// <summary>
-        /// Control lbtnDeleteProd.
+        /// Control gv_productos2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtnDeleteProd;
+        protected global::System.Web.UI.WebControls.GridView gv_productos2;
 
         /// <summary>
-        /// Control hlMostrar.
+        /// Control lblProductoSeleccionado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hlMostrar;
+        protected global::System.Web.UI.WebControls.Label lblProductoSeleccionado;
+
+        /// <summary>
+        /// Control hlVolverEJ2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlVolverEJ2;
     }
 }

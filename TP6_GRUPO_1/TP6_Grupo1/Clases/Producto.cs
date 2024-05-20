@@ -11,9 +11,13 @@ using System.Web;
         private string _nombreProducto;
         private string _cantidadPorUnidad;
         private decimal _precioUnidad;
+        private int _idProveedor;
+    private string nomProducto;
+    private string cantPorUnidad;
+    private decimal v;
 
-        /// METODOS CONSTRUCTORES
-        public Producto()
+    /// METODOS CONSTRUCTORES
+    public Producto()
         {
             
         }
@@ -23,12 +27,20 @@ using System.Web;
             _idProducto = idProducto;
         }
 
-        public Producto(int idProducto, string nombreProducto, string cantidadPorUnidad, decimal precioUnidad)
+    public Producto(int idProducto, string nomProducto, string cantPorUnidad, decimal v) : this(idProducto)
+    {
+        this.nomProducto = nomProducto;
+        this.cantPorUnidad = cantPorUnidad;
+        this.v = v;
+    }
+
+    public Producto(int idProducto, int idProveedor, string nombreProducto, string cantidadPorUnidad, decimal precioUnidad)
         {
             _idProducto = idProducto;
             _nombreProducto = nombreProducto;
             _cantidadPorUnidad = cantidadPorUnidad;
             _precioUnidad = precioUnidad;
+            _idProveedor = idProveedor;
         }
 
         /// METODOS GETTER Y SETTERS
@@ -77,4 +89,15 @@ using System.Web;
                 _precioUnidad = value;
             }
         }
+        public int idProveedor
+        {
+            get
+            {
+                return _idProveedor;
+            }set
+            {
+                _idProveedor = value;
+            }
+        }
+
     }
