@@ -11,7 +11,7 @@ namespace TP6_Grupo1
         public void CargarGridViewProductos(GridView gvProductos)
         {
             GestionProductos gestionProductos = new GestionProductos();
-            gvProductos.DataSource = gestionProductos.ObtenerProductos();
+            gvProductos.DataSource = gestionProductos.obtenerProducto();
             gvProductos.DataBind();
         }
     }

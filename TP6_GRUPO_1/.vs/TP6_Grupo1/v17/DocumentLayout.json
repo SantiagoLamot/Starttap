@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP6_GRUPO_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tp6_grupo_1\\tp6_grupo1\\ejercicio1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|solutionrelative:tp6_grupo1\\ejercicio1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP6_GRUPO_1\\tp6_grupo1\\ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|solutionrelative:tp6_grupo1\\ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tp6_grupo_1\\tp6_grupo1\\elementosejercicio2\\seleccionarproductos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP6_GRUPO_1\\tp6_grupo1\\elementosejercicio2\\seleccionarproductos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|solutionrelative:tp6_grupo1\\elementosejercicio2\\seleccionarproductos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tp6_grupo_1\\tp6_grupo1\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP6_GRUPO_1\\tp6_grupo1\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|solutionrelative:tp6_grupo1\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tp6_grupo_1\\tp6_grupo1\\ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{140509D4-A1DD-4529-A72E-3F81DE71AE49}|TP6_Grupo1\\TP6_Grupo1.csproj|solutionrelative:tp6_grupo1\\ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Ejercicio2.aspx",
               "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP6_GRUPO_1\\TP6_Grupo1\\Ejercicio2.aspx",
               "RelativeDocumentMoniker": "TP6_Grupo1\\Ejercicio2.aspx",
@@ -57,22 +53,9 @@
               "RelativeDocumentMoniker": "TP6_Grupo1\\ElementosEjercicio2\\SeleccionarProductos.aspx",
               "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP6_GRUPO_1\\TP6_Grupo1\\ElementosEjercicio2\\SeleccionarProductos.aspx",
               "RelativeToolTip": "TP6_Grupo1\\ElementosEjercicio2\\SeleccionarProductos.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-05-20T23:32:27.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Ejercicio1.aspx",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP6_GRUPO_1\\TP6_Grupo1\\Ejercicio1.aspx",
-              "RelativeDocumentMoniker": "TP6_Grupo1\\Ejercicio1.aspx",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP6_GRUPO_1\\TP6_Grupo1\\Ejercicio1.aspx",
-              "RelativeToolTip": "TP6_Grupo1\\Ejercicio1.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-20T23:32:00.914Z",
               "EditorCaption": ""
             },
             {
@@ -83,7 +66,7 @@
               "RelativeDocumentMoniker": "TP6_Grupo1\\Inicio.aspx",
               "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TP6_GRUPO_1\\TP6_Grupo1\\Inicio.aspx",
               "RelativeToolTip": "TP6_Grupo1\\Inicio.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-05-20T23:31:45.486Z",
               "EditorCaption": ""
