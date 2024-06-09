@@ -68,8 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Administrador\AgregarProducto.aspx" />
+    <Content Include="Administrador\SeleccionarEmpleado.aspx" />
+    <Content Include="Administrador\VerTablas.aspx" />
     <Content Include="Cliente\CarritodePedidos.aspx" />
     <Content Include="Cliente\EstadodePedidos.aspx" />
+    <Content Include="Cliente\EstadoReserva.aspx" />
     <Content Include="Login y Registro\FormularioRegistro.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -80,6 +83,20 @@
     </Compile>
     <Compile Include="Administrador\AgregarProducto.aspx.designer.cs">
       <DependentUpon>AgregarProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\SeleccionarEmpleado.aspx.cs">
+      <DependentUpon>SeleccionarEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\SeleccionarEmpleado.aspx.designer.cs">
+      <DependentUpon>SeleccionarEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\VerTablas.aspx.cs">
+      <DependentUpon>VerTablas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\VerTablas.aspx.designer.cs">
+      <DependentUpon>VerTablas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Cliente\CarritodePedidos.aspx.cs">
       <DependentUpon>CarritodePedidos.aspx</DependentUpon>
@@ -94,6 +111,13 @@
     </Compile>
     <Compile Include="Cliente\EstadodePedidos.aspx.designer.cs">
       <DependentUpon>EstadodePedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\EstadoReserva.aspx.cs">
+      <DependentUpon>EstadoReserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente\EstadoReserva.aspx.designer.cs">
+      <DependentUpon>EstadoReserva.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login y Registro\FormularioRegistro.aspx.cs">
       <DependentUpon>FormularioRegistro.aspx</DependentUpon>
