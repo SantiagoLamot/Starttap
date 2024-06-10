@@ -67,10 +67,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Administrador\AgregarProducto.aspx" />
+    <Content Include="Cliente\CarritodePedidos.aspx" />
+    <Content Include="Cliente\EstadodePedidos.aspx" />
     <Content Include="Login y Registro\FormularioRegistro.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador\AgregarProducto.aspx.cs">
+      <DependentUpon>AgregarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\AgregarProducto.aspx.designer.cs">
+      <DependentUpon>AgregarProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\CarritodePedidos.aspx.cs">
+      <DependentUpon>CarritodePedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente\CarritodePedidos.aspx.designer.cs">
+      <DependentUpon>CarritodePedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\EstadodePedidos.aspx.cs">
+      <DependentUpon>EstadodePedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente\EstadodePedidos.aspx.designer.cs">
+      <DependentUpon>EstadodePedidos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login y Registro\FormularioRegistro.aspx.cs">
       <DependentUpon>FormularioRegistro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -89,6 +113,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
