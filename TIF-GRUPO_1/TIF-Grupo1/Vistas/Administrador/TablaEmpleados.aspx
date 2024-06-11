@@ -16,7 +16,7 @@
             <asp:Label ID="lblTabladeEmpleados" runat="server" Font-Size="Medium" Text="TABLA DE EMPLEADOS"></asp:Label>
             <br />
             <br />
-            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False">
+            <asp:GridView ID="gvEmpleados" runat="server" AllowPaging="True" AutoGenerateColumns="False">
                 <Columns>
                     <asp:TemplateField HeaderText="Id"></asp:TemplateField>
                     <asp:TemplateField HeaderText="Nombre y Apellido"></asp:TemplateField>

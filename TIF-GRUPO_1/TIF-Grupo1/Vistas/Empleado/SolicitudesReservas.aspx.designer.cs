@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Vistas.Cliente
+namespace Vistas.Empleado
 {
 
 
-    public partial class DetallesDeLaCuenta
+    public partial class SolicitudesReservas
     {
 
         /// <summary>
@@ -33,30 +33,30 @@ namespace Vistas.Cliente
         protected global::System.Web.UI.WebControls.Label lblTitulo;
 
         /// <summary>
-        /// Control Label1.
+        /// Control lblListadesolicitudes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblListadesolicitudes;
 
         /// <summary>
-        /// Control lblIdPedido.
+        /// Control gvSolicitudesReservas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIdPedido;
+        protected global::System.Web.UI.WebControls.GridView gvSolicitudesReservas;
 
         /// <summary>
-        /// Control gvDetallesCuenta.
+        /// Control lbl.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvDetallesCuenta;
+        protected global::System.Web.UI.WebControls.Label lbl;
     }
 }

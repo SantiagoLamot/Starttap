@@ -77,6 +77,8 @@
     <Content Include="Cliente\EstadodePedidos.aspx" />
     <Content Include="Cliente\EstadoReserva.aspx" />
     <Content Include="Cliente\ReservaMesasCliente.aspx" />
+    <Content Include="Empleado\SolicitudesPedidos.aspx" />
+    <Content Include="Empleado\SolicitudesReservas.aspx" />
     <Content Include="Login y Registro\FormularioRegistro.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -150,6 +152,20 @@
     </Compile>
     <Compile Include="Cliente\ReservaMesasCliente.aspx.designer.cs">
       <DependentUpon>ReservaMesasCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\SolicitudesPedidos.aspx.cs">
+      <DependentUpon>SolicitudesPedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empleado\SolicitudesPedidos.aspx.designer.cs">
+      <DependentUpon>SolicitudesPedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\SolicitudesReservas.aspx.cs">
+      <DependentUpon>SolicitudesReservas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empleado\SolicitudesReservas.aspx.designer.cs">
+      <DependentUpon>SolicitudesReservas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login y Registro\FormularioRegistro.aspx.cs">
       <DependentUpon>FormularioRegistro.aspx</DependentUpon>

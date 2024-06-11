@@ -18,7 +18,7 @@
             <asp:Label ID="lblIdPedido" runat="server"></asp:Label>
             <br />
             <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+            <asp:GridView ID="gvDetallesCuenta" runat="server" AutoGenerateColumns="False">
                 <Columns>
                     <asp:TemplateField HeaderText="NombreDelProducto"></asp:TemplateField>
                     <asp:TemplateField HeaderText="Cantidad"></asp:TemplateField>

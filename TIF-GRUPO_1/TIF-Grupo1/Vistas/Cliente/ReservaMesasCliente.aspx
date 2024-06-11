@@ -16,7 +16,7 @@
             <asp:Label ID="lblMesaDeseaReservar" runat="server" Text="SELECCIONE LA MESA QUE DESEA RESERVAR"></asp:Label>
             <br />
             <br />
-            <asp:ListView ID="ListView1" runat="server">
+            <asp:ListView ID="ListViewReservas" runat="server">
             </asp:ListView>
             <br />
             <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
