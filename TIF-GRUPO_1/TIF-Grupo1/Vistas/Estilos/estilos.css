@@ -1,0 +1,93 @@
+.bodyLogoColor {
+    font-family: Arial, sans-serif;
+    background-image: url("/Imagenes/imagen01.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.bodyBlanco {
+    font-family: Arial, sans-serif;
+    background-image: url("/Imagenes/imagen02.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 300px;
+    margin: 100px auto;
+    padding-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formInicio {
+    width: 700px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.labelPrincipal {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.BotonPrincipal {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.BotonPrincipal:hover {
+    background-color: white;
+    color: black;
+}
+
+.hyperlink {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.hyperlinkParaListadoDeFunciones {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+
+}

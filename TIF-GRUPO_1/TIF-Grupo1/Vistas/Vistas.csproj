@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Administrador\AgregarProducto.aspx" />
+    <Content Include="Administrador\InformacionDeVentas.aspx" />
     <Content Include="Administrador\SeleccionarEmpleado.aspx" />
     <Content Include="Administrador\TablaClientes.aspx" />
     <Content Include="Administrador\TablaEmpleados.aspx" />
@@ -76,10 +77,16 @@
     <Content Include="Cliente\DetallesDeLaCuenta.aspx" />
     <Content Include="Cliente\EstadodePedidos.aspx" />
     <Content Include="Cliente\EstadoReserva.aspx" />
+    <Content Include="Cliente\Inicio.aspx" />
     <Content Include="Cliente\ReservaMesasCliente.aspx" />
+    <Content Include="Cliente\VerBebidas.aspx" />
     <Content Include="Empleado\SolicitudesPedidos.aspx" />
     <Content Include="Empleado\SolicitudesReservas.aspx" />
+    <Content Include="Estilos\estilos.css" />
+    <Content Include="Imagenes\imagen01.jpeg" />
+    <Content Include="Imagenes\imagen02.jpeg" />
     <Content Include="Login y Registro\FormularioRegistro.aspx" />
+    <Content Include="Login y Registro\Ingreso.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +96,13 @@
     </Compile>
     <Compile Include="Administrador\AgregarProducto.aspx.designer.cs">
       <DependentUpon>AgregarProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\InformacionDeVentas.aspx.cs">
+      <DependentUpon>InformacionDeVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\InformacionDeVentas.aspx.designer.cs">
+      <DependentUpon>InformacionDeVentas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administrador\SeleccionarEmpleado.aspx.cs">
       <DependentUpon>SeleccionarEmpleado.aspx</DependentUpon>
@@ -146,12 +160,26 @@
     <Compile Include="Cliente\EstadoReserva.aspx.designer.cs">
       <DependentUpon>EstadoReserva.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cliente\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cliente\ReservaMesasCliente.aspx.cs">
       <DependentUpon>ReservaMesasCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Cliente\ReservaMesasCliente.aspx.designer.cs">
       <DependentUpon>ReservaMesasCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\VerBebidas.aspx.cs">
+      <DependentUpon>VerBebidas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente\VerBebidas.aspx.designer.cs">
+      <DependentUpon>VerBebidas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Empleado\SolicitudesPedidos.aspx.cs">
       <DependentUpon>SolicitudesPedidos.aspx</DependentUpon>
@@ -173,6 +201,13 @@
     </Compile>
     <Compile Include="Login y Registro\FormularioRegistro.aspx.designer.cs">
       <DependentUpon>FormularioRegistro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login y Registro\Ingreso.aspx.cs">
+      <DependentUpon>Ingreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login y Registro\Ingreso.aspx.designer.cs">
+      <DependentUpon>Ingreso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
