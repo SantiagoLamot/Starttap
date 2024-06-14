@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    //Falta colocar la herencia de la clase Cliente.
-    public class Empleado
+    public class Empleado : Usuario
     {
         private int _IdEmpleado;
         private decimal _Salario;
@@ -30,7 +29,18 @@ namespace Entidades
             _Estado = Estado;
         }
 
-        //Falta el constructor con la herencia de la clase padre.
+        public Empleado(int IdEmplado, decimal Salario, Roles Rol, DateTime FechaIngreso, string Horario, bool Estado, 
+                        int idUsuario, string nombre, string apellido, string email, string contraseña, TipoUsuario tipoUsuario, string dni, string telefono, string direccion)
+                        : base(idUsuario, nombre, apellido, email, contraseña, tipoUsuario, dni, telefono, direccion)
+        {
+            _IdEmpleado = IdEmplado;
+            _Salario = Salario;
+            _Rol = Rol;
+            _FechaIngreso = FechaIngreso;
+            _Horario = Horario;
+            _Estado = Estado;
+        }
+
         public int IdEmpleado
         {
             get { return _IdEmpleado; }
