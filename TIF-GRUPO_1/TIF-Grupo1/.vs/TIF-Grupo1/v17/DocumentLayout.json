@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\entidades\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|solutionrelative:entidades\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1\\tif-grupo1\\vistas\\administrador\\informaciondeventas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\informaciondeventas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1\\tif-grupo1\\entidades\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|solutionrelative:entidades\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{218AA8E2-DAA7-47E0-A406-974AEE9467DB}|Negocio\\Negocio.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1\\tif-grupo1\\negocio\\negocio.mostrarreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218AA8E2-DAA7-47E0-A406-974AEE9467DB}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negocio.mostrarreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\vistas\\login y registro\\ingreso.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\login y registro\\ingreso.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1\\tif-grupo1\\datos\\daoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|solutionrelative:datos\\daoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1\\tif-grupo1\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|solutionrelative:datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1\\tif-grupo1\\vistas\\administrador\\mostrarreportes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\mostrarreportes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1\\tif-grupo1\\vistas\\administrador\\mostrarreportes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\mostrarreportes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1\\tif-grupo1\\vistas\\administrador\\informaciondeventas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\informaciondeventas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,40 +51,93 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Roles.cs",
-              "RelativeDocumentMoniker": "Entidades\\Roles.cs",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Roles.cs",
-              "RelativeToolTip": "Entidades\\Roles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAJAAAA",
+              "Title": "InformacionDeVentas.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\InformacionDeVentas.aspx.cs",
+              "RelativeDocumentMoniker": "Vistas\\Administrador\\InformacionDeVentas.aspx.cs",
+              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\InformacionDeVentas.aspx.cs",
+              "RelativeToolTip": "Vistas\\Administrador\\InformacionDeVentas.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T01:55:34.751Z",
+              "WhenOpened": "2024-06-14T17:26:19.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Empleado.cs",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Empleado.cs",
-              "RelativeDocumentMoniker": "Entidades\\Empleado.cs",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Empleado.cs",
-              "RelativeToolTip": "Entidades\\Empleado.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAAkAAAAHAAAA",
+              "Title": "Negocio.MostrarReportes.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Negocio\\Negocio.MostrarReportes.cs",
+              "RelativeDocumentMoniker": "Negocio\\Negocio.MostrarReportes.cs",
+              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Negocio\\Negocio.MostrarReportes.cs",
+              "RelativeToolTip": "Negocio\\Negocio.MostrarReportes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T01:46:50.262Z",
+              "WhenOpened": "2024-06-14T17:32:20.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Ingreso.aspx",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Login y Registro\\Ingreso.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Login y Registro\\Ingreso.aspx",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Login y Registro\\Ingreso.aspx",
-              "RelativeToolTip": "Vistas\\Login y Registro\\Ingreso.aspx",
+              "Title": "DaoProductos.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Datos\\DaoProductos.cs",
+              "RelativeDocumentMoniker": "Datos\\DaoProductos.cs",
+              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Datos\\DaoProductos.cs",
+              "RelativeToolTip": "Datos\\DaoProductos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T17:35:46.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Datos\\AccesoDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\AccesoDatos.cs",
+              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Datos\\AccesoDatos.cs",
+              "RelativeToolTip": "Datos\\AccesoDatos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T17:39:33.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MostrarReportes.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx.cs",
+              "RelativeDocumentMoniker": "Vistas\\Administrador\\MostrarReportes.aspx.cs",
+              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx.cs",
+              "RelativeToolTip": "Vistas\\Administrador\\MostrarReportes.aspx.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAYwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T17:31:32.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MostrarReportes.aspx",
+              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx",
+              "RelativeDocumentMoniker": "Vistas\\Administrador\\MostrarReportes.aspx",
+              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx",
+              "RelativeToolTip": "Vistas\\Administrador\\MostrarReportes.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-12T01:14:58.97Z"
+              "WhenOpened": "2024-06-14T17:31:20.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InformacionDeVentas.aspx",
+              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\InformacionDeVentas.aspx",
+              "RelativeDocumentMoniker": "Vistas\\Administrador\\InformacionDeVentas.aspx",
+              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\InformacionDeVentas.aspx",
+              "RelativeToolTip": "Vistas\\Administrador\\InformacionDeVentas.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-14T17:19:28.762Z",
+              "EditorCaption": ""
             }
           ]
         }

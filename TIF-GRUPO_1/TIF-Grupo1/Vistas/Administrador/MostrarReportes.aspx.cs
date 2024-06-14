@@ -7,14 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace Vistas.Administrador
 {
-    public partial class SeleccionarEmpleado : System.Web.UI.Page
+    public partial class MostrarReportes : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        protected void btnMostrar_Click(object sender, EventArgs e)
         {
 
         }

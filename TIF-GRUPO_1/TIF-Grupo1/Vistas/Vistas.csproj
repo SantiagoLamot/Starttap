@@ -69,7 +69,7 @@
   <ItemGroup>
     <Content Include="Administrador\AgregarProducto.aspx" />
     <Content Include="Administrador\InformacionDeVentas.aspx" />
-    <Content Include="Administrador\SeleccionarEmpleado.aspx" />
+    <Content Include="Administrador\MostrarReportes.aspx" />
     <Content Include="Administrador\TablaClientes.aspx" />
     <Content Include="Administrador\TablaEmpleados.aspx" />
     <Content Include="Administrador\VerTablas.aspx" />
@@ -104,12 +104,12 @@
     <Compile Include="Administrador\InformacionDeVentas.aspx.designer.cs">
       <DependentUpon>InformacionDeVentas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administrador\SeleccionarEmpleado.aspx.cs">
-      <DependentUpon>SeleccionarEmpleado.aspx</DependentUpon>
+    <Compile Include="Administrador\MostrarReportes.aspx.cs">
+      <DependentUpon>MostrarReportes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administrador\SeleccionarEmpleado.aspx.designer.cs">
-      <DependentUpon>SeleccionarEmpleado.aspx</DependentUpon>
+    <Compile Include="Administrador\MostrarReportes.aspx.designer.cs">
+      <DependentUpon>MostrarReportes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administrador\TablaClientes.aspx.cs">
       <DependentUpon>TablaClientes.aspx</DependentUpon>

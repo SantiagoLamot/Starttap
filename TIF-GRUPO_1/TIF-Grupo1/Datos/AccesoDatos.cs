@@ -11,7 +11,7 @@ namespace Datos
     class AccesoDatos
     {
         //Agregar nueva ruta de conexion
-        String cadenaDeConexion = @"";
+        String cadenaDeConexion = @"Data Source=localhost;Initial Catalog=TIF_ProgramacionIII;Integrated Security=True";
 
         public AccesoDatos()
         {
