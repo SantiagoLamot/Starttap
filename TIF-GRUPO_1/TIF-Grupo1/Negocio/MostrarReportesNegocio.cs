@@ -10,14 +10,19 @@ using System.Data;
 namespace Negocio
 {
 
-    public class MostrarReportes
+    public class MostrarReportesNegocio
     {
         DaoProductos daoProductos = new DaoProductos();
+        DaoClientes daoClientes = new DaoClientes();
         
         public DataTable MostrarProductos() 
         {
             return daoProductos.MostrarProductos();
         }
 
+        public DataTable MostrarClientes()
+        {
+            return daoClientes.MostrarClientes();
+        }
     }
 }

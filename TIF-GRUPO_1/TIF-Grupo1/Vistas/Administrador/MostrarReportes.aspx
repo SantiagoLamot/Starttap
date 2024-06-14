@@ -10,7 +10,7 @@
 
     <style type="text/css">
         .auto-style1 {
-            width: 433px;
+            width: 919px;
         }
     </style>
 
@@ -18,8 +18,12 @@
 <body class="bodyBlanco">
     <form id="form1" runat="server" class="auto-style1">
         <asp:Label ID="Label1" runat="server" Text="Reportes" CssClass="labelPrincipal"></asp:Label>
+        <asp:RadioButton ID="RadioButton1" runat="server" text="Productos" AutoPostBack="True" GroupName="MostrarDatos" OnCheckedChanged="RadioButton1_CheckedChanged"/>
+        <br />
+        <asp:RadioButton ID="RadioButton2" runat="server" text="Clientes" AutoPostBack="True" GroupName="MostrarDatos" OnCheckedChanged="RadioButton1_CheckedChanged"/>
+        <br />
         <asp:Button ID="btnMostrar" runat="server" OnClick="btnMostrar_Click" Text="Mostrar" />
-        <asp:GridView ID="GridView1" runat="server">
+        <asp:GridView ID="gvTabla" runat="server">
         </asp:GridView>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Ver:"></asp:Label>
