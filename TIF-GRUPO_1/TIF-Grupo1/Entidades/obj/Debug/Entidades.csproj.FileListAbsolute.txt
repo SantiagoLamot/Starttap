@@ -4,3 +4,9 @@ C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj
 C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj\Debug\Entidades.dll
 C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj\Debug\Entidades.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\bin\Debug\Entidades.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\bin\Debug\Entidades.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj\Debug\Entidades.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj\Debug\Entidades.pdb

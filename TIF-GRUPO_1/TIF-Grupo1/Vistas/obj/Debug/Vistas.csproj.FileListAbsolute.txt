@@ -179,3 +179,9 @@ C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Vistas\bin\En
 C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Vistas\bin\Negocio.dll
 C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Vistas\bin\Entidades.pdb
 C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Vistas\bin\Negocio.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Vistas\bin\Entidades.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Vistas\bin\Negocio.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Vistas\bin\Datos.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Vistas\bin\Entidades.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Vistas\bin\Negocio.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Vistas\bin\Datos.pdb
