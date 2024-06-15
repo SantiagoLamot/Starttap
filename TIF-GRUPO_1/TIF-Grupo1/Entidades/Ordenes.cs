@@ -12,22 +12,24 @@ namespace Entidades
         private Usuario _Usuario;
         private Empleado _Empleado;
         private Mesas _Mesa;
-        //Aca va la list class producto
+        private List <Producto> _Productos;
         private DateTime _Fecha;
         private decimal _Total;
         private bool _EstadoComanda;
         private bool _EstadoPreparacion;
 
-        public Ordenes() { }
+        public Ordenes() {
+            _Productos = new List<Producto>();
+        }
 
-        public Ordenes(int idOrden, Usuario usuario, Empleado empleado, Mesas mesa, /*Aca va Producto,*/ 
+        public Ordenes(int idOrden, Usuario usuario, Empleado empleado, Mesas mesa, List<Producto> productos,
                         DateTime fecha, decimal total, bool estadoComanda, bool estadoPreparacion )
         {
             _IdOrden = idOrden;
             _Usuario = usuario;
             _Empleado = empleado;
             _Mesa = mesa;
-            //Aca va producto
+            _Productos = productos ?? new List<Producto>();
             _Fecha = fecha;
             _Total = total;
             _EstadoComanda = estadoComanda;
@@ -50,7 +52,11 @@ namespace Entidades
             get { return _Mesa; }
             set { _Mesa = value; } 
         }
-        //Aca va producto
+        public List<Producto> productos
+        {
+            get { return _Productos; }
+            set { _Productos = value ?? new List<Producto>(); }
+        }
         public DateTime fecha {
             get { return _Fecha; }
             set { _Fecha = value; }
