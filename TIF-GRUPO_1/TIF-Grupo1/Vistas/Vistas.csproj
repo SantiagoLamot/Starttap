@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Administrador\AgregarProducto.aspx" />
+    <Content Include="Administrador\InformacionDeVentas.aspx" />
     <Content Include="Administrador\MostrarReportes.aspx" />
     <Content Include="Administrador\TablaClientes.aspx" />
     <Content Include="Administrador\TablaEmpleados.aspx" />
@@ -95,6 +96,13 @@
     </Compile>
     <Compile Include="Administrador\AgregarProducto.aspx.designer.cs">
       <DependentUpon>AgregarProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\InformacionDeVentas.aspx.cs">
+      <DependentUpon>InformacionDeVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\InformacionDeVentas.aspx.designer.cs">
+      <DependentUpon>InformacionDeVentas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administrador\MostrarReportes.aspx.cs">
       <DependentUpon>MostrarReportes.aspx</DependentUpon>

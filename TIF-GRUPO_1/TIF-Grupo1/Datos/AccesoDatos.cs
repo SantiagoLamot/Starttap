@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-using System.Web.UI.WebControls;
 
 namespace Datos
 {
@@ -80,22 +83,6 @@ namespace Datos
             }
             return estado;
         }
-        public DropDownList cargarDropDownList(string consulta)
-        {
-            SqlConnection connection = ObtenerConexion();
-            SqlCommand sqlCommand = new SqlCommand(consulta, connection);
-            SqlDataReader reader = sqlCommand.ExecuteReader();
-            DropDownList ddl = new DropDownList();
-            while (reader.Read())
-            {
-                string texto = reader.GetString(0); // Accede al primer campo como texto
-                int valor = reader.GetInt32(1); // Accede al segundo campo como entero (ID)
-                //para que funcionone que la consulta siempre sea select (campo texto), (campo value)
-                // Crea un nuevo ListItem con el nombre del cliente como Text y el ID del cliente como Value
-                ddl.Items.Add(new ListItem(texto, valor.ToString()));
-            }
-            connection.Close();
-            return ddl;
-        }
+
     }
 }
