@@ -1,50 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\",
+  "WorkspaceRootPath": "C:\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\entidades\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|solutionrelative:entidades\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tif-grupo_1\\tif-grupo1\\entidades\\ordenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|solutionrelative:entidades\\ordenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tif-grupo_1\\tif-grupo1\\entidades\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|solutionrelative:entidades\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\entidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|solutionrelative:entidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\datos\\daoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|solutionrelative:datos\\daoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\vistas\\administrador\\mostrarreportes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\mostrarreportes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|solutionrelative:datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\datos\\daoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|solutionrelative:datos\\daoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{218AA8E2-DAA7-47E0-A406-974AEE9467DB}|Negocio\\Negocio.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\negocio\\mostrarreportesnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{218AA8E2-DAA7-47E0-A406-974AEE9467DB}|Negocio\\Negocio.csproj|solutionrelative:negocio\\mostrarreportesnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\vistas\\administrador\\mostrarreportes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\mostrarreportes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{218AA8E2-DAA7-47E0-A406-974AEE9467DB}|Negocio\\Negocio.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\negocio\\productonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{218AA8E2-DAA7-47E0-A406-974AEE9467DB}|Negocio\\Negocio.csproj|solutionrelative:negocio\\productonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\github\\starttap\\tif-grupo_1\\tif-grupo1\\vistas\\login y registro\\formularioregistro.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\login y registro\\formularioregistro.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,150 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ordenes.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Ordenes.cs",
-              "RelativeDocumentMoniker": "Entidades\\Ordenes.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Ordenes.cs",
-              "RelativeToolTip": "Entidades\\Ordenes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T23:48:01.908Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Categoria.cs",
-              "RelativeDocumentMoniker": "Entidades\\Categoria.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Categoria.cs",
-              "RelativeToolTip": "Entidades\\Categoria.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T19:57:50.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Producto.cs",
-              "RelativeDocumentMoniker": "Entidades\\Producto.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Producto.cs",
-              "RelativeToolTip": "Entidades\\Producto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAvwBAAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T19:24:56.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Mesas.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Mesas.cs",
-              "RelativeDocumentMoniker": "Entidades\\Mesas.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Entidades\\Mesas.cs",
-              "RelativeToolTip": "Entidades\\Mesas.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T19:35:11.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DaoProductos.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Datos\\DaoProductos.cs",
-              "RelativeDocumentMoniker": "Datos\\DaoProductos.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Datos\\DaoProductos.cs",
-              "RelativeToolTip": "Datos\\DaoProductos.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T20:04:21.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MostrarReportes.aspx",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Administrador\\MostrarReportes.aspx",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx",
-              "RelativeToolTip": "Vistas\\Administrador\\MostrarReportes.aspx",
+              "Title": "FormularioRegistro.aspx",
+              "DocumentMoniker": "C:\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Login y Registro\\FormularioRegistro.aspx",
+              "RelativeDocumentMoniker": "Vistas\\Login y Registro\\FormularioRegistro.aspx",
+              "ToolTip": "C:\\GitHub\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Login y Registro\\FormularioRegistro.aspx",
+              "RelativeToolTip": "Vistas\\Login y Registro\\FormularioRegistro.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-14T19:43:42.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MostrarReportesNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Negocio\\MostrarReportesNegocio.cs",
-              "RelativeDocumentMoniker": "Negocio\\MostrarReportesNegocio.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Negocio\\MostrarReportesNegocio.cs",
-              "RelativeToolTip": "Negocio\\MostrarReportesNegocio.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T19:43:06.448Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DaoClientes.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Datos\\DaoClientes.cs",
-              "RelativeDocumentMoniker": "Datos\\DaoClientes.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Datos\\DaoClientes.cs",
-              "RelativeToolTip": "Datos\\DaoClientes.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T20:04:15.973Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AccesoDatos.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Datos\\AccesoDatos.cs",
-              "RelativeDocumentMoniker": "Datos\\AccesoDatos.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Datos\\AccesoDatos.cs",
-              "RelativeToolTip": "Datos\\AccesoDatos.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAkwGEAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T14:08:52.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MostrarReportes.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx.cs",
-              "RelativeDocumentMoniker": "Vistas\\Administrador\\MostrarReportes.aspx.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx.cs",
-              "RelativeToolTip": "Vistas\\Administrador\\MostrarReportes.aspx.cs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAqwJIAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T19:43:51.878Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProductoNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Negocio\\ProductoNegocio.cs",
-              "RelativeDocumentMoniker": "Negocio\\ProductoNegocio.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1\\TIF-Grupo1\\Negocio\\ProductoNegocio.cs",
-              "RelativeToolTip": "Negocio\\ProductoNegocio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T15:04:08.49Z"
+              "WhenOpened": "2024-06-15T21:02:54.61Z",
+              "EditorCaption": ""
             }
           ]
         }
