@@ -4,15 +4,21 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
+
 
 namespace Datos
 {
     public class DaoProductos
     {
-        AccesoDatos AccesoDatos = new AccesoDatos();
+        AccesoDatos accesoDatos = new AccesoDatos();
         public DataTable MostrarProductos() 
         {
-            return AccesoDatos.ObtenerTabla("Productos", "select * from Productos");
+            return accesoDatos.ObtenerTabla("Productos", "select * from Productos");
+        }
+        public DropDownList cargarDropDownListCategoria()
+        {
+            return accesoDatos.cargarDropDownList("select nombre, Idcategoria from Categoria");
         }
     }
 }

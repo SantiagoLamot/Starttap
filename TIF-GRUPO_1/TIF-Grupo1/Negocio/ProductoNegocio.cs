@@ -1,23 +1,20 @@
-﻿using System;
+﻿using Datos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Datos;
-using System.Data;
-
+using System.Web.UI.WebControls;
 
 namespace Negocio
 {
-
-    public class MostrarReportes
+    public class ProductoNegocio
     {
         DaoProductos daoProductos = new DaoProductos();
-        
-        public DataTable MostrarProductos() 
-        {
-            return daoProductos.MostrarProductos();
-        }
 
+        public DropDownList CargarDDLCategorias()
+        {
+            return daoProductos.cargarDropDownListCategoria();
+        }
     }
 }
