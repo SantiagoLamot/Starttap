@@ -13,13 +13,10 @@ namespace Datos
 {
     public class DaoEmpleados
     {
-
-
-
         AccesoDatos AccesoDatos = new AccesoDatos();
         public DataTable MostrarEmpleados()
         {
-           // return AccesoDatos.ObtenerTabla("Empleados", "SELECT Usuario * FROM Usuario INNER JOIN Empleado ON Usuario.IdUsuario = Empleado.IdUsuario;");
+            return AccesoDatos.ObtenerTabla("Empleados", "SELECT Usuario * FROM Usuario INNER JOIN Empleado ON Usuario.IdUsuario = Empleado.IdUsuario;");
         }    
     }
 }

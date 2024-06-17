@@ -91,3 +91,10 @@ input[type="text"], input[type="password"], input[type="email"], select {
     padding: 20px;
 
 }
+
+
+body.gridView th, body.gridView td {
+    border: 1px solid #ddd !important;
+    padding: 10px !important;
+    text-align: left !important;
+}

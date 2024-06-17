@@ -24,6 +24,8 @@
         <br />
         <asp:RadioButton ID="rbProductoMasVendido" runat="server" text="Producto mas vendido" AutoPostBack="True" GroupName="MostrarDatos" OnCheckedChanged="rbProductoMasVendido_CheckedChanged"/>
         <br />
+        <asp:RadioButton ID="rbProductoMasVendidoPorMes" runat="server" text="Producto mas vendido por mes" AutoPostBack="True" GroupName="MostrarDatos" OnCheckedChanged="rbProductoMasVendidoPorMes_CheckedChanged"/>
+        <br />
         <asp:RadioButton ID="rbProductoMasVendidoPorCategoria" runat="server" text="Producto mas vendido por categoria" AutoPostBack="True" GroupName="MostrarDatos" OnCheckedChanged="rbProductoMasVendidoPorCategoria_CheckedChanged"/>
         <br />
         <asp:RadioButton ID="rbDiaDelMesConMasVentas" runat="server" text="Dia del mes con mas ventas" AutoPostBack="True" GroupName="MostrarDatos" OnCheckedChanged="rbDiaDelMesConMasVentas_CheckedChanged"/>
@@ -34,22 +36,25 @@
         <asp:TextBox ID="tbHastaFecha" runat="server" TextMode="Date"></asp:TextBox>
         <br />
         <asp:Label ID="lMondoDesde" runat="server" Text="Desde monto: "></asp:Label>
-        <asp:TextBox ID="tbDesdeMonto" runat="server" TextMode="Number"></asp:TextBox>
+        <asp:TextBox ID="tbDesdeMonto" runat="server" CssClass="TextBoxChico" ></asp:TextBox>
         <asp:Label ID="lMontoHasta" runat="server" Text="hasta: "></asp:Label>
-        <asp:TextBox ID="tbHastaMonto" runat="server" TextMode="Number"></asp:TextBox>
+        <asp:TextBox ID="tbHastaMonto" runat="server" CssClass="TextBoxChico"></asp:TextBox>
         <br />
-        <asp:Label ID="lCategorias" runat="server" Text="Label"></asp:Label>
-        <asp:DropDownList ID="ddlCategorias" runat="server" AutoPostBack="True">
+        <asp:Label ID="lCategorias" runat="server" Text="Seleccionar categoria"></asp:Label>
+        <asp:DropDownList ID="ddlCategorias" runat="server" AutoPostBack="True" >
         </asp:DropDownList>
         <br />
+        <asp:Label ID="lMes" runat="server" Text="Seleccionar mes"></asp:Label>
+        <asp:TextBox ID="tbMes" runat="server" TextMode="Month"></asp:TextBox>
         <br />
-        <asp:Panel ID="PanelFiltros" runat="server">
-        </asp:Panel>
         <br />
-        <asp:Button ID="btnMostrar" runat="server" OnClick="btnMostrar_Click" Text="Mostrar" OnPreRender="btnMostrar_PreRender" />
-        <asp:GridView ID="gvTabla" runat="server">
+        <asp:Button ID="btnMostrar" runat="server" OnClick="btnMostrar_Click" Text="Mostrar" CssClass="BotonPrincipal" ValidationGroup="gpMostrar" />
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tbHastaMonto" ValidationExpression="^\d+(?:\.\d+)?$" ValidationGroup="gpMostrar"></asp:RegularExpressionValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbDesdeMonto" ValidationExpression="^\d+(?:\.\d+)?$" ValidationGroup="gpMostrar"></asp:RegularExpressionValidator>
+        <div class="gridViewContainer">
+        <asp:GridView ID="gvTabla" runat="server" CssClass="gridView">
         </asp:GridView>
-        <br />
+        </div>
             
         <asp:Label ID="idInfo" runat="server"></asp:Label>
         </form>
