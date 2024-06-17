@@ -16,15 +16,44 @@
             <asp:Label ID="Label1" runat="server" Text="TABLA DE CLIENTES"></asp:Label>
             <br />
             <br />
-            <asp:GridView ID="gvClientes" runat="server" AllowPaging="True" AutoGenerateColumns="False">
+            <asp:GridView ID="gvClientes" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
                 <Columns>
-                    <asp:TemplateField HeaderText="Id Cliente"></asp:TemplateField>
-                    <asp:TemplateField HeaderText="Nombre y Apellido"></asp:TemplateField>
-                    <asp:TemplateField HeaderText="Documento"></asp:TemplateField>
-                    <asp:TemplateField HeaderText="Direccion"></asp:TemplateField>
-                    <asp:TemplateField HeaderText="Telefono"></asp:TemplateField>
+                    <asp:TemplateField HeaderText="Id Cliente">
+                        <ItemTemplate>
+                            <asp:Label ID="l_it_IdCliente" runat="server" Text='<%# Bind("IdUsuario") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Nombre y Apellido">
+                        <ItemTemplate>
+                            <asp:Label ID="l_it_NombreApellido" runat="server" Text='<%# Bind("NombreApellido") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Documento">
+                        <ItemTemplate>
+                            <asp:Label ID="l_it_Documento" runat="server" Text='<%# Bind("DNI") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Direccion">
+                        <ItemTemplate>
+                            <asp:Label ID="l_it_Direccion" runat="server" Text='<%# Bind("Direccion") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Telefono">
+                        <ItemTemplate>
+                            <asp:Label ID="l_it_Telefono" runat="server" Text='<%# Bind("Telefono") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
                     <asp:ButtonField ButtonType="Button" CommandName="eventoDarBajaCliente" Text="Dar de baja" />
                 </Columns>
+                <FooterStyle BackColor="White" ForeColor="#333333" />
+                <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="White" ForeColor="#333333" />
+                <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                <SortedAscendingHeaderStyle BackColor="#487575" />
+                <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                <SortedDescendingHeaderStyle BackColor="#275353" />
             </asp:GridView>
         </div>
     </form>

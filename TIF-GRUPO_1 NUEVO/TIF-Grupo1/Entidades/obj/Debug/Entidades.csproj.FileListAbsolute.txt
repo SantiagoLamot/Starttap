@@ -22,3 +22,9 @@ C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj\Deb
 C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj\Debug\Entidades.dll
 C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\bin\Debug\Entidades.dll
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\obj\Debug\Entidades.dll
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\obj\Debug\Entidades.pdb
