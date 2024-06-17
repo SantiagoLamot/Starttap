@@ -9,18 +9,18 @@ using Negocio;
 
 namespace Vistas.Administrador
 {
-    //public partial class TablaEmpleados : System.Web.UI.Page
-    //{
-    //    EmpleadosNegocio empleadosNegocio = new EmpleadosNegocio(); 
+    public partial class TablaEmpleados : System.Web.UI.Page
+    {
+        EmpleadosNegocio empleadosNegocio = new EmpleadosNegocio();
 
-    //    protected void Page_Load(object sender, EventArgs e)
-    //    {
-    //        if (!IsPostBack)
-    //        {
-    //            DataTable TablaEmpleados = empleadosNegocio.CargarEmpleados();
-    //            gvEmpleados.DataSource = TablaEmpleados;
-    //            gvEmpleados.DataBind();
-    //        }
-    //    }
-    //}
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                DataTable TablaEmpleados = empleadosNegocio.MostrarEmpleados();
+                gvEmpleados.DataSource = TablaEmpleados;
+                gvEmpleados.DataBind();
+            }
+        }
+    }
 }

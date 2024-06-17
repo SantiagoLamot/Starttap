@@ -42,3 +42,14 @@ C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Negocio\bin\Debug
 C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Negocio\bin\Debug\Datos.pdb
 C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Negocio\bin\Debug\Entidades.pdb
 C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Negocio.dll
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Negocio.pdb
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Datos.dll
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Entidades.dll
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Datos.pdb
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Entidades.pdb
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.dll
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.pdb

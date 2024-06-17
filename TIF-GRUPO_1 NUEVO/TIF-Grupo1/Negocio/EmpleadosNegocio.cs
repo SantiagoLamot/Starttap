@@ -13,10 +13,10 @@ namespace Negocio
     {
         DaoEmpleados daoEmpleados = new DaoEmpleados();
 
-        //public DataTable CargarEmpleados()
-        //{
-        //    return daoEmpleados.MostrarEmpleados();
-        //}
+        public DataTable MostrarEmpleados()
+        {
+            return daoEmpleados.MostrarEmpleado();
+        }
 
         public DataTable getTabla()
         {

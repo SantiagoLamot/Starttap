@@ -130,6 +130,7 @@
     </Compile>
     <Compile Include="Administrador\TablaEmpleados.aspx.cs">
       <DependentUpon>TablaEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Administrador\TablaEmpleados.aspx.designer.cs">
       <DependentUpon>TablaEmpleados.aspx</DependentUpon>
