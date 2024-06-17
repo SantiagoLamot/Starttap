@@ -1,0 +1,36 @@
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Datos.dll
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Datos.pdb
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Entidades.dll
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Entidades.pdb
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.dll
+C:\Users\Santiago\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Datos.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Datos.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Entidades.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Entidades.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.pdb
+C:\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Datos.dll
+C:\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Datos.pdb
+C:\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Entidades.dll
+C:\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Entidades.pdb
+C:\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.dll
+C:\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.pdb
+C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.dll
+C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.pdb
+C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Datos.dll
+C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Datos.pdb
+C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Entidades.dll
+C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\bin\Debug\Entidades.pdb
+C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1\TIF-Grupo1\Datos\obj\Debug\Datos.csproj.CopyComplete
