@@ -14,11 +14,14 @@ namespace Vistas.Administrador
     {
 
         MostrarReportesNegocio mostrarReportesNegocio = new MostrarReportesNegocio();
-        int RadioButtonSeleccionado;
+        int RadioButtonSeleccionado = 0;
         ProductoNegocio productoNegocio = new ProductoNegocio();
+
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 desactivarControles();
             }
@@ -28,25 +31,30 @@ namespace Vistas.Administrador
                 {
                     RadioButtonSeleccionado = Convert.ToInt32(ViewState["RadioButtonSeleccionado"]);
                 }
-                
+
             }
 
         }
         private void desactivarControles()
         {
             ///RB 1
-            lFechaDesde.Visible= false;
+            lFechaDesde.Visible = false;
             tbDesdeFecha.Visible = false;
-            lFechaHasta.Visible= false;
+            lFechaHasta.Visible = false;
             tbHastaFecha.Visible = false;
             ///RB 2
-            lMondoDesde.Visible= false;
+            lMondoDesde.Visible = false;
             tbDesdeMonto.Visible = false;
-            lMontoHasta.Visible= false;
+            lMontoHasta.Visible = false;
             tbHastaMonto.Visible = false;
             ///RB 4
+            lMes.Visible = false;
+            tbMes.Visible = false;
+            ///RB 5
             lCategorias.Visible = false;
             ddlCategorias.Visible = false;
+            ddlCategorias.Items.Clear();
+            ddlCategorias.DataBind();
         }
         protected void rbVentasPor_CheckedChanged(object sender, EventArgs e)
         {
@@ -67,13 +75,22 @@ namespace Vistas.Administrador
             }
 
         }
-        
+
         protected void rbProductoMasVendido_CheckedChanged(object sender, EventArgs e)
         {
             if (rbProductoMasVendido.Checked)
             {
                 ViewState["RadioButtonSeleccionado"] = 3;
-                PanelFiltros.Controls.Clear();
+                desactivarControles();
+            }
+        }
+
+        protected void rbProductoMasVendidoPorMes_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbProductoMasVendidoPorMes.Checked)
+            {
+                ViewState["RadioButtonSeleccionado"] = 4;
+                motrarPanelMes();
             }
         }
 
@@ -81,7 +98,7 @@ namespace Vistas.Administrador
         {
             if (rbProductoMasVendidoPorCategoria.Checked)
             {
-                ViewState["RadioButtonSeleccionado"] = 4;
+                ViewState["RadioButtonSeleccionado"] = 5;
                 motrarPanelProductoMasVendidoPorCategoria();
             }
         }
@@ -90,23 +107,13 @@ namespace Vistas.Administrador
         {
             if (rbDiaDelMesConMasVentas.Checked)
             {
-                ViewState["RadioButtonSeleccionado"] = 5;
-                motrarPanelDiaDelMesConMasVentas();
+                ViewState["RadioButtonSeleccionado"] = 6;
+                motrarPanelMes();
             }
         }
         private void motrarPanelVentasPorFecha()
         {
-            //PanelFiltros.Controls.Clear();
-            //Label lbFechaDesde = new Label { Text = "Desde:" };
-            //Label lbFechaHasta = new Label { Text = "Hasta:" };
-            //TextBox FechaDesde = new TextBox { ID="tbFechaDesde" };
-            //FechaDesde.TextMode = TextBoxMode.Date;
-            //TextBox FechaHasta = new TextBox { ID = "tbFechaHasta" };
-            //FechaHasta.TextMode = TextBoxMode.Date;
-            //PanelFiltros.Controls.Add(lbFechaDesde);
-            //PanelFiltros.Controls.Add(FechaDesde);
-            //PanelFiltros.Controls.Add(lbFechaHasta);
-            //PanelFiltros.Controls.Add(FechaHasta);
+            desactivarControles();
             lFechaDesde.Visible = true;
             tbDesdeFecha.Visible = true;
             lFechaHasta.Visible = true;
@@ -117,17 +124,7 @@ namespace Vistas.Administrador
 
         private void motrarPanelVentasPorMonto()
         {
-            //PanelFiltros.Controls.Clear();
-            //Label lbDesdeMonto = new Label { Text = "Desde: $" };
-            //Label lbHastaMonto = new Label { Text = "Hasta: $" };
-            //TextBox FechaDesde = new TextBox { ID = "tbFechaDesde" };
-            //FechaDesde.TextMode = TextBoxMode.Number;
-            //TextBox FechaHasta = new TextBox { ID = "tbFechaHasta" };
-            //FechaHasta.TextMode = TextBoxMode.Number;
-            //PanelFiltros.Controls.Add(lbDesdeMonto);
-            //PanelFiltros.Controls.Add(FechaDesde);
-            //PanelFiltros.Controls.Add(lbHastaMonto);
-            //PanelFiltros.Controls.Add(FechaHasta);
+            desactivarControles();
             lMondoDesde.Visible = true;
             tbDesdeMonto.Visible = true;
             lMontoHasta.Visible = true;
@@ -138,56 +135,109 @@ namespace Vistas.Administrador
 
         private void motrarPanelProductoMasVendidoPorCategoria()
         {
-            //PanelFiltros.Controls.Clear();
-            //Label lbCategoria = new Label { Text = "Categoria:" };
-            //PanelFiltros.Controls.Add(lbCategoria);
-            //PanelFiltros.Controls.Add(ddlCategoria);
+            desactivarControles();
             lCategorias.Visible = true;
             ddlCategorias.Visible = true;
-            ddlCategorias.DataSource = (IDataAdapter)productoNegocio.CargarDDLCategorias();
+
+            productoNegocio.CargarDDLCategorias(ref ddlCategorias);
             ddlCategorias.DataBind();
             gvTabla.DataSource = null;
             gvTabla.DataBind();
         }
 
-        private void motrarPanelDiaDelMesConMasVentas()
+        private void motrarPanelMes()
         {
-            PanelFiltros.Controls.Clear();
-            Label lbSeleccionarMes = new Label { Text = "Mes:" };
-            TextBox tbMes = new TextBox { ID = "tbMes" };
-            tbMes.TextMode = TextBoxMode.Month;
-            PanelFiltros.Controls.Add(lbSeleccionarMes);
-            PanelFiltros.Controls.Add(tbMes);
+            desactivarControles();
+            lMes.Visible = true;
+            tbMes.Visible = true;
             gvTabla.DataSource = null;
             gvTabla.DataBind();
+
         }
 
         protected void btnMostrar_Click(object sender, EventArgs e)
         {
+
+            DataTable dataTable;
+            DateTime fecha;
+            DateTime fecha2;
+            idInfo.Text = string.Empty;
+            gvTabla.DataSource = null;
+            gvTabla.DataBind();
             switch (RadioButtonSeleccionado)
             {
                 case 1:
-                    idInfo.Text = tbDesdeFecha.Text +"----"+ tbHastaFecha.Text;
-                    
+                    try
+                    {
+                        fecha = DateTime.Parse(tbDesdeFecha.Text);
+                        fecha2 = DateTime.Parse(tbHastaFecha.Text);
+                        dataTable = mostrarReportesNegocio.VentasPorRangoFechasNegocio(fecha, fecha2);
+                        if (dataTable.Rows.Count > 0 && dataTable != null)
+                        {
+                            gvTabla.DataSource = dataTable;
+                            gvTabla.DataBind();
+                        }
+                        else
+                        {
+                            idInfo.Text = "No se encontraron registros en el rango establecido, revíselo.";
+                        }
+                    }
+                    catch
+                    {
+                        idInfo.Text = "No se encontraron registros en el rango establecido, revíselo.";
+                    }
                     break;
 
                 case 2:
-                    idInfo.Text = "entro al " + RadioButtonSeleccionado;
-
+                    dataTable = mostrarReportesNegocio.VentasPorRangoMontosNegocio(tbDesdeMonto.Text, tbHastaMonto.Text);
+                    if (dataTable != null && dataTable.Rows.Count > 0)
+                    {
+                        gvTabla.DataSource = dataTable;
+                        gvTabla.DataBind();
+                    }
+                    else
+                    {
+                        idInfo.Text = "No se encontraron registros con los montos ingresados, revíselos.";
+                    }
                     break;
 
                 case 3:
-                    idInfo.Text = "entro al " + RadioButtonSeleccionado;
+
+                    idInfo.Text = mostrarReportesNegocio.NegocioProductoMasVendido();
                     break;
 
 
                 case 4:
-                    idInfo.Text = "entro al " + RadioButtonSeleccionado;
-
+                    try
+                    {
+                        fecha = DateTime.Parse(tbMes.Text);
+                        idInfo.Text = mostrarReportesNegocio.ProductoMasVendidoPorMes(fecha);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        idInfo.Text = "fecha invalida, revísela.";
+                    }
                     break;
 
                 case 5:
-                    idInfo.Text = "entro al " + RadioButtonSeleccionado;
+
+                    idInfo.Text = mostrarReportesNegocio.ProductoMasVendidoPorCategoria(ddlCategorias.SelectedValue.ToString());
+                    break;
+
+                case 6:
+                    try
+                    {
+                        fecha = DateTime.Parse(tbMes.Text);
+                        idInfo.Text = mostrarReportesNegocio.DiaConMasVentas(fecha);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        idInfo.Text = "No se encontraron registros con el rango ingresado, revíselo.";
+
+                    }
+
                     break;
 
                 default:
@@ -195,44 +245,7 @@ namespace Vistas.Administrador
                     break;
             }
 
-            }
-            public static Control FindControlRecursive(Control root, string id)
-        {
-            if (root.ID == id)
-                return root;
-
-            foreach (Control child in root.Controls)
-            {
-                Control found = FindControlRecursive(child, id);
-                if (found != null)
-                    return found;
-            }
-
-            return null;
         }
 
-        protected void btnMostrar_PreRender(object sender, EventArgs e)
-        {
-
-        }
-        //if (rbVentasPorFechas.Checked)
-        //{
-        //    DataTable dataTable =  mostrarReportesNegocio.MostrarProductos();
-        //    gvTabla.DataSource = dataTable;
-        //    gvTabla.DataBind();
-        //}
-
-        //else
-        //{
-        //    DataTable dataTable = mostrarReportesNegocio.MostrarClientes();
-        //    gvTabla.DataSource = dataTable;
-        //    gvTabla.DataBind();
-        //}
-
-        //protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
-        //{
-        //    gvTabla.DataSource =null;
-        //    gvTabla.DataBind();
-        //}
     }
 }

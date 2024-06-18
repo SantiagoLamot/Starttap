@@ -12,9 +12,9 @@ namespace Negocio
     {
         DaoProductos daoProductos = new DaoProductos();
 
-        public DropDownList CargarDDLCategorias()
+        public void CargarDDLCategorias(ref DropDownList ddl)
         {
-            return daoProductos.cargarDropDownListCategoria();
+            daoProductos.cargarDropDownListCategoria(ref ddl);
         }
     }
 }

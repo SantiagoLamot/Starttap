@@ -140,5 +140,24 @@ namespace Datos
             int filasAfectadas = cmd.ExecuteNonQuery();
             return filasAfectadas;
         }
+
+        public DataTable ObtenerTablaDosParametros(String NombreTabla, String sql, String NomParam1, String NomParam2, String valor1, String Valor2)
+        {
+            DataSet ds = new DataSet();
+            SqlConnection Conexion = ObtenerConexion();
+            SqlDataAdapter adp = PrepararAdaptadorDosParametros(Conexion, sql, NomParam1, NomParam2, valor1, Valor2);
+            adp.Fill(ds, NombreTabla);
+            Conexion.Close();
+            return ds.Tables[NombreTabla];
+        }
+
+        public SqlDataAdapter PrepararAdaptadorDosParametros(SqlConnection connection, string consulta, string param1, string param2, string valor1, string valor2)
+        {
+            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, connection);
+            adaptador.SelectCommand.Parameters.AddWithValue(param1, valor1);
+            adaptador.SelectCommand.Parameters.AddWithValue(param2, valor2);
+            return adaptador;
+        }
+
     }
 }
