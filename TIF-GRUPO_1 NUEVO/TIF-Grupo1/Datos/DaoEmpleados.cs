@@ -28,9 +28,19 @@ namespace Datos
             return tabla;
         }
 
-        public int UpdateEmpleado(int id, decimal salario)
+        public int UpdateSalarioEmpleado(int id, decimal salario)
         {
             return AccesoDatos.updateCampo("UPDATE Empleado SET Salario = " + salario + " WHERE IdEmpleado = " + id + ";");
+        }
+
+        public int IncrementarSalario(int id, decimal salario)
+        {
+            return AccesoDatos.updateCampo("UPDATE Empleado SET Salario = Salario + "+ salario +" WHERE IdRol ="+ id +";");
+        }
+
+        public int UpdateEstadoEmpledo(int id)
+        {
+            return AccesoDatos.updateCampo("UPDATE Empleado SET Estado = CASE  WHEN Estado = 1 THEN 0 ELSE 1 END WHERE IdEmpleado ="+ id +";");
         }
     }
 }

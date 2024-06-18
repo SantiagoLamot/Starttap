@@ -23,9 +23,20 @@ namespace Negocio
             return daoEmpleados.getTablaEmpleado();
         }
 
-        public int ActualizarSalario(int id, decimal incremento)
+        public int ActualizarSalarioPorEmpleado(int id, decimal incremento)
         {
-            return daoEmpleados.UpdateEmpleado(id, incremento);
+            return daoEmpleados.UpdateSalarioEmpleado(id, incremento);
+        }
+
+
+        public int IncrementarSalarioEmpleados(int id, decimal incremento)
+        {
+            return daoEmpleados.IncrementarSalario(id, incremento);
+        }
+
+        public int CambiarEstadoEmpleado(int id)
+        {
+            return daoEmpleados.UpdateEstadoEmpledo(id);
         }
 
 
