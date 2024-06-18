@@ -33,5 +33,20 @@ namespace Negocio
         {
             return daoClientes.MostrarClientesSinContraseñaNiEmail();
         }
+
+        public DataTable cargarGridViewClientesInactivos()
+        {
+            return daoClientes.MostrarClientesInactivosSinContraseñaNiEmail();
+        }
+
+        public int DesactivarUsuarioNegocio(int idCli)
+        {
+            return daoClientes.DesacticvarCliente(idCli);
+        }
+
+        public int ActivarClienteNegocio(int idCli)
+        {
+            return daoClientes.ActivarCliente(idCli);
+        }
     }
 }

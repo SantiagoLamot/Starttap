@@ -6,33 +6,33 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Vistas.Administrador
+namespace Vistas
 {
-    public partial class TablaClientes : System.Web.UI.Page
+    public partial class ClientesInactivos : System.Web.UI.Page
     {
         NegocioUsuario negocioUsuario = new NegocioUsuario();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                cargarGridViewClientes();
+                cargarGridViewClientesInactivos();
             }
         }
-        private void cargarGridViewClientes()
+        private void cargarGridViewClientesInactivos()
         {
-            gvClientes.DataSource = negocioUsuario.cargarGridViewClientes();
+            gvClientes.DataSource = negocioUsuario.cargarGridViewClientesInactivos();
             gvClientes.DataBind();
         }
 
         protected void gvClientes_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            if(e.CommandName == "eventoDarBajaCliente")
+            if (e.CommandName == "eventoDarAltaCliente")
             {
                 int fila = Convert.ToInt32(e.CommandArgument);
                 int idCliente = int.Parse(((Label)gvClientes.Rows[fila].FindControl("l_it_IdCliente")).Text);
-                if(negocioUsuario.DesactivarUsuarioNegocio(idCliente)==1)
+                if (negocioUsuario.ActivarClienteNegocio(idCliente) == 1)
                 {
-                    cargarGridViewClientes();
+                    cargarGridViewClientesInactivos();
                 }
             }
         }

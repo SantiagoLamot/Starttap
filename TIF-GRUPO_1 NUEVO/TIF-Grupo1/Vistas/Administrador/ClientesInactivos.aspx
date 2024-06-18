@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TablaClientes.aspx.cs" Inherits="Vistas.Administrador.TablaClientes" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ClientesInactivos.aspx.cs" Inherits="Vistas.ClientesInactivos" %>
 
 <!DOCTYPE html>
 
@@ -13,7 +13,7 @@
             <asp:Label ID="lblTitulo" runat="server" Font-Size="XX-Large" Text="STARTAP BREWING CO."></asp:Label>
             <br />
             <br />
-            <asp:Label ID="Label1" runat="server" Text="TABLA DE CLIENTES"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="TABLA DE CLIENTES INACTIVOS"></asp:Label>
             <br />
             <br />
             <asp:GridView ID="gvClientes" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" OnRowCommand="gvClientes_RowCommand">
@@ -43,7 +43,7 @@
                             <asp:Label ID="l_it_Telefono" runat="server" Text='<%# Bind("Telefono") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:ButtonField ButtonType="Button" CommandName="eventoDarBajaCliente" Text="Dar de baja" />
+                    <asp:ButtonField ButtonType="Button" CommandName="eventoDarAltaCliente" Text="Dar de alta" />
                 </Columns>
                 <FooterStyle BackColor="White" ForeColor="#333333" />
                 <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
@@ -56,7 +56,7 @@
                 <SortedDescendingHeaderStyle BackColor="#275353" />
             </asp:GridView>
         </div>
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Administrador/ClientesInactivos.aspx">Clientes inactivos</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Administrador/TablaClientes.aspx">Clientes activos</asp:HyperLink>
     </form>
 </body>
 </html>

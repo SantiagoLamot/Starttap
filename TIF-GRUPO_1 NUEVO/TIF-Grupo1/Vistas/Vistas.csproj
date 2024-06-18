@@ -74,6 +74,7 @@
     <Content Include="Administrador\TablaClientes.aspx" />
     <Content Include="Administrador\TablaEmpleados.aspx" />
     <Content Include="Administrador\VerTablas.aspx" />
+    <Content Include="Administrador\ClientesInactivos.aspx" />
     <Content Include="Cliente\CarritodePedidos.aspx" />
     <Content Include="Cliente\DetallesDeLaCuenta.aspx" />
     <Content Include="Cliente\EstadodePedidos.aspx" />
@@ -141,6 +142,13 @@
     </Compile>
     <Compile Include="Administrador\VerTablas.aspx.designer.cs">
       <DependentUpon>VerTablas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ClientesInactivos.aspx.cs">
+      <DependentUpon>ClientesInactivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\ClientesInactivos.aspx.designer.cs">
+      <DependentUpon>ClientesInactivos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Cliente\CarritodePedidos.aspx.cs">
       <DependentUpon>CarritodePedidos.aspx</DependentUpon>

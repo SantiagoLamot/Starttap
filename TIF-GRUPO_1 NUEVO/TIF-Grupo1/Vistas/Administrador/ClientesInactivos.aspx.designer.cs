@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Vistas.Administrador
+namespace Vistas
 {
 
 
-    public partial class TablaClientes
+    public partial class ClientesInactivos
     {
 
         /// <summary>
