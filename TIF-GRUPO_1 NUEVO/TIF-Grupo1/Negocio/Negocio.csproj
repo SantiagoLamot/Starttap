@@ -48,6 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EmpleadosNegocio.cs" />
     <Compile Include="RegistroEmpleado.cs" />
+    <Compile Include="RegistroUsuarioNegocio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">

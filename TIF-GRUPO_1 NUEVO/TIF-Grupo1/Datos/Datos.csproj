@@ -47,6 +47,7 @@
     <Compile Include="DaoEmpleados.cs" />
     <Compile Include="DaoOrdenes.cs" />
     <Compile Include="DaoProductos.cs" />
+    <Compile Include="DaoRegistro.cs" />
     <Compile Include="DaoUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

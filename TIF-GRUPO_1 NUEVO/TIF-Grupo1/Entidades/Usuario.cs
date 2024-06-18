@@ -17,13 +17,14 @@ namespace Entidades
         private string _dni;
         private string _telefono;
         private string _direccion;
+        private int _RolID;
 
         public Usuario()
         {
             
         }
 
-        public Usuario(int idUsuario, string nombre, string apellido, string email, string contraseña, TipoUsuario tipoUsuario, string dni, string telefono, string direccion)
+        public Usuario(int idUsuario, string nombre, string apellido, string email, string contraseña, TipoUsuario tipoUsuario, string dni, string telefono, string direccion, int rolID)
         {
             _idUsuario = idUsuario;
             _nombre = nombre;
@@ -34,6 +35,7 @@ namespace Entidades
             _dni = dni;
             _telefono = telefono;
             _direccion = direccion;
+            _RolID = rolID;
         }
 
         public Usuario(string Email, string Contraseña)
