@@ -34,7 +34,11 @@
             <br />
             <asp:Label ID="lblTablas" runat="server" BorderStyle="Outset" Text="Seleccione una Tabla"></asp:Label>
 &nbsp;<asp:DropDownList ID="ddlTablas" runat="server">
-                <asp:ListItem>-seleccione una tabla-</asp:ListItem>
+                <asp:ListItem Value="-1">-seleccione una tabla-</asp:ListItem>
+                <asp:ListItem Value="1">Productos</asp:ListItem>
+                <asp:ListItem Value="2">Empleados</asp:ListItem>
+                <asp:ListItem Value="3">Clientes</asp:ListItem>
+                <asp:ListItem Value="4">Ventas</asp:ListItem>
             </asp:DropDownList>
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -42,7 +46,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnVer" runat="server" BorderStyle="Inset" Text="Ver" ValidationGroup="GrupoVer" />
+            <asp:Button ID="btnVer" runat="server" BorderStyle="Inset" Text="Ver" ValidationGroup="GrupoVer" OnClick="btnVer_Click" />
         </div>
     </form>
 </body>

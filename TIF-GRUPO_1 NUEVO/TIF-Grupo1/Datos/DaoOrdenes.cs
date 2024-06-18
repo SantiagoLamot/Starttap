@@ -15,7 +15,9 @@ namespace Datos
             string fecha = fe1.ToString("yyyy-dd-MM");
             string fecha2 = fe2.ToString("yyyy-dd-MM");
 
-            string consulta = "SELECT * FROM Ordenes WHERE Fecha BETWEEN '" + fecha + "' AND '" + fecha2 + "';";
+            string consulta = "SELECT CONCAT(U.Nombre, ' ' ,U.Apellido) as Cliente, (select concat(Us.Nombre, ' ', Us.Apellido) from Usuario as Us where Us.IdUsuario = E.IdEmpleado) as Empleado, " +
+                "CONVERT(DATE, O.Fecha) as Fecha, O.Total as Monto FROM Ordenes as O inner join Usuario as U on O.IdUsuario = U.IdUsuario inner join Empleado as E on O.IdEmpleado = O.IdEmpleado " +
+                "inner join Mesa as M on O.IdMesa = M.IdMesa WHERE O.Fecha BETWEEN '" + fecha + "' AND '" + fecha2 + "';";
             return accesoDatos.ObtenerTabla("Ventas", consulta);
         }
 
@@ -25,7 +27,9 @@ namespace Datos
             {
                 Decimal monto1 = Decimal.Parse(m1);
                 Decimal monto2 = Decimal.Parse(m2);
-                string consulta = "SELECT * FROM Ordenes WHERE Total BETWEEN " + monto1 + " AND " + monto2 + ";";
+                string consulta = "SELECT CONCAT(U.Nombre, ' ' ,U.Apellido) as Cliente, (select concat(Us.Nombre, ' ', Us.Apellido) from Usuario as Us where Us.IdUsuario = E.IdEmpleado) as Empleado, " +
+                    "CONVERT(DATE, O.Fecha) as Fecha, O.Total as Monto FROM Ordenes as O inner join Usuario as U on O.IdUsuario = U.IdUsuario inner join Empleado as E on O.IdEmpleado = O.IdEmpleado " +
+                    "inner join Mesa as M on O.IdMesa = M.IdMesa WHERE O.Total BETWEEN " + monto1 + " AND " + monto2 + ";";
                 return accesoDatos.ObtenerTabla("Ventas", consulta);
             }
             catch

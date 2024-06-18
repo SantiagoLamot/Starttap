@@ -13,5 +13,31 @@ namespace Vistas.Administrador
         {
 
         }
+
+        protected void btnVer_Click(object sender, EventArgs e)
+        {
+            switch (ddlTablas.SelectedValue)
+            {
+                    
+                case "1":
+                    //Response.Redirect("/Administrador/TablaProductos.aspx");
+                    
+                    break;
+                case "2":
+                    Response.Redirect("/Administrador/TablaEmpleados.aspx");
+
+                    break;
+                case "3":
+                    Response.Redirect("/Administrador/TablaClientes.aspx");
+                    break;
+                case "4":
+                    //Response.Redirect("/Administrador/TablaVentas.aspx");
+                    break;
+                default:
+                    
+                    break;
+
+            }
+        }
     }
 }

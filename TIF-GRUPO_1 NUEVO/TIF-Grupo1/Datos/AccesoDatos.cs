@@ -81,12 +81,11 @@ namespace Datos
             }
             return estado;
         }
-        public DropDownList cargarDropDownList(string consulta)
+        public DropDownList cargarDropDownList(string consulta, ref DropDownList ddl)
         {
             SqlConnection connection = ObtenerConexion();
             SqlCommand sqlCommand = new SqlCommand(consulta, connection);
             SqlDataReader reader = sqlCommand.ExecuteReader();
-            DropDownList ddl = new DropDownList();
             while (reader.Read())
             {
                 string texto = reader.GetString(0); // Accede al primer campo como texto
@@ -141,6 +140,16 @@ namespace Datos
             return filasAfectadas;
         }
 
+        public DataTable ObtenerTablaUnParametro(String NombreTabla, String sql, String NomParam1, String valor1)
+        {
+            DataSet ds = new DataSet();
+            SqlConnection Conexion = ObtenerConexion();
+            SqlDataAdapter adp = PrepararAdaptadorUnParametro(Conexion, sql, NomParam1, valor1);
+            adp.Fill(ds, NombreTabla);
+            Conexion.Close();
+            return ds.Tables[NombreTabla];
+        }
+
         public DataTable ObtenerTablaDosParametros(String NombreTabla, String sql, String NomParam1, String NomParam2, String valor1, String Valor2)
         {
             DataSet ds = new DataSet();
@@ -149,6 +158,13 @@ namespace Datos
             adp.Fill(ds, NombreTabla);
             Conexion.Close();
             return ds.Tables[NombreTabla];
+        }
+
+        public SqlDataAdapter PrepararAdaptadorUnParametro(SqlConnection connection, string consulta, string param1, string valor1)
+        {
+            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, connection);
+            adaptador.SelectCommand.Parameters.AddWithValue(param1, valor1);
+            return adaptador;
         }
 
         public SqlDataAdapter PrepararAdaptadorDosParametros(SqlConnection connection, string consulta, string param1, string param2, string valor1, string valor2)

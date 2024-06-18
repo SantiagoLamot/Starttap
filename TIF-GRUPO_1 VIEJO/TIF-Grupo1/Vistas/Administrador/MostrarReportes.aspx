@@ -52,7 +52,19 @@
         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tbHastaMonto" ValidationExpression="^\d+(?:\.\d+)?$" ValidationGroup="gpMostrar"></asp:RegularExpressionValidator>
         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbDesdeMonto" ValidationExpression="^\d+(?:\.\d+)?$" ValidationGroup="gpMostrar"></asp:RegularExpressionValidator>
         <div class="gridViewContainer">
-        <asp:GridView ID="gvTabla" runat="server" CssClass="gridView">
+        &nbsp;
+        <asp:GridView ID="gvTabla" runat="server" CssClass="gridView" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <AlternatingRowStyle BackColor="White" />
+            <EditRowStyle BackColor="#2461BF" />
+            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+            <RowStyle BackColor="#EFF3FB" />
+            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+            <SortedAscendingCellStyle BackColor="#F5F7FB" />
+            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+            <SortedDescendingCellStyle BackColor="#E9EBEF" />
+            <SortedDescendingHeaderStyle BackColor="#4870BE" />
         </asp:GridView>
         </div>
             

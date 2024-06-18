@@ -16,9 +16,33 @@ namespace Datos
         {
             return accesoDatos.ObtenerTabla("Productos", "select * from Productos");
         }
-        public DropDownList cargarDropDownListCategoria()
+
+        public void cargarDropDownListCategoria(ref DropDownList ddl)
         {
-            return accesoDatos.cargarDropDownList("select nombre, Idcategoria from Categoria");
+            accesoDatos.cargarDropDownList("select nombre, Idcategoria from Categoria", ref ddl);
         }
+
+        public DataTable ProductoMasVendido()
+        {
+            return accesoDatos.ObtenerTabla("Productos", "select top 1 sum(PO.Cantidad) as cantidad, P.Nombre from [Productos_Orden] as PO inner join " +
+                                            "Productos as P on PO.IdProducto = P.IdProducto group by p.Nombre order by cantidad desc");
+        }
+
+        public DataTable ProductoMasVendidoPorMes(string anio, string mes)
+        {
+            string consulta = "select top 1 P.Nombre, sum(PO.Cantidad) as cantidad from[Productos_Orden] as PO inner join Productos as P on PO.IdProducto = P.IdProducto " +
+                "inner join Ordenes as O on PO.IdOrden = O.IdOrden WHERE YEAR(Fecha) = @Anio AND MONTH(Fecha) = @Mes group by p.Nombre order by cantidad desc";
+
+            return accesoDatos.ObtenerTablaDosParametros("Productos", consulta, "@Anio", "@Mes", anio, mes);
+        }
+
+        public DataTable ProductoMasVendidoPorCategoria(string categoria)
+        {
+            string consulta = "select P.Nombre, SUM(PO.Cantidad) as Cantidad, C.Nombre as Categoria from [Productos_Orden] as PO inner join [Categoria_Productos] as CP on PO.IdProducto = CP.IdProducto " +
+                "inner join Productos as P on PO.IdProducto = P.IdProducto inner join Categoria as C on CP.IdCategoria = C.IdCategoria where CP.IdCategoria = @IdCategoria group by P.Nombre, C.Nombre order by Cantidad desc";
+
+            return accesoDatos.ObtenerTablaUnParametro("Productos", consulta, "@IdCategoria", categoria);
+        }
+
     }
 }
