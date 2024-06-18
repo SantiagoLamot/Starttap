@@ -54,12 +54,11 @@ namespace Vistas
             string horarios = ddlHorarios.SelectedValue;
             bool estado = chbEstadoInicial.Checked;
             
-            //Empleado empleado = new Empleado();
+            Empleados empleado = new Empleados();
             
-            //registroEmpleado.AgregarEmpleado(Empleado);
-
-            //Aca esta el error.
-
+            registroEmpleado.AgregarEmpleado(empleado);
+             /// Solucionado ;)
+            
         }
     }
 }
