@@ -27,7 +27,7 @@ namespace Negocio
             return daoEmpleado.cargarddlRoles(ref ddl);
         }
 
-        public void AgregarEmpleado(Empleado empleado)
+        public void AgregarEmpleado(Empleados empleado)
         {
             daoEmpleado.AgregarEmpleado(empleado);
 

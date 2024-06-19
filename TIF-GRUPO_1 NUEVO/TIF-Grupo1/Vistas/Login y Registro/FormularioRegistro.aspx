@@ -93,7 +93,7 @@
         <br />
         <br />   
         <br />
-        <asp:Button ID="btnRegistrarse" runat="server" Text="Registrarse" OnClick="TextBox1_TextChanged" ValidationGroup="GRegistro" Width="111px" />
+        <asp:Button ID="btnRegistrarse" runat="server" Text="Registrarse" OnClick="btnRegistrarse_click" ValidationGroup="GRegistro" Width="111px" />
         <br />
         <br />
         <asp:Label ID="lblmensaje" runat="server"></asp:Label>

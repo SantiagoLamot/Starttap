@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\vistas\\login y registro\\formularioregistro.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\login y registro\\formularioregistro.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\login y registro\\formularioregistro.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\vistas\\login y registro\\formularioregistro.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\login y registro\\formularioregistro.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\entidades\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54DFE709-D3EF-4A13-AA85-BC1A42A5EC91}|Entidades\\Entidades.csproj|solutionrelative:entidades\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\login y registro\\formularioregistro.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\login y registro\\formularioregistro.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218AA8E2-DAA7-47E0-A406-974AEE9467DB}|Negocio\\Negocio.csproj|c:\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\negocio\\registroempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218AA8E2-DAA7-47E0-A406-974AEE9467DB}|Negocio\\Negocio.csproj|solutionrelative:negocio\\registroempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{218AA8E2-DAA7-47E0-A406-974AEE9467DB}|Negocio\\Negocio.csproj|C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\negocio\\registrousuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,38 +39,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Empleado.cs",
-              "DocumentMoniker": "C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Entidades\\Empleado.cs",
-              "RelativeDocumentMoniker": "Entidades\\Empleado.cs",
-              "ToolTip": "C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Entidades\\Empleado.cs",
-              "RelativeToolTip": "Entidades\\Empleado.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAMwCEAAAAbAAAA",
+              "Title": "RegistroEmpleado.cs",
+              "DocumentMoniker": "C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Negocio\\RegistroEmpleado.cs",
+              "RelativeDocumentMoniker": "Negocio\\RegistroEmpleado.cs",
+              "ToolTip": "C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Negocio\\RegistroEmpleado.cs",
+              "RelativeToolTip": "Negocio\\RegistroEmpleado.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAewB0AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:23:29.739Z",
+              "WhenOpened": "2024-06-19T02:25:20.334Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FormularioRegistro.aspx",
               "DocumentMoniker": "C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Login y Registro\\FormularioRegistro.aspx",
               "RelativeDocumentMoniker": "Vistas\\Login y Registro\\FormularioRegistro.aspx",
               "ToolTip": "C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Login y Registro\\FormularioRegistro.aspx",
               "RelativeToolTip": "Vistas\\Login y Registro\\FormularioRegistro.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-06-18T21:51:35.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FormularioRegistro.aspx.cs",
               "DocumentMoniker": "C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Login y Registro\\FormularioRegistro.aspx.cs",
               "RelativeDocumentMoniker": "Vistas\\Login y Registro\\FormularioRegistro.aspx.cs",
               "ToolTip": "C:\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Login y Registro\\FormularioRegistro.aspx.cs",
               "RelativeToolTip": "Vistas\\Login y Registro\\FormularioRegistro.aspx.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAACQAAAAdAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAqwBIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T21:56:39.499Z",
               "EditorCaption": ""
@@ -85,7 +85,8 @@
               "RelativeToolTip": "Datos\\DaoRegistro.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T21:55:39.165Z"
+              "WhenOpened": "2024-06-18T21:55:39.165Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -97,7 +98,8 @@
               "RelativeToolTip": "Negocio\\RegistroUsuarioNegocio.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T22:00:04.32Z"
+              "WhenOpened": "2024-06-18T22:00:04.32Z",
+              "EditorCaption": ""
             }
           ]
         }

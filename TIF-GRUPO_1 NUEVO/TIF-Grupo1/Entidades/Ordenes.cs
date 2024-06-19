@@ -10,7 +10,7 @@ namespace Entidades
     {
         private int _IdOrden;
         private Usuario _Usuario;
-        private Empleado _Empleado;
+        private Empleados _Empleado;
         private Mesas _Mesa;
         private List <Producto> _Productos;
         private DateTime _Fecha;
@@ -22,7 +22,7 @@ namespace Entidades
             _Productos = new List<Producto>();
         }
 
-        public Ordenes(int idOrden, Usuario usuario, Empleado empleado, Mesas mesa, List<Producto> productos,
+        public Ordenes(int idOrden, Usuario usuario, Empleados empleado, Mesas mesa, List<Producto> productos,
                         DateTime fecha, decimal total, bool estadoComanda, bool estadoPreparacion )
         {
             _IdOrden = idOrden;
@@ -44,7 +44,7 @@ namespace Entidades
             get { return _Usuario;}
             set { _Usuario = value; } 
         } 
-        public Empleado Empleado {
+        public Empleados Empleado {
             get { return _Empleado; }
             set { _Empleado = value; }
         }

@@ -38,3 +38,5 @@ C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\obj\Debug\Entidades.cs
 C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\obj\Debug\Entidades.dll
 C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\obj\Debug\Entidades.pdb
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\bin\Debug\Entidades.dll
+C:\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Entidades\bin\Debug\Entidades.pdb
