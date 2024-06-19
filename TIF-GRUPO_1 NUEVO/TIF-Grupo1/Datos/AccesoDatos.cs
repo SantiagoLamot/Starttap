@@ -9,7 +9,7 @@ namespace Datos
     class AccesoDatos
     {
         //Agregar nueva ruta de conexion
-        String cadenaDeConexion = @"Data Source=localhost;Initial Catalog=Programacion3_TIF;Integrated Security=True";
+        String cadenaDeConexion = @"Data Source=localhost\sqlexpress;Initial Catalog=Programacion3_TIF;Integrated Security=True";
 
         public AccesoDatos()
         {
@@ -175,5 +175,22 @@ namespace Datos
             return adaptador;
         }
 
+        public Usuario ExisteUsuario(string consulta)
+        {
+            Usuario usuario = new Usuario();
+            SqlConnection Conexion = ObtenerConexion();
+            SqlCommand cmd = new SqlCommand(consulta, Conexion);
+            SqlDataReader datos = cmd.ExecuteReader();
+            if (datos.Read())
+            {
+                usuario.idUsuario = Convert.ToInt32(datos["IdUsuario"]);
+                usuario.email = datos["Email"].ToString();
+                usuario.nombre = datos["Nombre"].ToString();
+                usuario.apellido = datos["Apellido"].ToString();
+                usuario.telefono = datos["Telefono"].ToString();
+                usuario.direccion = datos["Direccion"].ToString();
+            }
+            return usuario;
+        }
     }
 }

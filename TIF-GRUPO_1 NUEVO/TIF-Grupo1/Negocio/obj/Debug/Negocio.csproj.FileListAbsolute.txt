@@ -75,3 +75,14 @@ C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj
 C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.dll
 C:\Users\user\Documents\GitHub\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Negocio.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Negocio.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Datos.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Entidades.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Datos.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\bin\Debug\Entidades.pdb
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.dll
+C:\Users\kechu\OneDrive\Escritorio\GitHub Equipo\Starttap\TIF-GRUPO_1 NUEVO\TIF-Grupo1\Negocio\obj\Debug\Negocio.pdb

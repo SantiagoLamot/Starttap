@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,5 +46,29 @@ namespace Datos
             return accesoDatos.ObtenerTablaUnParametro("Productos", consulta, "@IdCategoria", categoria);
         }
 
+        public int InsertarProductosYCategorias(Producto producto)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Parameters.AddWithValue("@Nombre", producto.nombre);
+            command.Parameters.AddWithValue("@Descripcion", producto.Descripcion);
+            command.Parameters.AddWithValue("@Precio", producto.precio);
+            command.Parameters.AddWithValue("@Stock", producto.stock);
+            command.Parameters.AddWithValue("@Imagen_URL", producto.imagenURL);
+            command.Parameters.AddWithValue("@Estado", producto.estado);
+            command.Parameters.AddWithValue("@IdCategoria", producto.categoria.idCategoria);
+
+
+            return accesoDatos.EjecutarProcedimientoAlmacenado(command, "InsertarProductosYCategorias");
+        }
+
+        public bool ExisteProducto(string nombre)
+        {
+            return accesoDatos.existe($"Select * from Productos where Nombre = '{nombre}'");
+        }
+
+        public int ActualizarEstadoProducto(int idProducto)
+        {
+            return accesoDatos.updateCampo($"UPDATE Productos SET Estado = CASE WHEN Estado = 1 THEN 0 ELSE 1 END WHERE IdProducto = {idProducto}");
+        }
     }
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
@@ -35,12 +36,40 @@ namespace Datos
 
         public int IncrementarSalario(int id, decimal salario)
         {
-            return AccesoDatos.updateCampo("UPDATE Empleado SET Salario = Salario + "+ salario +" WHERE IdRol ="+ id +";");
+            return AccesoDatos.updateCampo("UPDATE Empleado SET Salario = Salario + " + salario + " WHERE IdRol =" + id + ";");
         }
 
         public int UpdateEstadoEmpledo(int id)
         {
-            return AccesoDatos.updateCampo("UPDATE Empleado SET Estado = CASE  WHEN Estado = 1 THEN 0 ELSE 1 END WHERE IdEmpleado ="+ id +";");
+            return AccesoDatos.updateCampo("UPDATE Empleado SET Estado = CASE  WHEN Estado = 1 THEN 0 ELSE 1 END WHERE IdEmpleado =" + id + ";");
+        }
+
+        public bool ExisteUsuario(string DNI)
+        {
+            return AccesoDatos.existe($"Select * from Usuario where DNI = '{DNI}'");
+        }
+
+        public Usuario BuscarUsuario(string DNI)
+        {
+            return AccesoDatos.ExisteUsuario($"Select * from Usuario where DNI = '{DNI}'");
+        }
+
+        public int AgregarEmpleado(Empleado empleado)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@IdUsuario", empleado.idUsuario);
+            cmd.Parameters.AddWithValue("@Salario", empleado.Salario);
+            cmd.Parameters.AddWithValue("IdRol", empleado.Rol);
+            cmd.Parameters.AddWithValue("FechaIngreso", empleado.FechaIngreso);
+            cmd.Parameters.AddWithValue("Horarios", empleado.Horario);
+            cmd.Parameters.AddWithValue("Estado", empleado.Estado);
+
+            return AccesoDatos.EjecutarProcedimientoAlmacenado(cmd, "spInsertarEmpleado");
+        }
+
+        public DropDownList cargarddlRoles(ref DropDownList ddl)
+        {
+            return AccesoDatos.cargarDropDownList("Select NombreRol, IdRol from Roles", ref ddl);
         }
     }
 }

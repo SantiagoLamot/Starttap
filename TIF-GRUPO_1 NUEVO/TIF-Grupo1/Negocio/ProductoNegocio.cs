@@ -1,4 +1,5 @@
 ﻿using Datos;
+using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,19 @@ namespace Negocio
         {
             daoProductos.cargarDropDownListCategoria(ref ddl);
         }
+        public void InsertarProductosYCategorias(Producto producto)
+        {
+            daoProductos.InsertarProductosYCategorias(producto);
+        }
+
+        public bool ExisteProducto(string nombre)
+        {
+            return daoProductos.ExisteProducto(nombre);
+        }
+        public int ActualizarEstadoProducto(int idProducto)
+        {
+           return daoProductos.ActualizarEstadoProducto(idProducto);
+        }
+        
     }
 }

@@ -11,7 +11,7 @@ namespace Vistas
 {
 
 
-    public partial class AgregarProducto
+    public partial class AgregarEmpleado
     {
 
         /// <summary>
@@ -24,193 +24,175 @@ namespace Vistas
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control lblTabladeProductos.
+        /// Control lblAgregarNuevoEmpleado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTabladeProductos;
+        protected global::System.Web.UI.WebControls.Label lblAgregarNuevoEmpleado;
 
         /// <summary>
-        /// Control gvProductos.
+        /// Control txtDNI.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvProductos;
+        protected global::System.Web.UI.WebControls.TextBox txtDNI;
 
         /// <summary>
-        /// Control lblAgregarnuevoProducto.
+        /// Control rfvAgregardniEmpleado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAgregarnuevoProducto;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAgregardniEmpleado;
 
         /// <summary>
-        /// Control lblNombreproducto.
+        /// Control lblMensajeUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNombreproducto;
+        protected global::System.Web.UI.WebControls.Label lblMensajeUsuario;
 
         /// <summary>
-        /// Control txtNombreProducto.
+        /// Control lblMensaje.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombreProducto;
+        protected global::System.Web.UI.WebControls.Label lblMensaje;
 
         /// <summary>
-        /// Control rfvAgregarNombreProducto.
+        /// Control hlRegistrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAgregarNombreProducto;
+        protected global::System.Web.UI.WebControls.HyperLink hlRegistrar;
 
         /// <summary>
-        /// Control lblDescripciondelProducto.
+        /// Control lblRolEmpleado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescripciondelProducto;
+        protected global::System.Web.UI.WebControls.Label lblRolEmpleado;
 
         /// <summary>
-        /// Control txtDescripcionProducto.
+        /// Control ddlRol.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescripcionProducto;
+        protected global::System.Web.UI.WebControls.DropDownList ddlRol;
 
         /// <summary>
-        /// Control rfvAgregarDescripcionProducto.
+        /// Control rfvSeleccionRol.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAgregarDescripcionProducto;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvSeleccionRol;
 
         /// <summary>
-        /// Control lblPrecioProd.
+        /// Control lblSalarioEmpleado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrecioProd;
+        protected global::System.Web.UI.WebControls.Label lblSalarioEmpleado;
 
         /// <summary>
-        /// Control txtPrecioProducto.
+        /// Control txtSalario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrecioProducto;
+        protected global::System.Web.UI.WebControls.TextBox txtSalario;
 
         /// <summary>
-        /// Control rfvAgregarPrecioProd.
+        /// Control rfvSalario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAgregarPrecioProd;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvSalario;
 
         /// <summary>
-        /// Control lblStockInicial.
+        /// Control lbFechaIngreso.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblStockInicial;
+        protected global::System.Web.UI.WebControls.Label lbFechaIngreso;
 
         /// <summary>
-        /// Control txtStockInicial.
+        /// Control txtFechaIngreso.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStockInicial;
+        protected global::System.Web.UI.WebControls.TextBox txtFechaIngreso;
 
         /// <summary>
-        /// Control rfvAgregarStockInicial.
+        /// Control rfvFechaIngreso.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAgregarStockInicial;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFechaIngreso;
 
         /// <summary>
-        /// Control lblImagenURL.
+        /// Control lbHorarios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblImagenURL;
+        protected global::System.Web.UI.WebControls.Label lbHorarios;
 
         /// <summary>
-        /// Control txtImagenURL.
+        /// Control ddlHorarios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtImagenURL;
+        protected global::System.Web.UI.WebControls.DropDownList ddlHorarios;
 
         /// <summary>
-        /// Control rfvAgregarImagenProd.
+        /// Control rfvHorarios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAgregarImagenProd;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvHorarios;
 
         /// <summary>
-        /// Control lblCategoriadelProd.
+        /// Control lbEstado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCategoriadelProd;
-
-        /// <summary>
-        /// Control ddlCategorias.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCategorias;
-
-        /// <summary>
-        /// Control lblEstadoInicial.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEstadoInicial;
+        protected global::System.Web.UI.WebControls.Label lbEstado;
 
         /// <summary>
         /// Control chbEstadoInicial.
@@ -222,21 +204,12 @@ namespace Vistas
         protected global::System.Web.UI.WebControls.CheckBox chbEstadoInicial;
 
         /// <summary>
-        /// Control btnAgregarProd.
+        /// Control btnAgregarEmpleado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAgregarProd;
-
-        /// <summary>
-        /// Control lblMensaje.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensaje;
+        protected global::System.Web.UI.WebControls.Button btnAgregarEmpleado;
     }
 }
