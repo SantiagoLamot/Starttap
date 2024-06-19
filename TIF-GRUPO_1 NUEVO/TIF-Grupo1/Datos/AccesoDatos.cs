@@ -94,6 +94,14 @@ namespace Datos
             }
             return estado;
         }
+        public int existeEmpleado(String consulta)
+        {
+            SqlConnection Conexion = ObtenerConexion();
+            SqlCommand cmd = new SqlCommand(consulta, Conexion);
+            int count = (int)cmd.ExecuteScalar();
+
+            return count;
+        }
         public DropDownList cargarDropDownList(string consulta, ref DropDownList ddl)
         {
             SqlConnection connection = ObtenerConexion();

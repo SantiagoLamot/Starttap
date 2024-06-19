@@ -48,6 +48,13 @@ namespace Datos
         {
             return AccesoDatos.existe($"Select * from Usuario where DNI = '{DNI}'");
         }
+        public int ExisteEmpleado(string dni)
+        {
+            return AccesoDatos.existeEmpleado($"Select count(*) from Empleado e" +
+                $"                      Join Usuario u On e.IdUsuario = u.IdUsuario" +
+                $"                      where u.DNI= {dni}");
+
+        }
 
         public Usuario BuscarUsuario(string DNI)
         {

@@ -1,50 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\",
+  "WorkspaceRootPath": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\vertablas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\vertablas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\agregarempleado.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\agregarempleado.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\tablaclientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\tablaclientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\agregarempleado.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\agregarempleado.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\mostrarreportes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\mostrarreportes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\mostrarreportes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\mostrarreportes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\clientesinactivos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\clientesinactivos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\clientesinactivos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\clientesinactivos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\tablaclientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\tablaclientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\datoslaboralesempleados.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\datoslaboralesempleados.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\datoslaboralesempleados.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\datoslaboralesempleados.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\estilos\\estilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\vistas\\estilos\\estilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\estilos\\estilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\santiago\\documents\\github\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\login y registro\\ingreso.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\login y registro\\ingreso.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,157 +22,53 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VerTablas.aspx",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\VerTablas.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Administrador\\VerTablas.aspx",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\VerTablas.aspx",
-              "RelativeToolTip": "Vistas\\Administrador\\VerTablas.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-19T17:45:37.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MostrarReportes.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx.cs",
-              "RelativeDocumentMoniker": "Vistas\\Administrador\\MostrarReportes.aspx.cs",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx.cs",
-              "RelativeToolTip": "Vistas\\Administrador\\MostrarReportes.aspx.cs",
-              "ViewState": "AQIAANYAAAAAAAAAAAAmwPgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T17:43:31.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClientesInactivos.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\ClientesInactivos.aspx.cs",
-              "RelativeDocumentMoniker": "Vistas\\Administrador\\ClientesInactivos.aspx.cs",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\ClientesInactivos.aspx.cs",
-              "RelativeToolTip": "Vistas\\Administrador\\ClientesInactivos.aspx.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T17:41:46.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClientesInactivos.aspx",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\ClientesInactivos.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Administrador\\ClientesInactivos.aspx",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\ClientesInactivos.aspx",
-              "RelativeToolTip": "Vistas\\Administrador\\ClientesInactivos.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-19T17:41:40.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TablaClientes.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\TablaClientes.aspx.cs",
-              "RelativeDocumentMoniker": "Vistas\\Administrador\\TablaClientes.aspx.cs",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\TablaClientes.aspx.cs",
-              "RelativeToolTip": "Vistas\\Administrador\\TablaClientes.aspx.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAswCsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T17:40:57.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DatosLaboralesEmpleados.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\DatosLaboralesEmpleados.aspx.cs",
-              "RelativeDocumentMoniker": "Vistas\\Administrador\\DatosLaboralesEmpleados.aspx.cs",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\DatosLaboralesEmpleados.aspx.cs",
-              "RelativeToolTip": "Vistas\\Administrador\\DatosLaboralesEmpleados.aspx.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAswHcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T17:39:30.669Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TablaClientes.aspx",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\TablaClientes.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Administrador\\TablaClientes.aspx",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\TablaClientes.aspx",
-              "RelativeToolTip": "Vistas\\Administrador\\TablaClientes.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Title": "AgregarEmpleado.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\AgregarEmpleado.aspx.cs",
+              "RelativeDocumentMoniker": "Vistas\\Administrador\\AgregarEmpleado.aspx.cs",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\AgregarEmpleado.aspx.cs",
+              "RelativeToolTip": "Vistas\\Administrador\\AgregarEmpleado.aspx.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAcwF4AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T22:05:23.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AgregarEmpleado.aspx",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\AgregarEmpleado.aspx",
+              "RelativeDocumentMoniker": "Vistas\\Administrador\\AgregarEmpleado.aspx",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\AgregarEmpleado.aspx",
+              "RelativeToolTip": "Vistas\\Administrador\\AgregarEmpleado.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-19T17:33:15.443Z",
+              "WhenOpened": "2024-06-19T21:40:52.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MostrarReportes.aspx",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Administrador\\MostrarReportes.aspx",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\MostrarReportes.aspx",
-              "RelativeToolTip": "Vistas\\Administrador\\MostrarReportes.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-19T17:17:49.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DatosLaboralesEmpleados.aspx",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\DatosLaboralesEmpleados.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Administrador\\DatosLaboralesEmpleados.aspx",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\DatosLaboralesEmpleados.aspx",
-              "RelativeToolTip": "Vistas\\Administrador\\DatosLaboralesEmpleados.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-19T17:28:53.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "estilos.css",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Estilos\\estilos.css",
+              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Estilos\\estilos.css",
               "RelativeDocumentMoniker": "Vistas\\Estilos\\estilos.css",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Estilos\\estilos.css",
+              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Estilos\\estilos.css",
               "RelativeToolTip": "Vistas\\Estilos\\estilos.css",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAGIAAAABAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-06-19T17:20:21.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Ingreso.aspx",
-              "DocumentMoniker": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Login y Registro\\Ingreso.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Login y Registro\\Ingreso.aspx",
-              "ToolTip": "C:\\Users\\Santiago\\Documents\\GitHub\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Login y Registro\\Ingreso.aspx",
-              "RelativeToolTip": "Vistas\\Login y Registro\\Ingreso.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-19T17:27:20.176Z",
               "EditorCaption": ""
             }
           ]

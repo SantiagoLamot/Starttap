@@ -32,5 +32,9 @@ namespace Negocio
             daoEmpleado.AgregarEmpleado(empleado);
 
         }
+        public int ExisteEmpleado(string dni)
+        {
+            return daoEmpleado.ExisteEmpleado(dni);
+        }
     }
 }

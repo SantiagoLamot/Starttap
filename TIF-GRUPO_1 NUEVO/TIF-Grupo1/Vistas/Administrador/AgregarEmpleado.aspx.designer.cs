@@ -78,6 +78,15 @@ namespace Vistas
         protected global::System.Web.UI.WebControls.HyperLink hlRegistrar;
 
         /// <summary>
+        /// Control pnlAgregarEmpleado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlAgregarEmpleado;
+
+        /// <summary>
         /// Control lblRolEmpleado.
         /// </summary>
         /// <remarks>
@@ -211,5 +220,14 @@ namespace Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAgregarEmpleado;
+
+        /// <summary>
+        /// Control lblMensaje1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMensaje1;
     }
 }

@@ -17,49 +17,107 @@ namespace Vistas
         int idUsuario = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            CargarCategorias();
+            CargarRoles();
         }
-        private void CargarCategorias()
-        {
-            registroEmpleado.CargarddlRoles(ref ddlRol);
-            
-        }
+       
         protected void txtDNI_TextChanged(object sender, EventArgs e)
         {
-            string dni = txtDNI.Text;
+            LimpiarMensajes();
+            string dni = txtDNI.Text.Trim();
 
             if (registroEmpleado.ExisteUsuario(dni))
             {
                 Usuario Usuario = registroEmpleado.ObtenerUsuario(dni);
                 idUsuario = Usuario.idUsuario;
-                lblMensajeUsuario.Text = $"El Usuario con Identificador {Usuario.idUsuario}," +
-                    $" Nombre: {Usuario.nombre} {Usuario.apellido}, " +
-                    $" Email: {Usuario.email}, DNI:  {Usuario.dni}" +
-                    $" Telefono: {Usuario.telefono}, Direccion: {Usuario.direccion}" +
-                    $" Ya Existe. Complete los datos de Empleado";
-               
+                MostrarInformacionUsuario(Usuario);
+
+                if (registroEmpleado.ExisteEmpleado(dni) == 1)
+                {
+                    lblMensaje.Text = "El usuario ya está registrado como empleado.";
+                    pnlAgregarEmpleado.Visible = false;
+                }
+                else
+                {
+                    pnlAgregarEmpleado.Visible = true;
+                }
             }
             else
             {
-                lblMensaje.Text = "El usuario No existe. ¿Desea Registrar un Nuevo Usuario?.";
-                hlRegistrar.Visible = true;
+                MostrarMensajeUsuarioNoExiste();
             }
         }
         protected void btnAgregarProd_Click(object sender, EventArgs e)
         {
-            int IdUsuario = idUsuario;
-            decimal salario = Convert.ToDecimal(txtSalario.Text);
-            int idRol = Convert.ToInt32(ddlRol.SelectedValue);
-            DateTime fechaIngreso = Convert.ToDateTime(txtFechaIngreso.Text);
-            string horarios = ddlHorarios.SelectedValue;
-            bool estado = chbEstadoInicial.Checked;
-            
-            //Empleado empleado = new Empleado();
-            
-            //registroEmpleado.AgregarEmpleado(Empleado);
+            LimpiarMensajes();
+            string dni = txtDNI.Text.Trim();
 
-            //Aca esta el error.
 
+            try
+            {
+                Usuario Usuario = registroEmpleado.ObtenerUsuario(dni);
+                idUsuario = Usuario.idUsuario;
+                decimal salario = Convert.ToDecimal(txtSalario.Text);
+                DateTime fechaIngreso = Convert.ToDateTime(txtFechaIngreso.Text);
+                string horarios = ddlHorarios.SelectedValue;
+                bool estado = chbEstadoInicial.Checked;
+                int idRol = int.Parse(ddlRol.SelectedValue);
+
+                Roles rol = new Roles { IdRol = idRol };
+
+                Empleados empleado = new Empleados()
+                {
+                    idUsuario = idUsuario,
+                    Salario = salario,
+                    Rol = rol,
+                    FechaIngreso = fechaIngreso,
+                    Horario = horarios,
+                    Estado = estado
+                };
+
+                registroEmpleado.AgregarEmpleado(empleado);
+                LimpiarFormulario();
+                lblMensaje.Text = "Empleado agregado correctamente.";
+            }
+            catch (Exception ex)
+            {
+                lblMensaje.Text = $"Error al agregar empleado: {ex.Message}";
+            }
+
+        }
+        private void CargarRoles()
+        {
+            registroEmpleado.CargarddlRoles(ref ddlRol);
+            
+        }
+        private void MostrarInformacionUsuario(Usuario Usuario)
+        {
+            lblMensajeUsuario.Text = $@"El Usuario: {Usuario.nombre} {Usuario.apellido},<br />
+                con Email: {Usuario.email}, Telefono: {Usuario.telefono} y Direccion: {Usuario.direccion} <br /><br />
+                Ya Existe. Complete los datos de Empleado";
+
+        }
+        private void MostrarMensajeUsuarioNoExiste()
+        {
+            lblMensaje.Text = "El usuario No existe. ¿Desea Registrar un Nuevo Usuario?.";
+            hlRegistrar.Visible = true;
+            pnlAgregarEmpleado.Visible = false;
+        }
+        private void LimpiarMensajes()
+        {
+            lblMensaje.Text = "";
+            lblMensajeUsuario.Text = "";
+            hlRegistrar.Visible = false;
+        }
+
+        private void LimpiarFormulario()
+        {
+            txtDNI.Text = "";
+            txtSalario.Text = "";
+            txtFechaIngreso.Text = "";
+            ddlHorarios.SelectedIndex = 0;
+            chbEstadoInicial.Checked = false;
+            ddlRol.SelectedIndex = 0;
+            pnlAgregarEmpleado.Visible = false;
         }
     }
 }

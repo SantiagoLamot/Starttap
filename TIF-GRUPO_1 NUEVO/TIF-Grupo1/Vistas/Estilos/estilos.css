@@ -95,5 +95,5 @@ input[type="password"], input[type="email"], select {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente si es necesario */
-    width: auto; /* Ancho automático */
+    width: auto; /* Ancho automï¿½tico */
 }
