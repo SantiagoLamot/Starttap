@@ -31,7 +31,7 @@ namespace Entidades
 
         public Empleado(int IdEmplado, decimal Salario, Roles Rol, DateTime FechaIngreso, string Horario, bool Estado, 
                         int idUsuario, string nombre, string apellido, string email, string contraseña, TipoUsuario tipoUsuario, string dni, string telefono, string direccion)
-                        : base(idUsuario, nombre, apellido, email, contraseña, tipoUsuario, dni, telefono, direccion)
+                        :  base(idUsuario, nombre, apellido, email, contraseña, tipoUsuario, dni, telefono, direccion)
         {
             _IdEmpleado = IdEmplado;
             _Salario = Salario;

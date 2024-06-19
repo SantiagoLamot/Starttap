@@ -9,7 +9,7 @@ namespace Entidades
     public class Usuario
     {
         private int _idUsuario;
-        private string _nombre;
+        public string _nombre;
         private string _apellido;
         private string _email;
         private string _contraseña;
