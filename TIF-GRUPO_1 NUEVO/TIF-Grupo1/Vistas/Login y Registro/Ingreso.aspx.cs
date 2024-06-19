@@ -50,16 +50,17 @@ namespace Vistas.Login_y_Registro
                 lblMensaje.Text = "Sesion iniciada con exito";
                 if (TipoUsuario == 1)
                 {
+                    Session["IsAdmin"] = true;
                     Response.Redirect("/Administrador/VerTablas.aspx");
                 }
                 else if (TipoUsuario == 2)
                 {
-                    //Response.Redirect("/Empleado/InicioEmpleado.aspx");
+                    Session["IsAdmin"] = false;//Response.Redirect("/Empleado/InicioEmpleado.aspx");
                     lblMensaje1.Text = "tipo usuario 2: Emplado";
                 }
                 else
                 {
-                    //Response.Redirect("/Empleado/InicioEmpleado.aspx");
+                    Session["IsAdmin"] = false;//Response.Redirect("/Empleado/InicioEmpleado.aspx");
                     lblMensaje1.Text = "tipo usuario 3: Cliente";
                 }
 

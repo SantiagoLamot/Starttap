@@ -22,5 +22,10 @@ namespace Vistas.Administrador
                 gvEmpleados.DataBind();
             }
         }
+
+        protected void HyperLink1_DataBinding(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -17,5 +17,10 @@ namespace Negocio
         {
             daoRegistro.RegistroUsuarioNuevo(usuario);
         }
+
+        public bool ExisteUsuario(string DNI)
+        {
+           return daoRegistro.RegistroExistente(DNI);
+        }
     }
 }

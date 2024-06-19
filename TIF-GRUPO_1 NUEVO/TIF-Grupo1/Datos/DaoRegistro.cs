@@ -25,10 +25,14 @@ namespace Datos
             command.Parameters.AddWithValue("@DNI", usuario.dni);
             command.Parameters.AddWithValue("@Telefono", usuario.telefono);
             command.Parameters.AddWithValue("@Direccion", usuario.direccion);
-            //command.Parameters.AddWithValue("@RolID", usuario.rolID);
+            
+            return accesoDatos.EjecutarProcedimientoAlmacenado(command, "InsertarUsuario");
 
-            return accesoDatos.EjecutarProcedimientoAlmacenado(command, "RegistroUsuarioNuevo");
+        }
 
+        public bool RegistroExistente (String DNI)
+        {
+            return accesoDatos.existe($"SELECT * FROM Usuario WHERE DNI = '{DNI}'");
         }
     }
 }
