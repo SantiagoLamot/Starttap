@@ -89,5 +89,11 @@ input[type="password"], input[type="email"], select {
     width: 100%;
     text-align: left;
     padding: 20px;
+}
 
+.gridViewPrincipal {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    width: auto; /* Ancho automático */
 }

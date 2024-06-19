@@ -11,6 +11,11 @@
         .auto-style1 {
             width: 919px;
         }
+        .auto-style2 {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */;
+            align-items: center; /* Centra verticalmente si es necesario */;
+        }
     </style>
 
 </head>
@@ -51,7 +56,7 @@
         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tbHastaMonto" ValidationExpression="^\d+(?:\.\d+)?$" ValidationGroup="gpMostrar"></asp:RegularExpressionValidator>
         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbDesdeMonto" ValidationExpression="^\d+(?:\.\d+)?$" ValidationGroup="gpMostrar"></asp:RegularExpressionValidator>
         <div class="gridViewContainer">
-        <asp:GridView ID="gvTabla" runat="server" CssClass="gridView" CellPadding="4" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="gvTabla" runat="server" CssClass="auto-style2" CellPadding="4" ForeColor="#333333" GridLines="None" PageSize="5" Width="915px">
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

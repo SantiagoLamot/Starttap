@@ -4,6 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
+<link rel="stylesheet" type="text/css" href="/Estilos/estilos.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <style type="text/css">
@@ -19,12 +21,11 @@
 	}
     </style>
 </head>
-<body>
+<body class="bodyBlanco">
     <form id="form1" runat="server">
+      
         <div>
             
-            <v:imagedata croptop="-65520f" cropbottom="65520f" xmlns:v="urn:schemas-microsoft-com:vml"/></v:shape></span><![endif]-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STARTAP<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BREWING CO<br />
             <br />
             <asp:Label ID="lblHola" runat="server" Text="HOLA "></asp:Label>
             <asp:Label ID="lblNombreUsuario" runat="server" CssClass="MsoNormal">&quot;Nombre de usuario&quot;</asp:Label>
@@ -48,6 +49,29 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="btnVer" runat="server" BorderStyle="Inset" Text="Ver" ValidationGroup="GrupoVer" OnClick="btnVer_Click" />
         </div>
+
+        <asp:Label ID="Label1" runat="server" Text="Administracion de empleados"></asp:Label>
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Administrador/AgregarEmpleado.aspx">Agregar Empleado</asp:HyperLink>
+        <br />
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Administrador/DatosLaboralesEmpleados.aspx">Datos laborales</asp:HyperLink>
+        <br />
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Administrador/TablaEmpleados.aspx">Ver empleados</asp:HyperLink>
+        <br />
+        <asp:Label ID="Label2" runat="server" Text="Administracion de clientes"></asp:Label>
+        <br />
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Administrador/TablaClientes.aspx">Ver clientes</asp:HyperLink>
+        <br />
+        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Administrador/ClientesInactivos.aspx">Clientes inactivos</asp:HyperLink>
+        <br />
+        <asp:Label ID="Label3" runat="server" Text="Administracion de Productos"></asp:Label>
+        <br />
+        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Administrador/AgregarProducto.aspx">Ver/Agregar productos</asp:HyperLink>
+        <br />
+        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Administrador/MostrarReportes.aspx">Ver reportes</asp:HyperLink>
+        <br />
+       
+
     </form>
 </body>
 </html>

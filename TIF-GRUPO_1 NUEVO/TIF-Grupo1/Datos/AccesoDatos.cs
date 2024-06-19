@@ -8,8 +8,9 @@ namespace Datos
 {
     class AccesoDatos
     {
-        //Agregar nueva ruta de conexion
+        
         String cadenaDeConexion = @"Data Source=localhost\sqlexpress;Initial Catalog=Programacion3_TIF;Integrated Security=True";
+        String cadenaDeConexion2 = @"Data Source=localhost;Initial Catalog=Programacion3_TIF;Integrated Security=True";
 
         public AccesoDatos()
         {
@@ -26,7 +27,18 @@ namespace Datos
             }
             catch (Exception ex)
             {
-                return null;
+                Console.WriteLine(ex.Message);
+                try
+                {
+                    cn.ConnectionString = cadenaDeConexion2;
+                    cn.Open();
+                    return cn;
+                }
+                catch (Exception ex2)
+                {
+                    Console.WriteLine(ex2.Message);
+                    return null;
+                }
             }
         }
 
@@ -41,6 +53,7 @@ namespace Datos
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 return null;
             }
         }

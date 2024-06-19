@@ -1,4 +1,5 @@
-﻿using Negocio;
+﻿using Entidades;
+using Negocio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,12 @@ namespace Vistas
                     cargarGridViewClientesInactivos();
                 }
             }
+        }
+
+        protected void gvClientes_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvClientes.PageIndex = e.NewPageIndex;
+            cargarGridViewClientesInactivos();
         }
     }
 }

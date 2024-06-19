@@ -113,5 +113,11 @@ namespace Vistas.Administrador
             LimpiarCampos();
             CargarGridViewEmpleados();
         }
+
+        protected void gvEmpleados_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvEmpleados.PageIndex = e.NewPageIndex;
+            CargarGridViewEmpleados();
+        }
     }
 }

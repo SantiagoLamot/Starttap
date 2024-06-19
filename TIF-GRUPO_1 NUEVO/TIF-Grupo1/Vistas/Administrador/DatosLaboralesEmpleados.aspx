@@ -4,19 +4,25 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+<link rel="stylesheet" type="text/css" href="/Estilos/estilos.css"/>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 668px;
+        }
+    </style>
 </head>
-<body>
-    <form id="form1" runat="server">
+<body class="bodyBlanco">
+    <form id="form1" runat="server" class="auto-style1">
         <div>
-            <asp:Label ID="ll" runat="server" Font-Size="XX-Large" Text="STARTAP BREWING CO"></asp:Label>
             <br />
             <br />
             <asp:Label runat="server" Text="Manejo de los salarios  y estado de los empleados "></asp:Label>
             <br />
             <br />
-            <asp:GridView ID="gvEmpleados" runat="server">
+            <asp:GridView ID="gvEmpleados" runat="server" AllowPaging="True" OnPageIndexChanging="gvEmpleados_PageIndexChanging" Width="656px">
             </asp:GridView>
             <br />
             <asp:Label runat="server" Text="Modificar el salario de un empleado particular:" Font-Bold="True"></asp:Label>

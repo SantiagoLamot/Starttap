@@ -16,7 +16,7 @@
             <asp:Label ID="Label1" runat="server" Text="TABLA DE CLIENTES"></asp:Label>
             <br />
             <br />
-            <asp:GridView ID="gvClientes" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" OnRowCommand="gvClientes_RowCommand">
+            <asp:GridView ID="gvClientes" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" OnRowCommand="gvClientes_RowCommand" OnPageIndexChanging="gvClientes_PageIndexChanging" PageSize="5">
                 <Columns>
                     <asp:TemplateField HeaderText="Id Cliente">
                         <ItemTemplate>

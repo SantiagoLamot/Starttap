@@ -50,7 +50,7 @@ namespace Vistas.Login_y_Registro
                 lblMensaje.Text = "Sesion iniciada con exito";
                 if (TipoUsuario == 1)
                 {
-                    Response.Redirect("/Administrador/InicioAdministrador.aspx");
+                    Response.Redirect("/Administrador/VerTablas.aspx");
                 }
                 else if (TipoUsuario == 2)
                 {
