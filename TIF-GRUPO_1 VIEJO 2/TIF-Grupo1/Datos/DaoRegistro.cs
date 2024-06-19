@@ -18,14 +18,14 @@ namespace Datos
         {
             SqlCommand command = new SqlCommand();
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.AddWithValue("@Nombre", nombre);
-            command.Parameters.AddWithValue("@Apellido", apellido);
-            command.Parameters.AddWithValue("@Email", email);
-            command.Parameters.AddWithValue("@Contraseña", contraseña);
-            command.Parameters.AddWithValue("@DNI", dni);
-            command.Parameters.AddWithValue("@Telefono", telefono);
-            command.Parameters.AddWithValue("@Direccion", direccion);
-            command.Parameters.AddWithValue("@RolID", rolID);
+            command.Parameters.AddWithValue("@Nombre", usuario.nombre);
+            command.Parameters.AddWithValue("@Apellido", usuario.apellido);
+            command.Parameters.AddWithValue("@Email", usuario.email);
+            command.Parameters.AddWithValue("@Contraseña", usuario.contraseña);
+            command.Parameters.AddWithValue("@DNI", usuario.dni);
+            command.Parameters.AddWithValue("@Telefono", usuario.telefono);
+            command.Parameters.AddWithValue("@Direccion", usuario.direccion);
+            //command.Parameters.AddWithValue("@RolID", usuario.rolID);
 
             return accesoDatos.EjecutarProcedimientoAlmacenado(command, "RegistroUsuarioNuevo");
 

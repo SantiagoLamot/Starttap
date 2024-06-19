@@ -17,23 +17,23 @@ namespace Vistas
 
         protected void btnRegistrarse_click(object sender, EventArgs e)
         {
-            string nombre = txtNombre.Text;
-            string apellido = txtApellido.Text;
-            string email = txtmail.Text;
-            string contraseña = txtContraseña.Text;
-            string dni = txtDNI.Text;
-            string telefono = $"{DropDownList1.SelectedValue}{txtcodarea.Text}{txtnumtelefono.Text}";
-            string direccion = txtDireccion.Text;
+            string _nombre = txtNombre.Text;
+            string _apellido = txtApellido.Text;
+            string _email = txtmail.Text;
+            string _contraseña = txtContraseña.Text;
+            string _dni = txtDNI.Text;
+            string _telefono = $"{DropDownList1.SelectedValue}{txtcodarea.Text}{txtnumtelefono.Text}";
+            string _direccion = txtDireccion.Text;
 
             Usuario usuario = new Usuario
             {
-                _nombre = nombre,
-                _apellido = apellido,
-                _email = email,
-                _contraseña = contraseña,
-                _dni = dni,
-                _telefono = telefono,
-                _direccion = direccion
+                nombre = _nombre,
+                apellido = _apellido,
+                email = _email,
+                contraseña = _contraseña,
+                dni = _dni,
+                telefono = _telefono,
+                direccion = _direccion
             };
 
         }
