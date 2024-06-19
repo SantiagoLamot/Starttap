@@ -54,7 +54,7 @@ namespace Datos
             return AccesoDatos.ExisteUsuario($"Select * from Usuario where DNI = '{DNI}'");
         }
 
-        public int AgregarEmpleado(Empleado empleado)
+        public int AgregarEmpleado(Empleados empleado)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Parameters.AddWithValue("@IdUsuario", empleado.idUsuario);

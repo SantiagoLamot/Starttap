@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Empleado : Usuario
+    public class Empleados : Usuario
     {
         private int _IdEmpleado;
         private decimal _Salario;
@@ -16,10 +16,10 @@ namespace Entidades
         private string _Horario;
         private bool _Estado;
         
-        public Empleado()
+        public Empleados()
         { }
 
-        public Empleado(int IdEmplado, decimal Salario, Roles Rol,DateTime FechaIngreso, string Horario, bool Estado)
+        public Empleados(int IdEmplado, decimal Salario, Roles Rol,DateTime FechaIngreso, string Horario, bool Estado)
         {
             _IdEmpleado = IdEmplado;
             _Salario = Salario;
@@ -29,9 +29,9 @@ namespace Entidades
             _Estado = Estado;
         }
 
-        public Empleado(int IdEmplado, decimal Salario, Roles Rol, DateTime FechaIngreso, string Horario, bool Estado, 
+        public Empleados(int IdEmplado, decimal Salario, Roles Rol, DateTime FechaIngreso, string Horario, bool Estado, 
                         int idUsuario, string nombre, string apellido, string email, string contraseña, TipoUsuario tipoUsuario, string dni, string telefono, string direccion)
-                        :  base(idUsuario, nombre, apellido, email, contraseña, tipoUsuario, dni, telefono, direccion)
+                        : base(idUsuario, nombre, apellido, email, contraseña, tipoUsuario, dni, telefono, direccion)
         {
             _IdEmpleado = IdEmplado;
             _Salario = Salario;
