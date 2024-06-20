@@ -46,6 +46,7 @@ namespace Vistas
             if (Negocio1.ExisteProducto(producto.nombre))
             {
                 lblMensaje.Text = "El producto ya existe";
+                lblMensaje.ForeColor = System.Drawing.Color.Red;
                 return;
             }
 
@@ -55,7 +56,7 @@ namespace Vistas
             LimpiarCampos();
 
             lblMensaje.Text = "El producto se creo exitosamente.";
-
+            lblMensaje.ForeColor = System.Drawing.Color.Green;
 
 
         }

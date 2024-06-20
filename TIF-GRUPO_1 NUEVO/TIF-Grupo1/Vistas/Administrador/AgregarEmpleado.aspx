@@ -121,11 +121,12 @@
 </head>
 <body class="bodyBlanco">
     <form id="form1" runat="server" class="formInicio">
-        <div>
-            STARTAP<br />
-            BREWING CO.<br />
-            <br />
-        </div>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Administrador/VerTablas.aspx">
+            <span class="icon-left"><i class="fas fa-home"></i></span> Ir a Página Inicio
+            </asp:HyperLink>
+        <br />
+        <br />
+        <br />
         <br />
         <asp:Label ID="lblAgregarNuevoEmpleado" runat="server" Text="AGREGAR UN NUEVO EMPLEADO" CssClass="labelPrincipal"></asp:Label>
         <br />
@@ -134,6 +135,7 @@
             Ingrese numero de DNI del Empleado:
             <asp:TextBox ID="txtDNI" runat="server" Width="83px" AutoPostBack="True" CssClass="auto-style1" Height="16px" OnTextChanged="txtDNI_TextChanged" TextMode="Search"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvAgregardniEmpleado" runat="server" ControlToValidate="txtDNI" ErrorMessage="*Debe Agregar DNI">*Debe Agregar DNI</asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="rfvDNIIncorrecto" runat="server" ControlToValidate="txtDNI" ErrorMessage="*DNI Incorrecto" ValidationExpression="\d{8}"></asp:RegularExpressionValidator>
             <br />
             <br />
             <asp:Label ID="lblMensajeUsuario" runat="server" CssClass="lblMensajeUsuario"></asp:Label>

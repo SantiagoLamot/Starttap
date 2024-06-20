@@ -10,6 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Administrador/VerTablas.aspx">
+                <span class="icon-left"><i class="fas fa-home"></i></span> Ir a Página Inicio
+            </asp:HyperLink>
+            <br />
+            <br />
             <asp:Label ID="lblTitulo" runat="server" Font-Size="XX-Large" Text="STARTAP BREWING CO."></asp:Label>
             <br />
             <br />

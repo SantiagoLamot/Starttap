@@ -12,14 +12,23 @@
         .auto-style1 {
             width: 668px;
         }
+        .auto-style2 {
+            font-size: large;
+        }
     </style>
 </head>
 <body class="bodyBlanco">
     <form id="form1" runat="server" class="auto-style1">
         <div>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Administrador/VerTablas.aspx">
+<span class="icon-left"><i class="fas fa-home"></i></span> Ir a Página Inicio
+</asp:HyperLink>
             <br />
             <br />
-            <asp:Label runat="server" Text="Manejo de los salarios  y estado de los empleados "></asp:Label>
+            <br />
+            <strong>
+            <asp:Label runat="server" Text="Manejo de los salarios  y estado de los empleados " CssClass="auto-style2"></asp:Label>
+            </strong>
             <br />
             <br />
             <asp:GridView ID="gvEmpleados" runat="server" AllowPaging="True" OnPageIndexChanging="gvEmpleados_PageIndexChanging" Width="656px">

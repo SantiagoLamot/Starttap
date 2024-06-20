@@ -17,7 +17,11 @@ namespace Vistas
         int idUsuario = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            CargarRoles();
+            if (!IsPostBack)
+            {
+                CargarRoles();
+            }
+            
         }
        
         protected void txtDNI_TextChanged(object sender, EventArgs e)
@@ -34,6 +38,7 @@ namespace Vistas
                 if (registroEmpleado.ExisteEmpleado(dni) == 1)
                 {
                     lblMensaje.Text = "El usuario ya está registrado como empleado.";
+                    lblMensaje.ForeColor = System.Drawing.Color.Red;
                     pnlAgregarEmpleado.Visible = false;
                 }
                 else
@@ -77,10 +82,12 @@ namespace Vistas
                 registroEmpleado.AgregarEmpleado(empleado);
                 LimpiarFormulario();
                 lblMensaje.Text = "Empleado agregado correctamente.";
+                lblMensaje.ForeColor = System.Drawing.Color.Green;
             }
             catch (Exception ex)
             {
                 lblMensaje.Text = $"Error al agregar empleado: {ex.Message}";
+                lblMensaje.ForeColor = System.Drawing.Color.Blue;
             }
 
         }
@@ -99,6 +106,7 @@ namespace Vistas
         private void MostrarMensajeUsuarioNoExiste()
         {
             lblMensaje.Text = "El usuario No existe. ¿Desea Registrar un Nuevo Usuario?.";
+            lblMensaje.ForeColor = System.Drawing.Color.Blue;
             hlRegistrar.Visible = true;
             pnlAgregarEmpleado.Visible = false;
         }

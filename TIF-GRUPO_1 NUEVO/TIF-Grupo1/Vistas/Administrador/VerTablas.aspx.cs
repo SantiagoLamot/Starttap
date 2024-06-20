@@ -17,30 +17,29 @@ namespace Vistas.Administrador
             }
         }
 
+        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            // Eliminar las cookies
+            if (Request.Cookies["NombreUsuario"] != null)
+            {
+                HttpCookie nombreCookie = new HttpCookie("NombreUsuario");
+                nombreCookie.Expires = DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(nombreCookie);
+            }
+
+            if (Request.Cookies["ApellidoUsuario"] != null)
+            {
+                HttpCookie apellidoCookie = new HttpCookie("ApellidoUsuario");
+                apellidoCookie.Expires = DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(apellidoCookie);
+            }
+
+            
+            Response.Redirect("~/Login y Registro/Ingreso.aspx");
+        }
         protected void btnVer_Click(object sender, EventArgs e)
         {
-            switch (ddlTablas.SelectedValue)
-            {
-                    
-                case "1":
-                    //Response.Redirect("/Administrador/TablaProductos.aspx");
-                    
-                    break;
-                case "2":
-                    Response.Redirect("/Administrador/TablaEmpleados.aspx");
 
-                    break;
-                case "3":
-                    Response.Redirect("/Administrador/TablaClientes.aspx");
-                    break;
-                case "4":
-                    //Response.Redirect("/Administrador/TablaVentas.aspx");
-                    break;
-                default:
-                    
-                    break;
-
-            }
         }
     }
 }

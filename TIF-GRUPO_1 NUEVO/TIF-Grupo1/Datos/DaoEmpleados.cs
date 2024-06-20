@@ -66,7 +66,7 @@ namespace Datos
             SqlCommand cmd = new SqlCommand();
             cmd.Parameters.AddWithValue("@IdUsuario", empleado.idUsuario);
             cmd.Parameters.AddWithValue("@Salario", empleado.Salario);
-            cmd.Parameters.AddWithValue("IdRol", empleado.Rol);
+            cmd.Parameters.AddWithValue("IdRol", empleado.Rol.IdRol);
             cmd.Parameters.AddWithValue("FechaIngreso", empleado.FechaIngreso);
             cmd.Parameters.AddWithValue("Horarios", empleado.Horario);
             cmd.Parameters.AddWithValue("Estado", empleado.Estado);

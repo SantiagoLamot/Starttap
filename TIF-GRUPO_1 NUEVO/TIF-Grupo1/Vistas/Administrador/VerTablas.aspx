@@ -10,67 +10,123 @@
     <title></title>
     <style type="text/css">
 
- p.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;
+    .header {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .header .logout-button {
+            background-color: #f44336; 
+            color: white;
+            border: none; 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            float: right;
+        }
+
+        .header .logout-button:hover {
+            background-color: #d32f2f; 
+        }
+
+    .MsoNormal
+	{   
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
 	}
+
+    .labelPrincipal {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    }
+    
+    .navigation-menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation-menu li {
+        margin-bottom: 10px; /* Espacio entre los enlaces */
+    }
+
+    .navigation-menu a {
+        text-decoration: none;
+        color: #007bff; /* Color del texto */
+        font-weight: bold;
+    }
+
+    .navigation-menu a:hover {
+        color: #0056b3; /* Color al pasar el mouse por encima */
+    }
+        .auto-style1 {
+            width: 310px;
+            height: 358px;
+        }
     </style>
+
 </head>
 <body class="bodyBlanco">
     <form id="form1" runat="server">
+        <div class="header">
+            <asp:Label ID="CerrarSesion" runat="server"></asp:Label>
+            <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión" CssClass="logout-button" OnClick="btnCerrarSesion_Click" />
+        </div>
       
-        <div>
+        <div class="auto-style1">
             
             <br />
-            <asp:Label ID="lblHola" runat="server" Text="HOLA "></asp:Label>
-            <asp:Label ID="lblNombreUsuario" runat="server" CssClass="MsoNormal">&quot;Nombre de usuario&quot;</asp:Label>
-            <asp:Label ID="lblBienvenido" runat="server" Text=", BIENVENIDA/O!"></asp:Label>
+            <asp:Label ID="lblHola" runat="server" Text="HOLA "  CssClass="labelPrincipal"></asp:Label>
+            <asp:Label ID="lblNombreUsuario" runat="server"  CssClass="labelPrincipal" >&quot;Nombre de usuario&quot;</asp:Label>
+            <asp:Label ID="lblBienvenido" runat="server" Text="¡BIENVENIDA/O!" CssClass="labelPrincipal"></asp:Label>
             <br />
             <br />
             <br />
-            <asp:Label ID="lblTablas" runat="server" BorderStyle="Outset" Text="Seleccione una Tabla"></asp:Label>
-&nbsp;<asp:DropDownList ID="ddlTablas" runat="server">
-                <asp:ListItem Value="-1">-seleccione una tabla-</asp:ListItem>
-                <asp:ListItem Value="1">Productos</asp:ListItem>
-                <asp:ListItem Value="2">Empleados</asp:ListItem>
-                <asp:ListItem Value="3">Clientes</asp:ListItem>
-                <asp:ListItem Value="4">Ventas</asp:ListItem>
-            </asp:DropDownList>
-            <br />
+&nbsp;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:RequiredFieldValidator ID="rfvTablas" runat="server" ControlToValidate="ddlTablas" ErrorMessage="*Seleccione una Tabla" Font-Names="Times New Roman" Font-Size="Small" ForeColor="Red" InitialValue="-seleccione una tabla-" ValidationGroup="GrupoVer">*Seleccione una Tabla</asp:RequiredFieldValidator>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnVer" runat="server" BorderStyle="Inset" Text="Ver" ValidationGroup="GrupoVer" OnClick="btnVer_Click" />
-        </div>
-
-        <asp:Label ID="Label1" runat="server" Text="Administracion de empleados"></asp:Label>
-        <br />
+            <br />
+            <br />
+            <br />
+            <asp:Label ID="lblBienvenido0" runat="server" Text="Acceso de Usuario Administrador." CssClass="MsoNormal"></asp:Label>
+            </div>
+        <ul class="navigation-menu">
+    <li>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Administrador/AgregarEmpleado.aspx">Agregar Empleado</asp:HyperLink>
-        <br />
+    </li>
+    <li>
         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Administrador/DatosLaboralesEmpleados.aspx">Datos laborales</asp:HyperLink>
-        <br />
+    </li>
+    <li>
         <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Administrador/TablaEmpleados.aspx">Ver empleados</asp:HyperLink>
-        <br />
-        <asp:Label ID="Label2" runat="server" Text="Administracion de clientes"></asp:Label>
-        <br />
+    </li>
+    <li>
         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Administrador/TablaClientes.aspx">Ver clientes</asp:HyperLink>
-        <br />
+    </li>
+    <li>
         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Administrador/ClientesInactivos.aspx">Clientes inactivos</asp:HyperLink>
-        <br />
-        <asp:Label ID="Label3" runat="server" Text="Administracion de Productos"></asp:Label>
-        <br />
+    </li>
+    <li>
         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Administrador/AgregarProducto.aspx">Ver/Agregar productos</asp:HyperLink>
-        <br />
+    </li>
+    <li>
         <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Administrador/MostrarReportes.aspx">Ver reportes</asp:HyperLink>
-        <br />
-       
+    </li>
+</ul>
 
     </form>
 </body>

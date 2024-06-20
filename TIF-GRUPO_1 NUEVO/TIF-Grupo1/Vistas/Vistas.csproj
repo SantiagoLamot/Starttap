@@ -91,7 +91,6 @@
     <Content Include="Imagenes\imagen02.jpeg" />
     <Content Include="Login y Registro\FormularioRegistro.aspx" />
     <Content Include="Login y Registro\Ingreso.aspx" />
-    <Content Include="Login y Registro\IniciarSesion.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -241,13 +240,6 @@
     </Compile>
     <Compile Include="Login y Registro\Ingreso.aspx.designer.cs">
       <DependentUpon>Ingreso.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login y Registro\IniciarSesion.aspx.cs">
-      <DependentUpon>IniciarSesion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login y Registro\IniciarSesion.aspx.designer.cs">
-      <DependentUpon>IniciarSesion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
