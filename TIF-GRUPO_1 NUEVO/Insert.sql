@@ -38,17 +38,42 @@ VALUES (1),(2),(3),(4),(5),(6),(7),(8);
 
 --INSERT TIPOS DE USUARIOS
 Insert into TiposUsuarios(Tipo)
-Values ('Administrador'), ('Empleado'), ('Cliente')
+Values ('Administrador'), ('Empleado'), ('Cliente'),('Cliente inactivo')
 
 --INSERT ROLES DE EMPLEADOS
 Insert into Roles(NombreRol)
 values ('Mesero'),('Cocinero')
 
---INSERT USUARIO ADMINISTRADOR QUE NIVEL!!
+--INSERT USUARIO ADMINISTRADOR 
 INSERT INTO Usuario(Nombre,Apellido,Email,Contraseña,DNI,Telefono,Direccion)
-values ('Leonel', 'Messi', 'LeoMessi_10@gmail.com','#3Estrellas', '35824101', '11-05245782', '9 de Julio 640')
+values ('Lionel', 'Messi', 'leomessi@gmail.com','181222', '35824101', '11-05245782', '9 de Julio 640')
+
+INSERT INTO Usuario(Nombre, Apellido, Email, Contraseña, DNI, Telefono, Direccion)
+VALUES
+('Juan', 'Pérez', 'juan.perez@example.com', 'contraseña123', '12345678', '555-1234', 'Calle Falsa 123'),
+('María', 'González', 'maria.gonzalez@example.com', 'contraseña456', '87654321', '555-5678', 'Avenida Siempre Viva 456'),
+('Carlos', 'Ramírez', 'carlos.ramirez@example.com', 'contraseña789', '11223344', '555-8765', 'Calle Luna 789'),
+('Ana', 'Fernández', 'ana.fernandez@example.com', 'contraseña101', '44332211', '555-4321', 'Avenida Sol 101'),
+('Luis', 'Martínez', 'luis.martinez@example.com', 'contraseña202', '55667788', '555-2345', 'Calle Estrella 202'),
+('Elena', 'López', 'elena.lopez@example.com', 'contraseña303', '99887766', '555-3456', 'Avenida Horizonte 303'),
+('Miguel', 'Sánchez', 'miguel.sanchez@example.com', 'contraseña404', '88776655', '555-4567', 'Calle Aurora 404'),
+('Lucía', 'Torres', 'lucia.torres@example.com', 'contraseña505', '77665544', '555-5679', 'Avenida Océano 505'),
+('Jorge', 'Díaz', 'jorge.diaz@example.com', 'contraseña606', '66554433', '555-6789', 'Calle Mar 606'),
+('Marta', 'Morales', 'marta.morales@example.com', 'contraseña707', '55443322', '555-7890', 'Avenida Tierra 707');
+
 
 --INSERT EL TIPO DE USUARIO PARA ULTIMO REGISTRO CREADO
 insert into Usuario_Tipos(IdUsuario,IdTipos)
-values (1,1)
+values (1,1),(2,2),(3,2),(4,2),(5,2),(6,2),(7,3),(8,3),(9,3),(10,4),(11,4)
 
+--INSERT DE TABLA ROLES DE EMPLEADO
+INSERT INTO Empleado(IdUsuario, Salario, IdRol, FechaIngreso, Horarios, Estado)
+VALUES (2, 50000, 1, '19-05-2024', '20 a 2', 1),
+(3, 50000, 1, '19-05-2024', '20 a 2', 1),
+(4, 50000, 1, '19-05-2024', '20 a 2', 1),
+(5, 50000, 1, '19-05-2024', '20 a 2', 1),
+(6, 50000, 2, '19-05-2024', '20 a 2', 1),
+(7, 50000, 2, '19-05-2024', '20 a 2', 1),
+(8, 50000, 2, '19-05-2024', '20 a 2', 1),
+(9, 50000, 2, '19-05-2024', '20 a 2', 1),
+(10, 50000, 2, '19-05-2024', '20 a 2', 0)
