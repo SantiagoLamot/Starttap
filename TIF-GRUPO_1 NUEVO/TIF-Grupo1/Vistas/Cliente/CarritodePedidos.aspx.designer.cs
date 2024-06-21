@@ -33,13 +33,13 @@ namespace Vistas
         protected global::System.Web.UI.WebControls.Label lblTituloCarrito;
 
         /// <summary>
-        /// Control GridView1.
+        /// Control gv_Ordenes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView gv_Ordenes;
 
         /// <summary>
         /// Control btnConfirmarPedido.
@@ -51,12 +51,12 @@ namespace Vistas
         protected global::System.Web.UI.WebControls.Button btnConfirmarPedido;
 
         /// <summary>
-        /// Control lblMensaje.
+        /// Control lblMensajeConfirmacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensaje;
+        protected global::System.Web.UI.WebControls.Label lblMensajeConfirmacion;
     }
 }

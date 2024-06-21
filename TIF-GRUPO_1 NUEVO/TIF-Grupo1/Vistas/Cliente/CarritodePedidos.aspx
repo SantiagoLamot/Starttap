@@ -6,12 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            margin-top: 0px;
-        }
-    </style>
-</head>
+    </head>
 <body>
     <form id="form1" runat="server">
         <div>
@@ -22,22 +17,21 @@
             <br />
             <br />
         </div>
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CssClass="auto-style1" Height="214px" Width="518px">
-            <Columns>
-                <asp:TemplateField HeaderText="Nombre del Producto"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Cantidad"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Precio"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Subtotal"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Modificar Cantidad"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Eliminar Pedido"></asp:TemplateField>
-            </Columns>
-        </asp:GridView>
+        <asp:GridView ID="gv_Ordenes" runat="server" AutoGenerateColumns="False">
+    <Columns>
+        <asp:BoundField DataField="Nombre del Producto" HeaderText="Nombre del Producto" />
+        <asp:BoundField DataField="Cantidad" HeaderText="Cantidad" />
+        <asp:BoundField DataField="Precio" HeaderText="Precio" />
+        <asp:BoundField DataField="Subtotal" HeaderText="Subtotal" />
+    </Columns>
+</asp:GridView>
+
         <br />
         <br />
-        <asp:Button ID="btnConfirmarPedido" runat="server" Text="Confirmar Pedido" />
-        <br />
-        <br />
-        <asp:Label ID="lblMensaje" runat="server" Text="Label"></asp:Label>
+        <asp:Button ID="btnConfirmarPedido" runat="server" Text="Confirmar Pedido" OnClick="btnConfirmarPedido_Click1" />
+        <div>
+            <asp:Label ID="lblMensajeConfirmacion" runat="server" CssClass="mensaje-confirmacion"></asp:Label>
+        </div>
     </form>
 </body>
 </html>

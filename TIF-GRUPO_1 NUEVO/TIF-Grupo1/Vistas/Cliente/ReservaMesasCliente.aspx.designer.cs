@@ -11,7 +11,7 @@ namespace Vistas.Cliente
 {
 
 
-    public partial class ReservaMesasCliente
+    public partial class ReservasMesaCliente
     {
 
         /// <summary>

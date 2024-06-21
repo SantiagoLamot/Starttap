@@ -1,26 +1,33 @@
-﻿<!DOCTYPE html>
+﻿<%--<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InicioCliente.aspx.cs" Inherits="Vistas.Administrador.InicioCliente" %>--%>
+
+<%@ Register Src="~/Menu.ascx" TagName="Menu" TagPrefix="uc" %>
+
+<!DOCTYPE html>
 <html lang="es">
-<head>
+<head runat="server">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página</title>
-    <link rel="stylesheet" type="text/css" href="/Estilos/estilos.css"/>
+    <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css"/>
+    <style type="text/css">
+        .auto-style1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    </style>
 </head>
-<body class="bodyBlanco">
-     <form id="form1" runat="server" class="formInicio">
-    <ul>
-        <li><button>Inicio</button></li>
-        <li><button>Productos</button></li>
-        <li><button>Pedidos</button></li>
-        <li><button>Reservas</button></li>
-    </ul>
-    <asp:Label ID="lblNombreApellidoUsuario" runat="server" Text="Ariel Tapia"></asp:Label>
-    <ul>
-     <li><button>Editar Datos</button></li>
-     <li><button>Cerrar Sesion</button></li>
-    </ul>
-    <asp:Label ID="Label1" runat="server" CssClass="labelPrincipal" Text="Bienvenido a Starttap"></asp:Label>
-    <p>Explora nuestros productos y realiza tus pedidos y reservas.</p>
+<body class="bodyLogoColor">
+        <uc:Menu runat="server" />
+    <main>
+    </main>
+    <form id="form1" runat="server" class="formInicio">
+        <h1>Bienvenido a Starttap</h1>
+        <h2>Explora nuestros productos y realiza tus pedidos y reservas.</h2>
+        <h3>Encuéntranos en: Tapalqué, 9 de Julio 456</h3>
+        <h3>Comunícate al: 2281-463774</h3>
     </form>
 </body>
 </html>
+

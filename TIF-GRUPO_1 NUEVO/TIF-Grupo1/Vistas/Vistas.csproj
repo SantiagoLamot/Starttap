@@ -81,8 +81,8 @@
     <Content Include="Cliente\EstadodePedidos.aspx" />
     <Content Include="Cliente\EstadoReserva.aspx" />
     <Content Include="Cliente\InicioCliente.aspx" />
+    <Content Include="Cliente\MenuPedidos.aspx" />
     <Content Include="Cliente\ReservaMesasCliente.aspx" />
-    <Content Include="Cliente\VerBebidas.aspx" />
     <Content Include="Empleado\InicioEmpleado.aspx" />
     <Content Include="Empleado\SolicitudesPedidos.aspx" />
     <Content Include="Empleado\SolicitudesReservas.aspx" />
@@ -91,6 +91,7 @@
     <Content Include="Imagenes\imagen02.jpeg" />
     <Content Include="Login y Registro\FormularioRegistro.aspx" />
     <Content Include="Login y Registro\Ingreso.aspx" />
+    <Content Include="Menu.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -192,19 +193,19 @@
     <Compile Include="Cliente\InicioCliente.aspx.designer.cs">
       <DependentUpon>InicioCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cliente\MenuPedidos.aspx.cs">
+      <DependentUpon>MenuPedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente\MenuPedidos.aspx.designer.cs">
+      <DependentUpon>MenuPedidos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cliente\ReservaMesasCliente.aspx.cs">
       <DependentUpon>ReservaMesasCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Cliente\ReservaMesasCliente.aspx.designer.cs">
       <DependentUpon>ReservaMesasCliente.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Cliente\VerBebidas.aspx.cs">
-      <DependentUpon>VerBebidas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cliente\VerBebidas.aspx.designer.cs">
-      <DependentUpon>VerBebidas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Empleado\InicioEmpleado.aspx.cs">
       <DependentUpon>InicioEmpleado.aspx</DependentUpon>
@@ -240,6 +241,13 @@
     </Compile>
     <Compile Include="Login y Registro\Ingreso.aspx.designer.cs">
       <DependentUpon>Ingreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
