@@ -57,6 +57,7 @@ namespace Vistas.Login_y_Registro
                 {
                     Session["IsAdmin"] = false;//Response.Redirect("/Empleado/InicioEmpleado.aspx");
                     lblMensaje1.Text = "tipo usuario 2: Emplado";
+                    Response.Redirect("/Empleado/InicioEmpleado.aspx");
                 }
                 else
                 {

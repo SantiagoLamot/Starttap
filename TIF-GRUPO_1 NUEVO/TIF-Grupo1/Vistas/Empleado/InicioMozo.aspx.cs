@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Vistas.Administrador
+namespace Vistas.Empleado
 {
-    public partial class VerTablas : System.Web.UI.Page
+    public partial class InicioMozo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,9 +17,8 @@ namespace Vistas.Administrador
             }
         }
 
-        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        protected void btn_CerrarSesion_Click(object sender, EventArgs e)
         {
-            // Eliminar las cookies
             if (Request.Cookies["NombreUsuario"] != null)
             {
                 HttpCookie nombreCookie = new HttpCookie("NombreUsuario");
@@ -34,13 +33,7 @@ namespace Vistas.Administrador
                 Response.Cookies.Add(apellidoCookie);
             }
 
-            
             Response.Redirect("~/Login y Registro/Ingreso.aspx");
-        }
-
-        protected void btnVer_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -69,7 +69,6 @@
   <ItemGroup>
     <Content Include="Administrador\AgregarProducto.aspx" />
     <Content Include="Administrador\DatosLaboralesEmpleados.aspx" />
-    <Content Include="Administrador\InicioAdministrador.aspx" />
     <Content Include="Administrador\MostrarReportes.aspx" />
     <Content Include="Administrador\TablaClientes.aspx" />
     <Content Include="Administrador\TablaEmpleados.aspx" />
@@ -83,7 +82,9 @@
     <Content Include="Cliente\InicioCliente.aspx" />
     <Content Include="Cliente\MenuPedidos.aspx" />
     <Content Include="Cliente\ReservaMesasCliente.aspx" />
+    <Content Include="Empleado\InicioCocinero.aspx" />
     <Content Include="Empleado\InicioEmpleado.aspx" />
+    <Content Include="Empleado\InicioMozo.aspx" />
     <Content Include="Empleado\SolicitudesPedidos.aspx" />
     <Content Include="Empleado\SolicitudesReservas.aspx" />
     <Content Include="Estilos\estilos.css" />
@@ -108,13 +109,6 @@
     </Compile>
     <Compile Include="Administrador\DatosLaboralesEmpleados.aspx.designer.cs">
       <DependentUpon>DatosLaboralesEmpleados.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Administrador\InicioAdministrador.aspx.cs">
-      <DependentUpon>InicioAdministrador.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administrador\InicioAdministrador.aspx.designer.cs">
-      <DependentUpon>InicioAdministrador.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administrador\MostrarReportes.aspx.cs">
       <DependentUpon>MostrarReportes.aspx</DependentUpon>
@@ -207,12 +201,26 @@
     <Compile Include="Cliente\ReservaMesasCliente.aspx.designer.cs">
       <DependentUpon>ReservaMesasCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Empleado\InicioCocinero.aspx.cs">
+      <DependentUpon>InicioCocinero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empleado\InicioCocinero.aspx.designer.cs">
+      <DependentUpon>InicioCocinero.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Empleado\InicioEmpleado.aspx.cs">
       <DependentUpon>InicioEmpleado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Empleado\InicioEmpleado.aspx.designer.cs">
       <DependentUpon>InicioEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\InicioMozo.aspx.cs">
+      <DependentUpon>InicioMozo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empleado\InicioMozo.aspx.designer.cs">
+      <DependentUpon>InicioMozo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Empleado\SolicitudesPedidos.aspx.cs">
       <DependentUpon>SolicitudesPedidos.aspx</DependentUpon>
