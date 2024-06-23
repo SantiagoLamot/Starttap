@@ -18,13 +18,15 @@
             <asp:Label runat="server" Text="Bienvenido "></asp:Label>
             <asp:Label ID="lblNombreUsuario" runat="server"></asp:Label>
 &nbsp;<asp:Label ID="Label1" runat="server" Text=" al menu de Mozo"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btn_volver" runat="server" OnClick="btn_volver_Click" Text="Volver" />
             <br />
             <br />
             <asp:Label runat="server" Font-Bold="True" Text="Administracion de pedidos:"></asp:Label>
             <br />
-            <asp:HyperLink ID="hp_SolicPedido" runat="server">Ver solicitudes de pedido</asp:HyperLink>
+            <asp:HyperLink ID="hp_SolicPedido" runat="server" NavigateUrl="~/Empleado/SolicitudesPedidos.aspx">Ver solicitudes de pedido</asp:HyperLink>
             <br />
-            <asp:HyperLink ID="hp_VerPedidosListo" runat="server">Ver pedidos listos de la cocina</asp:HyperLink>
+            <asp:HyperLink ID="hp_Entregados" runat="server" NavigateUrl="~/Empleado/VerEntregadosFacturasMozo.aspx">Ver entregados y su facturacion</asp:HyperLink>
             <br />
             <br />
             <asp:Label ID="hp_AdmReserva" runat="server" Font-Bold="True" Text="Administracion de reservas:"></asp:Label>

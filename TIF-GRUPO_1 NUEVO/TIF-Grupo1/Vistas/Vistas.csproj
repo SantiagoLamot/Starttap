@@ -88,6 +88,7 @@
     <Content Include="Empleado\InicioMozo.aspx" />
     <Content Include="Empleado\SolicitudesPedidos.aspx" />
     <Content Include="Empleado\SolicitudesReservas.aspx" />
+    <Content Include="Empleado\VerEntregadosFacturasMozo.aspx" />
     <Content Include="Estilos\estilos.css" />
     <Content Include="Imagenes\imagen01.jpeg" />
     <Content Include="Imagenes\imagen02.jpeg" />
@@ -243,6 +244,13 @@
     </Compile>
     <Compile Include="Empleado\SolicitudesReservas.aspx.designer.cs">
       <DependentUpon>SolicitudesReservas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\VerEntregadosFacturasMozo.aspx.cs">
+      <DependentUpon>VerEntregadosFacturasMozo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empleado\VerEntregadosFacturasMozo.aspx.designer.cs">
+      <DependentUpon>VerEntregadosFacturasMozo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login y Registro\FormularioRegistro.aspx.cs">
       <DependentUpon>FormularioRegistro.aspx</DependentUpon>

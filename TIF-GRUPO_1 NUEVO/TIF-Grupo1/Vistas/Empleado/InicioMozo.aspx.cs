@@ -42,5 +42,10 @@ namespace Vistas.Empleado
 
             Response.Redirect("~/Login y Registro/Ingreso.aspx");
         }
+
+        protected void btn_volver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Empleado/InicioEmpleado.aspx");
+        }
     }
 }

@@ -46,9 +46,33 @@ namespace Datos
 
         public DataTable getTablaOrdenes()
         {
-            DataTable tabla = accesoDatos.ObtenerTabla("Ordenes", "SELECT (Usuario.Nombre+' '+Usuario.Apellido) As 'Cliente', Ordenes.IdOrden, Ordenes.EstadoPreparacion FROM Ordenes  INNER JOIN Usuario ON Usuario.IdUsuario = Ordenes.IdUsuario WHERE EstadoComanda = 1 AND EstadoPreparacion = 0");
+            DataTable tabla = accesoDatos.ObtenerTabla("Ordenes", "SELECT Usuario.Nombre, Usuario.Apellido, Ordenes.IdOrden, Ordenes.EstadoPreparacion FROM Ordenes  INNER JOIN Usuario ON Usuario.IdUsuario = Ordenes.IdUsuario WHERE EstadoComanda = 1 AND EstadoPreparacion = 0");
             return tabla;
         }
+
+        public DataTable CargarOrden(int id)
+        {
+            DataTable tabla = accesoDatos.ObtenerTabla("Orden", "SELECT P.Nombre, PO.Cantidad FROM Ordenes AS O INNER JOIN Productos_Orden AS PO ON O.IdOrden = PO.IdOrden INNER JOIN Productos AS P ON PO.IdProducto = P.IdProducto Where O.IdOrden ="+ id + ";");
+            return tabla;
+        }
+
+        public int CambiarEstadoOrden(int id)
+        {
+            return accesoDatos.updateCampo("UPDATE Ordenes SET EstadoPreparacion = 1 WHERE IdOrden =" + id);
+        }
+
+        public DataTable CargarEntregados()
+        {
+            DataTable tabla = accesoDatos.ObtenerTabla("Entregados", "select  O.IdOrden AS 'Numero de orden', (U.Nombre +' '+ U.Apellido) AS Cliente, O.IdMesa AS 'Mesa nº', O.Fecha AS 'Fecha de compra', O.Total  from Ordenes AS O INNER JOIN Usuario AS U ON O.IdUsuario = U.IdUsuario INNER JOIN Empleado as E ON O.IdEmpleado = E.IdEmpleado WHERE O.EstadoComanda = 1 AND O.EstadoPreparacion = 1");
+            return tabla;
+        }
+
+        public DataTable getOrden(int id)
+        {
+            DataTable tabla = accesoDatos.ObtenerTabla("OrdenEspecifica", "select  O.IdOrden AS 'Numero de orden', (U.Nombre +' '+ U.Apellido) AS Cliente, O.IdMesa AS 'Mesa nº', O.Fecha AS 'Fecha de compra', O.Total  from Ordenes AS O INNER JOIN Usuario AS U ON O.IdUsuario = U.IdUsuario INNER JOIN Empleado as E ON O.IdEmpleado = E.IdEmpleado WHERE O.EstadoComanda = 1 AND O.EstadoPreparacion = 1 AND O.IdOrden = "+ id );
+            return tabla;
+        }
+
     }
 
 }

@@ -24,6 +24,15 @@ namespace Vistas.Empleado
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Control btn_VolverInicioEmpleado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_VolverInicioEmpleado;
+
+        /// <summary>
         /// Control gv_ListaOrdenes.
         /// </summary>
         /// <remarks>
@@ -33,12 +42,39 @@ namespace Vistas.Empleado
         protected global::System.Web.UI.WebControls.GridView gv_ListaOrdenes;
 
         /// <summary>
-        /// Control GridView2.
+        /// Control lbl_MensajeOrden.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
+        protected global::System.Web.UI.WebControls.Label lbl_MensajeOrden;
+
+        /// <summary>
+        /// Control lbl_DetalleOrden.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_DetalleOrden;
+
+        /// <summary>
+        /// Control gv_Orden.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gv_Orden;
+
+        /// <summary>
+        /// Control btn_ContraerGVOrden.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_ContraerGVOrden;
     }
 }

@@ -18,6 +18,8 @@
             <asp:Label runat="server" Text="Bienvenido "></asp:Label>
             <asp:Label ID="lblNombreUsuario" runat="server"></asp:Label>
 &nbsp;<asp:Label ID="Label1" runat="server" Text=" al menu de Cocinero"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btn_volver" runat="server" OnClick="btn_volver_Click" Text="Volver" />
             <br />
             <br />
             <asp:Label runat="server" Font-Bold="True" Text="Administracion de pedidos:"></asp:Label>

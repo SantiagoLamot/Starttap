@@ -11,7 +11,7 @@ namespace Vistas.Empleado
 {
 
 
-    public partial class InicioMozo
+    public partial class VerEntregados
     {
 
         /// <summary>
@@ -24,22 +24,22 @@ namespace Vistas.Empleado
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control btn_CerrarSesion.
+        /// Control btn_Volver.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_CerrarSesion;
+        protected global::System.Web.UI.WebControls.Button btn_Volver;
 
         /// <summary>
-        /// Control lblNombreUsuario.
+        /// Control gv_Entregados.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNombreUsuario;
+        protected global::System.Web.UI.WebControls.GridView gv_Entregados;
 
         /// <summary>
         /// Control Label1.
@@ -51,57 +51,66 @@ namespace Vistas.Empleado
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Control btn_volver.
+        /// Control tb_IdOrden.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_volver;
+        protected global::System.Web.UI.WebControls.TextBox tb_IdOrden;
 
         /// <summary>
-        /// Control hp_SolicPedido.
+        /// Control rfv_buscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hp_SolicPedido;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_buscar;
 
         /// <summary>
-        /// Control hp_Entregados.
+        /// Control rev_buscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hp_Entregados;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator rev_buscar;
 
         /// <summary>
-        /// Control hp_AdmReserva.
+        /// Control btn_Buscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hp_AdmReserva;
+        protected global::System.Web.UI.WebControls.Button btn_Buscar;
 
         /// <summary>
-        /// Control hp_SoliReservas.
+        /// Control ValidationSummary1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hp_SoliReservas;
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
 
         /// <summary>
-        /// Control hp_VerReservsa.
+        /// Control gv_OrdenEspecifica.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hp_VerReservsa;
+        protected global::System.Web.UI.WebControls.GridView gv_OrdenEspecifica;
+
+        /// <summary>
+        /// Control btn_Ocultar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Ocultar;
     }
 }

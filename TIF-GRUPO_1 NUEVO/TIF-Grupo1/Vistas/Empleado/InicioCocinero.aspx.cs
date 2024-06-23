@@ -13,7 +13,7 @@ namespace Vistas.Empleado
         {
             if (Request.Cookies["NombreUsuario"] != null && Request.Cookies["ApellidoUsuario"] != null)
             {
-                lblNombreUsuario.Text = (Request.Cookies["NombreUsuario"].Value + "  " + Request.Cookies["ApellidoUsuario"].Value).ToUpper();
+                lblNombreUsuario.Text = (Request.Cookies["NombreUsuario"].Value + "  " + Request.Cookies["ApellidoUsuario"].Value);
             }
         }
 
@@ -41,6 +41,11 @@ namespace Vistas.Empleado
             }
 
             Response.Redirect("~/Login y Registro/Ingreso.aspx");
+        }
+
+        protected void btn_volver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Empleado/InicioEmpleado.aspx");
         }
     }
 }
