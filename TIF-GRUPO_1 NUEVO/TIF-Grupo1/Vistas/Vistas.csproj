@@ -82,6 +82,7 @@
     <Content Include="Cliente\InicioCliente.aspx" />
     <Content Include="Cliente\MenuPedidos.aspx" />
     <Content Include="Cliente\ReservaMesasCliente.aspx" />
+    <Content Include="Empleado\CocinaVerPedidos.aspx" />
     <Content Include="Empleado\InicioCocinero.aspx" />
     <Content Include="Empleado\InicioEmpleado.aspx" />
     <Content Include="Empleado\InicioMozo.aspx" />
@@ -200,6 +201,13 @@
     </Compile>
     <Compile Include="Cliente\ReservaMesasCliente.aspx.designer.cs">
       <DependentUpon>ReservaMesasCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\CocinaVerPedidos.aspx.cs">
+      <DependentUpon>CocinaVerPedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empleado\CocinaVerPedidos.aspx.designer.cs">
+      <DependentUpon>CocinaVerPedidos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Empleado\InicioCocinero.aspx.cs">
       <DependentUpon>InicioCocinero.aspx</DependentUpon>

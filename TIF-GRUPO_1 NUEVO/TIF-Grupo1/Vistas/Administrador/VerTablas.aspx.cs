@@ -34,6 +34,13 @@ namespace Vistas.Administrador
                 Response.Cookies.Add(apellidoCookie);
             }
 
+            if (Request.Cookies["IdUsuario"] != null)
+            {
+                HttpCookie ckIdUsuario = new HttpCookie("IdUsuario");
+                ckIdUsuario.Expires = DateTime.Now.AddDays(-1);
+                this.Response.Cookies.Add(ckIdUsuario);
+            }
+
             
             Response.Redirect("~/Login y Registro/Ingreso.aspx");
         }

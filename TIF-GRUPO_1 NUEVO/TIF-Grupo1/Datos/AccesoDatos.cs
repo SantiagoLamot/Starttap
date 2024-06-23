@@ -147,6 +147,7 @@ namespace Datos
                 datosUsuario.nombre = reader.GetString(0);
                 datosUsuario.apellido = reader.GetString(1);
                 datosUsuario.email = reader.GetString(2);
+                datosUsuario.idUsuario = reader.GetInt32(3);
                 connection.Close();
                 return datosUsuario;
             }

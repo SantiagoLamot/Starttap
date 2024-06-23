@@ -28,7 +28,7 @@ namespace Datos
 
         public Usuario ObtenerDatosUsuario(Usuario usuario)
         {
-            string consulta = "SELECT Nombre, Apellido, Email from Usuario  WHERE Email = '" + usuario.email + "'";
+            string consulta = "SELECT Nombre, Apellido, Email, IdUsuario from Usuario  WHERE Email = '" + usuario.email + "'";
             return dt.DatosUsuario(consulta);
         }
 

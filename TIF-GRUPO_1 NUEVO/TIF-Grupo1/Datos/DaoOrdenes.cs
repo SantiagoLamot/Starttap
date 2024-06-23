@@ -44,6 +44,11 @@ namespace Datos
             return accesoDatos.ObtenerTablaDosParametros("Tabla", consulta, "@Anio", "@Mes", Anio, Mes);
         }
 
+        public DataTable getTablaOrdenes()
+        {
+            DataTable tabla = accesoDatos.ObtenerTabla("Ordenes", "SELECT (Usuario.Nombre+' '+Usuario.Apellido) As 'Cliente', Ordenes.IdOrden, Ordenes.EstadoPreparacion FROM Ordenes  INNER JOIN Usuario ON Usuario.IdUsuario = Ordenes.IdUsuario WHERE EstadoComanda = 1 AND EstadoPreparacion = 0");
+            return tabla;
+        }
     }
 
 }

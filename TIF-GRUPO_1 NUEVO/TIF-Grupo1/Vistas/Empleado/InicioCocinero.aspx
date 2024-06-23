@@ -23,7 +23,7 @@
             <asp:Label runat="server" Font-Bold="True" Text="Administracion de pedidos:"></asp:Label>
             <br />
             <br />
-            <asp:HyperLink ID="hp_SolicPedido" runat="server">Ver pedidos</asp:HyperLink>
+            <asp:HyperLink ID="hp_SolicPedido" runat="server" NavigateUrl="~/Empleado/CocinaVerPedidos.aspx">Ver pedidos</asp:HyperLink>
             <br />
             <br />
             <br />

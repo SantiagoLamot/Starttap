@@ -46,6 +46,14 @@ namespace Vistas.Login_y_Registro
                 ckEmail.Expires = DateTime.Now.AddDays(1);
                 this.Response.Cookies.Add(ckEmail);
 
+                int idUsuario = DatosUsuario.idUsuario;
+
+                string idUsuarioString = idUsuario.ToString();
+
+                HttpCookie ckIdUsuario = new HttpCookie("IdUsuario", idUsuarioString);
+                ckIdUsuario.Expires = DateTime.Now.AddDays(1);
+                this.Response.Cookies.Add(ckIdUsuario);
+
 
                 lblMensaje.Text = "Sesion iniciada con exito";
                 if (TipoUsuario == 1)
