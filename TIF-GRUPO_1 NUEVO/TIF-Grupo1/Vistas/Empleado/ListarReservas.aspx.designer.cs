@@ -11,7 +11,7 @@ namespace Vistas.Empleado
 {
 
 
-    public partial class SolicitudesReservas
+    public partial class ListarReservas
     {
 
         /// <summary>
@@ -33,13 +33,22 @@ namespace Vistas.Empleado
         protected global::System.Web.UI.WebControls.Label lblListadesolicitudes;
 
         /// <summary>
-        /// Control gvSolicitudesReservas.
+        /// Control tbFecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvSolicitudesReservas;
+        protected global::System.Web.UI.WebControls.TextBox tbFecha;
+
+        /// <summary>
+        /// Control gvReservas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvReservas;
 
         /// <summary>
         /// Control lblMensaje.

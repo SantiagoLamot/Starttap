@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SolicitudesReservas.aspx.cs" Inherits="Vistas.Empleado.SolicitudesReservas" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListarReservas.aspx.cs" Inherits="Vistas.Empleado.ListarReservas" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -16,10 +17,13 @@
 <body class="bodyBlanco">
     <form id="form1" runat="server" class="auto-style1">
         <div>
-            <asp:Label ID="lblListadesolicitudes" runat="server" Text="SOLICITUDES DE RESERVAS" CssClass="labelPrincipal"></asp:Label>
+            <asp:Label ID="lblListadesolicitudes" runat="server" Text="RESERVAS" CssClass="labelPrincipal"></asp:Label>
             <br />
+            Seleccione una fecha:
             <br />
-            <asp:GridView ID="gvSolicitudesReservas" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" OnRowCommand="gvSolicitudesReservas_RowCommand">
+            <asp:TextBox ID="tbFecha" runat="server" OnTextChanged="TextBox1_TextChanged" TextMode="Date" AutoPostBack="True"></asp:TextBox>
+            <br />
+            <asp:GridView ID="gvReservas" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:TemplateField HeaderText="Nombre y apellido">
@@ -40,13 +44,6 @@
                     <asp:TemplateField HeaderText="Comensales">
                         <ItemTemplate>
                             <asp:Label ID="lblComensales_IT" runat="server" Text='<%# Bind("Comensales") %>'></asp:Label>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField>
-                        <ItemTemplate>
-                            <asp:Button ID="btnAceptar_IT" runat="server" CommandArgument='<%# Eval("IdReserva") %>' CommandName="Click_Aceptar" Text="Aceptar" />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <asp:Button ID="btnRechazar_IT" runat="server" Text="Rechazar" CommandArgument='<%# Eval("IdReserva") %>' CommandName="Click_Rechazar" />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

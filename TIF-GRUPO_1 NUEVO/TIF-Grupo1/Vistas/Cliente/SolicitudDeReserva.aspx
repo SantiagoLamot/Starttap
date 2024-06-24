@@ -8,18 +8,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css"/>
+    <style type="text/css">
+        .auto-style1 {
+            width: 484px;
+        }
+        .auto-style2 {
+            width: 379px;
+        }
+    </style>
 </head>
 <body class="bodyBlanco">
      <uc:Menu runat="server" />
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" class="auto-style1">
         <main> 
         </main>
-        <div>
-            <asp:Label ID="lblTitulo" runat="server" Font-Size="XX-Large" Text="STARTAP BREWING CO."></asp:Label>
+        <div class="auto-style2">
             <br />
-            <br />
-            <asp:Label ID="lblMesaDeseaReservar" runat="server" Text="SELECCIONE LA MESA QUE DESEA RESERVAR O MIRA EL ESTADO DE TUS " Font-Bold="True"></asp:Label>
-            &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Cliente/EstadoReserva.aspx">RESERVAS</asp:HyperLink>
+            SELECCIONE LA MESA QUE DESEA RESERVAR O MIRA EL ESTADO DE TUS
+            &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Cliente/EstadoReserva.aspx">Reservas</asp:HyperLink>
             <br />
             <asp:DataList ID="dlMesas" runat="server" CellPadding="4" ForeColor="#333333" OnItemCommand="dlMesas_ItemCommand">
                 <AlternatingItemStyle BackColor="White" />
@@ -42,9 +48,11 @@
             <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="tbComensales" ErrorMessage="Los comensales deben ser mayor o igual a 1" ForeColor="#FF3300" Operator="GreaterThan" ValueToCompare="0">*</asp:CompareValidator>
             <br />
             <br />
-            <asp:Label ID="lblElijaFecha" runat="server" Text="Pulse aqui para elegir una fecha: "></asp:Label>
-&nbsp;<asp:TextBox ID="tbFecha" runat="server" Height="16px" AutoPostBack="True" OnTextChanged="tbFecha_TextChanged" TextMode="DateTimeLocal"></asp:TextBox>
+            <asp:Label ID="lblElijaFecha" runat="server" Text="Seleccione una fecha: "></asp:Label>
+&nbsp;<br />
+            <asp:TextBox ID="tbFecha" runat="server" Height="16px" AutoPostBack="True" OnTextChanged="tbFecha_TextChanged" TextMode="DateTimeLocal"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbFecha" ErrorMessage="Seleccione una fecha" ForeColor="#FF3300">*</asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="CompareDateTimeValidator" runat="server" Operator="GreaterThan" ControlToValidate="tbFecha" ErrorMessage="La fecha y hora ingresada no debe ser anterior a la actual." ValueToCompare='<%# DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") %>' ForeColor="#FF3300" >*</asp:CompareValidator>
             <br />
             <br />
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" />

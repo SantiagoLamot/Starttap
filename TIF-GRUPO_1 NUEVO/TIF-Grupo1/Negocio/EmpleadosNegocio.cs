@@ -51,5 +51,10 @@ namespace Negocio
             return daoReserva.SetearEstadoReserva(NuevoEstado, IdReserva);
         }
 
+        public DataTable ReservasConfirmadas(string fecha)
+        {
+            return daoReserva.MostrarReservasConfirmadas(fecha);
+        }
+
     }
 }

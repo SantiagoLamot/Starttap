@@ -27,7 +27,6 @@
             <asp:HyperLink ID="HyperLink1" runat="server" CssClass="hyperlink" NavigateUrl="~/Login y Registro/FormularioRegistro.aspx">¡Quiero registrarme!</asp:HyperLink>
             <br />
             <asp:Button ID="btnIngresar" runat="server" OnClick="btnIngresar_Click" Text="Iniciar Sesion" CssClass="BotonPrincipal" />
-            <br />
         </div>
     </form>
 </body>

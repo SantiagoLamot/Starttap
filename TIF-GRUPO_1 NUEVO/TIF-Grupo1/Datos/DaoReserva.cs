@@ -37,5 +37,10 @@ namespace Datos
             return accesoDatos.ObtenerTabla("EstadoReserva", consulta);
         }
 
+        public DataTable MostrarReservasConfirmadas(string fecha)
+        {
+            string consulta = "SELECT CONCAT(U.Nombre,' ',U.Apellido) as Cliente, M.Numero AS NumMesa, R.Fecha, R.Comensales FROM Reserva AS R INNER JOIN Usuario AS U ON U.IdUsuario = R.IdUsuario INNER JOIN Mesa AS M ON M.IdMesa = R.IdMesa WHERE R.Estado = 1 AND CAST(R.Fecha AS DATE) = '" + fecha +"'";
+            return accesoDatos.ObtenerTabla("Reservas", consulta);
+        }
     }
 }

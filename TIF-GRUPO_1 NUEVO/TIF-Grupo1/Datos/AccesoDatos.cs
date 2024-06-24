@@ -9,8 +9,8 @@ namespace Datos
     class AccesoDatos
     {
         
-        String cadenaDeConexion = @"Data Source=localhost\sqlexpress;Initial Catalog=Programacion3_TIF;Integrated Security=True";
-        String cadenaDeConexion2 = @"Data Source=localhost;Initial Catalog=Programacion3_TIF;Integrated Security=True";
+        String cadenaDeConexion2 = @"Data Source=localhost\sqlexpress;Initial Catalog=Programacion3_TIF;Integrated Security=True";
+        String cadenaDeConexion = @"Data Source=localhost;Initial Catalog=Programacion3_TIF;Integrated Security=True";
 
         public AccesoDatos()
         {

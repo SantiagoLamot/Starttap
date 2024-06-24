@@ -33,7 +33,7 @@
             <br />
             <asp:HyperLink ID="hp_SoliReservas" runat="server" NavigateUrl="~/Empleado/SolicitudesReservas.aspx">Ver solicitudes de reservas</asp:HyperLink>
             <br />
-            <asp:HyperLink ID="hp_VerReservsa" runat="server">Ver listado de reservas</asp:HyperLink>
+            <asp:HyperLink ID="hp_VerReservsa" runat="server" NavigateUrl="~/Empleado/ListarReservas.aspx">Ver listado de reservas</asp:HyperLink>
         </div>
     </form>
 </body>
