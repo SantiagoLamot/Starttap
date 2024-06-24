@@ -15,7 +15,7 @@
             <nav class="auto-style1">
                 <ul class="nav-list">
                     <li><a href="InicioCliente.aspx">Inicio</a></li>
-                    <li><a href="ReservaMesasCliente.aspx">Reservas</a></li>
+                    <li><a href="/Cliente/SolicitudDeReserva.aspx">Reservas</a></li>
                     <li><a href="MenuPedidos.aspx">Menu</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>

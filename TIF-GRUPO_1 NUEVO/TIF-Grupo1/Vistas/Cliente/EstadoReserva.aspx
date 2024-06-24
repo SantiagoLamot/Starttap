@@ -7,6 +7,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Estado de Reserva</title>
     <style>
+        datalist {
+           font-family: Arial, sans-serif;
+           text-align: center;
+           margin-top: 50px;
+            
+            }
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -34,30 +40,77 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <div class="header">STARTAP BREWING CO.</div>
-            <div class="subheader">Estado de Reserva<br />
+            <div class="header">STARTAP BREWING CO.<br />
+                <asp:Label ID="Label4" runat="server" Text="Estado de reservas"></asp:Label>
+            </div>
+            <div class="subheader">&nbsp;<asp:Label ID="Label1" runat="server" BackColor="#00CC99" ForeColor="#006666" Text="ACEPTADAS"></asp:Label>
                 <br />
-                    Estado de la Reserva: 
-                <asp:Label ID="Label1" runat="server" BackColor="Lime" BorderColor="Lime" BorderStyle="Outset" ForeColor="#006699" Text="&quot;ACEPTADO&quot;"></asp:Label>
+                <asp:DataList ID="dlReservasAceptadas" runat="server" HorizontalAlign="Center" CellPadding="4" ForeColor="#333333">
+                    <AlternatingItemStyle BackColor="White" />
+                    <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                    <ItemStyle BackColor="#E3EAEB" />
+                    <ItemTemplate>
+                        Fecha:
+                        <asp:Label ID="lblFEcha_IT" runat="server" Text='<%# Bind("Fecha") %>'></asp:Label>
+                        <br />
+                        Mesa:
+                        <asp:Label ID="lblMesa_IT" runat="server" Text='<%# Bind("NumMesa") %>'></asp:Label>
+                        <br />
+                        Comensales:
+                        <asp:Label ID="lblComensales_IT" runat="server" Text='<%# Bind("Comensales") %>'></asp:Label>
+                    </ItemTemplate>
+                    <SelectedItemStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
+                </asp:DataList>
+        <br />
+        GRACIAS POR ELEGIRNOS!!</div>
+            
+            <div class="subheader">
+                <asp:Label ID="Label2" runat="server" BackColor="#CCCC00" ForeColor="#999966" Text="PENDIENTES"></asp:Label>
                 <br />
+                <asp:DataList ID="dlReservasPendientes" runat="server" HorizontalAlign="Center" CellPadding="4" ForeColor="#333333">
+                    <AlternatingItemStyle BackColor="White" />
+                    <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                    <ItemStyle BackColor="#E3EAEB" />
+                    <ItemTemplate>
+                        Fecha:
+                        <asp:Label ID="lblFEcha_IT" runat="server" Text='<%# Bind("Fecha") %>'></asp:Label>
+                        <br />
+                        Mesa:
+                        <asp:Label ID="lblMesa_IT" runat="server" Text='<%# Bind("NumMesa") %>'></asp:Label>
+                        <br />
+                        Comensales:
+                        <asp:Label ID="lblComensales_IT" runat="server" Text='<%# Bind("Comensales") %>'></asp:Label>
+                    </ItemTemplate>
+                    <SelectedItemStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
+                </asp:DataList>
                 <br />
             </div>
+
+            <div class="subheader">&nbsp;<asp:Label ID="Label3" runat="server" BackColor="Red" ForeColor="#993300" Text="RECHAZADAS"></asp:Label>
+                <br />
+                <asp:DataList ID="dlReservasRechazadas" runat="server" HorizontalAlign="Center" CellPadding="4" ForeColor="#333333">
+                    <AlternatingItemStyle BackColor="White" />
+                    <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                    <ItemStyle BackColor="#E3EAEB" />
+                    <ItemTemplate>
+                        Fecha:
+                        <asp:Label ID="lblFEcha_IT" runat="server" Text='<%# Bind("Fecha") %>'></asp:Label>
+                        <br />
+                        Mesa:
+                        <asp:Label ID="lblMesa_IT" runat="server" Text='<%# Bind("NumMesa") %>'></asp:Label>
+                        <br />
+                        Comensales:
+                        <asp:Label ID="lblComensales_IT" runat="server" Text='<%# Bind("Comensales") %>'></asp:Label>
+                    </ItemTemplate>
+                    <SelectedItemStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
+                </asp:DataList>
+                <br />
+            </div>
+
         </div>
-        Señor/a:
-        <asp:Label ID="lblMensaje" runat="server" Text="&quot;Nombre de usuario&quot;"></asp:Label>
-        <br />
-        Se confirmo su reserva para
-        <br />
-        Fecha:
-        <asp:Label ID="lblFecha" runat="server"></asp:Label>
-        <br />
-        Hora:
-        <asp:Label ID="lblHora" runat="server"></asp:Label>
-        <br />
-        Mesa N°:
-        <asp:Label ID="lblMesa" runat="server"></asp:Label>
-        <br />
-        <br />
-        GRACIAS POR ELEGIRNOS!!</form>
+        </form>
 </body>
 </html>

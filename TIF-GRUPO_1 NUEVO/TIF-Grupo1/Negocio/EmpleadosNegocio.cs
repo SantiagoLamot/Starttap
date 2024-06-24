@@ -13,6 +13,8 @@ namespace Negocio
     {
         DaoEmpleados daoEmpleados = new DaoEmpleados();
 
+        DaoReserva daoReserva = new DaoReserva();
+
         public DataTable MostrarEmpleados()
         {
             return daoEmpleados.MostrarEmpleado();
@@ -39,6 +41,15 @@ namespace Negocio
             return daoEmpleados.UpdateEstadoEmpledo(id);
         }
 
+        public DataTable SolicitudesDeReservasPendientes()
+        {
+            return daoReserva.SolicitudesDeReservasPendientes();
+        }
+
+        public int SetearEstadoReserva(int NuevoEstado, int IdReserva)
+        {
+            return daoReserva.SetearEstadoReserva(NuevoEstado, IdReserva);
+        }
 
     }
 }

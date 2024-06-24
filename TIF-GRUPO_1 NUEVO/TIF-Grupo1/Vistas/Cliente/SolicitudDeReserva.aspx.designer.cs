@@ -11,7 +11,7 @@ namespace Vistas.Cliente
 {
 
 
-    public partial class ReservasMesaCliente
+    public partial class SolicitudDeReserva
     {
 
         /// <summary>
@@ -42,22 +42,58 @@ namespace Vistas.Cliente
         protected global::System.Web.UI.WebControls.Label lblMesaDeseaReservar;
 
         /// <summary>
-        /// Control ListViewReservas.
+        /// Control HyperLink1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView ListViewReservas;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
 
         /// <summary>
-        /// Control SqlDataSource1.
+        /// Control dlMesas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.DataList dlMesas;
+
+        /// <summary>
+        /// Control lblElijaFecha0.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblElijaFecha0;
+
+        /// <summary>
+        /// Control tbComensales.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbComensales;
+
+        /// <summary>
+        /// Control RequiredFieldValidator1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+
+        /// <summary>
+        /// Control CompareValidator1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
 
         /// <summary>
         /// Control lblElijaFecha.
@@ -69,31 +105,31 @@ namespace Vistas.Cliente
         protected global::System.Web.UI.WebControls.Label lblElijaFecha;
 
         /// <summary>
-        /// Control TextBox1.
+        /// Control tbFecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox tbFecha;
 
         /// <summary>
-        /// Control lblElijaHora.
+        /// Control RequiredFieldValidator2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblElijaHora;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
 
         /// <summary>
-        /// Control txtHorarioReserva.
+        /// Control ValidationSummary1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtHorarioReserva;
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
 
         /// <summary>
         /// Control lblMensaje.

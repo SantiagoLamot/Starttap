@@ -84,7 +84,8 @@ CREATE TABLE Reserva (
     IdUsuario int NOT NULL,
     IdMesa int NOT NULL,
     Fecha datetime NOT NULL,
-    Estado bit NOT NULL,
+    Comensales int NOT NULL,
+	Estado bit NULL,
     CONSTRAINT PK_Reserva PRIMARY KEY CLUSTERED (IdReserva),
     CONSTRAINT FK_Reserva_Usuario FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario),
     CONSTRAINT FK_Reserva_Mesa FOREIGN KEY (IdMesa) REFERENCES Mesa(IdMesa)

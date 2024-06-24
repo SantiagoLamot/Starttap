@@ -24,6 +24,15 @@ namespace Vistas.Cliente
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Control Label4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+
+        /// <summary>
         /// Control Label1.
         /// </summary>
         /// <remarks>
@@ -33,39 +42,48 @@ namespace Vistas.Cliente
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Control lblMensaje.
+        /// Control dlReservasAceptadas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensaje;
+        protected global::System.Web.UI.WebControls.DataList dlReservasAceptadas;
 
         /// <summary>
-        /// Control lblFecha.
+        /// Control Label2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFecha;
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Control lblHora.
+        /// Control dlReservasPendientes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHora;
+        protected global::System.Web.UI.WebControls.DataList dlReservasPendientes;
 
         /// <summary>
-        /// Control lblMesa.
+        /// Control Label3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMesa;
+        protected global::System.Web.UI.WebControls.Label Label3;
+
+        /// <summary>
+        /// Control dlReservasRechazadas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataList dlReservasRechazadas;
     }
 }

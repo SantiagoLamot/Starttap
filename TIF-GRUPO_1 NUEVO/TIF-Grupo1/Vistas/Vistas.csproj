@@ -81,7 +81,7 @@
     <Content Include="Cliente\EstadoReserva.aspx" />
     <Content Include="Cliente\InicioCliente.aspx" />
     <Content Include="Cliente\MenuPedidos.aspx" />
-    <Content Include="Cliente\ReservaMesasCliente.aspx" />
+    <Content Include="Cliente\SolicitudDeReserva.aspx" />
     <Content Include="Empleado\CocinaVerPedidos.aspx" />
     <Content Include="Empleado\InicioCocinero.aspx" />
     <Content Include="Empleado\InicioEmpleado.aspx" />
@@ -196,12 +196,12 @@
     <Compile Include="Cliente\MenuPedidos.aspx.designer.cs">
       <DependentUpon>MenuPedidos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Cliente\ReservaMesasCliente.aspx.cs">
-      <DependentUpon>ReservaMesasCliente.aspx</DependentUpon>
+    <Compile Include="Cliente\SolicitudDeReserva.aspx.cs">
+      <DependentUpon>SolicitudDeReserva.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cliente\ReservaMesasCliente.aspx.designer.cs">
-      <DependentUpon>ReservaMesasCliente.aspx</DependentUpon>
+    <Compile Include="Cliente\SolicitudDeReserva.aspx.designer.cs">
+      <DependentUpon>SolicitudDeReserva.aspx</DependentUpon>
     </Compile>
     <Compile Include="Empleado\CocinaVerPedidos.aspx.cs">
       <DependentUpon>CocinaVerPedidos.aspx</DependentUpon>

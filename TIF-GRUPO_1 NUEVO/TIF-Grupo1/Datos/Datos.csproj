@@ -45,9 +45,11 @@
     <Compile Include="AccesoDatos.cs" />
     <Compile Include="DaoClientes.cs" />
     <Compile Include="DaoEmpleados.cs" />
+    <Compile Include="DaoMesas.cs" />
     <Compile Include="DaoOrdenes.cs" />
     <Compile Include="DaoProductos.cs" />
     <Compile Include="DaoRegistro.cs" />
+    <Compile Include="DaoReserva.cs" />
     <Compile Include="DaoUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

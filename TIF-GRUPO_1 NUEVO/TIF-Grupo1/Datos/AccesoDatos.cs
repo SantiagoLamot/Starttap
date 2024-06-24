@@ -232,5 +232,14 @@ namespace Datos
             return Id;
         }
 
+        public int EjecutarInsertUpdate(string consulta)
+        {
+            SqlConnection sqlConnection = ObtenerConexion();
+            SqlCommand cmd = new SqlCommand(consulta, sqlConnection);
+            int filasAfectadas = cmd.ExecuteNonQuery();
+            sqlConnection.Close();
+            return filasAfectadas;
+        }
+
     }
 }

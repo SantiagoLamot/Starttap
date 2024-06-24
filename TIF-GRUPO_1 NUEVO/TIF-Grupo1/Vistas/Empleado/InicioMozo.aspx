@@ -31,7 +31,7 @@
             <br />
             <asp:Label ID="hp_AdmReserva" runat="server" Font-Bold="True" Text="Administracion de reservas:"></asp:Label>
             <br />
-            <asp:HyperLink ID="hp_SoliReservas" runat="server">Ver solicitudes de reservas</asp:HyperLink>
+            <asp:HyperLink ID="hp_SoliReservas" runat="server" NavigateUrl="~/Empleado/SolicitudesReservas.aspx">Ver solicitudes de reservas</asp:HyperLink>
             <br />
             <asp:HyperLink ID="hp_VerReservsa" runat="server">Ver listado de reservas</asp:HyperLink>
         </div>
