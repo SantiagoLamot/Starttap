@@ -32,11 +32,7 @@ namespace Vistas.Cliente
                 decimal Precio;
                 decimal.TryParse(lblPrecio.Text, out Precio);
 
-                List<Producto> carrito = (List<Producto>)Session["Carrito"];
-                if (carrito == null)
-                {
-                    carrito = new List<Producto>();
-                }
+                List<Producto> carrito = ObtenerCarritoDesdeSesion();
 
                 Producto producto = new Producto
                 {
@@ -47,13 +43,23 @@ namespace Vistas.Cliente
 
                 carrito.Add(producto);
 
-                // Guardar el carrito en la sesión
-                Session["Carrito"] = carrito;
-
-                // Guardar el carrito en una cookie
+                GuardarCarritoEnSesion(carrito);
                 GuardarCarritoEnCookie(carrito);
             }
-            
+
+        }
+        private void GuardarCarritoEnSesion(List<Producto> carrito)
+        {
+            Session["Carrito"] = carrito;
+        }
+        private List<Producto> ObtenerCarritoDesdeSesion()
+        {
+            List<Producto> carrito = (List<Producto>)Session["Carrito"];
+            if (carrito == null)
+            {
+                carrito = new List<Producto>();
+            }
+            return carrito;
         }
         private void GuardarCarritoEnCookie(List<Producto> carrito)
         {

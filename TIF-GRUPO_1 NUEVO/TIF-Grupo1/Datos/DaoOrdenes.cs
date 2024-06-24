@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 
 namespace Datos
 {
@@ -60,7 +63,10 @@ namespace Datos
         {
             return accesoDatos.updateCampo("UPDATE Ordenes SET EstadoPreparacion = 1 WHERE IdOrden =" + id);
         }
-
+        public int CambiarEstadoOrdenComanda(int id)
+        {
+            return accesoDatos.updateCampo("UPDATE Ordenes SET EstadoComanda = 1 WHERE IdOrden =" + id);
+        }
         public DataTable CargarEntregados()
         {
             DataTable tabla = accesoDatos.ObtenerTabla("Entregados", "select  O.IdOrden AS 'Numero de orden', (U.Nombre +' '+ U.Apellido) AS Cliente, O.IdMesa AS 'Mesa nº', O.Fecha AS 'Fecha de compra', O.Total  from Ordenes AS O INNER JOIN Usuario AS U ON O.IdUsuario = U.IdUsuario INNER JOIN Empleado as E ON O.IdEmpleado = E.IdEmpleado WHERE O.EstadoComanda = 1 AND O.EstadoPreparacion = 1");
@@ -73,6 +79,56 @@ namespace Datos
             return tabla;
         }
 
+        public int CrearOrden(List<Producto> carrito, int idUsuario)
+        {
+            SqlCommand cmd = new SqlCommand();
+            String Consulta = "INSERT INTO Ordenes (IdUsuario, IdEmpleado, IdMesa, Fecha, Total, EstadoComanda, EstadoPreparacion) OUTPUT INSERTED.IdOrden VALUES (@IdUsuario, @IdEmpleado, @IdMesa, @Fecha, @Total, @EstadoComanda, @EstadoPreparacion)";
+            cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+            cmd.Parameters.AddWithValue("@IdEmpleado", DBNull.Value);
+            cmd.Parameters.AddWithValue("@IdMesa", DBNull.Value);
+            cmd.Parameters.AddWithValue("@Fecha", DateTime.Now);
+            cmd.Parameters.AddWithValue("@Total", carrito.Sum(p => p.stock * p.precio));
+            cmd.Parameters.AddWithValue("@EstadoComanda", 0);
+            cmd.Parameters.AddWithValue("@EstadoPreparacion", 0);
+            return accesoDatos.Insert_DevuelveId(Consulta, cmd);
+
+        }
+
+        public int CargarListProducto(int ordenId, List<Producto> carrito)
+        {
+            int result = 0;
+
+            foreach (var producto in carrito)
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "INSERT INTO Productos_Orden (IdOrden, IdProducto, Cantidad, Subtotal) VALUES (@IdOrden, @IdProducto, @Cantidad, @Subtotal)";
+                cmd.Parameters.AddWithValue("@IdOrden", ordenId);
+                cmd.Parameters.AddWithValue("@IdProducto", ObtenerIdProductoPorNombre(producto.nombre)); // Método para obtener el ID del producto por nombre
+                cmd.Parameters.AddWithValue("@Cantidad", producto.stock);
+                cmd.Parameters.AddWithValue("@Subtotal", producto.stock * producto.precio);
+
+                result += accesoDatos.Insert_DevuelveId(consulta, cmd);
+            }
+
+            return result;
+        }
+
+        public int ObtenerIdProductoPorNombre(string nombreProducto)
+        {
+            SqlCommand cmd = new SqlCommand();
+            string consulta = "SELECT IdProducto FROM Productos WHERE Nombre = @Nombre";
+            cmd.Parameters.AddWithValue("@Nombre", nombreProducto);
+
+            return accesoDatos.Insert_DevuelveId(consulta, cmd);
+        }
+
+        public DataTable CargarSolicitudPedidos()
+        {
+            return accesoDatos.ObtenerTabla("Tabla Pedidos", "SELECT IdOrden, IdUsuario, IdEmpleado, IdMesa, Fecha, Total, EstadoComanda, EstadoPreparacion FROM Ordenes WHERE IdMesa IS NOT NULL"); 
+        }
     }
 
+
 }
+
+

@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
 }
+
 .bodyBlanco {
     font-family: Arial, sans-serif;
     background-image: url("/Imagenes/imagen02.jpeg");
@@ -150,6 +151,7 @@ header {
     padding: 0;
     display: flex;
 }
+
     .nav-list li {
         margin-right: 20px; /* Espaciado entre elementos de la lista */
     }
@@ -173,9 +175,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .carrito-container {
     position: relative; /* Posición relativa para posicionar el icono */
 }
+
 .carrito-link {
     display: flex;
     align-items: center;
@@ -185,10 +189,12 @@ body {
     padding: 10px;
     transition: background-color 0.3s;
 }
+
 .carrito-icon {
     width: 25px; /* Tamaño del icono */
     margin-right: 5px; /* Espaciado entre el icono y el texto */
 }
+
 .menu-container {
     display: flex;
     justify-content: space-around;

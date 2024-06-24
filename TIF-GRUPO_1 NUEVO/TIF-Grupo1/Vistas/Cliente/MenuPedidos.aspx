@@ -12,6 +12,24 @@
             width: 93%;
             margin: 0;
         }
+        .auto-style2 {
+            width: 647px;
+        }
+        .auto-style3 {
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-right: 14px;
+        }
+        .auto-style4 {
+            width: 100%;
+            margin: 0 23 0 0;
+        }
     </style>
   
 </head>
@@ -20,10 +38,10 @@
     <body class="bodyBlanco"/>
    <form id="form1" runat="server" class="auto-style2">
         <main class="menu-container"></main>
-            <div class="auto-style1">
-                <asp:Label ID="LabelBebidas" runat="server" Text="Bebidas:" CssClass="labelPrincipal"></asp:Label>
+            <div class="auto-style4">
+                <asp:Label ID="LabelBebidas" runat="server" Text="Bebidas:" CssClass="auto-style3"></asp:Label>
                 <br />
-                <asp:DataList ID="DataListBebidas" runat="server" DataSourceID="SqlDataSourceBebidas" RepeatColumns="1" RepeatLayout="Flow" CssClass="menu-datalist">
+                <asp:DataList ID="DataListBebidas" runat="server" DataSourceID="SqlDataSourceBebidas" RepeatColumns="2" CssClass="menu-datalist" Height="1123px" Width="638px">
                     <ItemTemplate>
                         <div class="menu-item">
                             <h3 class="menu-item-name">

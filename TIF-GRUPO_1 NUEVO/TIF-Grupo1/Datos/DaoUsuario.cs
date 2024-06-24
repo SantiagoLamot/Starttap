@@ -31,6 +31,10 @@ namespace Datos
             string consulta = "SELECT Nombre, Apellido, Email, IdUsuario from Usuario  WHERE Email = '" + usuario.email + "'";
             return dt.DatosUsuario(consulta);
         }
+        public Usuario BuscarUsuarioEmail(string Email)
+        {
+            return dt.ExisteUsuario($"Select * from Usuario where Email = '{Email}'");
+        }
 
     }
 }

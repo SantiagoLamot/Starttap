@@ -215,5 +215,22 @@ namespace Datos
             return usuario;
         }
 
+        public int Insert_DevuelveId(string consulta, SqlCommand Comando)
+        {
+            int Id = 0;
+            SqlConnection conexion = ObtenerConexion();
+            Comando.Connection = conexion;
+            Comando.CommandText = consulta;
+            object result = Comando.ExecuteScalar();
+
+            if (result != null)
+            {
+                Id = Convert.ToInt32(result);
+            }
+
+            conexion.Close();
+            return Id;
+        }
+
     }
 }
