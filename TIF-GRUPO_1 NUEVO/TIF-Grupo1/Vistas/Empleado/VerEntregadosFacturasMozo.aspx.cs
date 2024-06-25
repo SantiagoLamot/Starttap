@@ -35,11 +35,18 @@ namespace Vistas.Empleado
 
             DataTable tablaOrden = neg.getOrden(id);
 
-            gv_OrdenEspecifica.DataSource = tablaOrden;
-            gv_OrdenEspecifica.DataBind();
+            if(tablaOrden.Rows.Count>0)
+            {
+                gv_OrdenEspecifica.DataSource = tablaOrden;
+                gv_OrdenEspecifica.DataBind();
 
-            gv_OrdenEspecifica.Visible = true;
-            btn_Ocultar.Visible = true;
+                gv_OrdenEspecifica.Visible = true;
+                btn_Ocultar.Visible = true;
+            }
+            else
+            {
+                lblMensaje.Text = "No existe ID de orden facturada.";
+            }
         }
 
         protected void btn_Ocultar_Click(object sender, EventArgs e)

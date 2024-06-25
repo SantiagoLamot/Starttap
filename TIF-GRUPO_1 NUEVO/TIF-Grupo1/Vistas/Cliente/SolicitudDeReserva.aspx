@@ -52,7 +52,7 @@
 &nbsp;<br />
             <asp:TextBox ID="tbFecha" runat="server" Height="16px" AutoPostBack="True" OnTextChanged="tbFecha_TextChanged" TextMode="DateTimeLocal"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbFecha" ErrorMessage="Seleccione una fecha" ForeColor="#FF3300">*</asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="CompareDateTimeValidator" runat="server" Operator="GreaterThan" ControlToValidate="tbFecha" ErrorMessage="La fecha y hora ingresada no debe ser anterior a la actual." ValueToCompare='<%# DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") %>' ForeColor="#FF3300" >*</asp:CompareValidator>
+            <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="tbFecha" ErrorMessage="Selecciona una fecha posterior a la actual" ForeColor="#FF3300" MaximumValue="31-12-2030" MinimumValue='<%# DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") %>'>*</asp:RangeValidator>
             <br />
             <br />
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" />

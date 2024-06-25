@@ -48,6 +48,7 @@
             <asp:Button ID="btn_Buscar" runat="server" OnClick="btn_Buscar_Click" Text="Buscar" ValidationGroup="GP" />
             <br />
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="GP" />
+            <asp:Label ID="lblMensaje" runat="server"></asp:Label>
             <br />
             <asp:GridView ID="gv_OrdenEspecifica" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
