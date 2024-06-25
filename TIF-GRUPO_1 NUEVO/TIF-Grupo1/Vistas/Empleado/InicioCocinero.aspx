@@ -6,8 +6,16 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css"/>
+    <style type="text/css">
+        .auto-style1 {
+            width: 657px;
+            margin-left: 109px;
+            margin-right: 252px;
+        }
+    </style>
 </head>
-<body>
+<body class="bodyBlanco">
     <form id="form1" runat="server">
         <div>
             <asp:Label runat="server" Font-Bold="True" Font-Size="XX-Large" Text="STARTAP BREWING CO"></asp:Label>
