@@ -48,23 +48,7 @@ namespace Vistas
                     }
                 }
 
-                DataTable dt = new DataTable();
-                dt.Columns.AddRange(new DataColumn[]
-                {
-                    new DataColumn("Nombre del Producto"),
-                    new DataColumn("Cantidad"),
-                    new DataColumn("Precio"),
-                    new DataColumn("Subtotal")
-                });
-
-                foreach (var producto in carrito)
-                {
-                    decimal subtotal = producto.stock * producto.precio;
-                    dt.Rows.Add(producto.nombre, producto.stock, producto.precio, subtotal);
-                }
-
-                gv_Ordenes.DataSource = dt;
-                gv_Ordenes.DataBind();
+                CargarGridView(carrito);
             }
         }
 
@@ -74,9 +58,9 @@ namespace Vistas
 
             foreach (GridViewRow row in gv_Ordenes.Rows)
             {
-                string nombre = row.Cells[0].Text;
-                int stock = int.Parse(row.Cells[1].Text);
-                decimal precio = decimal.Parse(row.Cells[2].Text);
+                string nombre = row.Cells[1].Text;
+                int stock = int.Parse(row.Cells[2].Text);
+                decimal precio = decimal.Parse(row.Cells[3].Text);
 
                 Producto producto = new Producto
                 {
@@ -123,6 +107,51 @@ namespace Vistas
             {
                 lblMensajeConfirmacion.Text = "Hubo un error al procesar su pedido. Por favor, intente nuevamente.";
             }
+        }
+
+        private void CargarGridView(List<Producto> carrito)
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.AddRange(new DataColumn[]
+            {
+                new DataColumn("Nombre del Producto"),
+                new DataColumn("Cantidad"),
+                new DataColumn("Precio"),
+                new DataColumn("Subtotal")
+            });
+
+            foreach (var producto in carrito)
+            {
+                decimal subtotal = producto.stock * producto.precio;
+                dt.Rows.Add(producto.nombre, producto.stock, producto.precio, subtotal);
+            }
+
+            gv_Ordenes.DataSource = dt;
+            gv_Ordenes.DataBind();
+        }
+
+
+        protected void gv_Ordenes_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int rowIndex = e.RowIndex;
+            List<Producto> carrito = ObtenerCarritoDesdeGridView();
+            carrito.RemoveAt(rowIndex);
+            CargarGridView(carrito);
+            GuardarCarritoEnCookie(carrito);
+        }
+        private void GuardarCarritoEnCookie(List<Producto> carrito)
+        {
+            HttpCookie carritoCookie = new HttpCookie("Carrito");
+
+            StringBuilder productos = new StringBuilder();
+            foreach (var producto in carrito)
+            {
+                productos.Append($"{producto.nombre}|{producto.stock}|{producto.precio},");
+            }
+            carritoCookie["Productos"] = productos.ToString().TrimEnd(',');
+
+            carritoCookie.Expires = DateTime.Now.AddDays(1);
+            Response.Cookies.Add(carritoCookie);
         }
     }
 }

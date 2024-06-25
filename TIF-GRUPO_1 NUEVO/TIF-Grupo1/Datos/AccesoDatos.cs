@@ -174,6 +174,16 @@ namespace Datos
             int filasAfectadas = cmd.ExecuteNonQuery();
             return filasAfectadas;
         }
+        public void updateCampocomando(string consulta, SqlCommand cmd)
+        {
+            SqlConnection connection = ObtenerConexion();
+            cmd.Connection = connection;
+            cmd.CommandText = consulta;
+            cmd.CommandType = CommandType.Text;
+            cmd.ExecuteNonQuery();
+
+        }
+
 
         public DataTable ObtenerTablaUnParametro(String NombreTabla, String sql, String NomParam1, String valor1)
         {

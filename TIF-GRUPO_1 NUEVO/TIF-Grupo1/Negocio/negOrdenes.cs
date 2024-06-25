@@ -46,6 +46,10 @@ namespace Negocio
             {
                 return daoOrdenes.ObtenerStock(Nombre);
             }
+            public void ActualizarStock(string Nombre, int NStock)
+            {
+                 daoOrdenes.ActualizarStock(Nombre, NStock);
+            }
         }
     }
 }

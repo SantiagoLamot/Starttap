@@ -67,6 +67,10 @@ namespace Datos
         {
             return accesoDatos.updateCampo("UPDATE Ordenes SET EstadoComanda = 1 WHERE IdOrden =" + id);
         }
+        public int CambiarEstadoOrdenStock(int id)
+        {
+            return accesoDatos.updateCampo("UPDATE Estado SET EstadoComanda = 1 WHERE IdOrden =" + id);
+        }
         public DataTable CargarEntregados()
         {
             DataTable tabla = accesoDatos.ObtenerTabla("Entregados", "select  O.IdOrden AS 'Numero de orden', (U.Nombre +' '+ U.Apellido) AS Cliente, O.IdMesa AS 'Mesa nº', O.Fecha AS 'Fecha de compra', O.Total  from Ordenes AS O INNER JOIN Usuario AS U ON O.IdUsuario = U.IdUsuario INNER JOIN Empleado as E ON O.IdEmpleado = E.IdEmpleado WHERE O.EstadoComanda = 1 AND O.EstadoPreparacion = 1");
@@ -155,10 +159,20 @@ namespace Datos
         public int ObtenerStock(string Nombre)
         {
             SqlCommand cmd = new SqlCommand();
-            string consulta = "SELECT Stock FROM Productos WHERE Nombre LIKE @Nombre";
+            string consulta = "SELECT Stock FROM Productos WHERE Nombre = @Nombre";
             cmd.Parameters.AddWithValue("@Nombre", Nombre);
 
             return accesoDatos.Insert_DevuelveId(consulta, cmd);
+        }
+
+        public void ActualizarStock(string NombreProducto, int NuevoStock)
+        {
+            string query = "UPDATE Productos SET Stock = @NuevoStock, Estado = CASE WHEN @NuevoStock = 0 THEN 0 ELSE Estado END WHERE Nombre = @NombreProducto";
+            SqlCommand cmd = new SqlCommand(query);
+            cmd.Parameters.AddWithValue("@NombreProducto", NombreProducto);
+            cmd.Parameters.AddWithValue("@NuevoStock", NuevoStock);
+
+             accesoDatos.updateCampocomando(query, cmd);
         }
     }
 

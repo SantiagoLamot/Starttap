@@ -27,6 +27,7 @@ namespace Vistas.Cliente
 
                 TextBox txtCantidadB = (TextBox)item.FindControl("txtCantidadB");
                 Label lblPrecio = (Label)item.FindControl("lblPrecioB");
+                Label lblEstado = (Label)item.FindControl("lblEstado");
 
                 string Nombre = e.CommandArgument.ToString();
                 int Cantidad = int.Parse(txtCantidadB.Text);
@@ -35,10 +36,15 @@ namespace Vistas.Cliente
 
                 int stockDispo = negStock.ObtenerStock(Nombre);
 
+                if (stockDispo <= 0)
+                {
+                    btnAgregar.Visible = false;
+                }
                 if (Cantidad > stockDispo)
                 {
-                    lblMensaje.Text ="La cantidad ingresada supera el stock disponible.";
-                    return;
+                    lblMensaje.Visible = true;
+                    lblMensaje.Text = "La cantidad ingresada supera el stock disponible.";
+                    lblMensaje.ForeColor = System.Drawing.Color.DarkRed;
                 }
                 else
                 {
@@ -55,9 +61,17 @@ namespace Vistas.Cliente
 
                     GuardarCarritoEnSesion(carrito);
                     GuardarCarritoEnCookie(carrito);
+
+                    int nuevoStock = stockDispo - Cantidad;
+                    negStock.ActualizarStock(Nombre, nuevoStock);
+                    if (nuevoStock <= 0 )
+                    {
+                        lblMensaje.Text = "El producto ha sido agotado.";
+                        lblMensaje.ForeColor = System.Drawing.Color.DarkRed; 
+                        btnAgregar.Visible = false;
+                    }
+
                 }
-
-
             }
 
         }
@@ -88,47 +102,7 @@ namespace Vistas.Cliente
             carritoCookie.Expires = DateTime.Now.AddDays(1);
             Response.Cookies.Add(carritoCookie);
         }
-
-        protected void btnAgregarCarritoC_Command(object sender, CommandEventArgs e)
-        {
-            if (e.CommandName == "eAgregarCarritoC")
-            {
-                Button btnAgregar = (Button)sender;
-                DataListItem item = (DataListItem)btnAgregar.NamingContainer;
-
-                TextBox txtCantidadB = (TextBox)item.FindControl("txtCantidadC");
-                Label lblPrecio = (Label)item.FindControl("lblPrecioC");
-
-                string Nombre = e.CommandArgument.ToString();
-                int Cantidad = int.Parse(txtCantidadB.Text);
-                decimal Precio;
-                decimal.TryParse(lblPrecio.Text, out Precio);
-
-                int stockDispo = negStock.ObtenerStock(Nombre);
-
-                if (Cantidad > stockDispo)
-                {
-                    lblMensaje.Text = ("La cantidad ingresada supera el stock disponible.");
-                    return;
-                }
-                else
-                {
-                    List<Producto> carrito = ObtenerCarritoDesdeSesion();
-
-                    Producto producto = new Producto
-                    {
-                        nombre = Nombre,
-                        stock = Cantidad,
-                        precio = Precio
-                    };
-
-                    carrito.Add(producto);
-
-                    GuardarCarritoEnSesion(carrito);
-                    GuardarCarritoEnCookie(carrito);
-                }
-            }
-        }
     }
+       
 }
    
