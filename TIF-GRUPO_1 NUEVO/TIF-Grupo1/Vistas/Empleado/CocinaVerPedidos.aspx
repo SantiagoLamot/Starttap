@@ -1,14 +1,24 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CocinaVerPedidos.aspx.cs" Inherits="Vistas.Empleado.CocinaVerPedidos" %>
-
+<%@ Register Src="~/Empleado/VistaMenuEmpleado.ascx" TagName="Menu" TagPrefix="uc" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css"/>
+    <style type="text/css">
+        .auto-style1 {
+            width: 657px;
+            margin-left: 109px;
+            margin-right: 252px;
+        }
+    </style>
 </head>
-<body>
-    <form id="form1" runat="server">
+    <header><uc:menu runat="server" /> </header>
+<body class="bodyBlanco">
+    <form id="form1" runat="server" class="auto-style1">
+        <main class="menu-container"></main>
         <div>
             <asp:Label runat="server" Font-Bold="True" Font-Size="XX-Large" Text="STARTAP BREWING CO."></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

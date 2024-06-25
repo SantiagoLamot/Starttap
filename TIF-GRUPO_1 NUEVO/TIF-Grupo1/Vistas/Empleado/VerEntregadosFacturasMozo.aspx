@@ -1,21 +1,26 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="VerEntregadosFacturasMozo.aspx.cs" Inherits="Vistas.Empleado.VerEntregados" %>
-
+<%@ Register Src="~/Empleado/VistaMenuEmpleado.ascx" TagName="Menu" TagPrefix="uc" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css"/>
     <style type="text/css">
         .auto-style1 {
             margin-top: 0px;
         }
+        .auto-style2 {
+            width: 474px;
+        }
     </style>
 </head>
-<body>
-    <form id="form1" runat="server">
+    <header><uc:menu runat="server" /> </header>
+<body class="bodyBlanco">
+    <form id="form1" runat="server" class="auto-style2">
+        <main class="menu-container"></main>
         <div>
-            <asp:Label runat="server" Font-Bold="True" Font-Size="XX-Large" Text="STARTAP BREWING CO."></asp:Label>
             <br />
             <br />
             Listado de ordenes entregadas y su facturacion:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

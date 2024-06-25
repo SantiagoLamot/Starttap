@@ -122,9 +122,43 @@ namespace Datos
             return accesoDatos.Insert_DevuelveId(consulta, cmd);
         }
 
-        public DataTable CargarSolicitudPedidos()
+        public DataTable CargarSolicitudPedidos(string estado, int? idMesa)
         {
-            return accesoDatos.ObtenerTabla("Tabla Pedidos", "SELECT IdOrden, IdUsuario, IdEmpleado, IdMesa, Fecha, Total, EstadoComanda, EstadoPreparacion FROM Ordenes WHERE IdMesa IS NOT NULL"); 
+            string consulta = "SELECT IdOrden, IdUsuario, IdEmpleado, IdMesa, Fecha, Total, EstadoComanda, EstadoPreparacion FROM Ordenes WHERE IdMesa IS NOT NULL";
+
+            if (!string.IsNullOrEmpty(estado))
+            {
+                consulta += " AND EstadoComanda = @EstadoComanda";
+            }
+            if (idMesa.HasValue)
+            {
+                consulta += " AND IdMesa = @IdMesa";
+            }
+
+            SqlCommand cmd = new SqlCommand(consulta);
+            if (!string.IsNullOrEmpty(estado))
+            {
+                cmd.Parameters.AddWithValue("@EstadoComanda", estado);
+            }
+            if (idMesa.HasValue)
+            {
+                cmd.Parameters.AddWithValue("@IdMesa", idMesa);
+            }
+
+            return accesoDatos.ObtenerTablaConComando("Tabla Pedidos", cmd);
+        }
+        public DataTable ObtenerMesas()
+        {
+            string consulta = "SELECT DISTINCT IdMesa FROM Ordenes WHERE IdMesa IS NOT NULL";
+            return accesoDatos.ObtenerTabla("Mesas", consulta);
+        }
+        public int ObtenerStock(string Nombre)
+        {
+            SqlCommand cmd = new SqlCommand();
+            string consulta = "SELECT Stock FROM Productos WHERE Nombre LIKE @Nombre";
+            cmd.Parameters.AddWithValue("@Nombre", Nombre);
+
+            return accesoDatos.Insert_DevuelveId(consulta, cmd);
         }
     }
 

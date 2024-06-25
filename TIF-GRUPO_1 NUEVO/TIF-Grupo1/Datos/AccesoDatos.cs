@@ -68,6 +68,18 @@ namespace Datos
             return ds.Tables[NombreTabla];
         }
 
+        public DataTable ObtenerTablaConComando(string nombreTabla, SqlCommand comando)
+        {
+            DataSet ds = new DataSet();
+            SqlConnection conexion = ObtenerConexion();
+            comando.Connection = conexion;
+            SqlDataAdapter adaptador = new SqlDataAdapter(comando);
+            adaptador.Fill(ds, nombreTabla);
+            conexion.Close();
+            return ds.Tables[nombreTabla];
+        }
+
+
         public int EjecutarProcedimientoAlmacenado(SqlCommand Comando, String NombreSP)
         {
             int FilasCambiadas;
@@ -94,6 +106,7 @@ namespace Datos
             }
             return estado;
         }
+      
         public int existeEmpleado(String consulta)
         {
             SqlConnection Conexion = ObtenerConexion();

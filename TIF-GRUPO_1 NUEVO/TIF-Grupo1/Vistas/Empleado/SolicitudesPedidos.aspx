@@ -1,21 +1,31 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SolicitudesPedidos.aspx.cs" Inherits="Vistas.Empleado.SolicitudesPedidos" %>
+<%@ Register Src="~/Empleado/VistaMenuEmpleado.ascx" TagName="Menu" TagPrefix="uc" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css"/>
     <style type="text/css">
         .auto-style1 {
             width: 674px;
         }
+        .auto-style2 {
+            width: 945px;
+        }
+        .auto-style3 {
+            margin-top: 3;
+        }
     </style>
 </head>
-   <body class="bodyBlanco"/>
-<body>
-    <form id="form1" runat="server" class="auto-style1">
+<body class="bodyBlanco">
+    <header>
+        <uc:menu runat="server" />
+    </header>
+    <form id="form1" runat="server" class="auto-style2">
+        <main class="menu-container"></main>
         <br />
         <div>
             <asp:Label ID="Label2" runat="server" Text="TABLA SOLICITUDES DE PEDIDOS"></asp:Label>
@@ -32,7 +42,7 @@
             <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
             <br />
             <br />
-            <asp:GridView ID="gvTablaSolicitudesPedidos" runat="server" AllowPaging="True" AutoGenerateColumns="False" OnRowCommand="gvTablaSolicitudesPedidos_RowCommand" Height="303px" Width="676px">
+            <asp:GridView ID="gvTablaSolicitudesPedidos" runat="server" AllowPaging="True" AutoGenerateColumns="False" OnRowCommand="gvTablaSolicitudesPedidos_RowCommand" Height="290px" Width="888px" CssClass="auto-style3">
                 <Columns>
                     <asp:TemplateField HeaderText="IdPedido">
                         <ItemTemplate>
@@ -66,7 +76,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Tomar Pedido">
                         <ItemTemplate>
-                            <asp:LinkButton ID="Confirmar" runat="server" 
+                            <asp:LinkButton CssClass="hyperlink" ID="Confirmar" runat="server" 
                                 CommandArgument='<%# Eval("IdOrden") %>'
                                 CommandName="Confirmar" 
                                 Text="Tomar Pedido" 

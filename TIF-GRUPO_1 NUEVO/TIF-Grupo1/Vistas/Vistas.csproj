@@ -90,12 +90,15 @@
     <Content Include="Empleado\SolicitudesPedidos.aspx" />
     <Content Include="Empleado\SolicitudesReservas.aspx" />
     <Content Include="Empleado\VerEntregadosFacturasMozo.aspx" />
+    <Content Include="Empleado\VistaMenuEmpleado.ascx" />
     <Content Include="Estilos\estilos.css" />
+    <Content Include="Estilos\StyleMenu.css" />
+    <Content Include="Estilos\StyleGeneral.css" />
     <Content Include="Imagenes\imagen01.jpeg" />
     <Content Include="Imagenes\imagen02.jpeg" />
     <Content Include="Login y Registro\FormularioRegistro.aspx" />
     <Content Include="Login y Registro\Ingreso.aspx" />
-    <Content Include="Menu.ascx" />
+    <Content Include="Cliente\VistaMenuCliente.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -260,6 +263,13 @@
     <Compile Include="Empleado\VerEntregadosFacturasMozo.aspx.designer.cs">
       <DependentUpon>VerEntregadosFacturasMozo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Empleado\VistaMenuEmpleado.ascx.cs">
+      <DependentUpon>VistaMenuEmpleado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empleado\VistaMenuEmpleado.ascx.designer.cs">
+      <DependentUpon>VistaMenuEmpleado.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Login y Registro\FormularioRegistro.aspx.cs">
       <DependentUpon>FormularioRegistro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -274,12 +284,12 @@
     <Compile Include="Login y Registro\Ingreso.aspx.designer.cs">
       <DependentUpon>Ingreso.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Menu.ascx.cs">
-      <DependentUpon>Menu.ascx</DependentUpon>
+    <Compile Include="Cliente\VistaMenuCliente.ascx.cs">
+      <DependentUpon>VistaMenuCliente.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Menu.ascx.designer.cs">
-      <DependentUpon>Menu.ascx</DependentUpon>
+    <Compile Include="Cliente\VistaMenuCliente.ascx.designer.cs">
+      <DependentUpon>VistaMenuCliente.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

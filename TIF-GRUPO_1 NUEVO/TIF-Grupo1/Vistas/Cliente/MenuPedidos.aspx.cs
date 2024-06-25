@@ -6,12 +6,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Entidades;
-using Negocio;
+using static Negocio.negOrdenes;
 
 namespace Vistas.Cliente
 {
     public partial class Menu : System.Web.UI.Page
     {
+        NegocioOrdenes negStock = new NegocioOrdenes();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -28,23 +29,35 @@ namespace Vistas.Cliente
                 Label lblPrecio = (Label)item.FindControl("lblPrecioB");
 
                 string Nombre = e.CommandArgument.ToString();
-                string Cantidad = txtCantidadB.Text;
+                int Cantidad = int.Parse(txtCantidadB.Text);
                 decimal Precio;
                 decimal.TryParse(lblPrecio.Text, out Precio);
 
-                List<Producto> carrito = ObtenerCarritoDesdeSesion();
+                int stockDispo = negStock.ObtenerStock(Nombre);
 
-                Producto producto = new Producto
+                if (Cantidad > stockDispo)
                 {
-                    nombre = Nombre,
-                    stock = int.Parse(Cantidad),
-                    precio = Precio
-                };
+                    lblMensaje.Text ="La cantidad ingresada supera el stock disponible.";
+                    return;
+                }
+                else
+                {
+                    List<Producto> carrito = ObtenerCarritoDesdeSesion();
 
-                carrito.Add(producto);
+                    Producto producto = new Producto
+                    {
+                        nombre = Nombre,
+                        stock = Cantidad,
+                        precio = Precio
+                    };
 
-                GuardarCarritoEnSesion(carrito);
-                GuardarCarritoEnCookie(carrito);
+                    carrito.Add(producto);
+
+                    GuardarCarritoEnSesion(carrito);
+                    GuardarCarritoEnCookie(carrito);
+                }
+
+
             }
 
         }
@@ -74,6 +87,47 @@ namespace Vistas.Cliente
 
             carritoCookie.Expires = DateTime.Now.AddDays(1);
             Response.Cookies.Add(carritoCookie);
+        }
+
+        protected void btnAgregarCarritoC_Command(object sender, CommandEventArgs e)
+        {
+            if (e.CommandName == "eAgregarCarritoC")
+            {
+                Button btnAgregar = (Button)sender;
+                DataListItem item = (DataListItem)btnAgregar.NamingContainer;
+
+                TextBox txtCantidadB = (TextBox)item.FindControl("txtCantidadC");
+                Label lblPrecio = (Label)item.FindControl("lblPrecioC");
+
+                string Nombre = e.CommandArgument.ToString();
+                int Cantidad = int.Parse(txtCantidadB.Text);
+                decimal Precio;
+                decimal.TryParse(lblPrecio.Text, out Precio);
+
+                int stockDispo = negStock.ObtenerStock(Nombre);
+
+                if (Cantidad > stockDispo)
+                {
+                    lblMensaje.Text = ("La cantidad ingresada supera el stock disponible.");
+                    return;
+                }
+                else
+                {
+                    List<Producto> carrito = ObtenerCarritoDesdeSesion();
+
+                    Producto producto = new Producto
+                    {
+                        nombre = Nombre,
+                        stock = Cantidad,
+                        precio = Precio
+                    };
+
+                    carrito.Add(producto);
+
+                    GuardarCarritoEnSesion(carrito);
+                    GuardarCarritoEnCookie(carrito);
+                }
+            }
         }
     }
 }

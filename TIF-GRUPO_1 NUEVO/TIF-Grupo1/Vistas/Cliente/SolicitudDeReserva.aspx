@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SolicitudDeReserva.aspx.cs" Inherits="Vistas.Cliente.SolicitudDeReserva" %>
-<%@ Register Src="~/Menu.ascx" TagName="Menu" TagPrefix="uc" %>
+<%@ Register Src="~/Cliente/VistaMenuCliente.ascx"TagName="Menu" TagPrefix="uc" %>
 
 <!DOCTYPE html>
 
@@ -15,6 +15,11 @@
         .auto-style2 {
             width: 379px;
         }
+        .auto-style3 {
+            display: block;
+            text-align: center;
+            Color: cornflowerblue;
+        }
     </style>
 </head>
 <body class="bodyBlanco">
@@ -24,21 +29,16 @@
         </main>
         <div class="auto-style2">
             <br />
-            SELECCIONE LA MESA QUE DESEA RESERVAR O MIRA EL ESTADO DE TUS
-            &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Cliente/EstadoReserva.aspx">Reservas</asp:HyperLink>
+            SELECCIONE LA MESA QUE DESEA RESERVAR O MIRA EL ESTADO DE TUS <asp:HyperLink ID="HyperLink1" CssClass="auto-style3" runat="server" NavigateUrl="~/Cliente/EstadoReserva.aspx" Width="133px">Reservas</asp:HyperLink>
             <br />
-            <asp:DataList ID="dlMesas" runat="server" CellPadding="4" ForeColor="#333333" OnItemCommand="dlMesas_ItemCommand">
-                <AlternatingItemStyle BackColor="White" />
-                <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                <ItemStyle BackColor="#FFFBD6" ForeColor="#333333" />
+            <br />
+            <asp:DataList ID="dlMesas" Class="menu-datalist" runat="server" OnItemCommand="dlMesas_ItemCommand">
                 <ItemTemplate>
                     Mesa N°
                     <asp:Label ID="lblNumeroMesa" runat="server" Text='<%# Bind("Numero") %>'></asp:Label>
                     &nbsp;
                     <asp:Button ID="btnReservar" runat="server" Text="Reservar" CommandArgument='<%# Eval("IdMesa") %>' CommandName="btnReservar" />
                 </ItemTemplate>
-                <SelectedItemStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
             </asp:DataList>
             <br />
             <asp:Label ID="lblElijaFecha0" runat="server" Text="Ingrese cantidad de comensales: "></asp:Label>

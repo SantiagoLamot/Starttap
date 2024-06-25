@@ -1,6 +1,6 @@
 ﻿<%--<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InicioCliente.aspx.cs" Inherits="Vistas.Administrador.InicioCliente" %>--%>
 
-<%@ Register Src="~/Menu.ascx" TagName="Menu" TagPrefix="uc" %>
+<%@ Register Src="~/Cliente/VistaMenuCliente.ascx" TagName="Menu" TagPrefix="uc" %>
 
 <!DOCTYPE html>
 <html lang="es">

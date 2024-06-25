@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListarReservas.aspx.cs" Inherits="Vistas.Empleado.ListarReservas" %>
-
+<%@ Register Src="~/Empleado/VistaMenuEmpleado.ascx" TagName="Menu" TagPrefix="uc" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -14,8 +14,10 @@
         }
     </style>
 </head>
+    <header><uc:menu runat="server" /> </header>
 <body class="bodyBlanco">
     <form id="form1" runat="server" class="auto-style1">
+        <main class="menu-container"></main>
         <div>
             <asp:Label ID="lblListadesolicitudes" runat="server" Text="RESERVAS" CssClass="labelPrincipal"></asp:Label>
             <br />

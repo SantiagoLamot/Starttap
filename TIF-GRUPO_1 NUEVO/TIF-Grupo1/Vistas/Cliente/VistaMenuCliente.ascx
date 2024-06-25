@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Menu.ascx.cs" Inherits="Vistas.Menu" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="VistaMenuCliente.ascx.cs" Inherits="Vistas.Menu" %>
 <%--<%@ Register Src="~/Menu.ascx" TagName="Menu" TagPrefix="uc" %>--%>
 
 <!DOCTYPE html>

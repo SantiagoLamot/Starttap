@@ -29,14 +29,22 @@ namespace Negocio
             {
                 return usada.BuscarUsuarioEmail(Email);
             }
-            public DataTable MostrarOrdenensporMesa()
+            public DataTable MostrarOrdenensporMesa(string estado, int? idMesa)
             {
-                return daoOrdenes.CargarSolicitudPedidos();
+                return daoOrdenes.CargarSolicitudPedidos(estado,idMesa);
             }
 
             public int CambiarEstadoOrdenComanda(int id)
             {
                 return daoOrdenes.CambiarEstadoOrdenComanda(id);
+            }
+            public DataTable ObtenerMesas()
+            {
+                return daoOrdenes.ObtenerMesas();
+            }
+            public int ObtenerStock(string Nombre)
+            {
+                return daoOrdenes.ObtenerStock(Nombre);
             }
         }
     }

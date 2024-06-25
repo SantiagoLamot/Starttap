@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CarritodePedidos.aspx.cs" Inherits="Vistas.CarritodePedidos" %>
-<%@ Register Src="~/Menu.ascx" TagName="Menu" TagPrefix="uc" %>
+<%@ Register Src="~/Cliente/VistaMenuCliente.ascx" TagName="Menu" TagPrefix="uc" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -21,9 +21,7 @@
   <header><uc:menu runat="server" /> </header>
   
     <body class="bodyBlanco"/>
-   <form id="form2" runat="server" class="auto-style2">
-        <main class="menu-container"></main>
-<body>
+        <body>
 
 
     <form id="form1" runat="server" class="auto-style2">

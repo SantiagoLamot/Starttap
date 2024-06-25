@@ -102,7 +102,7 @@ namespace Vistas
 
         protected void btnConfirmarPedido_Click1(object sender, EventArgs e)
         {
-            List<Producto> carrito = ObtenerCarritoDesdeGridView(); // Método que obtiene el carrito actual
+            List<Producto> carrito = ObtenerCarritoDesdeGridView();
             NegocioOrdenes negocioOrdenes = new NegocioOrdenes();
             Usuario usuario = new Usuario();
 
