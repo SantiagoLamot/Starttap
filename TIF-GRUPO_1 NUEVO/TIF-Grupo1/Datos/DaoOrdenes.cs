@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
@@ -126,9 +127,15 @@ namespace Datos
             return accesoDatos.Insert_DevuelveId(consulta, cmd);
         }
 
-        public DataTable CargarSolicitudPedidos(string estado, int? idMesa)
+        public DataTable CargarSolicitudPedidos(string estado, int? idMesa, DateTime? FechaActual)
         {
-            string consulta = "SELECT IdOrden, IdUsuario, IdEmpleado, IdMesa, Fecha, Total, EstadoComanda, EstadoPreparacion FROM Ordenes WHERE IdMesa IS NOT NULL";
+            //string consulta = "SELECT IdOrden, IdUsuario, IdEmpleado, IdMesa, Fecha, Total, EstadoComanda, EstadoPreparacion FROM Ordenes WHERE IdMesa IS NOT NULL";
+            string consulta = "SELECT o.IdOrden, u.Nombre + u.Apellido AS NombreUsuario, o.IdEmpleado, o.IdMesa, o.Fecha, o.Total, o.EstadoComanda, o.EstadoPreparacion " +
+                                  "FROM Ordenes o INNER JOIN Usuario u ON o.IdUsuario = u.IdUsuario WHERE o.IdMesa IS NOT NULL";
+            //string consulta = "SELECT o.IdOrden, u.Nombre + u.Apellido AS NombreUsuario, o.IdEmpleado, o.IdMesa, o.Fecha, o.Total, o.EstadoComanda, o.EstadoPreparacion " +
+            //          "FROM Ordenes o INNER JOIN Usuario u ON o.IdUsuario = u.IdUsuario " +
+            //          "WHERE o.IdMesa IS NOT NULL AND CONVERT(date, o.Fecha) = @FechaActual";
+
 
             if (!string.IsNullOrEmpty(estado))
             {
@@ -138,8 +145,19 @@ namespace Datos
             {
                 consulta += " AND IdMesa = @IdMesa";
             }
+            if (FechaActual.HasValue)
+            {
+                consulta += " AND CONVERT(date, o.Fecha) = @FechaActual";
+            }
+            
 
             SqlCommand cmd = new SqlCommand(consulta);
+            
+
+            if (FechaActual.HasValue)
+            {
+                cmd.Parameters.AddWithValue("@FechaActual", FechaActual.Value.Date);
+            }
             if (!string.IsNullOrEmpty(estado))
             {
                 cmd.Parameters.AddWithValue("@EstadoComanda", estado);
@@ -148,6 +166,7 @@ namespace Datos
             {
                 cmd.Parameters.AddWithValue("@IdMesa", idMesa);
             }
+
 
             return accesoDatos.ObtenerTablaConComando("Tabla Pedidos", cmd);
         }

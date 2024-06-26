@@ -39,6 +39,9 @@
                 <asp:ListItem Text="Por Mesa" Value="PorMesa"></asp:ListItem>
             </asp:RadioButtonList>
             <asp:DropDownList ID="ddlMesas" runat="server" Visible="False"></asp:DropDownList>
+            <asp:TextBox ID="txtFechaFiltro" runat="server" AutoPostBack="True" TextMode="Date"></asp:TextBox>
+            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="txtFechaFiltro" ErrorMessage="Ingrese una fecha válida" Operator="DataTypeCheck" Type="Date"></asp:CompareValidator>
+            <br />
             <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
             <br />
             <br />
@@ -49,9 +52,9 @@
                             <asp:Label ID="IdOrden" runat="server" Text='<%# Eval("IdOrden") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="IdCliente">
+                    <asp:TemplateField HeaderText="Cliente">
                         <ItemTemplate>
-                            <asp:Label ID="IdUsuario" runat="server" Text='<%# Eval("IdUsuario") %>'></asp:Label>
+                            <asp:Label ID="IdUsuario" runat="server" Text='<%# Eval("NombreUsuario") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="IdMesa">

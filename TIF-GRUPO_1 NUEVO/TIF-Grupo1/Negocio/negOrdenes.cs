@@ -29,9 +29,9 @@ namespace Negocio
             {
                 return usada.BuscarUsuarioEmail(Email);
             }
-            public DataTable MostrarOrdenensporMesa(string estado, int? idMesa)
+            public DataTable MostrarOrdenensporMesa(string estado, int? idMesa, DateTime? fecha)
             {
-                return daoOrdenes.CargarSolicitudPedidos(estado,idMesa);
+                return daoOrdenes.CargarSolicitudPedidos(estado,idMesa, fecha);
             }
 
             public int CambiarEstadoOrdenComanda(int id)

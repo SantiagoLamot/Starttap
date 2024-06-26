@@ -15,7 +15,7 @@ namespace Vistas.Cliente
         NegocioOrdenes negStock = new NegocioOrdenes();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnAgregarCarritoB_Command(object sender, CommandEventArgs e)

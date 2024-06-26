@@ -23,9 +23,9 @@ namespace Vistas.Empleado
                 CargarMesas();
             }
         }
-        private void CargarOrdenesPorMesa(string estado = "", int? idMesa = null)
+        private void CargarOrdenesPorMesa(string estado = "", int? idMesa = null, DateTime? fecha = null)
         {
-            DataTable tablaProductos = negocioOrdenes.MostrarOrdenensporMesa(estado, idMesa);
+            DataTable tablaProductos = negocioOrdenes.MostrarOrdenensporMesa(estado, idMesa, fecha);
             gvTablaSolicitudesPedidos.DataSource = tablaProductos;
             gvTablaSolicitudesPedidos.DataBind();
         }
@@ -66,11 +66,12 @@ namespace Vistas.Empleado
         {
             string estado = rblFiltro.SelectedValue;
             int? idMesa = null;
+            DateTime? fecha = null;
 
             if (estado == "PorMesa")
             {
                 idMesa = int.Parse(ddlMesas.SelectedValue);
-                estado = ""; // No filtrar por estado cuando se filtra por mesa
+                estado = ""; 
             }
             else if (estado == "EnEspera")
             {
@@ -80,8 +81,15 @@ namespace Vistas.Empleado
             {
                 estado = "1";
             }
+            if (!string.IsNullOrEmpty(txtFechaFiltro.Text))
+            {
+                if (DateTime.TryParse(txtFechaFiltro.Text, out DateTime parsedFecha))
+                {
+                    fecha = parsedFecha;
+                }
+            }
 
-            CargarOrdenesPorMesa(estado, idMesa);
+            CargarOrdenesPorMesa(estado, idMesa, fecha);
         }
         private void CargarMesas()
         {
