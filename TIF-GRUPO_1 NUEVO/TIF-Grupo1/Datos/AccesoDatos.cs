@@ -172,6 +172,7 @@ namespace Datos
             SqlConnection sqlConnection = ObtenerConexion();
             SqlCommand cmd = new SqlCommand(consulta, sqlConnection);
             int filasAfectadas = cmd.ExecuteNonQuery();
+            sqlConnection.Close();
             return filasAfectadas;
         }
         public void updateCampocomando(string consulta, SqlCommand cmd)

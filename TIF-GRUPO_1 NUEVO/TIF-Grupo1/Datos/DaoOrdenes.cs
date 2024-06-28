@@ -129,13 +129,9 @@ namespace Datos
 
         public DataTable CargarSolicitudPedidos(string estado, int? idMesa, DateTime? FechaActual)
         {
-            //string consulta = "SELECT IdOrden, IdUsuario, IdEmpleado, IdMesa, Fecha, Total, EstadoComanda, EstadoPreparacion FROM Ordenes WHERE IdMesa IS NOT NULL";
-            string consulta = "SELECT o.IdOrden, u.Nombre + u.Apellido AS NombreUsuario, o.IdEmpleado, o.IdMesa, o.Fecha, o.Total, o.EstadoComanda, o.EstadoPreparacion " +
+            string consulta = "SELECT o.IdOrden, u.Nombre + u.Apellido AS NombreUsuario, o.IdEmpleado, o.IdMesa, o.Fecha, o.Total, o.EstadoComanda, " +
+                "o.EstadoPreparacion " +
                                   "FROM Ordenes o INNER JOIN Usuario u ON o.IdUsuario = u.IdUsuario WHERE o.IdMesa IS NOT NULL";
-            //string consulta = "SELECT o.IdOrden, u.Nombre + u.Apellido AS NombreUsuario, o.IdEmpleado, o.IdMesa, o.Fecha, o.Total, o.EstadoComanda, o.EstadoPreparacion " +
-            //          "FROM Ordenes o INNER JOIN Usuario u ON o.IdUsuario = u.IdUsuario " +
-            //          "WHERE o.IdMesa IS NOT NULL AND CONVERT(date, o.Fecha) = @FechaActual";
-
 
             if (!string.IsNullOrEmpty(estado))
             {
@@ -170,6 +166,13 @@ namespace Datos
 
             return accesoDatos.ObtenerTablaConComando("Tabla Pedidos", cmd);
         }
+        public DataTable VerEstado(int idOrden)
+        {
+            string query = "SELECT o.IdOrden, u.Nombre + u.Apellido AS NombreUsuario, o.Total, o.EstadoPreparacion " +
+                                  "FROM Ordenes o INNER JOIN Usuario u ON o.IdUsuario = u.IdUsuario and o.IdOrden =" + idOrden;
+            return accesoDatos.ObtenerTabla("EstadodePedido", query);
+        }
+
         public DataTable ObtenerMesas()
         {
             string consulta = "SELECT DISTINCT IdMesa FROM Ordenes WHERE IdMesa IS NOT NULL";

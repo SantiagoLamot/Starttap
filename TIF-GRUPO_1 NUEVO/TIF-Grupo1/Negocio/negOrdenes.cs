@@ -29,7 +29,7 @@ namespace Negocio
             {
                 return usada.BuscarUsuarioEmail(Email);
             }
-            public DataTable MostrarOrdenensporMesa(string estado, int? idMesa, DateTime? fecha)
+            public DataTable MostrarOrdenens(string estado, int? idMesa, DateTime? fecha)
             {
                 return daoOrdenes.CargarSolicitudPedidos(estado,idMesa, fecha);
             }
@@ -49,6 +49,10 @@ namespace Negocio
             public void ActualizarStock(string Nombre, int NStock)
             {
                  daoOrdenes.ActualizarStock(Nombre, NStock);
+            }
+            public DataTable VerEstado(int idOrden)
+            {
+               return daoOrdenes.VerEstado(idOrden);
             }
         }
     }

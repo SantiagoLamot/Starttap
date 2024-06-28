@@ -9,14 +9,13 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css"/>
     <style type="text/css">
-        .auto-style1 {
-            width: 674px;
-        }
         .auto-style2 {
             width: 945px;
         }
-        .auto-style3 {
-            margin-top: 3;
+        .auto-style5 {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */;
+            align-items: center; /* Centra verticalmente si es necesario */;
         }
     </style>
 </head>
@@ -39,55 +38,89 @@
                 <asp:ListItem Text="Por Mesa" Value="PorMesa"></asp:ListItem>
             </asp:RadioButtonList>
             <asp:DropDownList ID="ddlMesas" runat="server" Visible="False"></asp:DropDownList>
-            <asp:TextBox ID="txtFechaFiltro" runat="server" AutoPostBack="True" TextMode="Date"></asp:TextBox>
+            <br />
+            <br />
+            <asp:TextBox ID="txtFechaFiltro" runat="server" AutoPostBack="True" TextMode="Date" Height="23px"></asp:TextBox>
             <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="txtFechaFiltro" ErrorMessage="Ingrese una fecha válida" Operator="DataTypeCheck" Type="Date"></asp:CompareValidator>
             <br />
-            <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
+            <br />
+            <asp:Button ID="btnFiltrar" CssClass="BotonPrincipal" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
             <br />
             <br />
-            <asp:GridView ID="gvTablaSolicitudesPedidos" runat="server" AllowPaging="True" AutoGenerateColumns="False" OnRowCommand="gvTablaSolicitudesPedidos_RowCommand" Height="290px" Width="888px" CssClass="auto-style3">
-                <Columns>
-                    <asp:TemplateField HeaderText="IdPedido">
-                        <ItemTemplate>
-                            <asp:Label ID="IdOrden" runat="server" Text='<%# Eval("IdOrden") %>'></asp:Label>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Cliente">
-                        <ItemTemplate>
-                            <asp:Label ID="IdUsuario" runat="server" Text='<%# Eval("NombreUsuario") %>'></asp:Label>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="IdMesa">
-                        <ItemTemplate>
-                            <asp:Label ID="IdMesa" runat="server" Text='<%# Eval("IdMesa") %>'></asp:Label>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Fecha y hora">
-                        <ItemTemplate>
-                            <asp:Label ID="Fecha" runat="server" Text='<%# Eval("Fecha") %>'></asp:Label>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Total">
-                        <ItemTemplate>
-                            <asp:Label ID="Total" runat="server" Text='<%# Eval("Total") %>'></asp:Label>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Estado">
-                        <ItemTemplate>
-                            <asp:Label ID="EstadoComanda" runat="server" Text='<%# Convert.ToBoolean(Eval("EstadoComanda")) ? "Tomado" : "En espera" %>'></asp:Label>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Tomar Pedido">
-                        <ItemTemplate>
-                            <asp:LinkButton CssClass="hyperlink" ID="Confirmar" runat="server" 
-                                CommandArgument='<%# Eval("IdOrden") %>'
-                                CommandName="Confirmar" 
-                                Text="Tomar Pedido" 
-                                OnClientClick="return confirm('¿Estás seguro de cambiar el estado del producto?');"></asp:LinkButton> 
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                </Columns>
-            </asp:GridView>
+            <asp:GridView ID="gvTablaSolicitudesPedidos"  runat="server" AllowPaging="True" AutoGenerateColumns="False" OnRowCommand="gvTablaSolicitudesPedidos_RowCommand"  Height="332px" Width="911px" CssClass="auto-style5" >
+    <Columns>
+        <asp:TemplateField HeaderText="IdPedido">
+            <ItemTemplate>
+                <asp:Label ID="IdOrden" runat="server" Text='<%# Eval("IdOrden") %>'></asp:Label>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Cliente">
+            <ItemTemplate>
+                <asp:Label ID="IdUsuario" runat="server" Text='<%# Eval("NombreUsuario") %>'></asp:Label>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="IdMesa">
+            <ItemTemplate>
+                <asp:Label ID="IdMesa" runat="server" Text='<%# Eval("IdMesa") %>'></asp:Label>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Fecha y hora">
+            <ItemTemplate>
+                <asp:Label ID="Fecha" runat="server" Text='<%# Eval("Fecha") %>'></asp:Label>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Total">
+            <ItemTemplate>
+                <asp:Label ID="Total" runat="server" Text='<%# Eval("Total") %>'></asp:Label>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Estado">
+            <ItemTemplate>
+                <asp:Label ID="EstadoComanda" runat="server" Text='<%# Convert.ToBoolean(Eval("EstadoComanda")) ? "Tomado" : "En espera" %>'></asp:Label>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Tomar Pedido">
+            <ItemTemplate>
+                <asp:LinkButton CssClass="hyperlink" ID="Confirmar" runat="server" 
+                    CommandArgument='<%# Eval("IdOrden") %>'
+                    CommandName="Confirmar" 
+                    Text="Tomar Pedido" 
+                    OnClientClick="return confirm('¿Estás seguro de cambiar el estado del producto?');"></asp:LinkButton> 
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="Pedidos Listos">
+            <ItemTemplate>
+                <asp:LinkButton ID="lbVerEstado" CssClass="hyperlink" runat="server" CommandArgument='<%# Eval("IdOrden") %>' CommandName="Ver Estado">Ver Estado</asp:LinkButton>
+            </ItemTemplate>
+        </asp:TemplateField>
+    </Columns>
+</asp:GridView>
+
+            <br />
+            <asp:Panel ID="Panel1" runat="server">
+                <asp:GridView ID="gvEstadoPreparacion" runat="server" AutoGenerateColumns="False" Width="258px">
+                    <Columns>
+                        <asp:TemplateField HeaderText="Cliente">
+                            <ItemTemplate>
+                                <asp:Label ID="Label5" runat="server" Text='<%# Eval("NombreUsuario") %>' ></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Listo">
+                            <ItemTemplate>
+                                <asp:Label ID="Label6" runat="server" Text='<%# Convert.ToBoolean(Eval("EstadoPreparacion")) ? "Si" : "Aun no" %>' ></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="TOTAL">
+                            <ItemTemplate>
+                                <asp:Label ID="Label7" runat="server" Text='<%# Eval("Total") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                    <EmptyDataTemplate>
+                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("IdOrden") %>'></asp:Label>
+                    </EmptyDataTemplate>
+                </asp:GridView>
+            </asp:Panel>
         </div>
     </form>
 </body>

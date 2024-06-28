@@ -15,37 +15,39 @@ namespace Vistas.Empleado
     public partial class SolicitudesPedidos : System.Web.UI.Page
     {
         NegocioOrdenes negocioOrdenes = new NegocioOrdenes();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                CargarOrdenesPorMesa();
+                CargarOrdenes();
                 CargarMesas();
             }
         }
-        private void CargarOrdenesPorMesa(string estado = "", int? idMesa = null, DateTime? fecha = null)
+        private void CargarOrdenes(string estado = "", int? idMesa = null, DateTime? fecha = null)
         {
-            DataTable tablaProductos = negocioOrdenes.MostrarOrdenensporMesa(estado, idMesa, fecha);
+            DataTable tablaProductos = negocioOrdenes.MostrarOrdenens(estado, idMesa, fecha);
             gvTablaSolicitudesPedidos.DataSource = tablaProductos;
             gvTablaSolicitudesPedidos.DataBind();
         }
 
         protected void gvTablaSolicitudesPedidos_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            
 
-            if (e.CommandName == "Confirmar")
+            if (e.CommandName == "Ver Estado")
             {
                 int idOrden = Convert.ToInt32(e.CommandArgument);
-                int fila = Convert.ToInt32(e.CommandArgument);
 
+                DataTable TablaEstado = negocioOrdenes.VerEstado(idOrden);
+                gvEstadoPreparacion.DataSource = TablaEstado;
+                gvEstadoPreparacion.DataBind();
+            }
+            else if (e.CommandName == "Confirmar")
+            {
+                int idOrden = Convert.ToInt32(e.CommandArgument);
                 negocioOrdenes.CambiarEstadoOrdenComanda(idOrden);
-
-
-                if (fila > 0)
-                {
-                    CargarOrdenesPorMesa();
-                }
+               
+                CargarOrdenes();
             }
 
         }
@@ -83,13 +85,13 @@ namespace Vistas.Empleado
             }
             if (!string.IsNullOrEmpty(txtFechaFiltro.Text))
             {
-                if (DateTime.TryParse(txtFechaFiltro.Text, out DateTime parsedFecha))
+                if (DateTime.TryParse(txtFechaFiltro.Text, out DateTime Fechaconvertida))
                 {
-                    fecha = parsedFecha;
+                    fecha = Fechaconvertida;
                 }
             }
 
-            CargarOrdenesPorMesa(estado, idMesa, fecha);
+            CargarOrdenes(estado, idMesa, fecha);
         }
         private void CargarMesas()
         {
@@ -99,5 +101,7 @@ namespace Vistas.Empleado
             ddlMesas.DataValueField = "IdMesa";
             ddlMesas.DataBind();
         }
+
+       
     }
 }
