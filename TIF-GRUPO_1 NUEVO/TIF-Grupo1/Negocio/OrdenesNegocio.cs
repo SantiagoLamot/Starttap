@@ -37,5 +37,10 @@ namespace Negocio
             return dao.getOrden(id);
         }
 
+        public DataTable DetallesFactura(int idOrden)
+        {
+            return dao.DetallesFactura(idOrden);
+        }
+
     }
 }
