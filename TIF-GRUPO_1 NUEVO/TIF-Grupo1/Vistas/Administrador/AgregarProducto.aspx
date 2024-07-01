@@ -78,7 +78,7 @@
         }
 
         .gvProductos tr:hover {
-            background-color: #f1f1f1;
+            background-color: #ff6a00;
         }
 
         .BotonPrincipal {

@@ -101,11 +101,13 @@ namespace Vistas
             {
 
                 lblMensajeConfirmacion.Text = "SU CARRITO HA SIDO ENVIADO ESPERE LA CONFIRMACION.";
+                lblMensajeConfirmacion.ForeColor = System.Drawing.Color.DarkGreen;
                 LimpiarCarritoActual();
             }
             else
             {
                 lblMensajeConfirmacion.Text = "Hubo un error al procesar su pedido. Por favor, intente nuevamente.";
+                lblMensajeConfirmacion.ForeColor = System.Drawing.Color.Red;
             }
         }
 
@@ -133,6 +135,7 @@ namespace Vistas
 
         protected void gv_Ordenes_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
+            
             int rowIndex = e.RowIndex;
             List<Producto> carrito = ObtenerCarritoDesdeGridView();
             carrito.RemoveAt(rowIndex);
@@ -153,5 +156,7 @@ namespace Vistas
             carritoCookie.Expires = DateTime.Now.AddDays(1);
             Response.Cookies.Add(carritoCookie);
         }
+
+      
     }
 }

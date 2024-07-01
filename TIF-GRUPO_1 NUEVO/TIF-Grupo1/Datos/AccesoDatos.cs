@@ -19,7 +19,7 @@ namespace Datos
 
         private SqlConnection ObtenerConexion()
         {
-            SqlConnection cn = new SqlConnection(cadenaDeConexion);
+            SqlConnection cn = new SqlConnection(cadenaDeConexion2);
             try
             {
                 cn.Open();
@@ -30,7 +30,7 @@ namespace Datos
                 Console.WriteLine(ex.Message);
                 try
                 {
-                    cn.ConnectionString = cadenaDeConexion2;
+                    cn.ConnectionString = cadenaDeConexion;
                     cn.Open();
                     return cn;
                 }

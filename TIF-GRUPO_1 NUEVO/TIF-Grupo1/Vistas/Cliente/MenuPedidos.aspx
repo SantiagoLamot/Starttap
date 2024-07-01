@@ -9,8 +9,6 @@
     <link rel="stylesheet" type="text/css" href="../Estilos/StyleGeneral.css"/>
     <link rel="stylesheet" type="text/css" href="../Estilos/StyleMenu.css"/>
 
-   
-  
     <style type="text/css">
         .auto-style1 {
             margin-left: 0px;
@@ -20,12 +18,6 @@
             margin-left: 112px;
             margin-right: 472px;
             height: 986px;
-        }
-        .auto-style3 {
-            font-size: 20px;
-            color: #666;
-            margin: 10px 0 0 0;
-            width: 123px;
         }
         .auto-style4 {
             font-size: 1em;
@@ -65,7 +57,6 @@
         <main class="menu-container"></main>
             <div class="auto-style4">
                 <asp:Label ID="lblMensaje" runat="server" CssClass="auto-style8"></asp:Label>
-                <asp:Label ID="LabelBebidas" runat="server" Text="Bebidas:" CssClass="auto-style3"></asp:Label>
                 <br />
                 <asp:DataList ID="DataListBebidas" runat="server" DataSourceID="SqlDataSourceBebidas" RepeatColumns="6" CssClass="menu-datalist" Height="149px" Width="82px" ShowFooter="False" RepeatDirection="Horizontal">
                     <ItemTemplate>
@@ -88,16 +79,15 @@
                             <p class="menu-item-description" id="CantidadesB">
                                 <asp:Label ID="lblCantidadB" runat="server" Text="Cantidad"></asp:Label>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <asp:TextBox ID="txtCantidadB" runat="server" Height="16px" TextMode="Number" Width="41px"></asp:TextBox>
+                                <asp:TextBox ID="txtCantidadB"  runat="server" Height="22px" TextMode="Number" Width="41px"></asp:TextBox>
                             </p>
+                            <p class="menu-item-description">
+                                &nbsp;</p>
                             <p class="menu-item-description">
                                 <asp:RangeValidator ID="rNoNegativo" runat="server" ControlToValidate="txtCantidadB" ErrorMessage="*Ingrese una Cantidad Valida" ForeColor="#CC3300" MaximumValue="200" MinimumValue="1" SetFocusOnError="True" Type="Integer" ValidationGroup="G1"></asp:RangeValidator>
                             </p>
                             <p class="menu-item-description">
-                                <asp:Label ID="lblMensaje" runat="server" CssClass="auto-style9"></asp:Label>
-                            </p>
-                            <p class="menu-item-description">
-                                <asp:Button ID="btnAgregarCarritoB" runat="server" Text="Agregar al Carrito" CommandName="eAgregarCarritoB"
+                                <asp:Button ID="btnAgregarCarritoB" CssClass="BotonPrincipal" runat="server" Text="Agregar al Carrito" CommandName="eAgregarCarritoB"
                                     OnCommand="btnAgregarCarritoB_Command" CommandArgument='<%# Eval("Nombre") %>' ValidationGroup="G1" />
                             </p>
                         </div>

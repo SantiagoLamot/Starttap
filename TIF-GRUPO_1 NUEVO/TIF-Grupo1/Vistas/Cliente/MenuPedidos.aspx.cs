@@ -22,8 +22,10 @@ namespace Vistas.Cliente
         {
             if (e.CommandName == "eAgregarCarritoB")
             {
+                lblMensaje.Visible = false;
                 Button btnAgregar = (Button)sender;
                 DataListItem item = (DataListItem)btnAgregar.NamingContainer;
+
 
                 TextBox txtCantidadB = (TextBox)item.FindControl("txtCantidadB");
                 Label lblPrecio = (Label)item.FindControl("lblPrecioB");
@@ -36,10 +38,10 @@ namespace Vistas.Cliente
 
                 int stockDispo = negStock.ObtenerStock(Nombre);
 
-                if (stockDispo <= 0)
-                {
-                    btnAgregar.Visible = false;
-                }
+                //if (stockDispo <= 0)
+                //{
+                //    btnAgregar.Visible = false;
+                //}
                 if (Cantidad > stockDispo)
                 {
                     lblMensaje.Visible = true;

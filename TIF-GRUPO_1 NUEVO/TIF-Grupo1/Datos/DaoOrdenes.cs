@@ -121,7 +121,7 @@ namespace Datos
         public int ObtenerIdProductoPorNombre(string nombreProducto)
         {
             SqlCommand cmd = new SqlCommand();
-            string consulta = "SELECT IdProducto FROM Productos WHERE Nombre = @Nombre";
+            string consulta = "SELECT IdProducto FROM Productos WHERE Nombre like @Nombre";
             cmd.Parameters.AddWithValue("@Nombre", nombreProducto);
 
             return accesoDatos.Insert_DevuelveId(consulta, cmd);

@@ -1,39 +1,30 @@
-﻿.bodyLogoColor {
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.bodyLogoColor, .bodyBlanco {
     font-family: Arial, sans-serif;
-    background-image: url("/Imagenes/imagen01.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bodyBlanco {
-    font-family: Arial, sans-serif;
-    background-image: url("/Imagenes/imagen02.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-}
-
-form {
-    width: 300px;
-    margin: 100px auto;
-    padding-top: 50px;
+form, .formInicio {
+    margin: 20px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.formInicio {
-    width: 700px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    display: inline-block; /* Adjusts form to content */
 }
 
 .labelPrincipal {
@@ -42,8 +33,6 @@ form {
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
-    display: block;
-    width: 100%;
     text-align: center;
 }
 
@@ -68,9 +57,7 @@ input[type="password"], input[type="email"], select {
     font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
-    display: block;
     width: 100%;
-    text-align: center;
 }
 
     .BotonPrincipal:hover {
@@ -82,7 +69,7 @@ input[type="password"], input[type="email"], select {
     display: block;
     width: 100%;
     text-align: center;
-    Color: cornflowerblue;
+    color: cornflowerblue;
 }
 
 .hyperlinkParaListadoDeFunciones {
@@ -96,7 +83,8 @@ input[type="password"], input[type="email"], select {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 * {
@@ -116,13 +104,6 @@ a {
     a:hover {
         text-decoration: underline;
     }
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-}
 
 .carrito-container {
     position: relative;
