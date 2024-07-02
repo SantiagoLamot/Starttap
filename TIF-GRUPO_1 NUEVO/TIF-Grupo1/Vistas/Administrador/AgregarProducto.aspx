@@ -155,9 +155,14 @@
 <body class="bodyBlanco">
     <form id="form1" runat="server">
         <div class="auto-style8">
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Administrador/VerTablas.aspx">
-            <span class="icon-left"><i class="fas fa-home"></i></span> Ir a Página Inicio
-            </asp:HyperLink>
+            <br />
+            <br />
+            <asp:Panel ID="Panel2" runat="server">
+                <asp:Label ID="lblBUSQUEDA" runat="server" CssClass="labelPrincipal" Text="BUSQUEDA POR NOMBRE DE PRODUCTO"></asp:Label>
+                Nombre del Producto:
+                <%--<asp:TextBox ID="txtBusqueda" runat="server" OnTextChanged="txtBusqueda_TextChanged" TextMode="Search" Width="129px"></asp:TextBox>--%>
+            </asp:Panel>
+            <br />
             <asp:Label ID="lblTabladeProductos" runat="server" Text="TABLA DE PRODUCTOS" CssClass="labelPrincipal"></asp:Label>
             <br />
             <div class="auto-style4">
@@ -197,8 +202,12 @@
                                     CommandArgument='<%# Eval("IdProducto") %>' 
                                     CommandName="CambiarEstado"
                                     Text="Cambiar Estado"
-                                    OnClientClick="return confirm('¿Estás seguro de cambiar el estado del producto?');">
-                                </asp:LinkButton>                   
+                                    OnClientClick="return confirm('¿Estás seguro de cambiar el estado del producto?');"></asp:LinkButton>                   
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Actualizar Stock">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="lbActualizarStock" runat="server" CommandArgument='<%# Eval("Nombre") %>' CommandName="ActualizarStock" OnClientClick="return confirm('¿Estás seguro de cambiar el estado del producto?');" Text="Actualizar"></asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
@@ -214,6 +223,14 @@
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
             </div>
+            <br />
+            <asp:Panel ID="Panel1" runat="server">
+                <asp:Label ID="lblActualizarStock" runat="server" CssClass="labelPrincipal" Text="ACTUALIZAR STOCK"></asp:Label>
+                Nuevo Stock:
+                <asp:TextBox ID="txtCantidad" runat="server" TextMode="Number" Width="49px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="rfvAgregarStock" runat="server" ControlToValidate="txtCantidad" ErrorMessage="*Debe Agregar un stock "></asp:RequiredFieldValidator>
+            </asp:Panel>
+            <br />
             <br />
             <asp:Label ID="lblAgregarnuevoProducto" runat="server" Text="AGREGAR UN NUEVO PRODUCTO" CssClass="labelPrincipal"></asp:Label>
             <br />

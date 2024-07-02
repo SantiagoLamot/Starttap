@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using Negocio;
 using Entidades;
 using System.Data;
+using static Negocio.negOrdenes;
 
 namespace Vistas
 {
@@ -14,6 +15,7 @@ namespace Vistas
     {
         MostrarReportesNegocio Negocio = new MostrarReportesNegocio();
         ProductoNegocio Negocio1 = new ProductoNegocio();
+        NegocioOrdenes negStock = new NegocioOrdenes();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -101,7 +103,22 @@ namespace Vistas
                 {
                     CargarProductos();
                 }
+            }else if (e.CommandName == "ActualizarStock")
+            {
+                Panel1.Visible = true;
+                string Nombre = e.CommandArgument.ToString();
+                int cantidad = int.Parse(txtCantidad.Text);
+
+                negStock.ActualizarStock(Nombre, cantidad);
             }
         }
-    }
+
+        //protected void txtBusqueda_TextChanged(object sender, EventArgs e)
+        //{
+        //    string Contenido = txtBusqueda.Text.Trim();
+
+        //    gvProductos.DataSource = negocio.BuscarProductos(busqueda);
+        //    gvProductos.DataBind();
+        //}
+}
 }

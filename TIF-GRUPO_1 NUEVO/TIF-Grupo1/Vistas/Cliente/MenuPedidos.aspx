@@ -58,6 +58,7 @@
             <div class="auto-style4">
                 <asp:Label ID="lblMensaje" runat="server" CssClass="auto-style8"></asp:Label>
                 <br />
+                <br />
                 <asp:DataList ID="DataListBebidas" runat="server" DataSourceID="SqlDataSourceBebidas" RepeatColumns="6" CssClass="menu-datalist" Height="149px" Width="82px" ShowFooter="False" RepeatDirection="Horizontal">
                     <ItemTemplate>
                         <div class="menu-item">

@@ -239,7 +239,7 @@ namespace Datos
             return usuario;
         }
 
-        public int Insert_DevuelveId(string consulta, SqlCommand Comando)
+        public int DevuelveId(string consulta, SqlCommand Comando)
         {
             int Id = 0;
             SqlConnection conexion = ObtenerConexion();
