@@ -27,8 +27,41 @@
             <asp:Button ID="btn_Volver" runat="server" OnClick="btn_Volver_Click" Text="Volver" />
             <br />
             <br />
-            <asp:GridView ID="gv_Entregados" runat="server" AllowPaging="True" CellPadding="4" CssClass="auto-style1" ForeColor="#333333" GridLines="None" OnPageIndexChanging="gv_Entregados_PageIndexChanging">
+            <asp:GridView ID="gv_Entregados" runat="server" AllowPaging="True" CellPadding="4" CssClass="auto-style1" ForeColor="#333333" GridLines="None" OnPageIndexChanging="gv_Entregados_PageIndexChanging" AutoGenerateColumns="False" OnRowCommand="gv_Entregados_RowCommand">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                <Columns>
+                    <asp:TemplateField HeaderText="Numero de Orden">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_idOrden" runat="server" Text='<%# Bind("IdOrden") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Nombre">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_Nombre" runat="server" Text='<%# Bind("Nombre") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Apellido">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_Apellido" runat="server" Text='<%# Bind("Apellido") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Numero de Mesa">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_idMesa" runat="server" Text='<%# Bind("IdMesa") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Fecha">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_Fecha" runat="server" Text='<%# Bind("Fecha") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:ButtonField CommandName="eventoVerDetalles" Text="VER DETALLES" />
+                    <asp:TemplateField HeaderText="Total">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_Total" runat="server" Text='<%# Bind("Total") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
                 <EditRowStyle BackColor="#999999" />
                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                 <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -50,8 +83,41 @@
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="GP" />
             <asp:Label ID="lblMensaje" runat="server"></asp:Label>
             <br />
-            <asp:GridView ID="gv_OrdenEspecifica" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <asp:GridView ID="gv_OrdenEspecifica" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False" OnRowCommand="gv_OrdenEspecifica_RowCommand">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                <Columns>
+                    <asp:TemplateField HeaderText="Numero de Orden">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_IdOrden" runat="server" Text='<%# Bind("IdOrden") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Nombre">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_Nombre" runat="server" Text='<%# Bind("Nombre") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Apellido">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_Apellido" runat="server" Text='<%# Bind("Apellido") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Numero de Mesa">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_IdMesa" runat="server" Text='<%# Bind("IdMesa") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Fecha">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_Fecha" runat="server" Text='<%# Bind("Fecha") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:ButtonField CommandName="eventoVerDetallesOrden" Text="VER DETALLES" />
+                    <asp:TemplateField HeaderText="Total">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_Total" runat="server" Text='<%# Bind("Total") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
                 <EditRowStyle BackColor="#999999" />
                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                 <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -65,6 +131,32 @@
             </asp:GridView>
             <br />
             <asp:Button ID="btn_Ocultar" runat="server" OnClick="btn_Ocultar_Click" Text="Ocultar" Visible="False" />
+            <br />
+            <br />
+            <asp:Label ID="lblMensaje2" runat="server"></asp:Label>
+            <asp:GridView ID="gv_Detalles" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Visible="False">
+                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                <EditRowStyle BackColor="#999999" />
+                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+            </asp:GridView>
+            <br />
+            <asp:Button ID="btn_OcultarDetalles" runat="server" OnClick="btn_OcultarDetalles_Click" Text="Ocultar detalles" Visible="False" />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </form>
 </body>

@@ -31,7 +31,7 @@ namespace Negocio
             }
             public DataTable MostrarOrdenens(string estado, int? idMesa, DateTime? fecha)
             {
-                return daoOrdenes.CargarSolicitudPedidos(estado,idMesa, fecha);
+                return daoOrdenes.CargarSolicitudPedidos(estado, idMesa, fecha);
             }
 
             public int CambiarEstadoOrdenComanda(int id)
@@ -48,12 +48,14 @@ namespace Negocio
             }
             public void ActualizarStock(string Nombre, int NStock)
             {
-                 daoOrdenes.ActualizarStock(Nombre, NStock);
+                daoOrdenes.ActualizarStock(Nombre, NStock);
             }
             public DataTable VerEstado(int idOrden)
             {
-               return daoOrdenes.VerEstado(idOrden);
+                return daoOrdenes.VerEstado(idOrden);
             }
+
+            
         }
     }
 }

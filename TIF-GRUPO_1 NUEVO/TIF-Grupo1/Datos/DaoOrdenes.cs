@@ -74,13 +74,13 @@ namespace Datos
         }
         public DataTable CargarEntregados()
         {
-            DataTable tabla = accesoDatos.ObtenerTabla("Entregados", "select  O.IdOrden AS 'Numero de orden', (U.Nombre +' '+ U.Apellido) AS Cliente, O.IdMesa AS 'Mesa nº', O.Fecha AS 'Fecha de compra', O.Total  from Ordenes AS O INNER JOIN Usuario AS U ON O.IdUsuario = U.IdUsuario INNER JOIN Empleado as E ON O.IdEmpleado = E.IdEmpleado WHERE O.EstadoComanda = 1 AND O.EstadoPreparacion = 1");
+            DataTable tabla = accesoDatos.ObtenerTabla("Entregados", "select  O.IdOrden, U.Nombre, U.Apellido, O.IdMesa, O.Fecha, O.Total  from Ordenes AS O INNER JOIN Usuario AS U ON O.IdUsuario = U.IdUsuario INNER JOIN Empleado as E ON O.IdEmpleado = E.IdEmpleado WHERE O.EstadoComanda = 1 AND O.EstadoPreparacion = 1");
             return tabla;
         }
 
         public DataTable getOrden(int id)
         {
-            DataTable tabla = accesoDatos.ObtenerTabla("OrdenEspecifica", "select  O.IdOrden AS 'Numero de orden', (U.Nombre +' '+ U.Apellido) AS Cliente, O.IdMesa AS 'Mesa nº', O.Fecha AS 'Fecha de compra', O.Total  from Ordenes AS O INNER JOIN Usuario AS U ON O.IdUsuario = U.IdUsuario INNER JOIN Empleado as E ON O.IdEmpleado = E.IdEmpleado WHERE O.EstadoComanda = 1 AND O.EstadoPreparacion = 1 AND O.IdOrden = "+ id );
+            DataTable tabla = accesoDatos.ObtenerTabla("OrdenEspecifica", "select  O.IdOrden, U.Nombre, U.Apellido, O.IdMesa, O.Fecha, O.Total  from Ordenes AS O INNER JOIN Usuario AS U ON O.IdUsuario = U.IdUsuario INNER JOIN Empleado as E ON O.IdEmpleado = E.IdEmpleado WHERE O.EstadoComanda = 1 AND O.EstadoPreparacion = 1 AND O.IdOrden = " + id);
             return tabla;
         }
 
@@ -195,6 +195,12 @@ namespace Datos
             cmd.Parameters.AddWithValue("@NuevoStock", NuevoStock);
 
              accesoDatos.updateCampocomando(query, cmd);
+        }
+
+        public DataTable DetallesFactura(int idOrden)
+        {
+            DataTable tabla = accesoDatos.ObtenerTabla("Detalles", "SELECT PR.Nombre, PO.Cantidad, PO.Subtotal FROM Ordenes O INNER JOIN Productos_Orden PO ON O.IdOrden = PO.IdOrden INNER JOIN Productos PR ON PR.IdProducto = PO.IdProducto WHERE O.IdOrden = "+ idOrden);
+            return tabla;
         }
     }
 

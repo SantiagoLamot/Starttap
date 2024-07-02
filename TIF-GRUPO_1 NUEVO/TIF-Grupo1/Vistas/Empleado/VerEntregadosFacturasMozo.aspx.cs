@@ -12,6 +12,7 @@ namespace Vistas.Empleado
     public partial class VerEntregados : System.Web.UI.Page
     {
         OrdenesNegocio neg = new OrdenesNegocio();
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -47,6 +48,11 @@ namespace Vistas.Empleado
             {
                 lblMensaje.Text = "No existe ID de orden facturada.";
             }
+
+            gv_Detalles.Visible = false;
+            btn_OcultarDetalles.Visible = false;
+            lblMensaje2.Text = string.Empty;
+
         }
 
         protected void btn_Ocultar_Click(object sender, EventArgs e)
@@ -54,6 +60,9 @@ namespace Vistas.Empleado
             gv_OrdenEspecifica.Visible = false;
             btn_Ocultar.Visible = false;
             tb_IdOrden.Text = string.Empty;
+            btn_OcultarDetalles.Visible = false;
+            gv_Detalles.Visible = false;
+            lblMensaje2.Text = string.Empty;
         }
 
         protected void gv_Entregados_PageIndexChanging(object sender, GridViewPageEventArgs e)
@@ -65,6 +74,49 @@ namespace Vistas.Empleado
         protected void btn_Volver_Click(object sender, EventArgs e)
         {
             Response.Redirect("/Empleado/InicioMozo.aspx");
+        }
+
+        protected void gv_Entregados_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if(e.CommandName== "eventoVerDetalles")
+            {
+                int fila = Convert.ToInt32(e.CommandArgument);
+                int idOrden = int.Parse(((Label)gv_Entregados.Rows[fila].FindControl("lbl_it_IdOrden")).Text);
+
+                gv_Detalles.Visible = true;
+                btn_OcultarDetalles.Visible = true;
+
+                lblMensaje2.Text = "Detalles de la orden numero: " + idOrden;
+                DataTable tablaDetalles = neg.DetallesFactura(idOrden);
+                gv_Detalles.DataSource = tablaDetalles;
+                gv_Detalles.DataBind();
+
+            }
+        }
+
+        protected void gv_OrdenEspecifica_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if(e.CommandName== "eventoVerDetallesOrden")
+            {
+                int fila = Convert.ToInt32(e.CommandArgument);
+                int idOrden = int.Parse(((Label)gv_OrdenEspecifica.Rows[fila].FindControl("lbl_it_IdOrden")).Text);
+
+                gv_Detalles.Visible = true;
+                btn_OcultarDetalles.Visible = true;
+
+                lblMensaje2.Text = "Detalles de la orden numero: " + idOrden;
+                DataTable tablaDetalles = neg.DetallesFactura(idOrden);
+                gv_Detalles.DataSource = tablaDetalles;
+                gv_Detalles.DataBind(); 
+            }
+
+        }
+
+        protected void btn_OcultarDetalles_Click(object sender, EventArgs e)
+        {
+            btn_OcultarDetalles.Visible = false;
+            gv_Detalles.Visible = false;
+            lblMensaje2.Text = string.Empty;
         }
     }
 }
