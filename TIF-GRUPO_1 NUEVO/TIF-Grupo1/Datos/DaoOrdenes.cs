@@ -95,7 +95,7 @@ namespace Datos
             cmd.Parameters.AddWithValue("@Total", carrito.Sum(p => p.stock * p.precio));
             cmd.Parameters.AddWithValue("@EstadoComanda", 0);
             cmd.Parameters.AddWithValue("@EstadoPreparacion", 0);
-            return accesoDatos.DevuelveId(Consulta, cmd);
+            return accesoDatos.Insert_DevuelveId(Consulta, cmd);
 
         }
 
@@ -108,11 +108,11 @@ namespace Datos
                 SqlCommand cmd = new SqlCommand();
                 string consulta = "INSERT INTO Productos_Orden (IdOrden, IdProducto, Cantidad, Subtotal) VALUES (@IdOrden, @IdProducto, @Cantidad, @Subtotal)";
                 cmd.Parameters.AddWithValue("@IdOrden", ordenId);
-                cmd.Parameters.AddWithValue("@IdProducto", ObtenerIdProductoPorNombre(producto.nombre)); 
+                cmd.Parameters.AddWithValue("@IdProducto", ObtenerIdProductoPorNombre(producto.nombre)); // Método para obtener el ID del producto por nombre
                 cmd.Parameters.AddWithValue("@Cantidad", producto.stock);
                 cmd.Parameters.AddWithValue("@Subtotal", producto.stock * producto.precio);
 
-                result += accesoDatos.DevuelveId(consulta, cmd);
+                result += accesoDatos.Insert_DevuelveId(consulta, cmd);
             }
 
             return result;
@@ -124,7 +124,7 @@ namespace Datos
             string consulta = "SELECT IdProducto FROM Productos WHERE Nombre like @Nombre";
             cmd.Parameters.AddWithValue("@Nombre", nombreProducto);
 
-            return accesoDatos.DevuelveId(consulta, cmd);
+            return accesoDatos.Insert_DevuelveId(consulta, cmd);
         }
 
         public DataTable CargarSolicitudPedidos(string estado, int? idMesa, DateTime? FechaActual)
@@ -184,13 +184,12 @@ namespace Datos
             string consulta = "SELECT Stock FROM Productos WHERE Nombre = @Nombre";
             cmd.Parameters.AddWithValue("@Nombre", Nombre);
 
-            return accesoDatos.DevuelveId(consulta, cmd);
+            return accesoDatos.Insert_DevuelveId(consulta, cmd);
         }
 
         public void ActualizarStock(string NombreProducto, int NuevoStock)
         {
-            string query = "UPDATE Productos SET Stock = @NuevoStock, Estado = CASE WHEN @NuevoStock = 0 THEN 0" +
-                " ELSE Estado END WHERE Nombre like @NombreProducto";
+            string query = "UPDATE Productos SET Stock = @NuevoStock, Estado = CASE WHEN @NuevoStock = 0 THEN 0 ELSE Estado END WHERE Nombre = @NombreProducto";
             SqlCommand cmd = new SqlCommand(query);
             cmd.Parameters.AddWithValue("@NombreProducto", NombreProducto);
             cmd.Parameters.AddWithValue("@NuevoStock", NuevoStock);

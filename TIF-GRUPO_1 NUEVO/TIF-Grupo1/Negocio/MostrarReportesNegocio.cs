@@ -21,10 +21,7 @@ namespace Negocio
         {
             return daoProductos.MostrarProductos();
         }
-        public DataTable BuscarProductos(string Contenido)
-        {
-            return daoProductos.BusquedaProductos(Contenido);
-        }
+
         public DataTable MostrarClientes()
         {
             return daoClientes.MostrarClientes();

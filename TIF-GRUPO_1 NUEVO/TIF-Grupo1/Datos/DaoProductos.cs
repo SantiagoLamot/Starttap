@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,13 +18,7 @@ namespace Datos
         {
             return accesoDatos.ObtenerTabla("Productos", "select * from Productos");
         }
-        public DataTable BusquedaProductos(string Contenido)
-        {
-            SqlCommand cmd = new SqlCommand();
-            string query = "SELECT * FROM Productos WHERE Nombre LIKE @Contenido";
-            cmd.Parameters.AddWithValue("Contenido", "%" + Contenido + "%");
-            return accesoDatos.ObtenerTablaConComando(query, cmd );
-        }
+
         public void cargarDropDownListCategoria(ref DropDownList ddl)
         {
             accesoDatos.cargarDropDownList("select nombre, Idcategoria from Categoria", ref ddl);

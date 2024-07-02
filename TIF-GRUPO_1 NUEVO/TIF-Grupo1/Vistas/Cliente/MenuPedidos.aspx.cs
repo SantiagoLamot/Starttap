@@ -26,6 +26,7 @@ namespace Vistas.Cliente
                 Button btnAgregar = (Button)sender;
                 DataListItem item = (DataListItem)btnAgregar.NamingContainer;
 
+
                 TextBox txtCantidadB = (TextBox)item.FindControl("txtCantidadB");
                 Label lblPrecio = (Label)item.FindControl("lblPrecioB");
                 Label lblEstado = (Label)item.FindControl("lblEstado");
@@ -37,6 +38,10 @@ namespace Vistas.Cliente
 
                 int stockDispo = negStock.ObtenerStock(Nombre);
 
+                //if (stockDispo <= 0)
+                //{
+                //    btnAgregar.Visible = false;
+                //}
                 if (Cantidad > stockDispo)
                 {
                     lblMensaje.Visible = true;
@@ -53,9 +58,10 @@ namespace Vistas.Cliente
                         stock = Cantidad,
                         precio = Precio
                     };
+
                     carrito.Add(producto);
-                    Session["Carrito"] = carrito;
-                   
+
+                    GuardarCarritoEnSesion(carrito);
                     GuardarCarritoEnCookie(carrito);
 
                     int nuevoStock = stockDispo - Cantidad;
@@ -66,8 +72,14 @@ namespace Vistas.Cliente
                         lblMensaje.ForeColor = System.Drawing.Color.DarkRed; 
                         btnAgregar.Visible = false;
                     }
+
                 }
             }
+
+        }
+        private void GuardarCarritoEnSesion(List<Producto> carrito)
+        {
+            Session["Carrito"] = carrito;
         }
         private List<Producto> ObtenerCarritoDesdeSesion()
         {
