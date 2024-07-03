@@ -14,8 +14,8 @@
         }
         .auto-style5 {
             display: flex;
-            justify-content: center; /* Centra horizontalmente */;
-            align-items: center; /* Centra verticalmente si es necesario */;
+            justify-content: center;
+            align-items: center; 
         }
     </style>
 </head>
@@ -47,7 +47,7 @@
             <asp:Button ID="btnFiltrar" CssClass="BotonPrincipal" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
             <br />
             <br />
-            <asp:GridView ID="gvTablaSolicitudesPedidos"  runat="server" AllowPaging="True" AutoGenerateColumns="False" OnRowCommand="gvTablaSolicitudesPedidos_RowCommand"  Height="332px" Width="911px" CssClass="auto-style5" >
+            <asp:GridView ID="gvTablaSolicitudesPedidos"  runat="server" AllowPaging="True" AutoGenerateColumns="False" OnRowCommand="gvTablaSolicitudesPedidos_RowCommand"  Height="332px" Width="911px"  >
     <Columns>
         <asp:TemplateField HeaderText="IdPedido">
             <ItemTemplate>

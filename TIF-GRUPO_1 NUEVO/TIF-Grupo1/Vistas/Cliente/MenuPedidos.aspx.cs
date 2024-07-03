@@ -38,15 +38,10 @@ namespace Vistas.Cliente
 
                 int stockDispo = negStock.ObtenerStock(Nombre);
 
-                //if (stockDispo <= 0)
-                //{
-                //    btnAgregar.Visible = false;
-                //}
+              
                 if (Cantidad > stockDispo)
                 {
-                    lblMensaje.Visible = true;
-                    lblMensaje.Text = "La cantidad ingresada supera el stock disponible.";
-                    lblMensaje.ForeColor = System.Drawing.Color.DarkRed;
+                    Response.Write("<script>alert('La cantidad ingresada supera el stock disponible.');</script>"); 
                 }
                 else
                 {
@@ -68,9 +63,7 @@ namespace Vistas.Cliente
                     negStock.ActualizarStock(Nombre, nuevoStock);
                     if (nuevoStock <= 0 )
                     {
-                        lblMensaje.Text = "El producto ha sido agotado.";
-                        lblMensaje.ForeColor = System.Drawing.Color.DarkRed; 
-                        btnAgregar.Visible = false;
+                        Response.Write("<script>alert('El producto ha sido agotado.');</script>");
                     }
 
                 }

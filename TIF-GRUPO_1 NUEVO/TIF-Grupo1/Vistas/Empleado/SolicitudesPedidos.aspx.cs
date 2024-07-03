@@ -70,6 +70,7 @@ namespace Vistas.Empleado
             int? idMesa = null;
             DateTime? fecha = null;
 
+            
             if (estado == "PorMesa")
             {
                 idMesa = int.Parse(ddlMesas.SelectedValue);
@@ -89,6 +90,9 @@ namespace Vistas.Empleado
                 {
                     fecha = Fechaconvertida;
                 }
+            }else
+            {
+                CargarOrdenes();
             }
 
             CargarOrdenes(estado, idMesa, fecha);

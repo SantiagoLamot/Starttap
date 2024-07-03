@@ -197,7 +197,13 @@
                                     CommandArgument='<%# Eval("IdProducto") %>' 
                                     CommandName="CambiarEstado"
                                     Text="Cambiar Estado"
-                                    OnClientClick="return confirm('¿Estás seguro de cambiar el estado del producto?');">
+                                    OnClientClick="return confirm('¿Estás seguro de cambiar el estado del producto?');"></asp:LinkButton>                   
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Actualizar Stock">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="lbActualizarStock" runat="server" CommandArgument='<%# Eval("Nombre") %>' CommandName="ActualizarStock" Text="Actualizar" 
+                                    OnClientClick ="return confirm('¿Estás seguro de cambiar el estado del producto?');">
                                 </asp:LinkButton>                   
                             </ItemTemplate>
                         </asp:TemplateField>
@@ -214,6 +220,14 @@
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
             </div>
+            <br />
+            <asp:Panel ID="Panel1" runat="server">
+                <asp:Label ID="lblActualizarStock" runat="server" CssClass="labelPrincipal" Text="ACTUALIZAR STOCK"></asp:Label>
+                Nuevo Stock:
+                <asp:TextBox ID="txtCantidad" runat="server" TextMode="Number" Width="49px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="rfvAgregarStock" runat="server" ControlToValidate="txtCantidad" ErrorMessage="*Debe Agregar un stock "></asp:RequiredFieldValidator>
+            </asp:Panel>
+            <br />
             <br />
             <asp:Label ID="lblAgregarnuevoProducto" runat="server" Text="AGREGAR UN NUEVO PRODUCTO" CssClass="labelPrincipal"></asp:Label>
             <br />
