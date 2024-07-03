@@ -3,34 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\datos\\daoordenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F471EB-37B7-40F9-AAC1-1321BA436984}|Datos\\Datos.csproj|solutionrelative:datos\\daoordenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\vistas\\empleado\\solicitudespedidos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\empleado\\solicitudespedidos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\vistas\\cliente\\carritodepedidos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\cliente\\carritodepedidos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\vistas\\cliente\\menupedidos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\cliente\\menupedidos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\cliente\\menupedidos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\cliente\\menupedidos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\vistas\\cliente\\carritodepedidos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\cliente\\carritodepedidos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\estilos\\stylegeneral.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\estilos\\stylegeneral.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|c:\\users\\kechu\\onedrive\\escritorio\\github equipo\\starttap\\tif-grupo_1 nuevo\\tif-grupo1\\vistas\\administrador\\agregarproducto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{875CCE58-FE61-4876-B95D-F3C8A4C6E654}|Vistas\\Vistas.csproj|solutionrelative:vistas\\administrador\\agregarproducto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
@@ -42,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,106 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "AgregarProducto.aspx",
               "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\AgregarProducto.aspx",
               "RelativeDocumentMoniker": "Vistas\\Administrador\\AgregarProducto.aspx",
               "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Administrador\\AgregarProducto.aspx",
               "RelativeToolTip": "Vistas\\Administrador\\AgregarProducto.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-01T00:46:42.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StyleGeneral.css",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Estilos\\StyleGeneral.css",
-              "RelativeDocumentMoniker": "Vistas\\Estilos\\StyleGeneral.css",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Estilos\\StyleGeneral.css",
-              "RelativeToolTip": "Vistas\\Estilos\\StyleGeneral.css",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAAALIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-30T22:39:17.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SolicitudesPedidos.aspx",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Empleado\\SolicitudesPedidos.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Empleado\\SolicitudesPedidos.aspx",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Empleado\\SolicitudesPedidos.aspx",
-              "RelativeToolTip": "Vistas\\Empleado\\SolicitudesPedidos.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-26T01:53:34.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DaoOrdenes.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Datos\\DaoOrdenes.cs",
-              "RelativeDocumentMoniker": "Datos\\DaoOrdenes.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Datos\\DaoOrdenes.cs",
-              "RelativeToolTip": "Datos\\DaoOrdenes.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAAAHsAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T01:11:20.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CarritodePedidos.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Cliente\\CarritodePedidos.aspx.cs",
-              "RelativeDocumentMoniker": "Vistas\\Cliente\\CarritodePedidos.aspx.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Cliente\\CarritodePedidos.aspx.cs",
-              "RelativeToolTip": "Vistas\\Cliente\\CarritodePedidos.aspx.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T01:48:36.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CarritodePedidos.aspx",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Cliente\\CarritodePedidos.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Cliente\\CarritodePedidos.aspx",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Cliente\\CarritodePedidos.aspx",
-              "RelativeToolTip": "Vistas\\Cliente\\CarritodePedidos.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-26T01:48:33.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MenuPedidos.aspx",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Cliente\\MenuPedidos.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Cliente\\MenuPedidos.aspx",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Cliente\\MenuPedidos.aspx",
-              "RelativeToolTip": "Vistas\\Cliente\\MenuPedidos.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-25T01:25:26.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MenuPedidos.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Cliente\\MenuPedidos.aspx.cs",
-              "RelativeDocumentMoniker": "Vistas\\Cliente\\MenuPedidos.aspx.cs",
-              "ToolTip": "C:\\Users\\kechu\\OneDrive\\Escritorio\\GitHub Equipo\\Starttap\\TIF-GRUPO_1 NUEVO\\TIF-Grupo1\\Vistas\\Cliente\\MenuPedidos.aspx.cs",
-              "RelativeToolTip": "Vistas\\Cliente\\MenuPedidos.aspx.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T00:41:18.298Z",
+              "WhenOpened": "2024-07-03T01:59:55.452Z",
               "EditorCaption": ""
             }
           ]

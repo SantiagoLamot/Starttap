@@ -32,10 +32,10 @@ namespace Vistas
             {
                 List<Producto> carrito = new List<Producto>();
 
-                var productos = carritoCookie["Productos"].Split(',');
-                foreach (var productoData in productos)
+                string[] productos = carritoCookie["Productos"].Split(',');
+                foreach (string DatosProductos in productos)
                 {
-                    var datos = productoData.Split('|');
+                    string[] datos = DatosProductos.Split('|');
                     if (datos.Length == 3)
                     {
                         Producto producto = new Producto
@@ -140,6 +140,7 @@ namespace Vistas
             List<Producto> carrito = ObtenerCarritoDesdeGridView();
             carrito.RemoveAt(rowIndex);
             CargarGridView(carrito);
+            Response.Write("<script>alert('Producto Eliminado Con Exito.');</script>");
             GuardarCarritoEnCookie(carrito);
         }
         private void GuardarCarritoEnCookie(List<Producto> carrito)

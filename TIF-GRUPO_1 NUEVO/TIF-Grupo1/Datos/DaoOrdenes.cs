@@ -87,7 +87,9 @@ namespace Datos
         public int CrearOrden(List<Producto> carrito, int idUsuario)
         {
             SqlCommand cmd = new SqlCommand();
-            String Consulta = "INSERT INTO Ordenes (IdUsuario, IdEmpleado, IdMesa, Fecha, Total, EstadoComanda, EstadoPreparacion) OUTPUT INSERTED.IdOrden VALUES (@IdUsuario, @IdEmpleado, @IdMesa, @Fecha, @Total, @EstadoComanda, @EstadoPreparacion)";
+            String Consulta = "INSERT INTO Ordenes (IdUsuario, IdEmpleado, IdMesa, Fecha, Total, EstadoComanda, " +
+                "EstadoPreparacion) OUTPUT INSERTED.IdOrden VALUES (@IdUsuario, @IdEmpleado, @IdMesa, @Fecha, @Total, " +
+                "@EstadoComanda, @EstadoPreparacion)";
             cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
             cmd.Parameters.AddWithValue("@IdEmpleado", DBNull.Value);
             cmd.Parameters.AddWithValue("@IdMesa", DBNull.Value);
@@ -99,24 +101,24 @@ namespace Datos
 
         }
 
-        public int CargarListProducto(int ordenId, List<Producto> carrito)
-        {
-            int result = 0;
+        //public int CargarListProducto(int ordenId, List<Producto> carrito)
+        //{
+        //    int result = 0;
 
-            foreach (var producto in carrito)
-            {
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "INSERT INTO Productos_Orden (IdOrden, IdProducto, Cantidad, Subtotal) VALUES (@IdOrden, @IdProducto, @Cantidad, @Subtotal)";
-                cmd.Parameters.AddWithValue("@IdOrden", ordenId);
-                cmd.Parameters.AddWithValue("@IdProducto", ObtenerIdProductoPorNombre(producto.nombre)); // Método para obtener el ID del producto por nombre
-                cmd.Parameters.AddWithValue("@Cantidad", producto.stock);
-                cmd.Parameters.AddWithValue("@Subtotal", producto.stock * producto.precio);
+        //    foreach (var producto in carrito)
+        //    {
+        //        SqlCommand cmd = new SqlCommand();
+        //        string consulta = "INSERT INTO Productos_Orden (IdOrden, IdProducto, Cantidad, Subtotal) VALUES (@IdOrden, @IdProducto, @Cantidad, @Subtotal)";
+        //        cmd.Parameters.AddWithValue("@IdOrden", ordenId);
+        //        cmd.Parameters.AddWithValue("@IdProducto", ObtenerIdProductoPorNombre(producto.nombre)); // Método para obtener el ID del producto por nombre
+        //        cmd.Parameters.AddWithValue("@Cantidad", producto.stock);
+        //        cmd.Parameters.AddWithValue("@Subtotal", producto.stock * producto.precio);
 
-                result += accesoDatos.Insert_DevuelveId(consulta, cmd);
-            }
+        //        result += accesoDatos.Insert_DevuelveId(consulta, cmd);
+        //    }
 
-            return result;
-        }
+        //    return result;
+        //}
 
         public int ObtenerIdProductoPorNombre(string nombreProducto)
         {

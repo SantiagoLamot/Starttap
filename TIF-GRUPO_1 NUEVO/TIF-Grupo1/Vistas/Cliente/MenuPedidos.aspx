@@ -6,59 +6,32 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../Estilos/StyleGeneral.css"/>
-    <link rel="stylesheet" type="text/css" href="../Estilos/StyleMenu.css"/>
+    <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css"/>
+    <%--<link rel="stylesheet" type="text/css" href="../Estilos/StyleMenu.css"/>--%>
 
     <style type="text/css">
         .auto-style1 {
-            margin-left: 0px;
+            width: 845px;
         }
         .auto-style2 {
-            width: 1636px;
-            margin-left: 112px;
-            margin-right: 472px;
-            height: 986px;
+            width: 864px;
+            height: 683px;
         }
-        .auto-style4 {
-            font-size: 1em;
-            color: #666;
-            margin: 10px 36px 0 0;
-            width: 1602px;
-        }
-        .auto-style6 {
-            font-size: 0.5em;
-        }
-        .auto-style7 {
-            font-size: 1.5em;
-            margin: 26 0 0 0;
-            color: #333;
-            width: 214px;
-            height: 119px;
-        }
-        .auto-style8 {
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-            display: block;
-            width: 100%;
+        .header-container {
             text-align: center;
         }
     </style>
-
-   
-  
 </head>
-  <header><uc:menu runat="server" /> </header>
-  
-    <body class="bodyBlanco"/>
-   <form id="form1" runat="server" class="auto-style2">
-        <main class="menu-container"></main>
-            <div class="auto-style4">
+
+<body class="bodyBlanco">
+    <uc:menu runat="server" />
+    <form id="form1" runat="server" class="auto-style2">
+         </div>
+            <div class="auto-style9" >
+                <br />
                 <asp:Label ID="lblMensaje" runat="server" CssClass="auto-style8"></asp:Label>
                 <br />
-                <asp:DataList ID="DataListBebidas" runat="server" DataSourceID="SqlDataSourceBebidas" RepeatColumns="6" CssClass="menu-datalist" Height="149px" Width="82px" ShowFooter="False" RepeatDirection="Horizontal">
+                <asp:DataList ID="DataListBebidas" runat="server" DataSourceID="SqlDataSourceBebidas" RepeatColumns="6" CssClass="menu-datalist" Height="163px" Width="151px" ShowFooter="False" RepeatDirection="Horizontal">
                     <ItemTemplate>
                         <div class="menu-item">
                             <h3 class="auto-style7">

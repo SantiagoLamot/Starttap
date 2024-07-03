@@ -20,10 +20,10 @@ namespace Negocio
                 return daoOrdenes.CrearOrden(carrito, id);
             }
 
-            public int CargarCarrito(int ordenId, List<Producto> carrito)
-            {
-                return daoOrdenes.CargarListProducto(ordenId, carrito);
-            }
+            //public int CargarCarrito(int ordenId, List<Producto> carrito)
+            //{
+            //    return daoOrdenes.CargarListProducto(ordenId, carrito);
+            //}
 
             public Usuario ObtenerDatosUsuario(string Email)
             {

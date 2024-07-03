@@ -81,8 +81,10 @@
 <body class="bodyBlanco">
     <form id="form1" runat="server">
         <div class="header">
-            <asp:Label ID="CerrarSesion" runat="server"></asp:Label>
-            <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión" CssClass="logout-button" OnClick="btnCerrarSesion_Click" />
+            <asp:Label ID="lblCerrarSesion" runat="server"></asp:Label>
+            <br />
+            <br />
+            <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión" CssClass="logout-button" OnClick="btnCerrarSesion_Click" Height="36px" Width="133px" />
         </div>
       
         <div class="auto-style1">

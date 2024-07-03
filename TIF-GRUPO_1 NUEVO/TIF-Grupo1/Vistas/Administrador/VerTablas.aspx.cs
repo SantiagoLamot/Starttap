@@ -14,6 +14,7 @@ namespace Vistas.Administrador
             if (Request.Cookies["NombreUsuario"] != null && Request.Cookies["ApellidoUsuario"] != null)
             {
                 lblNombreUsuario.Text = (Request.Cookies["NombreUsuario"].Value + "  " + Request.Cookies["ApellidoUsuario"].Value).ToUpper();
+                lblCerrarSesion.Text = (Request.Cookies["NombreUsuario"].Value + "  " + Request.Cookies["ApellidoUsuario"].Value).ToUpper();
             }
         }
 
@@ -25,6 +26,7 @@ namespace Vistas.Administrador
                 HttpCookie nombreCookie = new HttpCookie("NombreUsuario");
                 nombreCookie.Expires = DateTime.Now.AddDays(-1);
                 Response.Cookies.Add(nombreCookie);
+                
             }
 
             if (Request.Cookies["ApellidoUsuario"] != null)
@@ -49,5 +51,7 @@ namespace Vistas.Administrador
         {
 
         }
+
+      
     }
 }
