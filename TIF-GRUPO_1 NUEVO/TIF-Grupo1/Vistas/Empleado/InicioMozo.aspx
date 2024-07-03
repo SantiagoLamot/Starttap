@@ -12,6 +12,7 @@
 <body class="bodyBlanco">
     <form id="form1" runat="server">
          <main class="menu-container"></main>
+         <asp:Label ID="Label2" runat="server" CssClass="nombre-usuario"></asp:Label>
         <div>
             <asp:Label runat="server" Font-Bold="True" Font-Size="XX-Large" Text="STARTAP BREWING CO"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

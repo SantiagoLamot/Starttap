@@ -15,6 +15,11 @@ namespace Vistas.Empleado
             {
                 lblNombreUsuario.Text = (Request.Cookies["NombreUsuario"].Value + "  " + Request.Cookies["ApellidoUsuario"].Value).ToUpper();
             }
+
+            if (Request.Cookies["NombreUsuario"] != null && Request.Cookies["ApellidoUsuario"] != null)
+            {
+                lblNombreUsuario.Text = (Request.Cookies["NombreUsuario"].Value + "  " + Request.Cookies["ApellidoUsuario"].Value).ToUpper();
+            }
         }
 
         protected void btn_CerrarSesion_Click(object sender, EventArgs e)

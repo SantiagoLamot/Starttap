@@ -19,6 +19,7 @@
 <body>
    <header>
         <div class="nav-container">
+            <asp:Label ID="lblNombreUsuario" runat="server" CssClass="nombre-usuario"></asp:Label>
             <nav class="auto-style4">
                 <ul class="nav-list">
                     <li><a href="InicioEmpleado.aspx">Inicio</a></li>

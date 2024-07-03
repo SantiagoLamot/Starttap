@@ -13,6 +13,11 @@ namespace Vistas.Empleado
         EmpleadosNegocio empleadosNegocio = new EmpleadosNegocio();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.Cookies["NombreUsuario"] != null && Request.Cookies["ApellidoUsuario"] != null)
+            {
+                lblNombreUsuario.Text = (Request.Cookies["NombreUsuario"].Value + "  " + Request.Cookies["ApellidoUsuario"].Value).ToUpper();
+            }
+
             if (!IsPostBack)
             {
                 CargarReservas();

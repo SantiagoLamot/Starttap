@@ -14,6 +14,11 @@ namespace Vistas.Cliente
         NegocioCliente negocioCliente = new NegocioCliente();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.Cookies["NombreUsuario"] != null && Request.Cookies["ApellidoUsuario"] != null)
+            {
+                lblNombreUsuario.Text = (Request.Cookies["NombreUsuario"].Value + "  " + Request.Cookies["ApellidoUsuario"].Value).ToUpper();
+            }
+
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
 
             if (!IsPostBack)

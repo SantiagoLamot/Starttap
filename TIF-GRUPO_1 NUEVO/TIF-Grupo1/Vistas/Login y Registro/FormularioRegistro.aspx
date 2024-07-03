@@ -127,7 +127,7 @@
         <asp:Label ID="lblContraseña" runat="server" Text="Contraseña"></asp:Label>
         <asp:TextBox ID="txtContraseña" runat="server" ValidationGroup="GRegistro" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ControlToValidate="txtContraseña" ErrorMessage="*El Campo Contraseña no puede estar vacío" ValidationGroup="GRegistro"></asp:RequiredFieldValidator>
-        <asp:RegularExpressionValidator ID="rveContraseñaInsegura" runat="server" ControlToValidate="txtContraseña" ErrorMessage="*Contraseña Insegura" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$" ValidationGroup="GRegistro"></asp:RegularExpressionValidator>
+        <%--<asp:RegularExpressionValidator ID="rveContraseñaInsegura" runat="server" ControlToValidate="txtContraseña" ErrorMessage="*Contraseña Insegura" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$" ValidationGroup="GRegistro"></asp:RegularExpressionValidator>--%>
         <br />
         <asp:Literal ID="litPasswordRequirements" runat="server" Text="La contraseña debe tener al menos 8 caracteres, incluyendo:
             <ul>

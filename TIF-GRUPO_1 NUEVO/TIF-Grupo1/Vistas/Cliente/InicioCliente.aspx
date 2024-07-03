@@ -1,4 +1,5 @@
-﻿<%--<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InicioCliente.aspx.cs" Inherits="Vistas.Administrador.InicioCliente" %>--%>
+﻿<%@ Page language="C#" %>
+<%--<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InicioCliente.aspx.cs" Inherits="Vistas.Administrador.InicioCliente" %>--%>
 
 <%@ Register Src="~/Cliente/VistaMenuCliente.ascx" TagName="Menu" TagPrefix="uc" %>
 
@@ -23,6 +24,8 @@
     <main>
     </main>
     <form id="form1" runat="server" class="formInicio">
+        <asp:Label ID="lblNombreUsuario" runat="server" CssClass="nombre-usuario"></asp:Label>
+        &nbsp;&nbsp;&nbsp;
         <h1>Bienvenido a Starttap</h1>
         <h2>Explora nuestros productos y realiza tus pedidos y reservas.</h2>
         <h3>Encuéntranos en: Tapalqué, 9 de Julio 456</h3>

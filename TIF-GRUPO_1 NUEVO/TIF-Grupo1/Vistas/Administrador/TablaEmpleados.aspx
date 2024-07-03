@@ -108,12 +108,23 @@
             align-items: center; /* Centra verticalmente si es necesario */
             width: auto; /* Ancho automático */
         }
+        .auto-style1 {
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+            text-align: center;
+        }
     </style>
 </head>
 <body class="bodyLogoColor">
     <form id="form1" runat="server" class="formInicio">
         <div>
-            <asp:Label ID="lblTitulo" runat="server" CssClass="labelPrincipal" Text="STARTAP BREWING CO."></asp:Label>
+            <asp:Label ID="lblNombreUsuario" runat="server" CssClass="nombre-usuario"></asp:Label>
+            <asp:Label ID="lblTitulo" runat="server" CssClass="auto-style1" Text="STARTAP BREWING CO." Height="60px" Width="713px"></asp:Label>
+            <br />
             <br />
             <br />
             <asp:Label ID="lblTabladeEmpleados" runat="server" Font-Size="Medium" Text="TABLA DE EMPLEADOS"></asp:Label>
@@ -165,7 +176,7 @@
 &nbsp;
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="hlRedirigir" runat="server" NavigateUrl="~/Administrador/VerTablas.aspx" OnDataBinding="HyperLink1_DataBinding">Regresar a Ver Tablas</asp:HyperLink>
+            <asp:HyperLink ID="hlRedirigir" runat="server" NavigateUrl="~/Administrador/VerTablas.aspx" OnDataBinding="HyperLink1_DataBinding">Ir a pagina de inicio</asp:HyperLink>
         </div>
     </form>
 </body>

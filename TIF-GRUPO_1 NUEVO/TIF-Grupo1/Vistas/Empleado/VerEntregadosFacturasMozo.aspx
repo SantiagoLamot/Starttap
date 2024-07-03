@@ -20,6 +20,7 @@
 <body class="bodyBlanco">
     <form id="form1" runat="server" class="auto-style2">
         <main class="menu-container"></main>
+        <asp:Label ID="lblNombreUsuario" runat="server" CssClass="nombre-usuario"></asp:Label>
         <div>
             <br />
             <br />
