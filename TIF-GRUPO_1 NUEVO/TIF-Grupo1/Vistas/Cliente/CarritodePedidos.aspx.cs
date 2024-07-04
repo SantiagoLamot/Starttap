@@ -91,6 +91,12 @@ namespace Vistas
         protected void btnConfirmarPedido_Click1(object sender, EventArgs e)
         {
             List<Producto> carrito = ObtenerCarritoDesdeGridView();
+            if (carrito == null || carrito.Count == 0)
+            {
+                lblMensajeConfirmacion.Text = "El carrito está vacío.";
+                lblMensajeConfirmacion.ForeColor = System.Drawing.Color.Red;
+                return;
+            }
             NegocioOrdenes negocioOrdenes = new NegocioOrdenes();
             Usuario usuario = new Usuario();
             Mesas Mesa = new Mesas();

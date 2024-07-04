@@ -81,7 +81,7 @@
             <asp:Label ID="lblNombreUsuario" runat="server" CssClass="nombre-usuario"></asp:Label>
             <nav class="auto-style4">
                 <ul class="nav-list">
-                    <li><a href="InicioEmpleado.aspx">Inicio</a></li>
+                    <li><a href="InicioMozo.aspx">Inicio</a></li>
                     <li class= "dropdown">
                         <a href="InicioMozo.aspx" class="dropbtn">Mozo</a>
                         <div class="dropdown-content">
@@ -91,7 +91,7 @@
                             <a href="VerEntregadosFacturasMozo.aspx">Pedidos Entregados</a>
                         </div>
                         <li class= "dropdown">
-                        <a href="InicioCocinero.aspx" class="dropbtn">Cocinero</a>
+                        <a href="CocinaVerPedidos.aspx" class="dropbtn">Cocinero</a>
                         <div class="dropdown-content">
                             <a href="CocinaVerPedidos.aspx">Cocina</a>
                             
@@ -99,6 +99,13 @@
                     </li>
                 </ul>
             </nav>
+            <div class="icons-container">
+   
+            <br />
+            <a href="../Login y Registro/Ingreso.aspx" class="icon-link" onclick="return confirmLogout();">
+                <img width="26" height="26" src="https://img.icons8.com/ios-glyphs/30/logout-rounded-up.png" alt="logout"/>
+    </a>
+</div>
         </div>
     </header>
 </body>

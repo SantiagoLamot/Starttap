@@ -12,7 +12,9 @@
             margin-top: 0px;
         }
         .auto-style2 {
-            width: 474px;
+            width: 769px;
+            margin-left: 0px;
+            margin-right: 229px;
         }
     </style>
 </head>
@@ -20,12 +22,10 @@
 <body class="bodyBlanco">
     <form id="form1" runat="server" class="auto-style2">
         <main class="menu-container"></main>
-        <asp:Label ID="lblNombreUsuario" runat="server" CssClass="nombre-usuario"></asp:Label>
         <div>
             <br />
             <br />
             Listado de ordenes entregadas y su facturacion:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btn_Volver" runat="server" OnClick="btn_Volver_Click" Text="Volver" />
             <br />
             <br />
             <asp:GridView ID="gv_Entregados" runat="server" AllowPaging="True" CellPadding="4" CssClass="auto-style1" ForeColor="#333333" GridLines="None" OnPageIndexChanging="gv_Entregados_PageIndexChanging" AutoGenerateColumns="False" OnRowCommand="gv_Entregados_RowCommand">

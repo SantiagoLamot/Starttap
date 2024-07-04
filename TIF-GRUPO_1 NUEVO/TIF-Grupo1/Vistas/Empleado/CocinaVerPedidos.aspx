@@ -22,7 +22,6 @@
         <div>
             <asp:Label runat="server" Font-Bold="True" Font-Size="XX-Large" Text="STARTAP BREWING CO."></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btn_VolverInicioEmpleado" runat="server" OnClick="btn_VolverInicioEmpleado_Click" Text="Volver" />
             <br />
             <br />
             <asp:Label runat="server" Text="Lista de pedidos:"></asp:Label>

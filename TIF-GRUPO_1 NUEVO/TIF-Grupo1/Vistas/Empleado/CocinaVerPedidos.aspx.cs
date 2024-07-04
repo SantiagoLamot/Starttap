@@ -72,10 +72,7 @@ namespace Vistas.Empleado
             lbl_DetalleOrden.Text = string.Empty;
         }
 
-        protected void btn_VolverInicioEmpleado_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("/Empleado/InicioCocinero.aspx");
-        }
+       
 
         protected void gv_ListaOrdenes_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
