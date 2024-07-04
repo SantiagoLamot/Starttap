@@ -6,13 +6,14 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-      <link rel="stylesheet" type="text/css" href="../Estilos/StyleGeneral.css"/>
-      <link rel="stylesheet" type="text/css" href="../Estilos/StyleMenu.css"/>
+      <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css"/>
+      
 </head>
-    <header><uc:menu runat="server" /> </header>
+    
 <body class="bodyBlanco">
+   <uc:Menu runat="server" />
     <form id="form1" runat="server">
-        <main class="menu-container"></main>
+        
         <div>
             <asp:Label runat="server" Font-Size="XX-Large" Text="STARTAP BREWING CO." ID="ctl02" Font-Bold="True"></asp:Label>
             <br />

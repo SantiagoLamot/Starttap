@@ -84,7 +84,7 @@ namespace Datos
             return tabla;
         }
 
-        public int CrearOrden(List<Producto> carrito, int idUsuario)
+        public int CrearOrden(List<Producto> carrito, int idUsuario, int idMesa)
         {
             SqlCommand cmd = new SqlCommand();
             String Consulta = "INSERT INTO Ordenes (IdUsuario, IdEmpleado, IdMesa, Fecha, Total, EstadoComanda, " +
@@ -92,7 +92,7 @@ namespace Datos
                 "@EstadoComanda, @EstadoPreparacion)";
             cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
             cmd.Parameters.AddWithValue("@IdEmpleado", DBNull.Value);
-            cmd.Parameters.AddWithValue("@IdMesa", DBNull.Value);
+            cmd.Parameters.AddWithValue("@IdMesa", idMesa);
             cmd.Parameters.AddWithValue("@Fecha", DateTime.Now);
             cmd.Parameters.AddWithValue("@Total", carrito.Sum(p => p.stock * p.precio));
             cmd.Parameters.AddWithValue("@EstadoComanda", 0);

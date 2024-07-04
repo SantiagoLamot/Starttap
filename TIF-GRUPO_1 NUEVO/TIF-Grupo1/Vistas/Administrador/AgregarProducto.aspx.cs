@@ -59,8 +59,9 @@ namespace Vistas
 
             Negocio1.InsertarProductosYCategorias(producto);
 
-            CargarProductos();
+
             LimpiarCampos();
+            CargarProductos();
 
             lblMensaje.Text = "El producto se creo exitosamente.";
             lblMensaje.ForeColor = System.Drawing.Color.Green;
@@ -116,6 +117,7 @@ namespace Vistas
 
                 negStock.ActualizarStock(Nombre, cantidad);
                 txtCantidad.Text = "";
+                CargarProductos();
             }
         }
     }

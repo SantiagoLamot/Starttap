@@ -83,7 +83,6 @@ namespace Vistas
         {
             gv_Ordenes.DataSource = null;
             gv_Ordenes.DataBind();
-
             HttpCookie carritoCookie = new HttpCookie("Carrito");
             carritoCookie.Expires = DateTime.Now.AddDays(-1);
             Response.Cookies.Add(carritoCookie);
@@ -94,20 +93,37 @@ namespace Vistas
             List<Producto> carrito = ObtenerCarritoDesdeGridView();
             NegocioOrdenes negocioOrdenes = new NegocioOrdenes();
             Usuario usuario = new Usuario();
+            Mesas Mesa = new Mesas();
 
 
             string email = (Request.Cookies["EmailUsuario"].Value);
+            if (string.IsNullOrEmpty(email))
+            {
+                lblMensajeConfirmacion.Text = "No se pudo obtener el correo del usuario.";
+                lblMensajeConfirmacion.ForeColor = System.Drawing.Color.Red;
+                return;
+            }
             usuario = negocioOrdenes.ObtenerDatosUsuario(email);
+            if (usuario == null)
+            {
+                lblMensajeConfirmacion.Text = "No se pudo obtener los datos del usuario.";
+                lblMensajeConfirmacion.ForeColor = System.Drawing.Color.Red;
+                return;
+            }
+
 
             int idUsuario = usuario.idUsuario;
+            Mesa.idMesa = negocioOrdenes.ObtenerREserva(idUsuario);
+            int idMesa = Mesa.idMesa;
 
-            int ordenId = negocioOrdenes.CargarOrdenes(carrito, idUsuario);
+            int ordenId = negocioOrdenes.CargarOrdenes(carrito, idUsuario, idMesa);
             if (ordenId > 0)
             {
 
                 lblMensajeConfirmacion.Text = "SU CARRITO HA SIDO ENVIADO ESPERE LA CONFIRMACION.";
                 lblMensajeConfirmacion.ForeColor = System.Drawing.Color.DarkGreen;
                 LimpiarCarritoActual();
+                Session["Carrito"] = null;
             }
             else
             {
@@ -140,13 +156,14 @@ namespace Vistas
 
         protected void gv_Ordenes_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            
+
             int rowIndex = e.RowIndex;
             List<Producto> carrito = ObtenerCarritoDesdeGridView();
             carrito.RemoveAt(rowIndex);
+            Session["Carrito"] = null;
             CargarGridView(carrito);
-            Response.Write("<script>alert('Producto Eliminado Con Exito.');</script>");
             GuardarCarritoEnCookie(carrito);
+            Response.Write("<script>alert('Producto Eliminado Con Exito.');</script>");
         }
         private void GuardarCarritoEnCookie(List<Producto> carrito)
         {
@@ -163,6 +180,10 @@ namespace Vistas
             Response.Cookies.Add(carritoCookie);
         }
 
-      
+        protected void gv_Ordenes_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gv_Ordenes.PageIndex = e.NewPageIndex;
+            CargarCarrito();
+        }
     }
 }

@@ -111,6 +111,10 @@ namespace Vistas.Empleado
             ddlMesas.DataBind();
         }
 
-       
+        protected void gvTablaSolicitudesPedidos_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvTablaSolicitudesPedidos.PageIndex = e.NewPageIndex;
+            CargarOrdenes();
+        }
     }
 }

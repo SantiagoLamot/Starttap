@@ -76,7 +76,6 @@
     <Content Include="Administrador\ClientesInactivos.aspx" />
     <Content Include="Administrador\AgregarEmpleado.aspx" />
     <Content Include="Cliente\CarritodePedidos.aspx" />
-    <Content Include="Cliente\DetallesDeLaCuenta.aspx" />
     <Content Include="Cliente\EstadodePedidos.aspx" />
     <Content Include="Cliente\EstadoReserva.aspx" />
     <Content Include="Cliente\InicioCliente.aspx" />
@@ -164,13 +163,6 @@
     </Compile>
     <Compile Include="Cliente\CarritodePedidos.aspx.designer.cs">
       <DependentUpon>CarritodePedidos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Cliente\DetallesDeLaCuenta.aspx.cs">
-      <DependentUpon>DetallesDeLaCuenta.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cliente\DetallesDeLaCuenta.aspx.designer.cs">
-      <DependentUpon>DetallesDeLaCuenta.aspx</DependentUpon>
     </Compile>
     <Compile Include="Cliente\EstadodePedidos.aspx.cs">
       <DependentUpon>EstadodePedidos.aspx</DependentUpon>

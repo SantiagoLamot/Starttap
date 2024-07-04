@@ -22,15 +22,26 @@ namespace Vistas.Administrador
 
             if (!IsPostBack)
             {
-                DataTable TablaEmpleados = empleadosNegocio.MostrarEmpleados();
-                gvEmpleados.DataSource = TablaEmpleados;
-                gvEmpleados.DataBind();
+                CargarGridViewEmpleados();
             }
         }
 
         protected void HyperLink1_DataBinding(object sender, EventArgs e)
         {
 
+        }
+
+        protected void gvEmpleados_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvEmpleados.PageIndex = e.NewPageIndex;
+            CargarGridViewEmpleados();
+        }
+
+        public void CargarGridViewEmpleados()
+        {
+            DataTable TablaEmpleados = empleadosNegocio.MostrarEmpleados();
+            gvEmpleados.DataSource = TablaEmpleados;
+            gvEmpleados.DataBind();
         }
     }
 }

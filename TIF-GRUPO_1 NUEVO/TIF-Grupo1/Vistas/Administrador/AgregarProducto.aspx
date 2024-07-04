@@ -205,8 +205,7 @@
                         <asp:TemplateField HeaderText="Actualizar Stock">
                             <ItemTemplate>
                                 <asp:LinkButton ID="lbActualizarStock" runat="server" CommandArgument='<%# Eval("Nombre") %>' CommandName="ActualizarStock" Text="Actualizar" 
-                                    OnClientClick ="return confirm('¿Estás seguro de cambiar el estado del producto?');">
-                                </asp:LinkButton>                   
+                                    OnClientClick ="return confirm('¿Estás seguro de cambiar el estado del producto?');" ValidationGroup="G1"></asp:LinkButton>                   
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
@@ -227,7 +226,7 @@
                 <asp:Label ID="lblActualizarStock" runat="server" CssClass="labelPrincipal" Text="ACTUALIZAR STOCK"></asp:Label>
                 Nuevo Stock:
                 <asp:TextBox ID="txtCantidad" runat="server" TextMode="Number" Width="49px"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="rfvAgregarStock" runat="server" ControlToValidate="txtCantidad" ErrorMessage="*Debe Agregar un stock "></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvAgregarStock" runat="server" ControlToValidate="txtCantidad" ErrorMessage="*Debe Agregar un stock " ValidationGroup="G1"></asp:RequiredFieldValidator>
             </asp:Panel>
             <br />
             <br />

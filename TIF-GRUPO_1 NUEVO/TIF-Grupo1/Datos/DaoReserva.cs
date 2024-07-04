@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using Entidades;
 
 namespace Datos
@@ -35,6 +37,14 @@ namespace Datos
             string consulta = "SELECT M.Numero as NumMesa, R.Fecha, R.Comensales FROM Reserva as R inner join Usuario as U on U.IdUsuario = R.IdUsuario " +
                                "inner join Mesa as M on M.IdMesa = R.IdMesa where R.Estado " + condicion + " and R.IdUsuario = " + idCli;
             return accesoDatos.ObtenerTabla("EstadoReserva", consulta);
+        }
+
+        public int ObtenerREserva(int id)
+        {
+            SqlCommand cmd = new SqlCommand();
+            string consulta = "Select M.Numero from Mesa M right join Reserva R on R.IdMesa = M.IdMesa right Join Usuario U on R.IdUsuario = U.IdUsuario where U.IdUsuario = @id";
+            cmd.Parameters.AddWithValue("@id", id);
+            return accesoDatos.Insert_DevuelveId(consulta, cmd);
         }
 
         public DataTable MostrarReservasConfirmadas(string fecha)

@@ -15,15 +15,16 @@ namespace Negocio
         {
             DaoOrdenes daoOrdenes = new DaoOrdenes();
             DaoUsuario usada = new DaoUsuario();
-            public int CargarOrdenes(List<Producto> carrito, int id)
+            DaoReserva reserva = new DaoReserva();
+            public int CargarOrdenes(List<Producto> carrito, int id, int idMesa)
             {
-                return daoOrdenes.CrearOrden(carrito, id);
+                return daoOrdenes.CrearOrden(carrito, id, idMesa);
             }
 
-            //public int CargarCarrito(int ordenId, List<Producto> carrito)
-            //{
-            //    return daoOrdenes.CargarListProducto(ordenId, carrito);
-            //}
+            public int ObtenerREserva(int id)
+            {
+                return reserva.ObtenerREserva(id);
+            }
 
             public Usuario ObtenerDatosUsuario(string Email)
             {

@@ -6,13 +6,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página</title>
-    <link rel="stylesheet" type="text/css" href="../Estilos/StyleMenu.css"/>
+   <%-- <link rel="stylesheet" type="text/css" href="../Estilos/StyleMenu.css"/>--%>
     <style type="text/css">
         .auto-style4 {
             left: 0px;
             top: 3px;
             height: 129px;
         }
+        .nav-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+        .nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-list li {
+            margin-right: 20px; /* Espaciado entre elementos de la lista */
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+            .nav-list li a:hover {
+                background-color: #4800ff; /* Color de fondo al pasar el mouse */
+            }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:black;
+            font-size: 8px;
+            min-width: 40px;
+            box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+            .dropdown-content a {
+                color: black;
+                padding: 6px 8px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
     </style>
 
 </head>

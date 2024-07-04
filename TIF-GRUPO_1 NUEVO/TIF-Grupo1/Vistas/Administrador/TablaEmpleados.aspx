@@ -130,7 +130,7 @@
             <asp:Label ID="lblTabladeEmpleados" runat="server" Font-Size="Medium" Text="TABLA DE EMPLEADOS"></asp:Label>
             <br />
             <br />
-            <asp:GridView ID="gvEmpleados" runat="server" AllowPaging="True" AutoGenerateColumns="False" CssClass="gridViewPrincipal">
+            <asp:GridView ID="gvEmpleados" runat="server" AllowPaging="True" AutoGenerateColumns="False" CssClass="gridViewPrincipal" OnPageIndexChanging="gvEmpleados_PageIndexChanging">
                 <Columns>
                     <asp:BoundField DataField="Empleado" HeaderText="Empleado" />
                     <asp:TemplateField HeaderText="DNI">

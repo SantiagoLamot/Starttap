@@ -48,7 +48,7 @@
             <asp:Button ID="btnFiltrar" CssClass="BotonPrincipal" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
             <br />
             <br />
-            <asp:GridView ID="gvTablaSolicitudesPedidos"  runat="server" AllowPaging="True" AutoGenerateColumns="False" OnRowCommand="gvTablaSolicitudesPedidos_RowCommand"  Height="332px" Width="911px"  >
+            <asp:GridView ID="gvTablaSolicitudesPedidos"  runat="server" AllowPaging="True" AutoGenerateColumns="False" OnRowCommand="gvTablaSolicitudesPedidos_RowCommand"  Height="332px" Width="911px" OnPageIndexChanging="gvTablaSolicitudesPedidos_PageIndexChanging"  >
     <Columns>
         <asp:TemplateField HeaderText="IdPedido">
             <ItemTemplate>
