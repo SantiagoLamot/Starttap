@@ -20,7 +20,6 @@ namespace Datos
         {
             return AccesoDatos.ObtenerTabla("Empleados", "SELECT CONCAT(U.Nombre, ' ', U.Apellido) AS Empleado, U.DNI, R.NombreRol AS Rol, E.Salario, E.FechaIngreso, E.Horarios, U.Telefono, E.Estado FROM Empleado E JOIN Usuario U ON E.IdUsuario = U.IdUsuario LEFT JOIN  Roles R ON E.IdRol = R.IdRol;");
 
-
         }
 
         public DataTable getTablaEmpleado()
